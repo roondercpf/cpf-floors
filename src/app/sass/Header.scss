@@ -1,0 +1,21 @@
+.desktop-header{
+    display: flex;
+    padding: 0px 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../../../public/header-texture.svg');
+    background-position: center;
+    background-size: cover;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    a {
+        margin: 0 35px;
+        font-weight: 600;
+    }
+}
+.header-promo{
+    background-color: #6f6f6f;
+    padding: 15px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}

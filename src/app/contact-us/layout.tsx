@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Programs",
-  description: "CPF Floors - Programs",
+  title: "Contact Us",
+  description: "CPF Floors - Contact Us",
 };
 
 export default function RootLayout({

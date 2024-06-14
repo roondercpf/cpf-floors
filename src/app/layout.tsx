@@ -1,6 +1,12 @@
-import type { Metadata } from "next";
-import "./globals.css";
 
+
+import type { Metadata } from "next";
+
+
+import Header from "@/components/Header";
+import Footer from "@/components/footer";
+
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "CPF Floors LLC.",
@@ -14,7 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

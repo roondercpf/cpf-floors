@@ -1,6 +1,11 @@
+'use client'
+import Image from "next/image";
+
 function Home() {
   return ( 
-    <h1>This is the Homepage</h1>
+    <>
+    <h1>This is the homepage</h1>
+    </>
    );
 }
 
