@@ -5,10 +5,10 @@
 
 # Our Vision:
 
-  ## Streamlined Processes: We're building tools to automate tasks like order processing, inventory management, and customer communication. This frees up valuable time for our team to focus on providing exceptional service.
-  ## Enhanced Efficiency: Through automation, we aim to optimize workflows and increase productivity. This translates to faster turnaround times and a smoother overall experience for our clients.
-  ## Data-Driven Decisions: We're leveraging technology to collect and analyze data, allowing us to make informed decisions about everything from product selection to marketing strategies.
-  ## Innovation: We're constantly exploring new technologies and integrating them into our operations. This ensures we stay at the forefront of the industry and deliver the best possible experience.
+  ### Streamlined Processes: We're building tools to automate tasks like order processing, inventory management, and customer communication. This frees up valuable time for our team to focus on providing exceptional service.
+  ### Enhanced Efficiency: Through automation, we aim to optimize workflows and increase productivity. This translates to faster turnaround times and a smoother overall experience for our clients.
+  ### Data-Driven Decisions: We're leveraging technology to collect and analyze data, allowing us to make informed decisions about everything from product selection to marketing strategies.
+  ### Innovation: We're constantly exploring new technologies and integrating them into our operations. This ensures we stay at the forefront of the industry and deliver the best possible experience.
   
 # Join the Movement!
 
