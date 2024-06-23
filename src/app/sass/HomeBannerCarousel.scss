@@ -1,0 +1,179 @@
+.embla {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 !important;
+  }
+  .embla__container {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 80px;
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    padding: 40px 80px;
+  }
+
+  .home-carousel-prev{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    margin: 0 60px;
+  }
+  .home-carousel-next{
+    position: absolute;
+    top: 40%;
+    right: 0;
+    margin: 0 60px;
+  }
+
+
+/*HOME SLIDES*/
+
+
+.home-slide-one{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    height: 100%;
+    .content{
+        background-color: transparent;
+        background-image: url("/home/slide1.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        padding: 80px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 25px;
+        }
+        h3{
+            font-size: 40px;
+        }
+        p{
+            width: 40%;
+            margin: 30px 0;
+        }
+        a{
+            width: 14%;
+            text-align: center;
+        }
+    }
+}
+.home-slide-two{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    height: 100%;
+    .content{
+        background-color: transparent;
+        background-image: url("/home/slide2.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        padding: 80px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 25px;
+        }
+        h3{
+            font-size: 40px;
+        }
+        p{
+            width: 40%;
+            margin: 30px 0;
+        }
+        a{
+            width: 14%;
+            text-align: center;
+        }
+    }
+}
+.home-slide-three{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    height: 100%;
+    .content{
+        background-color: transparent;
+        background-image: url("/home/slide3.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        padding: 80px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 25px;
+        }
+        h3{
+            font-size: 40px;
+        }
+        p{
+            width: 40%;
+            margin: 30px 0;
+        }
+        a{
+            width: 14%;
+            text-align: center;
+        }
+    }
+}
+.home-slide-four{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    height: 100%;
+    .content{
+        background-color: transparent;
+        background-image: url("/home/slide4.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        padding: 80px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 25px;
+        }
+        h3{
+            font-size: 40px;
+        }
+        p{
+            width: 40%;
+            margin: 30px 0;
+        }
+        a{
+            width: 14%;
+            text-align: center;
+        }
+    }
+}

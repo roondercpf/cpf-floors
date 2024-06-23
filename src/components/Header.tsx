@@ -26,18 +26,36 @@ function Header() {
           </Link>
         </div>
         <nav className="desktop-nav">
-          <ul>
-            <li>
-              <Link href="/products">Products</Link>
+
+              <div className="composed-link flex">
+                <Link href="/products">Products</Link>
+                <Image
+                  src="/menu-arrow.svg"
+                  height={14}
+                  width={14}
+                  alt=""
+                ></Image>
+              </div>
+
               <Link href="/dealer-locator">Dealer Locator</Link>
               <Link href="/order-samples">Order Sample</Link>
               <Link href="/about-us">About Us</Link>
-              <Link href="/get-inspired">Get Inspired</Link>
+
+              <div className="composed-link flex">
+                <Link href="/get-inspired">Get Inspired</Link>
+                <Image
+                  src="/menu-arrow.svg"
+                  height={14}
+                  width={14}
+                  alt=""
+                ></Image>
+              </div>
+
               <Link href="/contact-us">Contact Us</Link>
-            </li>
-          </ul>
         </nav>
-        <Link href="/become-a-dealer" className="button-dark">Become a Dealer</Link>
+        <Link href="/become-a-dealer" className="button-dark">
+          Become a Dealer
+        </Link>
       </header>
     </>
   );
