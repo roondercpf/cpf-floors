@@ -19,8 +19,13 @@
 
 .menu-carousel-buttons{
     position: absolute;
-    bottom: 10%;
-    right: 12%;
+    max-height: 40px;
+    bottom: 15%;
+    right: 10%;
+    padding: 10px;
+    img{
+      max-width: 80%;
+    }
 }
 
 /*MENU PRODUCTS SLIDES*/
@@ -29,8 +34,9 @@
     height: 100%;
     border-radius: 18px;
     .content{
+      position: relative;
         background-image: url("/home/menu-carousel-1.png");
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         height: 100%;
@@ -41,7 +47,8 @@
         flex-direction: column;
         justify-content: end;
         align-items: start;
-        padding: 60px;
+        padding: 20px;
+        border-radius: 18px;
 
         h2{
             font-size: 20px;
