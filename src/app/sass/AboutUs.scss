@@ -9,6 +9,7 @@
     background-color: #e3e3e3;
     .about-text{
         width: 50%;
+        padding: 80px;
         h2{
             font-size: 40px;
             font-weight: 700;
@@ -121,6 +122,7 @@
     .about-main-banner{
         padding: 80px 20px;
         .about-text{
+            padding: 0;
             width: 100%;
             text-align: center;
             h2{
