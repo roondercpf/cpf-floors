@@ -15,12 +15,12 @@ function Home() {
         <div className="main-banner">
           <h1>Let&apos;s Click Together!</h1>
           <p>The smartest flooring solution for all your renovation needs.</p>
-          <Image
+          <img
             src="/home/main-banner-img.png"
             height={500}
             width={500}
             alt=""
-          ></Image>
+          ></img>
         </div>
       </>
       <>
