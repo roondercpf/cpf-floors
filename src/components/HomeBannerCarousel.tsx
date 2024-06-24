@@ -25,56 +25,7 @@ const HomeBannerCarousel = () => {
       <div className="embla home-banner-carousel-container">
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
-            <div className="embla__slide home-carousel-slide">
-              <div className="home-slide-one">
-                <div className="content">
-                  <h2>Inspire Black</h2>
-                  <h3>Edition Collection</h3>
-                  <p>
-                    The collection that perfectly blends the resilience of
-                    waterproof rigid core vinyl with the serene hues of natural
-                    and rich wood landscapes.
-                  </p>
-                  <Link className="link-light" href="#">
-                    See More!
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="embla__slide home-carousel-slide">
-              <div className="home-slide-two">
-                <div className="content">
-                  <h2>Spirit XL</h2>
-                  <h3>Collection</h3>
-                  <p>
-                    The collection that perfectly blends the resilience of
-                    waterproof rigid core vinyl with the serene hues of natural
-                    and rich wood landscapes.
-                  </p>
-                  <Link className="link-light" href="#">
-                    See More!
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="embla__slide home-carousel-slide">
-              <div className="home-slide-three">
-                <div className="content">
-                  <h2>Project</h2>
-                  <h3>Collection</h3>
-                  <p>
-                    The collection that perfectly blends the resilience of
-                    waterproof rigid core vinyl with the serene hues of natural
-                    and rich wood landscapes.
-                  </p>
-                  <Link className="link-light" href="#">
-                    See More!
-                  </Link>
-                </div>
-              </div>
-            </div>
+            
 
             <div className="embla__slide home-carousel-slide">
               <div className="home-slide-four">
@@ -92,6 +43,7 @@ const HomeBannerCarousel = () => {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
 

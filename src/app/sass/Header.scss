@@ -31,3 +31,46 @@
   font-weight: 400;
   text-align: center;
 }
+
+
+
+/*MOBILE HEADER*/
+
+.mobile-header{
+  width: 100;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media(max-width: 1280px){
+  .desktop-header{
+    display: none;
+  }
+  .header-promo{
+    display: none;
+  }
+
+  .mobile-header{
+    .header-mobile-logo{
+      height: 50px;
+    }
+  }
+    
+}
+@media(min-width: 1280px){
+  .mobile-header{
+    display: none;
+  }
+}

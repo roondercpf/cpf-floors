@@ -55,12 +55,12 @@ function Footer() {
           <div className="links-container">
             <h3>Company</h3>
             <li>
-              <Link href="#">About Us</Link>
-              <Link href="#">Become a Dealer</Link>
+              <Link href="/about">About Us</Link>
+              <Link href="/become-a-dealer">Become a Dealer</Link>
               <Link href="#">Financing</Link>
               <Link href="#">Shipping & Delivery</Link>
               <Link href="#">Privacy Policies</Link>
-              <Link href="#">Contact Us</Link>
+              <Link href="/contact-us">Contact Us</Link>
             </li>
           </div>
         </div>

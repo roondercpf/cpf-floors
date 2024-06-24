@@ -1,0 +1,104 @@
+.contact-main-banner {
+  width: 100%;
+  padding: 80px;
+  .contact-form-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .contact-form {
+      width: 50%;
+      padding: 40px;
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+          font-size: 40px;
+          font-weight: 600;
+        }
+        input {
+          border-radius: 12px;
+        }
+      }
+    }
+    .contact-img {
+      width: 50%;
+      padding: 80px;
+      background-color: #e3e3e3;
+      border-radius: 18px;
+      text-align: center;
+      h2 {
+        font-size: 40px;
+        font-weight: 700;
+      }
+      p {
+        width: 100%;
+        margin: 25px 0;
+      }
+      img {
+        margin: 40px auto;
+      }
+    }
+  }
+}
+
+/*CONTACT BANNER SECTION*/
+
+.contact-banner-section {
+  width: 100%;
+  height: 90vh;
+  padding: 80px;
+  .contact-banner {
+    height: 100%;
+    width: 100%;
+    background-image: url("/contact-us/contact-banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    .contact-banner-text {
+      text-align: center;
+      width: 60%;
+      h2 {
+        font-size: 40px;
+      }
+      p {
+        margin: 45px 0;
+      }
+    }
+  }
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1280px) {
+  .contact-main-banner {
+    padding: 20px;
+    .contact-form-section {
+        width: 100%;
+        .contact-form{
+            width: 100%;
+        }
+        .contact-img{
+            width: 100%;
+        }
+    }
+  }
+
+  .contact-banner-section{
+    padding: 20px;
+    margin-bottom: 80px;
+    .contact-banner{
+        padding: 40px;
+        .contact-banner-text{
+            width: 100%;
+        }
+    }
+  }
+}
