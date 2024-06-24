@@ -40,7 +40,7 @@ function Footer() {
               <Link href="#">Data Center</Link>
               <Link href="#">Display Resources</Link>
               <Link href="#">Installation Guidelines</Link>
-              <Link href="#">F.A.Q.</Link>
+              <Link href="/faq">F.A.Q.</Link>
             </li>
           </div>
           <div className="links-container">
