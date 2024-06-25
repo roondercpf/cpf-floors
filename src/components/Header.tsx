@@ -13,11 +13,16 @@ function Header() {
   const [openProducts, setOpenProducts] = useState(false);
   const [openInspire, setOpenInspire] = useState(false);
 
+  const [mobileNav, setMobileNav] = useState(false);
+
   return (
     <>
       <>
         <div className="header-promo">
-          <p className="font-semibold">(305) 602 2330 CALL US - 98% of orders ship in 48 hours - The Best in Waterproof Flooring</p>
+          <p className="font-semibold">
+            (305) 602 2330 CALL US - 98% of orders ship in 48 hours - The Best
+            in Waterproof Flooring
+          </p>
         </div>
 
         <header className="desktop-header">
@@ -34,7 +39,7 @@ function Header() {
           </div>
           <nav className="desktop-nav">
             <div className="composed-link flex">
-              <Link href="/products">Products</Link>
+              <Link href="/#">Products</Link>
               <Image
                 onClick={() => setOpenProducts(!openProducts)}
                 src="/menu-arrow.svg"
@@ -109,9 +114,6 @@ function Header() {
                   <Link href="#">Whisper Matt</Link>
                 </div>
               </div>
-
-
-
             </motion.div>
           )}
         </AnimatePresence>
@@ -123,19 +125,62 @@ function Header() {
             <motion.div
               className="inspired-menu"
               initial={{ height: 0 }}
-              animate={{ height: 400 }}
+              animate={{ height: 600 }}
               exit={{ height: 0 }}
-            ></motion.div>
+            >
+              <Link href="#">
+                <div className="inspired-menu-card">
+                  <Image
+                    src="/home/inspired-menu-1.png"
+                    height={400}
+                    width={400}
+                    alt="CPF Floors - Get Inspired"
+                  ></Image>
+                  <p>
+                    Discover the CoreSteps line, the Stair Luxury Collection
+                    with unparalleled{" "}
+                  </p>
+                </div>
+              </Link>
+
+              <Link href="#">
+                <div className="inspired-menu-card">
+                  <Image
+                    src="/home/inspired-menu-2.png"
+                    height={400}
+                    width={400}
+                    alt="CPF Floors - Get Inspired"
+                  ></Image>
+                  <p>
+                    Discover the CoreSteps line, the Stair Luxury Collection
+                    with unparalleled{" "}
+                  </p>
+                </div>
+              </Link>
+
+              <Link href="#">
+                <div className="inspired-menu-card">
+                  <Image
+                    src="/home/inspired-menu-1.png"
+                    height={400}
+                    width={400}
+                    alt="CPF Floors - Get Inspired"
+                  ></Image>
+                  <p>
+                    Discover the CoreSteps line, the Stair Luxury Collection
+                    with unparalleled{" "}
+                  </p>
+                </div>
+              </Link>
+            </motion.div>
           )}
         </AnimatePresence>
       </>
 
-
-
       {/*MOBILE HEADER*/}
 
       <>
-          <div className="mobile-header">
+        <div className="mobile-header">
           <div>
             <Link href="/">
               <Image
@@ -148,12 +193,77 @@ function Header() {
             </Link>
           </div>
 
-          <div className="menu-bar">
-            <Image src="/menu-bar.svg" height={40} width={40} alt="menu bar"></Image>
+          <div className="menu-bar" onClick={() => setMobileNav(!mobileNav)}>
+            <Image
+              src="/menu-bar.svg"
+              height={35}
+              width={35}
+              alt="menu bar"
+            ></Image>
           </div>
-          </div>
-      
-      
+        </div>
+
+        <AnimatePresence initial={false}>
+          {mobileNav && (
+            <motion.div
+              className="mobile-nav"
+              initial={{ height: 0 }}
+              animate={{ height: 800 }}
+              exit={{ height: 0 }}
+            >
+              <div className="mobile-nav-links">
+                <div className="composed-link flex">
+                  <Link href="/#">Products</Link>
+                  <Image
+                    src="/menu-arrow.svg"
+                    height={14}
+                    width={14}
+                    alt=""
+                  ></Image>
+                </div>
+
+                <Link
+                  onClick={() => setMobileNav(!mobileNav)}
+                  href="/dealer-locator"
+                >
+                  Dealer Locator
+                </Link>
+                <Link
+                  onClick={() => setMobileNav(!mobileNav)}
+                  href="/order-samples"
+                >
+                  Order Sample
+                </Link>
+                <Link onClick={() => setMobileNav(!mobileNav)} href="/about-us">
+                  About Us
+                </Link>
+                <Link
+                  onClick={() => setMobileNav(!mobileNav)}
+                  href="/contact-us"
+                >
+                  Contact Us
+                </Link>
+
+                <div className="composed-link flex">
+                  <Link href="/get-inspired">Get Inspired</Link>
+                  <Image
+                    src="/menu-arrow.svg"
+                    height={14}
+                    width={14}
+                    alt=""
+                  ></Image>
+                </div>
+
+                <Link
+                  onClick={() => setMobileNav(!mobileNav)}
+                  href="/become-a-dealer"
+                >
+                  Become a dealer
+                </Link>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </>
     </>
   );
