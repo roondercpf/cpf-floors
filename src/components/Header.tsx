@@ -31,7 +31,7 @@ function Header() {
               <Image
                 className="header-desktop-logo"
                 alt="CPF Floors logo"
-                src="./header_desktop_logo.svg"
+                src="./footer-logo.svg"
                 height={70}
                 width={70}
               ></Image>

@@ -6,9 +6,9 @@
   padding: 0px 50px;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../../../public/header-texture.svg");
-  background-position: center;
-  background-size: cover;
+  // background-image: url("../../../public/header-texture.svg");
+  // background-position: center;
+  // background-size: cover;
   background-color: rgb(255, 255, 255);
   border-bottom: 1px solid rgb(189, 189, 189);
   z-index: 100;
@@ -145,13 +145,13 @@
     .composed-link{
       width: 100%;
       img{
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid rgb(199, 199, 199);
         cursor: pointer;
       }
     }
     a{
       padding: 25px 0;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid rgb(199, 199, 199);
       width: 100%;
       font-weight: 600;
     }
