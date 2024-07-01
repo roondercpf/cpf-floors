@@ -49,7 +49,7 @@ import {
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-5">
+        <AccordionItem value="item-6">
           <AccordionTrigger className="font-bold py-10">Can I request samples before making a decision?</AccordionTrigger>
           <AccordionContent className="py-20">
           Absolutely! Contact us, and we’ll arrange your free samples of our flooring products. It’s essential to see and feel the materials firsthand.

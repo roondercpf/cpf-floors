@@ -50,7 +50,7 @@ function Home() {
 
       <>
         <div className="logos p-20 flex justify-center items-center w-100">
-          <Image src="/home/logos.svg" height={100} width={100} alt=""></Image>
+          <Image src="/home/logos.svg" height={100} width={100} alt="" />
         </div>
       </>
 

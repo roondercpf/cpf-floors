@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "F.A.Q.",
+  title: "FAQ",
   description: "CPF Floors - Frecuently Asked Questions",
 };
 

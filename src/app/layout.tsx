@@ -1,6 +1,9 @@
 
 
 import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat();
 
 
 import Header from "@/components/Header";
@@ -21,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
-      <body>
+      <body className={`${montserrat.className}`}>
         <Header />
         {children}
         <Footer />

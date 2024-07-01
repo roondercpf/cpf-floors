@@ -39,7 +39,7 @@ function AboutUs() {
             <p>
               With over 20 years of experience in the industry. Our team
               comprises experts from leading national and global flooring
-              companies who bring innovation and excellence to the table. 
+              companies who bring innovation and excellence to the table.
             </p>
             <Link className="link-dark" href="#">
               Contact Us

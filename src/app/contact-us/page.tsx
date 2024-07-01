@@ -45,7 +45,7 @@ function ContactUs() {
               <h2>To Grow Your Business</h2>
               <p>
                 Discover high-quality flooring options in different styles, from
-                rustic, modern, and classic to elegant.  Transform your space
+                rustic, modern, and classic to elegant. Transform your space
                 and find inspiration with our beautiful collections.
               </p>
               <Link href="#" className="link-light">
