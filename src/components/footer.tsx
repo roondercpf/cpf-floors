@@ -57,7 +57,7 @@ function Footer() {
             <li>
               <Link href="/about">About Us</Link>
               <Link href="/become-a-dealer">Become a Dealer</Link>
-              <Link href="#">Financing</Link>
+              <Link href="/financing">Financing</Link>
               <Link href="#">Shipping & Delivery</Link>
               <Link href="#">Privacy Policies</Link>
               <Link href="/contact-us">Contact Us</Link>
