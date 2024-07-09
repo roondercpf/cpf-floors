@@ -3,7 +3,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 
-const montserrat = Montserrat();
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 
 import Header from "@/components/Header";

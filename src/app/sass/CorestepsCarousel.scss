@@ -1,0 +1,45 @@
+.embla {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 !important;
+    padding: 80px ;
+    height: auto;
+  }
+  .embla__container {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .embla__slide {
+    flex: 0 0 40%;
+    min-width: 0;
+    padding: 40px 80px;
+    img{
+        margin: 0 auto;
+        border-radius: 18px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+  }
+
+  .home-carousel-prev{
+    position: absolute;
+    top: 45%;
+    left: 0;
+    margin: 0 60px;
+  }
+  .home-carousel-next{
+    position: absolute;
+    top: 45%;
+    right: 0;
+    margin: 0 60px;
+  }
+
+
+  /*MEDIA QUERIES*/
+
+  @media(max-width: 1280px){
+    .embla__slide{
+        flex: 0 0 100%;
+    }
+  }

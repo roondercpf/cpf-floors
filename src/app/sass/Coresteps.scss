@@ -1,0 +1,327 @@
+.coresteps-main-banner{
+    height: auto;
+    width: 100%;
+    background-color: #e3e3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 120px 80px;
+    .coresteps-text{
+        padding: 40px;
+        width: 50%;
+        h2{
+            font-size: 40px;
+            font-weight: 700;
+        }
+        h3{
+            font-size: 40px;
+        }
+        p{
+            margin: 20px 0;
+            width: 60%;
+            margin-bottom: 40px;
+        }
+    }
+    .coresteps-img{
+        width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin: 0 auto;
+        }
+    }
+}
+
+/*CUSTOM STEPS SECTION*/
+
+.main-steps-container{
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .main-steps-text{
+        width: 50%;
+        padding: 40px;
+        h2{
+            font-size: 40px;
+            font-weight: 600;
+        }
+        h3{
+            font-size: 40px;
+        }
+        p{
+            margin: 25px 0;
+        }
+    }
+    .main-steps-img{
+        width: 50%;
+        padding: 40px;
+        img{
+            margin-bottom: 60px;
+        }
+    }
+}
+
+/*STEPS CARDS SECTION*/
+
+.steps-cards-container{
+    width: 100%;
+    height: auto;
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .steps-card{
+        text-align: center;
+        width: 40%;
+        margin: 40px;
+        border: 4px solid rgb(212, 212, 212);
+        border-radius: 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        img{
+            margin: 0 auto;
+        }
+        h3{
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+/*PURCHASE CORESTEPS*/
+
+.purchase-container{
+    width: 100%;
+    height: auto;
+    padding: 80px;
+    .purchase{
+        background-color: #6362b0;
+        width: 100%;
+        height: auto;
+        padding: 80px;
+        border-radius: 25px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .purchase-img{
+            width: 50%;
+            img{
+                max-width: 80%;
+            }
+        }
+        .purchase-text{
+            h2{
+                font-size: 25px;
+                font-weight: 600;
+            }
+            p{
+                margin: 25px 0;
+            }
+            a{
+                background-color: white;
+                color: black;
+                border-radius: 18px;
+                padding: 20px 45px;
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+
+/*CONSTRUCTION SECTION*/
+
+.construction-container{
+    padding: 80px;
+    width: 100%;
+    height: auto;
+    .construction-title{
+        text-align: start;
+        padding: 80px 0;
+        width: 100%;
+        h2{
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        p{
+            width: 35%;
+        }
+    }
+    .construction-cards-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 18px;
+        .construction-card{
+            width: 20%;
+            text-align: center;
+            margin: 40px;
+            img{
+                margin: 0 auto;
+                height: 100%;
+            }
+            h2{
+                font-size: 18px;
+                font-weight: 600;
+                margin: 25px 0;
+            }
+        }
+    }
+}
+
+.documents-cards-container{
+    width: 100%;
+    height: auto;
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .documents-card{
+        text-align: center;
+        width: 50%;
+        padding: 80px;
+        h2{
+            font-size: 25px;
+            font-weight: 600;
+            margin: 40px 0;
+        }
+        img{
+            max-width: 20%;
+            margin: 0% auto;
+        }
+        p{
+            margin: 40px;
+        }
+    }
+}
+
+
+/*LAST BANNER*/
+
+.last-banner-container{
+    width: 100%;
+    padding: 80px;
+    .last-banner{
+        width: 100%;
+        height: 600px;
+        background-image: url("/coresteps/last-banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        color: white;
+        border-radius: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2{
+            font-size: 45px;
+            font-weight: 600;
+        }
+        h3{
+            font-size: 18px;
+            margin: 25px 0;
+        }
+
+    }
+}
+
+
+/*MEDIA QUERIES*/
+
+@media(max-width:1280px){
+    .coresteps-main-banner{
+        padding: 120px 40px;
+        .coresteps-text{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 80px;
+            p{
+                width: 100%;
+            }
+        }
+        .coresteps-img{
+            width: 100%;
+        }
+    }
+    .main-steps-container{
+        .main-steps-text{
+            width: 100%;
+            text-align: center;
+        }
+        .main-steps-img{
+            width: 100%;
+            text-align: center;
+            img{
+                margin: 0 auto;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .steps-cards-container{
+        padding: 40px;
+        .steps-card{
+            width: 100%;
+        }
+    }
+
+    .purchase-container{
+        padding: 40px;
+        .purchase{
+            .purchase-img{
+                margin-bottom: 40px;
+                img{
+                    margin: 0 auto;
+                    height: 100%;
+                    max-width: 100%;
+                }
+            }
+            .purchase-text{
+                text-align: center;
+                p{
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+
+    .construction-container{
+        padding: 40px;
+        .construction-title{
+            text-align: center;
+            p{
+                width: 100%;
+            }
+        }
+        .construction-cards-container{
+            padding: 0;
+            .construction-card{
+                width: 100%;
+            }
+        }
+    }
+}

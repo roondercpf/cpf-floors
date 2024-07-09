@@ -9,6 +9,7 @@ import useEmblaCarousel from "embla-carousel-react";
 
 import "@/app/sass/HomeBannerCarousel.scss";
 
+
 const HomeBannerCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
@@ -112,7 +113,10 @@ const HomeBannerCarousel = () => {
           </button>
         </div>
       </div>
+
+
     </>
+
   );
 };
 export default HomeBannerCarousel;

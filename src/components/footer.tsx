@@ -28,7 +28,7 @@ function Footer() {
             <li>
               <Link href="#">Rigid Core and Vinyl</Link>
               <Link href="#">Waterproof Laminate</Link>
-              <Link href="#">Core Steps</Link>
+              <Link href="/coresteps">Core Steps</Link>
               <Link href="#">Core Moldings</Link>
               <Link href="#">Underlayment</Link>
               <Link href="#">Order Sample</Link>

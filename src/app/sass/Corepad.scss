@@ -1,0 +1,424 @@
+.main-banner{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e3e3;
+    padding: 80px;
+    .main-banner-text{
+        width: 30%;
+        padding: 80px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        img{
+            margin-bottom: 40px;
+        }
+        a{
+            margin: 25px 0;
+        }
+    }
+    .main-banner-img{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin: 0 auto;
+            height: 400px !important;
+        }
+    }
+}
+
+
+/*BE QUIET SECTION*/
+
+.quiet-section-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    .quiet-section-img{
+        width: 50%;
+        img{
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+    .quiet-section-text{
+        width: 50%;
+        h2{
+            font-size: 45px;
+            font-weight: 700;
+        }
+        p{
+            margin: 25px 0;
+        }
+    }
+}
+
+
+/*MUTEPAD SECTION*/
+
+.mutepad-banner{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #373737;
+    padding: 80px;
+    .mutepad-banner-text{
+        width: 30%;
+        padding: 80px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        img{
+            margin-bottom: 40px;
+        }
+        a{
+            margin: 25px 0;
+        }
+    }
+    .mutepad-banner-img{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin: 0 auto;
+            height: 400px !important;
+        }
+    }
+}
+
+.specs-section-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 80px;
+    .specs-img{
+        width: 50%;
+        img{
+            width: 75%;
+            margin: 0 auto;
+        }
+        .updated{
+            width: 50%;
+        }
+
+    }
+}
+
+.mutepad-banner-gray{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e3e3;
+    padding: 80px;
+    .mutepad-banner-text{
+        width: 30%;
+        padding: 80px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        img{
+            margin-bottom: 40px;
+        }
+        a{
+            margin: 25px 0;
+        }
+    }
+    .mutepad-banner-img{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin: 0 auto;
+            height: 400px !important;
+        }
+    }
+}
+
+
+.mutepad-banner-white{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #373737;
+    padding: 80px;
+    .mutepad-banner-text{
+        width: 30%;
+        padding: 80px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        img{
+            margin-bottom: 40px;
+        }
+        a{
+            margin: 25px 0;
+        }
+    }
+    .mutepad-banner-img{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin: 0 auto;
+            height: 400px !important;
+        }
+    }
+}
+
+
+
+/*BUY SECTION CONTAINER*/
+
+.buy-section-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: e3e3e3;
+    padding: 40px 80px;
+    .buy-text{
+        width: 50%;
+        padding: 0px 80px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        h2{
+            font-size: 45px;
+            font-weight: 700;
+        }
+        h2:nth-child(2){
+            color: #48b16a;
+        }
+        h3{
+            font-size: 25px;
+            font-weight: 500;
+        }
+        img{
+            margin-bottom: 40px;
+        }
+        a{
+            margin: 25px 0;
+            background-color: #48b16a;
+            padding: 20px 40px;
+            color: white;
+            border-radius: 12px;
+        }
+    }
+    .buy-img{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+}
+
+
+/*LAST BANNER*/
+
+.last-banner-container{
+    width: 100%;
+    padding: 80px;
+    height: 700px;
+    .last-banner{
+        width: 100%;
+        background-image: url("/corepad/last-banner.png");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 18px;
+        h2{
+            font-size: 45px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media(max-width: 1280px){
+    .main-banner{
+        padding: 180px 40px;
+        height: auto;
+        .main-banner-text{
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin: 40px auto;
+            }
+        }
+        .main-banner-img{
+            width: 100%;
+        }
+    }
+    .quiet-section-container{
+        padding: 80px 40px;
+        height: auto;
+        .quiet-section-img{
+            width: 100%;
+            margin-bottom: 40px;
+            img{
+                width: 50%;
+            }
+        }
+        .quiet-section-text{
+            width: 100%;
+            text-align: center ;
+            img{
+                margin: 0 auto;
+            }
+
+        }
+    }
+
+    .mutepad-banner{
+        padding: 80px 40px;
+        height: auto;
+        .mutepad-banner-text{
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin: 40px auto;
+            }
+        }
+        .mutepad-banner-img{
+            width: 100%;
+        }
+    }
+
+    .specs-section-container{
+        padding: 80px 40px;
+        .specs-img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+            .updated{
+                margin: 80px auto;
+                width: 70%;
+            }
+        }
+    }
+
+    .mutepad-banner-gray{
+        padding: 80px 40px;
+        height: auto;
+        .mutepad-banner-text{
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin: 40px auto;
+            }
+        }
+        .mutepad-banner-img{
+            width: 100%;
+        }
+    }
+    .mutepad-banner-white{
+        padding: 80px 40px;
+        height: auto;
+        .mutepad-banner-text{
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin: 40px auto;
+            }
+        }
+        .mutepad-banner-img{
+            width: 100%;
+        }
+    }
+
+    .buy-section-container{
+        padding: 40px;
+        .buy-text{
+            width: 100%;
+            margin-bottom: 80px;
+            h3{
+                font-size: 20px;
+            }
+        }
+        .buy-img{
+            width: 100%;
+        }
+    }
+
+}
