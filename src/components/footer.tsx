@@ -55,7 +55,7 @@ function Footer() {
           <div className="links-container">
             <h3>Company</h3>
             <li>
-              <Link href="/about">About Us</Link>
+              <Link href="/about-us">About Us</Link>
               <Link href="/become-a-dealer">Become a Dealer</Link>
               <Link href="/financing">Financing</Link>
               <Link href="#">Shipping & Delivery</Link>
@@ -67,7 +67,7 @@ function Footer() {
       </div>
       <div className="copyright-footer">
         <p>© 2024 CPF Floors. All rights reserved.</p>
-        <div className="flex">
+        <div className="flex footer-img">
         <Image className="mx-10" src="./footer2.svg" width={60} height={60} alt="World Floor Covering Association"></Image>
         <Image className="mx-10" src="./footer1.svg" width={80} height={80} alt="World Floor Covering Association"></Image>
         <Image className="mx-10" src="./wfca.svg" width={220} height={220} alt="World Floor Covering Association"></Image>

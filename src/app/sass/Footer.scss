@@ -97,8 +97,20 @@ footer{
                 width: 100% !important;
                 font-size: 12px;
                 text-align: center;
+                margin-bottom: 60px;
+            }
+            .footer-img{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+                    margin: 25px 0;
+                }
+                
             }
         }
+
     }
 
 }
