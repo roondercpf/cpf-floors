@@ -15,12 +15,15 @@ function Home() {
         <div className="main-banner">
           <h1>Let&apos;s Click Together!</h1>
           <p>The smartest flooring solution for all your renovation needs.</p>
-          <img
+          <motion.img
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration:2}}
             src="/home/main-banner-img.png"
             height={500}
             width={500}
             alt=""
-          ></img>
+          ></motion.img>
         </div>
       </>
       <>

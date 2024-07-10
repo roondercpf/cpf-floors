@@ -38,7 +38,7 @@ function Footer() {
             <h3>Resources</h3>
             <li>
               <Link href="#">Data Center</Link>
-              <Link href="#">Display Resources</Link>
+              <Link href="/display-resources">Display Resources</Link>
               <Link href="#">Installation Guidelines</Link>
               <Link href="/faq">F.A.Q.</Link>
             </li>
@@ -67,7 +67,12 @@ function Footer() {
       </div>
       <div className="copyright-footer">
         <p>© 2024 CPF Floors. All rights reserved.</p>
-        <Image src="./wfca.svg" width={220} height={220} alt="World Floor Covering Association"></Image>
+        <div className="flex">
+        <Image className="mx-10" src="./footer2.svg" width={60} height={60} alt="World Floor Covering Association"></Image>
+        <Image className="mx-10" src="./footer1.svg" width={80} height={80} alt="World Floor Covering Association"></Image>
+        <Image className="mx-10" src="./wfca.svg" width={220} height={220} alt="World Floor Covering Association"></Image>
+        </div>
+        
       </div>
     </footer>
   );

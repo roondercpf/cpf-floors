@@ -39,9 +39,9 @@ function Header() {
           </div>
           <nav className="desktop-nav">
             <div className="composed-link flex">
-              <Link href="/#">Products</Link>
+              <Link onClick={() => {setOpenProducts(!openProducts); setOpenInspire(false)}} href="/#">Products</Link>
               <Image
-                onClick={() => setOpenProducts(!openProducts)}
+                onClick={() => {setOpenProducts(!openProducts); setOpenInspire(false)}}
                 src="/menu-arrow.svg"
                 height={14}
                 width={14}
@@ -49,14 +49,14 @@ function Header() {
               ></Image>
             </div>
 
-            <Link href="/dealer-locator">Dealer Locator</Link>
-            <Link href="/order-samples">Order Sample</Link>
+            <Link href="#">Dealer Locator</Link>
+            <Link href="#">Order Sample</Link>
             <Link href="/about-us">About Us</Link>
 
             <div className="composed-link flex">
-              <Link href="/get-inspired">Get Inspired</Link>
+              <Link onClick={() => {setOpenInspire(!openInspire); setOpenProducts(false)}} href="#">Get Inspired</Link>
               <Image
-                onClick={() => setOpenInspire(!openInspire)}
+                onClick={() => {setOpenInspire(!openInspire); setOpenProducts(false)}}
                 src="/menu-arrow.svg"
                 height={14}
                 width={14}
@@ -77,9 +77,9 @@ function Header() {
           {openProducts && (
             <motion.div
               className="products-menu"
-              initial={{ height: 0 }}
-              animate={{ height: 600 }}
-              exit={{ height: 0 }}
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 600, opacity: 1 }}
+              exit={{ height: 0, opacity:0 }}
             >
               <div className="menu-products-carousel">
                 <MenuCarousel />
@@ -124,9 +124,9 @@ function Header() {
           {openInspire && (
             <motion.div
               className="inspired-menu"
-              initial={{ height: 0 }}
-              animate={{ height: 600 }}
-              exit={{ height: 0 }}
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 600, opacity: 1 }}
+              exit={{ height: 0, opacity:0 }}
             >
               <Link href="#">
                 <div className="inspired-menu-card">
