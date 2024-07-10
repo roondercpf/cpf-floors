@@ -30,7 +30,7 @@ function Home() {
         <motion.div className="description-container"
         initial={{opacity:0}}
         whileInView={{opacity:1}}
-        transition={{duration: 1}}>
+        transition={{duration: 2}}>
           <div className="description-text">
             <h2>+800</h2>
             <p>dealers</p>
