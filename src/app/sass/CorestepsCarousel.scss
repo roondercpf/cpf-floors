@@ -39,7 +39,19 @@
   /*MEDIA QUERIES*/
 
   @media(max-width: 1280px){
+    .embla{
+      height: auto;
+    }
     .embla__slide{
         flex: 0 0 100%;
+        img{
+          width: 100%;
+        }
+    }
+    .home-banner-carousel-container{
+      padding: 0;
+    }
+    .home-carousel-next, .home-carousel-prev{
+      margin: 0 10px;
     }
   }

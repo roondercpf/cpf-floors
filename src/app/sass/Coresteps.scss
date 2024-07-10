@@ -260,6 +260,14 @@
             width: 100%;
             text-align: center;
             margin-bottom: 80px;
+            h2{
+                font-size: 35px;
+                line-height: 40px;
+                margin-bottom: 20px;
+            }
+            h3{
+                font-size: 20px;
+            }
             p{
                 width: 100%;
             }
@@ -269,6 +277,7 @@
         }
     }
     .main-steps-container{
+        padding: 0;
         .main-steps-text{
             width: 100%;
             text-align: center;
@@ -286,12 +295,14 @@
         padding: 40px;
         .steps-card{
             width: 100%;
+            margin: 40px 0;
         }
     }
 
     .purchase-container{
         padding: 40px;
         .purchase{
+            padding: 80px 20px;
             .purchase-img{
                 margin-bottom: 40px;
                 img{
@@ -321,6 +332,25 @@
             padding: 0;
             .construction-card{
                 width: 100%;
+            }
+        }
+    }
+    .documents-cards-container{
+        padding: 40px;
+        .documents-card{
+            width: 100%;
+            padding: 0;
+            img{
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+    }
+    .last-banner-container{
+        padding: 20px;
+        .last-banner{
+            h2{
+                font-size: 35px;
             }
         }
     }

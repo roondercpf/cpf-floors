@@ -117,10 +117,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 30px;
   background-color: rgb(240, 240, 240);
   border-bottom: 1px solid rgb(207, 207, 207);
   z-index: 300;
+  box-shadow: rgba(0, 0, 0, 0.171) 0px 19px 38px, rgba(0, 0, 0, 0.027) 0px 15px 12px;
   .menu-bar{
     cursor: pointer;
   }
@@ -129,7 +130,7 @@
   position: fixed;
   width: 100%;
   background-color: white;
-  top: 90px;
+  top: 85px;
   left: 0;
   right: 0;
   z-index: 300;
