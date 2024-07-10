@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import ContactUsForm from "@/components/ContactUsForm";
 
@@ -16,15 +17,18 @@ function ContactUs() {
             <div className="contact-form">
               <ContactUsForm />
             </div>
-            <div className="contact-img">
+            <motion.div className="contact-img"
+              initial={{opacity: 0, rotateX: 180}}
+              animate={{opacity: 1, rotateX: 0}}
+              transition={{duration: 1}}>
               <h2>Let&apos;s Get In Touch</h2>
               <p>
                 Take advantage of opportunities to grow your dealer business and
                 increase sales! 
               </p>
-              <div>
-                <Link href="mailto:sales@cpffloors">sales@cpffloors.com</Link>
-                <Link href="tel:13056022330">+1-305-6022330 -</Link>
+              <div className="flex flex-col font-bold">
+                <Link className="mb-5" href="mailto:sales@cpffloors">sales@cpffloors.com</Link>
+                <Link href="tel:13056022330">+1-305-6022330</Link>
               </div>
               <Image
                 src="/become-a-dealer/contact-img.png"
@@ -32,13 +36,16 @@ function ContactUs() {
                 width={300}
                 alt="CPF Floors - Contact us"
               ></Image>
-            </div>
+            </motion.div>
           </div>
         </div>
       </>
 
       <>
-        <div className="contact-banner-section">
+        <motion.div className="contact-banner-section"
+        initial={{opacity: 0, y: 600}}
+        whileInView={{opacity:1, y: 0}}
+        transition={{duration: 1}}>
           <div className="contact-banner">
             <div className="contact-banner-text">
               <h2 className="font-bold">Collection Floors</h2>
@@ -53,7 +60,7 @@ function ContactUs() {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </>
     </>
   );
