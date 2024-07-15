@@ -14,6 +14,10 @@ function Header() {
   const [openInspire, setOpenInspire] = useState(false);
 
   const [mobileNav, setMobileNav] = useState(false);
+  const [openMobileProductsScetion, setOpenMobileProductsSection] =
+    useState(false);
+  const [openMobileInspiredSection, setOpenMobileInspiredSection] =
+    useState(false);
 
   return (
     <>
@@ -39,9 +43,20 @@ function Header() {
           </div>
           <nav className="desktop-nav">
             <div className="composed-link flex">
-              <Link onClick={() => {setOpenProducts(!openProducts); setOpenInspire(false)}} href="/#">Products</Link>
+              <Link
+                onClick={() => {
+                  setOpenProducts(!openProducts);
+                  setOpenInspire(false);
+                }}
+                href="/#"
+              >
+                Products
+              </Link>
               <Image
-                onClick={() => {setOpenProducts(!openProducts); setOpenInspire(false)}}
+                onClick={() => {
+                  setOpenProducts(!openProducts);
+                  setOpenInspire(false);
+                }}
                 src="/menu-arrow.svg"
                 height={14}
                 width={14}
@@ -54,9 +69,20 @@ function Header() {
             <Link href="/about-us">About Us</Link>
 
             <div className="composed-link flex">
-              <Link onClick={() => {setOpenInspire(!openInspire); setOpenProducts(false)}} href="#">Get Inspired</Link>
+              <Link
+                onClick={() => {
+                  setOpenInspire(!openInspire);
+                  setOpenProducts(false);
+                }}
+                href="#"
+              >
+                Get Inspired
+              </Link>
               <Image
-                onClick={() => {setOpenInspire(!openInspire); setOpenProducts(false)}}
+                onClick={() => {
+                  setOpenInspire(!openInspire);
+                  setOpenProducts(false);
+                }}
                 src="/menu-arrow.svg"
                 height={14}
                 width={14}
@@ -79,7 +105,7 @@ function Header() {
               className="products-menu"
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: 600, opacity: 1 }}
-              exit={{ height: 0, opacity:0 }}
+              exit={{ height: 0, opacity: 0 }}
             >
               <div className="menu-products-carousel">
                 <MenuCarousel />
@@ -126,7 +152,7 @@ function Header() {
               className="inspired-menu"
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: 600, opacity: 1 }}
-              exit={{ height: 0, opacity:0 }}
+              exit={{ height: 0, opacity: 0 }}
             >
               <Link href="#">
                 <div className="inspired-menu-card">
@@ -208,11 +234,16 @@ function Header() {
             <motion.div
               className="mobile-nav"
               initial={{ height: 0 }}
-              animate={{ height: 800 }}
+              animate={{ height: "100vh" }}
               exit={{ height: 0 }}
             >
               <div className="mobile-nav-links">
-                <div className="composed-link flex">
+                <div
+                  className="composed-link flex"
+                  onClick={() =>
+                    setOpenMobileProductsSection(!openMobileProductsScetion)
+                  }
+                >
                   <Link href="/#">Products</Link>
                   <Image
                     src="/menu-arrow.svg"
@@ -221,6 +252,25 @@ function Header() {
                     alt=""
                   ></Image>
                 </div>
+                <AnimatePresence initial={false}>
+                  {openMobileProductsScetion && (
+                    <motion.div
+                      className="mobile-section-links"
+                      initial={{ height: 0 }}
+                      animate={{ height: "auto" }}
+                      exit={{ height: 0 }}
+                    >
+                      <h3>Collections</h3>
+                      <Link href="#">Deco54</Link>
+                      <Link href="#">Quick48+</Link>
+                      <Link href="#">Project</Link>
+                      <Link href="#">Spirit XL</Link>
+                      <Link href="#">Alpha</Link>
+                      <Link href="#">Supreme</Link>
+                      <Link href="#">Evolve</Link>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
 
                 <Link
                   onClick={() => setMobileNav(!mobileNav)}
@@ -244,7 +294,12 @@ function Header() {
                   Contact Us
                 </Link>
 
-                <div className="composed-link flex">
+                <div
+                  className="composed-link flex"
+                  onClick={() =>
+                    setOpenMobileInspiredSection(!openMobileInspiredSection)
+                  }
+                >
                   <Link href="/get-inspired">Get Inspired</Link>
                   <Image
                     src="/menu-arrow.svg"
@@ -253,6 +308,19 @@ function Header() {
                     alt=""
                   ></Image>
                 </div>
+                <AnimatePresence initial={false}>
+                  {openMobileInspiredSection && (
+                    <motion.div
+                      className="mobile-section-links"
+                      initial={{ height: 0 }}
+                      animate={{ height: "auto" }}
+                      exit={{ height: 0 }}
+                    >
+                      <h3>Visit Our Blog</h3>
+                      <Link href="#">Blogs</Link>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
 
                 <Link
                   onClick={() => setMobileNav(!mobileNav)}

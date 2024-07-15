@@ -56,9 +56,9 @@
     .benefits-text-area {
       width: 30%;
       .benefits-img {
-        width: 40%;
+        max-width: 30%;
         img {
-          max-width: 80%;
+          max-width: 30%;
           margin: 0 auto;
         }
       }
@@ -168,6 +168,17 @@
 
 /*MEDIA QUERIES*/
 
+
+@media(max-width: 1430px){
+  .benefits-section-container{
+    .benefits-text-container{
+      .benefits-img{
+        display: none;
+      }
+    }
+  }
+}
+
 @media(max-width:1280px){
 
   .become-main-banner{
@@ -193,6 +204,8 @@
 
 
   /*BENEFITS SECTION*/
+
+
 
   .benefits-section-container{
     padding: 40px 20px;

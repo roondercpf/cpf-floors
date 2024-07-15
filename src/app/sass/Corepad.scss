@@ -412,12 +412,27 @@
         .buy-text{
             width: 100%;
             margin-bottom: 80px;
+            padding: 0;
             h3{
                 font-size: 20px;
             }
         }
         .buy-img{
             width: 100%;
+        }
+    }
+    .last-banner-container{
+        padding: 20px;
+        margin-bottom: 40px;
+        .last-banner{
+            padding: 20px;
+            h2{
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+            p{
+                width: 80%;
+            }
         }
     }
 
