@@ -76,11 +76,13 @@
 
 @media(max-width:1280px){
     .faq-main-banner{
-        height: auto;
+        height: 100vh;
         padding: 20px;
+        margin-top: 80px;
         .faq-banner-text{
             width: 100%;
             text-align: center;
+            padding: 0;
             h2{
                 margin-top: 40px;
                 font-size: 28px;
@@ -92,10 +94,18 @@
     }
 
     .accordion-container{
-        padding: 20px;
+        padding: 80px 20px;
     }
 
     .faq-contact-banner{
         padding: 20px;
+        .faq-contact-section{
+            .faq-text{
+                h2{
+                    font-size: 25px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
     }
 }
