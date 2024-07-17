@@ -213,8 +213,8 @@ function Header() {
                 className="header-mobile-logo"
                 alt="CPF Floors logo"
                 src="./footer-logo.svg"
-                height={70}
-                width={70}
+                height={50}
+                width={50}
               ></Image>
             </Link>
           </div>
@@ -222,8 +222,8 @@ function Header() {
           <div className="menu-bar" onClick={() => setMobileNav(!mobileNav)}>
             <Image
               src="/menu-bar.svg"
-              height={35}
-              width={35}
+              height={30}
+              width={30}
               alt="menu bar"
             ></Image>
           </div>

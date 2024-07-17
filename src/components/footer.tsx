@@ -30,7 +30,7 @@ function Footer() {
               <Link href="#">Waterproof Laminate</Link>
               <Link href="/coresteps">Core Steps</Link>
               <Link href="#">Core Moldings</Link>
-              <Link href="#">Underlayment</Link>
+              <Link href="/corepad">Underlayment</Link>
               <Link href="#">Order Sample</Link>
             </li>
           </div>
