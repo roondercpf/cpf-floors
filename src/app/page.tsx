@@ -13,24 +13,30 @@ function Home() {
     <>
       <>
         <div className="main-banner">
-          <h1>Let&apos;s Click Together!</h1>
-          <p>The smartest flooring solution for all your renovation needs.</p>
-          <motion.img
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            transition={{duration:2}}
-            src="/home/main-banner-img.png"
-            height={500}
-            width={500}
-            alt=""
-          ></motion.img>
+          <div className="main-banner-text">
+            <h1>Let&apos;s Click Together!</h1>
+            <p>The smartest flooring solution for all your renovation needs.</p>
+          </div>
+          <div className="main-banner-img">
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 2 }}
+              src="/home/main-banner-img.png"
+              height={500}
+              width={500}
+              alt=""
+            ></motion.img>
+          </div>
         </div>
       </>
       <>
-        <motion.div className="description-container"
-        initial={{opacity:0}}
-        whileInView={{opacity:1}}
-        transition={{duration: 2}}>
+        <motion.div
+          className="description-container"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
           <div className="description-text">
             <h2>+800</h2>
             <p>dealers</p>
@@ -61,7 +67,10 @@ function Home() {
       </>
 
       <>
-        <div className="roomvo-section-container">
+        <motion.div className="roomvo-section-container"
+        initial={{opacity: 0, y:800}}
+        animate={{opacity:1, y: 0}}
+        whileInView={{opacity: 1, y: 0}}>
           <div className="roomvo-section">
             <div className="roomvo-img">
               <Image
@@ -85,7 +94,7 @@ function Home() {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </>
 
       <>
@@ -219,20 +228,21 @@ function Home() {
               transition={{ duration: 1 }}
             ></motion.img>
             <div className="rigid-core-text">
-            <h2>Rigid Core Vinyl</h2>
-            
-            <div className="flex flex-row justify-center items-center">
-            <h3>Your Flooring Solution Partner</h3>
+              <h2>Rigid Core Vinyl</h2>
+
+              <div className="flex flex-row justify-center items-center">
+                <h3>Your Flooring Solution Partner</h3>
+              </div>
+              <p>
+                Discover high-quality flooring options in different styles, from
+                rustic, modern, and classic to elegant.  Transform your space
+                and find inspiration with our beautiful collections.
+              </p>
+              <Link className="link-light" href="#">
+                See More
+              </Link>
             </div>
-            <p>
-              Discover high-quality flooring options in different styles, from
-              rustic, modern, and classic to elegant.  Transform your space and
-              find inspiration with our beautiful collections.
-            </p>
-            <Link className="link-light" href="#">See More</Link>
           </div>
-          </div>
-          
         </div>
       </>
     </>

@@ -132,7 +132,7 @@ function DisplayResources() {
       </>
 
       <>
-        <div className="main-container">
+        <div className="main-container-dog">
           <div className="discover">
             <div className="discover-text">
               <h2>Discover Programs</h2>
