@@ -22,7 +22,7 @@ function AboutUs() {
           </div>
           <div className="about-img">
             <Image
-              src="/about/about-banner.png"
+              src="/about/about-banner.svg"
               height={600}
               width={600}
               alt="About Us - CPF Floors"
