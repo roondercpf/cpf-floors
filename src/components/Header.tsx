@@ -64,7 +64,7 @@ function Header() {
               ></Image>
             </div>
 
-            <Link href="#">Dealer Locator</Link>
+            <Link href="/dealer-locator">Dealer Locator</Link>
             <Link href="#">Order Sample</Link>
             <Link href="/about-us">About Us</Link>
 
