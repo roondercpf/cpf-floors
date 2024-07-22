@@ -45,6 +45,7 @@
     padding: 20px;
     border-radius: 18px;
     border: 1px solid rgb(206, 206, 206);
+
 }
 
 .mapboxgl-canvas {
@@ -52,6 +53,7 @@
     height: 100%;
     left: 0;
     top: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
 

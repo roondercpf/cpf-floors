@@ -59,7 +59,7 @@ function Footer() {
               <Link href="/become-a-dealer">Become a Dealer</Link>
               <Link href="/financing">Financing</Link>
               <Link href="#">Shipping & Delivery</Link>
-              <Link href="#">Privacy Policies</Link>
+              <Link href="/privacy-policy">Privacy Policies</Link>
               <Link href="/contact-us">Contact Us</Link>
             </li>
           </div>
