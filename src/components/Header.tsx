@@ -317,7 +317,7 @@ function Header() {
                       exit={{ height: 0 }}
                     >
                       <h3>Visit Our Blog</h3>
-                      <Link href="#">Blogs</Link>
+                      <Link href="/blogs">Blogs</Link>
                     </motion.div>
                   )}
                 </AnimatePresence>
