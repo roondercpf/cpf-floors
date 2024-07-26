@@ -1,8 +1,11 @@
+
+
 import type { Metadata } from "next";
 import { FRONTEND } from "../../utils/env";
 import { BlogsResponse } from "@/interfaces/blogs.model";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion"
 
 import "@/app/sass/Blogs.scss";
 

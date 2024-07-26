@@ -7,7 +7,11 @@
     justify-content: center;
     align-items: center;
     background-image: url('/blogs/Rectangle 293.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 0 80px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     .blogs-text {
       padding: 40px;
       width: 40%;
@@ -41,8 +45,8 @@
     padding: 80px;
     .blog-card{
         width: 45%;
-        height: 700px;
-        padding: 20px;
+        height: 750px;
+        padding: 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -94,6 +98,50 @@
         }
         p{
             margin-bottom: 40px;
+        }
+    }
+}
+
+
+
+/*ARTICLE*/
+
+.blog-article-container{
+    position: relative;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+    .blog-article{
+        width: 60%;
+        overflow: scroll;
+        overflow-x: hidden;
+        height: 100%;
+        padding: 40px;
+        img{
+            width: 100%;
+            border-radius: 18px;
+            margin: 120px auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        h3{
+            font-size: 20px;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+
+    }
+    .blog-title{
+        width: 40%;
+        padding: 20px;
+        background-color: #373737;
+        color: white;
+        padding: 80px;
+        box-shadow: rgba(0, 0, 0, 0) 0px 54px 55px, rgba(0, 0, 0, 0.60) 0px -12px 30px, rgba(0, 0, 0, 0) 0px 4px 6px, rgba(0, 0, 0, 0) 0px 12px 13px, rgba(0, 0, 0, 0.30) 0px -3px 5px;
+        h1{
+            font-size: 45px;
+            font-weight: 600;
         }
     }
 }
