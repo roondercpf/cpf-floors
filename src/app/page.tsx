@@ -60,11 +60,11 @@ function Home() {
         </motion.div>
       </>
 
-      <>
+      {/* <>
         <div className="logos p-20 flex justify-center items-center w-100">
           <Image src="/home/logos.svg" height={100} width={100} alt="" />
         </div>
-      </>
+      </> */}
 
       <>
         <motion.div className="roomvo-section-container"

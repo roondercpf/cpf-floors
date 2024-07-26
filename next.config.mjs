@@ -3,7 +3,8 @@ const nextConfig = {
     images: {
         remotePatterns: [
             {
-                hostname: "cpfmainbucket.s3.amazonaws.com"
+                hostname: "cpfmainbucket.s3.amazonaws.com",
+                hostname: "cpffloors.com"
             }
         ]
     }

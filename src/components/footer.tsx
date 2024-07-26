@@ -47,7 +47,7 @@ function Footer() {
             <h3>Get Inspired</h3>
             <li>
               <Link href="#">Visualize Your Room</Link>
-              <Link href="#">Dealer Locator</Link>
+              <Link href="/dealer-locator">Dealer Locator</Link>
               <Link href="/blogs">Blogs</Link>
               <Link href="#">Product Catalogs</Link>
             </li>

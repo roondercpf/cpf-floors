@@ -21,14 +21,7 @@ function Faq() {
               Explore Products
             </Link>
           </div>
-          <div className="faq-banner-img">
-            <Image
-              src="/faq/faq-banner-img.png"
-              height={400}
-              width={400}
-              alt="CPF Floors -F.A.Q."
-            ></Image>
-          </div>
+        
         </div>
       </>
 

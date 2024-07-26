@@ -45,10 +45,10 @@ function Header() {
             <div className="composed-link flex">
               <Link
                 onClick={() => {
-                  setOpenProducts(!openProducts);
+                  setOpenProducts(!openProducts)
                   setOpenInspire(false);
                 }}
-                href="/#"
+                href="#"
               >
                 Products
               </Link>
@@ -64,9 +64,33 @@ function Header() {
               ></Image>
             </div>
 
-            <Link href="/dealer-locator">Dealer Locator</Link>
-            <Link href="#">Order Sample</Link>
-            <Link href="/about-us">About Us</Link>
+            <Link
+              href="/dealer-locator"
+              onClick={() => {
+                setOpenProducts(false);
+                setOpenInspire(false);
+              }}
+            >
+              Dealer Locator
+            </Link>
+            <Link
+              href="#"
+              onClick={() => {
+                setOpenProducts(false);
+                setOpenInspire(false);
+              }}
+            >
+              Order Sample
+            </Link>
+            <Link
+              href="/about-us"
+              onClick={() => {
+                setOpenProducts(false);
+                setOpenInspire(false);
+              }}
+            >
+              About Us
+            </Link>
 
             <div className="composed-link flex">
               <Link
@@ -90,9 +114,24 @@ function Header() {
               ></Image>
             </div>
 
-            <Link href="/contact-us">Contact Us</Link>
+            <Link
+              href="/contact-us"
+              onClick={() => {
+                setOpenProducts(false);
+                setOpenInspire(false);
+              }}
+            >
+              Contact Us
+            </Link>
           </nav>
-          <Link href="/become-a-dealer" className="button-dark">
+          <Link
+            href="/become-a-dealer"
+            className="button-dark"
+            onClick={() => {
+              setOpenProducts(false);
+              setOpenInspire(false);
+            }}
+          >
             Become a Dealer
           </Link>
         </header>

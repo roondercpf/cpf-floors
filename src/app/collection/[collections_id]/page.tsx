@@ -10,11 +10,13 @@ async function CollectionsID({
   const res = await fetch(`${FRONTEND}/api/collections/${collection_id}`);
   const data: Collections = await res.json();
 
+  console.log(data)
+
   if ("error" in data) {
     notFound();
   }
 
-  return <div>Collectiones here!</div>;
+  return <div>{}</div>;
 }
 
 export default CollectionsID;
