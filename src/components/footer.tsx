@@ -48,7 +48,7 @@ function Footer() {
             <li>
               <Link href="#">Visualize Your Room</Link>
               <Link href="#">Dealer Locator</Link>
-              <Link href="#">Blogs</Link>
+              <Link href="/blogs">Blogs</Link>
               <Link href="#">Product Catalogs</Link>
             </li>
           </div>
