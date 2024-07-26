@@ -24,10 +24,10 @@ async function Collections() {
       <div className="blog-card-container">
         {collections.length > 0 ? (
           <>
-            {collections.map((blog) => {
+            {collections.map((collection) => {
               return (
-                <div key={blog._id}>
-                    {collections.name}
+                <div key={collection._id}>
+                    {collection.name}
                 </div>
               );
             })}
@@ -42,4 +42,4 @@ async function Collections() {
   );
 }
 
-export default Blogs;
+export default Collections;
