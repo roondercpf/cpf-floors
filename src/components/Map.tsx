@@ -1,6 +1,5 @@
 "use client";
-import { ReactNode, useRef, useMemo } from "react";
-import Image from "next/image";
+import { ReactNode, useRef } from "react";
 import DealerMap, {
   Marker,
   Popup,
@@ -8,10 +7,12 @@ import DealerMap, {
   GeolocateControl,
   FullscreenControl,
   ScaleControl,
-
+  Source,
+  Layer,
 } from "react-map-gl";
 import { Dealerlocator } from "@/interfaces/dealer-locator.model";
 import { getCenter } from "geolib";
+import GeocoderControl from "./Geocoder-control";
 import "@/app/mapbox-gl.css";
 
 interface MapProps {
@@ -23,7 +24,7 @@ export const Map = ({ data, ...props }: MapProps) => {
     return <div>No dealers found</div>;
   }
 
-  const markerRef = useRef<mapboxgl.Marker>();
+  //const markerRef = useRef<mapboxgl.Marker>();
 
   const center = getCenter(
     data.map((dealer) => ({
@@ -34,7 +35,7 @@ export const Map = ({ data, ...props }: MapProps) => {
 
   return (
     <div className="map-container">
-        {/* <div className="map-container-bar">
+      {/* <div className="map-container-bar">
           <div className="map-title-bar text-center">
             <Image
               className="mb-10"
@@ -61,7 +62,12 @@ export const Map = ({ data, ...props }: MapProps) => {
           bearing: 0,
           pitch: 0,
         }}
+        antialias={true}
       >
+        <GeocoderControl
+          position="top-right"
+          mapboxAccessToken={`${process.env.NEXT_PUBLIC_ACCESSTOKEN}`}
+        />
         <NavigationControl position="top-left" />
         <GeolocateControl position="top-left" />
         <FullscreenControl position="top-left" />
