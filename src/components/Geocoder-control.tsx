@@ -20,7 +20,7 @@ type GeocoderControlProps = Omit<
 /* eslint-disable complexity,max-statements */
 export default function GeocoderControl(props: GeocoderControlProps) {
   const [marker, setMarker] = useState(null);
-  // @ts-expect-error
+  // @ts-ignore
   const geocoder = useControl<MapboxGeocoder>(
     () => {
       const ctrl = new MapboxGeocoder({
@@ -30,7 +30,7 @@ export default function GeocoderControl(props: GeocoderControlProps) {
       });
       ctrl.on("loading", props.onLoading || (() => {}));
       ctrl.on("results", props.onResults || (() => {}));
-      ctrl.on("result", (evt) => {
+      ctrl.on("result", (evt:any) => {
         if (props.onResult) {
           props.onResult(evt);
         }
@@ -42,9 +42,9 @@ export default function GeocoderControl(props: GeocoderControlProps) {
             (result.geometry?.type === "Point" && result.geometry.coordinates));
         if (location && props.marker) {
           setMarker(
-            // @ts-expect-error
+            // @ts-ignore
             <Marker
-              // @ts-expect-error
+              // @ts-ignore
               {...props.marker}
               longitude={location[0]}
               latitude={location[1]}
