@@ -15,19 +15,19 @@ body{
 .button-dark{
   background-color: #373737;
   color: white;
-  padding: 15px 35px;
+  padding: 15px 25px;
   border-radius: 8px;
 }
 .link-dark{
   background-color: #373737;
   color: white;
-  padding: 15px 35px;
+  padding: 15px 25px;
   border-radius: 8px;
 }
 .link-light{
   background-color: white;
   color: black;
-  padding: 15px 35px;
+  padding: 15px 25px;
   border-radius: 8px;
   font-weight: 600;
 }
