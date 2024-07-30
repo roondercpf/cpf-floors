@@ -111,7 +111,7 @@ async function CollectionsID({
 
             <div className="specs m-10">
               <p>Instalation Type</p>
-              <h3>{data.installation_method}</h3>
+              <h3 className="flex lowercase">{data.installation_method}</h3>
             </div>
 
             <div className="specs m-10">
@@ -121,7 +121,7 @@ async function CollectionsID({
 
             <div className="specs m-10">
               <p>Class</p>
-              <h3>{data.traffic_class}</h3>
+              <h3 className="lowercase">{data.traffic_class}</h3>
             </div>
           </div>
         </div>

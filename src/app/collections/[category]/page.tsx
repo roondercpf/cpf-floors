@@ -61,7 +61,7 @@ async function Collections() {
                         {collection.plank_sizes}
                       </div>
                     </div>
-                    <Link className="underline" href="#">
+                    <Link className="underline" href={"/collection/"+ collection._id}>
                       View Collection
                     </Link>
                   </div>

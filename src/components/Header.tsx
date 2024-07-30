@@ -45,7 +45,7 @@ function Header() {
             <div className="composed-link flex">
               <Link
                 onClick={() => {
-                  setOpenProducts(!openProducts)
+                  setOpenProducts(!openProducts);
                   setOpenInspire(false);
                 }}
                 href="#"
@@ -142,10 +142,16 @@ function Header() {
                 <div className="links-container">
                   <h3>Collections</h3>
                   <Link href="#">Deco54</Link>
-                  <Link href="/collection/6696ccc2103daba3b410e1a2">Quick48+</Link>
-                  <Link href="#">Project</Link>
-                  <Link href="#">Spirit XL</Link>
-                  <Link href="#">Alpha</Link>
+                  <Link href="/collection/6696ccc2103daba3b410e1a2">
+                    Quick48+
+                  </Link>
+                  <Link href="/collection/6696cdb2103daba3b410e1a6">
+                    Project
+                  </Link>
+                  <Link href="/collection/6696cabd103daba3b410e19f">
+                    Spirit XL
+                  </Link>
+                  <Link href="/collection/6696ccd5103daba3b410e1a4">Project 2.0</Link>
                   <Link href="#">Supreme</Link>
                   <Link href="#">Evolve</Link>
                 </div>
@@ -290,10 +296,16 @@ function Header() {
                     >
                       <h3>Collections</h3>
                       <Link href="#">Deco54</Link>
-                      <Link href="#">Quick48+</Link>
-                      <Link href="#">Project</Link>
-                      <Link href="#">Spirit XL</Link>
-                      <Link href="#">Alpha</Link>
+                      <Link onClick={()=> setOpenProducts(false)} href="/collection/6696ccc2103daba3b410e1a2">
+                        Quick48+
+                      </Link>
+                      <Link onClick={()=> setOpenProducts(false)} href="/collection/6696cdb2103daba3b410e1a6">
+                        Project
+                      </Link>
+                      <Link onClick={()=> setOpenProducts(false)} href="/collection/6696cabd103daba3b410e19f">
+                        Spirit XL
+                      </Link>
+                      <Link onClick={()=> setOpenProducts(false)} href="/collection/6696ccd5103daba3b410e1a4">Project 2.0</Link>
                       <Link href="#">Supreme</Link>
                       <Link href="#">Evolve</Link>
                     </motion.div>
