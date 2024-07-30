@@ -22,6 +22,13 @@ export default function ContactUsForm() {
   } = useForm<IFormInput>();
 
   const onSubmit: SubmitHandler<IFormInput> = async (data) => {
+    const dataFormatted = {
+      name: data.fullName,
+      email: data.email,
+      company_address: data.address,
+      company_name: data.business,
+      phone: data.phone,
+    };
 
     try {
       const response = await fetch("/api/emails/sendContact", {
@@ -29,13 +36,12 @@ export default function ContactUsForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(dataFormatted),
       });
 
       if (response.status !== 200) {
         throw new Error("Error en la petición");
       }
-
     } catch (error) {
       console.error(error);
     }
@@ -46,7 +52,9 @@ export default function ContactUsForm() {
       <form onSubmit={handleSubmit(onSubmit)}>
         <p>Get Started</p>
         <h2>Contact Now</h2>
-        <p className="mb-10">Have any questions? Feel free to reach out to us</p>
+        <p className="mb-10">
+          Have any questions? Feel free to reach out to us
+        </p>
 
         <input
           className="p-5 mb-5"
@@ -98,8 +106,9 @@ export default function ContactUsForm() {
           })}
         />
 
-
-        <button className="button-dark" type="submit">Sign Up</button>
+        <button className="button-dark" type="submit">
+          Sign Up
+        </button>
       </form>
     </>
   );
