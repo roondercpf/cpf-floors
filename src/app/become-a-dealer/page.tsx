@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import BecomeADealerForm from "@/components/BecomeADealerForm";
 
 import "@/app/sass/BecomeADealer.scss";
+import { Rotate3D } from "lucide-react";
 
 function BecomeADealer() {
   return (
@@ -22,14 +24,18 @@ function BecomeADealer() {
               Contact Us
             </Link>
           </div>
-          <div className="become-img">
+          <motion.div
+            className="become-img"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+          >
             <Image
-              src="/become-a-dealer/become-banner.png"
+              src="/become-a-dealer/become-banner.svg"
               height={600}
               width={600}
               alt="CPF Floors - Become a dealer"
             ></Image>
-          </div>
+          </motion.div>
         </div>
       </>
 
@@ -49,7 +55,7 @@ function BecomeADealer() {
             <div className="benefits-text-area">
               <div className="benefits-text-div">
                 <Image
-                  src="/become-a-dealer/icon.svg"
+                  src="/become-a-dealer/early-access.svg"
                   height={50}
                   width={50}
                   alt="icon"
@@ -62,33 +68,38 @@ function BecomeADealer() {
               </div>
               <div className="benefits-text-div">
                 <Image
-                  src="/become-a-dealer/icon.svg"
+                  src="/become-a-dealer/grow.svg"
                   height={50}
                   width={50}
                   alt="icon"
                 ></Image>
                 <h3>Grow Your Business</h3>
                 <p>
-                  We’ve got your back with the largest in-stock selection of
+                  We &quote; ve got your back with the largest in-stock selection of
                   rigid core vinyl, laminate flooring, baseboards, and
                   stair-step materials.{" "}
                 </p>
               </div>
             </div>
 
-            <div className="benefits-img">
+            <motion.div
+              className="benefits-img"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, rotateX: 360 }}
+              transition={{ duration: 1 }}
+            >
               <Image
-                src="/become-a-dealer/plank-become-banner.png"
+                src="/become-a-dealer/benefits-img.svg"
                 height={500}
                 width={500}
                 alt="CPF Floors Become a dealer"
               ></Image>
-            </div>
+            </motion.div>
 
             <div className="benefits-text-area">
               <div className="benefits-text-div">
                 <Image
-                  src="/become-a-dealer/icon.svg"
+                  src="/become-a-dealer/satisfaction.svg"
                   height={50}
                   width={50}
                   alt="icon"
@@ -102,7 +113,7 @@ function BecomeADealer() {
               </div>
               <div className="benefits-text-div">
                 <Image
-                  src="/become-a-dealer/icon.svg"
+                  src="/become-a-dealer/custom.svg"
                   height={50}
                   width={50}
                   alt="icon"
@@ -136,14 +147,16 @@ function BecomeADealer() {
                 Explore Products
               </Link>
             </div>
-            <div className="bluetape-img">
+            <motion.div className="bluetape-img"
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}>
               <Image
                 src="/become-a-dealer/bluetape-banner.png"
                 height={600}
                 width={600}
                 alt="CPF Floors - Become a dealer"
               ></Image>
-            </div>
+            </motion.div>
           </div>
         </div>
       </>
@@ -154,7 +167,9 @@ function BecomeADealer() {
             <div className="form-container">
               <BecomeADealerForm />
             </div>
-            <div className="form-img">
+            <motion.div className="form-img"
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}>
               <Image
                 src="/become-a-dealer/contact-img.png"
                 height={300}
@@ -167,7 +182,7 @@ function BecomeADealer() {
                 Take advantage of opportunities to grow your dealer business and
                 increase sales! 
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </>

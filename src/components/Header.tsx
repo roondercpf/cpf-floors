@@ -48,7 +48,7 @@ function Header() {
                   setOpenProducts(!openProducts);
                   setOpenInspire(false);
                 }}
-                href="/#"
+                href="#"
               >
                 Products
               </Link>
@@ -64,35 +64,63 @@ function Header() {
               ></Image>
             </div>
 
-            <Link href="#">Dealer Locator</Link>
-            <Link href="#">Order Sample</Link>
-            <Link href="/about-us">About Us</Link>
+            <Link
+              href="/dealer-locator"
+              onClick={() => {
+                setOpenProducts(false);
+                setOpenInspire(false);
+              }}
+            >
+              Dealer Locator
+            </Link>
+            <Link
+              href="#"
+              onClick={() => {
+                setOpenProducts(false);
+                setOpenInspire(false);
+              }}
+            >
+              Order Sample
+            </Link>
+            <Link
+              href="/about-us"
+              onClick={() => {
+                setOpenProducts(false);
+                setOpenInspire(false);
+              }}
+            >
+              About Us
+            </Link>
 
             <div className="composed-link flex">
               <Link
                 onClick={() => {
-                  setOpenInspire(!openInspire);
                   setOpenProducts(false);
                 }}
-                href="#"
+                href="/blogs"
               >
-                Get Inspired
+                Blog
               </Link>
-              <Image
-                onClick={() => {
-                  setOpenInspire(!openInspire);
-                  setOpenProducts(false);
-                }}
-                src="/menu-arrow.svg"
-                height={14}
-                width={14}
-                alt=""
-              ></Image>
             </div>
 
-            <Link href="/contact-us">Contact Us</Link>
+            <Link
+              href="/contact-us"
+              onClick={() => {
+                setOpenProducts(false);
+                setOpenInspire(false);
+              }}
+            >
+              Contact Us
+            </Link>
           </nav>
-          <Link href="/become-a-dealer" className="button-dark">
+          <Link
+            href="/become-a-dealer"
+            className="button-dark"
+            onClick={() => {
+              setOpenProducts(false);
+              setOpenInspire(false);
+            }}
+          >
             Become a Dealer
           </Link>
         </header>
@@ -114,10 +142,16 @@ function Header() {
                 <div className="links-container">
                   <h3>Collections</h3>
                   <Link href="#">Deco54</Link>
-                  <Link href="#">Quick48+</Link>
-                  <Link href="#">Project</Link>
-                  <Link href="#">Spirit XL</Link>
-                  <Link href="#">Alpha</Link>
+                  <Link href="/collection/6696ccc2103daba3b410e1a2">
+                    Quick48+
+                  </Link>
+                  <Link href="/collection/6696cdb2103daba3b410e1a6">
+                    Project
+                  </Link>
+                  <Link href="/collection/6696cabd103daba3b410e19f">
+                    Spirit XL
+                  </Link>
+                  <Link href="/collection/6696ccd5103daba3b410e1a4">Project 2.0</Link>
                   <Link href="#">Supreme</Link>
                   <Link href="#">Evolve</Link>
                 </div>
@@ -213,8 +247,8 @@ function Header() {
                 className="header-mobile-logo"
                 alt="CPF Floors logo"
                 src="./footer-logo.svg"
-                height={70}
-                width={70}
+                height={50}
+                width={50}
               ></Image>
             </Link>
           </div>
@@ -222,8 +256,8 @@ function Header() {
           <div className="menu-bar" onClick={() => setMobileNav(!mobileNav)}>
             <Image
               src="/menu-bar.svg"
-              height={35}
-              width={35}
+              height={30}
+              width={30}
               alt="menu bar"
             ></Image>
           </div>
@@ -262,10 +296,16 @@ function Header() {
                     >
                       <h3>Collections</h3>
                       <Link href="#">Deco54</Link>
-                      <Link href="#">Quick48+</Link>
-                      <Link href="#">Project</Link>
-                      <Link href="#">Spirit XL</Link>
-                      <Link href="#">Alpha</Link>
+                      <Link onClick={()=> setOpenProducts(false)} href="/collection/6696ccc2103daba3b410e1a2">
+                        Quick48+
+                      </Link>
+                      <Link onClick={()=> setOpenProducts(false)} href="/collection/6696cdb2103daba3b410e1a6">
+                        Project
+                      </Link>
+                      <Link onClick={()=> setOpenProducts(false)} href="/collection/6696cabd103daba3b410e19f">
+                        Spirit XL
+                      </Link>
+                      <Link onClick={()=> setOpenProducts(false)} href="/collection/6696ccd5103daba3b410e1a4">Project 2.0</Link>
                       <Link href="#">Supreme</Link>
                       <Link href="#">Evolve</Link>
                     </motion.div>
@@ -317,7 +357,7 @@ function Header() {
                       exit={{ height: 0 }}
                     >
                       <h3>Visit Our Blog</h3>
-                      <Link href="#">Blogs</Link>
+                      <Link href="/blogs">Blogs</Link>
                     </motion.div>
                   )}
                 </AnimatePresence>

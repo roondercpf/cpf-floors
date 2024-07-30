@@ -26,30 +26,26 @@ function Footer() {
           <div className="links-container">
             <h3>Our Products</h3>
             <li>
-              <Link href="#">Rigid Core and Vinyl</Link>
+              <Link href="/collections/vinyl">Rigid Core and Vinyl</Link>
               <Link href="#">Waterproof Laminate</Link>
               <Link href="/coresteps">Core Steps</Link>
               <Link href="#">Core Moldings</Link>
-              <Link href="#">Underlayment</Link>
-              <Link href="#">Order Sample</Link>
+              <Link href="/corepad">Underlayment</Link>
             </li>
           </div>
           <div className="links-container">
             <h3>Resources</h3>
             <li>
-              <Link href="#">Data Center</Link>
+
               <Link href="/display-resources">Display Resources</Link>
-              <Link href="#">Installation Guidelines</Link>
               <Link href="/faq">F.A.Q.</Link>
             </li>
           </div>
           <div className="links-container">
             <h3>Get Inspired</h3>
             <li>
-              <Link href="#">Visualize Your Room</Link>
-              <Link href="#">Dealer Locator</Link>
-              <Link href="#">Blogs</Link>
-              <Link href="#">Product Catalogs</Link>
+              <Link href="/dealer-locator">Dealer Locator</Link>
+              <Link href="/blogs">Blog</Link>
             </li>
           </div>
           <div className="links-container">
@@ -58,8 +54,7 @@ function Footer() {
               <Link href="/about-us">About Us</Link>
               <Link href="/become-a-dealer">Become a Dealer</Link>
               <Link href="/financing">Financing</Link>
-              <Link href="#">Shipping & Delivery</Link>
-              <Link href="#">Privacy Policies</Link>
+              <Link href="/privacy-policy">Privacy Policies</Link>
               <Link href="/contact-us">Contact Us</Link>
             </li>
           </div>

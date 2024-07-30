@@ -4,30 +4,49 @@
   position: relative;
   height: 90vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   background-image: url("/home/main-banner-bg.png");
   background-position: center;
   background-size: cover;
   color: white;
   padding: 40px 80px;
-  h1 {
-    font-weight: 700;
-    font-size: 60px;
+  padding-bottom: 0;
+  overflow: hidden;
+  .main-banner-text{
     width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 80px;
+    h1 {
+      font-weight: 700;
+      font-size: 60px;
+      width: 100%;
+      text-align: center;
+    }
+    p {
+      width: 100%;
+      text-align: center;
+      font-size: 25px;
+    }
   }
-  p {
+  .main-banner-img{
     width: 100%;
-    text-align: center;
-    font-size: 25px;
-  }
-  img {
-    position: absolute;
-    bottom: 0;
-    width: 60%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    height: 50%;
+    display: flex;
+    align-items: end;
+    padding: 0;
+    img{
+      margin: 0 auto;
+      height: 100%;
+      width: auto;
+    }
   }
 }
 
@@ -410,29 +429,34 @@
   /*MAIN BANNER*/
 
   .main-banner {
-    height: 100vh;
+    height: 60dvh;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     background-color: #202020;
-    background-image: url("/home/mobile-banner-img.svg");
-    background-size: 75%;
-    background-repeat: no-repeat;
-    background-position: bottom;
-
-    h1 {
-      margin-top: 200px;
-      font-size: 45px;
-      line-height: 60px;
-      margin-bottom: 25px;
+    padding: 120px 20px 0px 20px;
+    margin-top: 80px;
+    .main-banner-text{
+      padding: 0;
+      height: auto;
+      h1{
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: 18px;
+        margin-bottom: 45px;
+      }
     }
-    p {
-      font-size: 18px;
-    }
-    img {
-      display: none;
+    .main-banner-img{
+      width: 90%;
+      height: 30%;
+      img{
+        max-height: 100%;
+        max-width: auto;
+      }
     }
   }
 
@@ -480,17 +504,16 @@
   /*DISCOVER SECTION*/
 
   .discover-section-container {
-    padding: 80px 20px;
+    padding: 20px;
     height: auto;
     .discover {
-      padding: 80px 20px;
+      padding:  20px;
       .discover-text {
         width: 100%;
         text-align: center;
-        padding: 20px;
         margin-bottom: 40px;
         h2 {
-          font-size: 28px;
+          font-size: 22px;
         }
       }
       .discover-img {
