@@ -4,9 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import ContactUsForm from "@/components/ContactUsForm";
+import ContactUsForm from "@/components/BecomeADealerForm";
 
 import "@/app/sass/ContactUs.scss";
+import BecomeADealerForm from "@/components/BecomeADealerForm";
 
 function ContactUs() {
   return (
@@ -15,7 +16,7 @@ function ContactUs() {
         <div className="contact-main-banner">
           <div className="contact-form-section">
             <div className="contact-form">
-              <ContactUsForm />
+              <BecomeADealerForm />
             </div>
             <motion.div className="contact-img"
               initial={{opacity: 0, rotateX: 180}}
@@ -24,7 +25,7 @@ function ContactUs() {
               <h2>Let&apos;s Get In Touch</h2>
               <p>
                 Take advantage of opportunities to grow your dealer business and
-                increase sales! 
+                increase sales!
               </p>
               <div className="flex flex-col font-bold">
                 <Link className="mb-5" href="mailto:sales@cpffloors">sales@cpffloors.com</Link>
