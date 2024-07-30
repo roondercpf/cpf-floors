@@ -22,7 +22,7 @@ function Corepad() {
               width={300}
               alt="Corepad logo"
             ></Image>
-            <Link className="link-dark" href="#">
+            <Link className="link-dark" href="/collections/vinyl">
               See Products
             </Link>
           </div>
@@ -74,7 +74,7 @@ function Corepad() {
               width={300}
               alt="Corepad logo"
             ></Image>
-            <Link className="link-light" href="#">
+            <Link className="link-light" href="/collections/vinyl">
               See Products
             </Link>
           </div>
@@ -120,7 +120,7 @@ function Corepad() {
               width={300}
               alt="Corepad logo"
             ></Image>
-            <Link className="link-light" href="#">
+            <Link className="link-light" href="/collections/vinyl">
               See Products
             </Link>
           </div>
@@ -166,7 +166,7 @@ function Corepad() {
               width={300}
               alt="Corepad logo"
             ></Image>
-            <Link className="link-light" href="#">
+            <Link className="link-light" href="/collections/vinyl">
               See Products
             </Link>
           </div>
@@ -215,7 +215,7 @@ function Corepad() {
               Vapor Barrier <br />
               at $35
             </h2>
-            <Link href="#" className="corepad-green-link">
+            <Link href="/become-a-dealer" className="corepad-green-link">
               Call Your Rep Now!
             </Link>
           </div>

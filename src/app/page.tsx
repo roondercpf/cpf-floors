@@ -112,7 +112,7 @@ function Home() {
                 equip your dealer with powerful marketing tools that make CPF
                 selling easy.
               </p>
-              <Link className="link-dark" href="#">
+              <Link className="link-dark" href="/become-a-dealer">
                 Contact Now!
               </Link>
             </div>
@@ -138,7 +138,7 @@ function Home() {
                 Request your samples and experience the quality of CPF Floors
                 with your own eyes!
               </p>
-              <Link href="#" className="link-light">
+              <Link href="/contact-us" className="link-light">
                 Get Started
               </Link>
             </div>
@@ -161,7 +161,7 @@ function Home() {
             <div className="available-accessories-container">
               <div className="available-accessories-div-one">
                 <h2>Steps</h2>
-                <Link href="#">View More</Link>
+                <Link href="/coresteps">View More</Link>
               </div>
               <div className="available-accessories-div-two">
                 <h2>Moldings</h2>
@@ -169,7 +169,7 @@ function Home() {
               </div>
               <div className="available-accessories-div-three">
                 <h2>Underlayments</h2>
-                <Link href="#">View More</Link>
+                <Link href="/corepad">View More</Link>
               </div>
             </div>
           </div>
@@ -195,7 +195,7 @@ function Home() {
                 comprises experts from leading national and global flooring
                 companies who bring innovation and excellence to the table.
               </p>
-              <Link href="#" className="link-dark">
+              <Link href="/become-a-dealer" className="link-dark">
                 Try it Yourself!
               </Link>
             </div>
@@ -238,7 +238,7 @@ function Home() {
                 rustic, modern, and classic to elegant. Transform your space
                 and find inspiration with our beautiful collections.
               </p>
-              <Link className="link-light" href="#">
+              <Link className="link-light" href="/collections/vinyl">
                 See More
               </Link>
             </div>
