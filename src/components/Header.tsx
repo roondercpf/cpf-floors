@@ -95,23 +95,12 @@ function Header() {
             <div className="composed-link flex">
               <Link
                 onClick={() => {
-                  setOpenInspire(!openInspire);
                   setOpenProducts(false);
                 }}
-                href="#"
+                href="/blogs"
               >
-                Get Inspired
+                Blog
               </Link>
-              <Image
-                onClick={() => {
-                  setOpenInspire(!openInspire);
-                  setOpenProducts(false);
-                }}
-                src="/menu-arrow.svg"
-                height={14}
-                width={14}
-                alt=""
-              ></Image>
             </div>
 
             <Link
@@ -153,7 +142,7 @@ function Header() {
                 <div className="links-container">
                   <h3>Collections</h3>
                   <Link href="#">Deco54</Link>
-                  <Link href="#">Quick48+</Link>
+                  <Link href="/collection/6696ccc2103daba3b410e1a2">Quick48+</Link>
                   <Link href="#">Project</Link>
                   <Link href="#">Spirit XL</Link>
                   <Link href="#">Alpha</Link>

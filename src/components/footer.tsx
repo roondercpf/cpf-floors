@@ -26,7 +26,7 @@ function Footer() {
           <div className="links-container">
             <h3>Our Products</h3>
             <li>
-              <Link href="#">Rigid Core and Vinyl</Link>
+              <Link href="/collections/vinyl">Rigid Core and Vinyl</Link>
               <Link href="#">Waterproof Laminate</Link>
               <Link href="/coresteps">Core Steps</Link>
               <Link href="#">Core Moldings</Link>
