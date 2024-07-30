@@ -22,7 +22,7 @@ function Coresteps() {
             Explore our services and products in interior stairs and discover
             the variety of colors.
           </p>
-          <Link className="link-coresteps" href="#">
+          <Link className="link-coresteps" href="/contact-us">
             Get a free quote
           </Link>
         </div>
@@ -55,7 +55,7 @@ function Coresteps() {
               height={300}
               alt="Coresteps Logo"
             ></Image>
-            <Link className="link-coresteps" href="#">
+            <Link className="link-coresteps" href="/contact-us">
               Get a free quote
             </Link>
           </div>
@@ -97,7 +97,7 @@ function Coresteps() {
               <p>
                 Click on the button to place your order with our step system
               </p>
-              <Link className="light-link-coresteps" href="#">
+              <Link className="light-link-coresteps" href="/contact-us">
                 Get a free quote
               </Link>
             </div>

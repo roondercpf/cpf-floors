@@ -16,7 +16,7 @@ function AboutUs() {
               We continuously search for the finest and most innovative flooring
               solutions.
             </p>
-            <Link className="link-dark" href="#">
+            <Link className="link-dark" href="/contact-us">
               Contact Us
             </Link>
           </div>
@@ -41,7 +41,7 @@ function AboutUs() {
               comprises experts from leading national and global flooring
               companies who bring innovation and excellence to the table.
             </p>
-            <Link className="link-dark" href="#">
+            <Link className="link-dark" href="/contact-us">
               Contact Us
             </Link>
           </div>
@@ -59,7 +59,7 @@ function AboutUs() {
               customers. We&apos;ve gained the trust of our dealers which has helped
               us ensure swift and efficient service to our valued dealers.
             </p>
-            <Link className="link-dark" href="#">
+            <Link className="link-dark" href="/contact-us">
               Contact Us
             </Link>
           </div>
@@ -77,7 +77,7 @@ function AboutUs() {
                 rustic, modern, and classic to elegant. Transform your space
                 and find inspiration with our beautiful collections.
               </p>
-              <Link className="link-light" href="#">See More</Link>
+              <Link className="link-light" href="/contact-us">See More</Link>
             </div>
           </div>
         </div>

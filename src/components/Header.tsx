@@ -74,7 +74,7 @@ function Header() {
               Dealer Locator
             </Link>
             <Link
-              href="#"
+              href="/contact-us"
               onClick={() => {
                 setOpenProducts(false);
                 setOpenInspire(false);
@@ -340,7 +340,7 @@ function Header() {
                     setOpenMobileInspiredSection(!openMobileInspiredSection)
                   }
                 >
-                  <Link href="/get-inspired">Get Inspired</Link>
+                  <Link href="/blogs">Get Inspired</Link>
                   <Image
                     src="/menu-arrow.svg"
                     height={14}

@@ -56,7 +56,7 @@ function ContactUs() {
                 rustic, modern, and classic to elegant. Transform your space
                 and find inspiration with our beautiful collections.
               </p>
-              <Link href="#" className="link-light">
+              <Link href="/collections/vinyl" className="link-light">
                 See More
               </Link>
             </div>
