@@ -75,7 +75,7 @@ function BecomeADealer() {
                 ></Image>
                 <h3>Grow Your Business</h3>
                 <p>
-                  We’ve got your back with the largest in-stock selection of
+                  We &quote; ve got your back with the largest in-stock selection of
                   rigid core vinyl, laminate flooring, baseboards, and
                   stair-step materials.{" "}
                 </p>

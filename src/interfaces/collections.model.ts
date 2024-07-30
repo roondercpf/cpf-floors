@@ -9,7 +9,7 @@ export interface Collections {
   sbrand: string;
   category: string;
   colors: string[];
-  fproduct_type: string;
+  product_type: string;
   plank_sizes: string;
   wear_layer: string;
   overall_thickness: string;

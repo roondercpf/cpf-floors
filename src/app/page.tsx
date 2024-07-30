@@ -193,7 +193,7 @@ function Home() {
               <p>
                 With over 20 years of experience in the industry. Our team
                 comprises experts from leading national and global flooring
-                companies who bring innovation and excellence to the table. 
+                companies who bring innovation and excellence to the table.
               </p>
               <Link href="#" className="link-dark">
                 Try it Yourself!
@@ -235,7 +235,7 @@ function Home() {
               </div>
               <p>
                 Discover high-quality flooring options in different styles, from
-                rustic, modern, and classic to elegant.  Transform your space
+                rustic, modern, and classic to elegant. Transform your space
                 and find inspiration with our beautiful collections.
               </p>
               <Link className="link-light" href="#">

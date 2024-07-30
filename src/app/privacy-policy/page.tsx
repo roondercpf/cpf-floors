@@ -43,7 +43,7 @@ function PrivacyPolicy() {
           initial={{opacity: 0}}
           whileInView={{opacity:1}}
           transition={{duration: 1}}>
-            1- Introduction: CPF Floors LLC (the “Company" or “We”), maintains
+            1- Introduction: CPF Floors LLC (the &quot;Company&quot; or &quote;We&quote;), maintains
             its website www.cpffloors.com (the “Site”) for your personal
             entertainment, information, education, and shopping convenience of
             our flooring products and services (the “Service”). By using our
@@ -62,7 +62,7 @@ function PrivacyPolicy() {
             anyone else and are responsible for all activities that occur under
             your account. If you create an account or use the Services on behalf
             of another person or entity, you must have the authority to accept
-            these Terms on their behalf.Whether you’re a visitor or a customer,
+            these Terms on their behalf.Whether you&apos;re a visitor or a customer,
             especially a user of one of our authorized dealer networks (each a
             “Dealer”), you may download material from our website and electronic
             applications for non-commercial, and Dealer-use only, provided you
@@ -81,7 +81,7 @@ function PrivacyPolicy() {
             not limited to our logo, our tag lines, and those of our vendors and
             others (collectively, “Our Marks”). Any use of Our Marks is strictly
             prohibited, except as explicitly permitted in this Site. The Company
-            is the rightful owner of the "Core Proof Floors" trademark and a
+            is the rightful owner of the &quot;Core Proof Floors&quot; trademark and a
             licensee of Finfloor products. “Roomvo” is a registered trademark of
             Leap Tools Inc and they does not endorse these Terms, and their
             terms of services are available in this link. The content on our
@@ -98,7 +98,7 @@ function PrivacyPolicy() {
           <h2>Special Clauses for our Dealers</h2>
           <p>
             As a Dealer utilizing our services, you acknowledge and agree to the
-            Company’s Terms for the Sale of Flooring Products, and to indemnify
+            Company&apos;s Terms for the Sale of Flooring Products, and to indemnify
             and hold CPF Floors LLC, including reasonable legal fees and other
             litigation expenses, arising directly or indirectly.
           </p>
@@ -113,7 +113,7 @@ function PrivacyPolicy() {
           <h2>Special Clauses for our Dealers</h2>
           <p>
             As a Dealer utilizing our services, you acknowledge and agree to the
-            Company’s Terms for the Sale of Flooring Products, and to indemnify
+            Company&apos;s Terms for the Sale of Flooring Products, and to indemnify
             and hold CPF Floors LLC, including reasonable legal fees and other
             litigation expenses, arising directly or indirectly.
           </p>

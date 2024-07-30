@@ -56,7 +56,7 @@ function AboutUs() {
             <p>
               Our Miami HQ and Lakeland warehouse allow us to expand quickly
               over the state of Florida and provide efficient service to valued
-              customers. We’ve gained the trust of our dealers which has helped
+              customers. We&apos;ve gained the trust of our dealers which has helped
               us ensure swift and efficient service to our valued dealers.
             </p>
             <Link className="link-dark" href="#">

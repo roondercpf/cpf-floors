@@ -85,7 +85,7 @@ async function CollectionsID({
       </div>
 
       <>
-        <div className="specs-section">
+        <div className="specs-section p-3">
           <h2>Specifications</h2>
           <div className="specs-text flex flex-wrap justify-center items-start">
             <div className="specs m-10">
