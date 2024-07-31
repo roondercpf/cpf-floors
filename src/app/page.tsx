@@ -165,7 +165,7 @@ function Home() {
               </div>
               <div className="available-accessories-div-two">
                 <h2>Moldings</h2>
-                <Link href="#">View More</Link>
+                <Link href="/core-moldings">View More</Link>
               </div>
               <div className="available-accessories-div-three">
                 <h2>Underlayments</h2>
