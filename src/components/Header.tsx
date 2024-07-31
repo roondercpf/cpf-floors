@@ -296,16 +296,16 @@ function Header() {
                     >
                       <h3>Collections</h3>
                       <Link href="#">Deco54</Link>
-                      <Link onClick={()=> setOpenProducts(false)} href="/collection/6696ccc2103daba3b410e1a2">
+                      <Link onClick={()=> setMobileNav(false)} href="/collection/6696ccc2103daba3b410e1a2">
                         Quick48+
                       </Link>
-                      <Link onClick={()=> setOpenProducts(false)} href="/collection/6696cdb2103daba3b410e1a6">
+                      <Link onClick={()=> setMobileNav(false)} href="/collection/6696cdb2103daba3b410e1a6">
                         Project
                       </Link>
-                      <Link onClick={()=> setOpenProducts(false)} href="/collection/6696cabd103daba3b410e19f">
+                      <Link onClick={()=> setMobileNav(false)} href="/collection/6696cabd103daba3b410e19f">
                         Spirit XL
                       </Link>
-                      <Link onClick={()=> setOpenProducts(false)} href="/collection/6696ccd5103daba3b410e1a4">Project 2.0</Link>
+                      <Link onClick={()=> setMobileNav(false)} href="/collection/6696ccd5103daba3b410e1a4">Project 2.0</Link>
                       <Link href="#">Supreme</Link>
                       <Link href="#">Evolve</Link>
                     </motion.div>
@@ -317,12 +317,6 @@ function Header() {
                   href="/dealer-locator"
                 >
                   Dealer Locator
-                </Link>
-                <Link
-                  onClick={() => setMobileNav(!mobileNav)}
-                  href="/order-samples"
-                >
-                  Order Sample
                 </Link>
                 <Link onClick={() => setMobileNav(!mobileNav)} href="/about-us">
                   About Us
@@ -357,7 +351,7 @@ function Header() {
                       exit={{ height: 0 }}
                     >
                       <h3>Visit Our Blog</h3>
-                      <Link href="/blogs">Blogs</Link>
+                      <Link onClick={()=> setMobileNav(false)} href="/blogs">Blog</Link>
                     </motion.div>
                   )}
                 </AnimatePresence>
