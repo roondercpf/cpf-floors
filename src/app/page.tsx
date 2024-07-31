@@ -211,9 +211,9 @@ function Home() {
               width={500}
               height={800}
               alt="CPF Floors Rigid Core Vinyl"
-              initial={{ y: 800 }}
-              whileInView={{ y: 0 }}
-              exit={{ y: 800 }}
+              initial={{ y: 700 }}
+              whileInView={{ y: 100 }}
+              exit={{ y: 700 }}
               transition={{ duration: 0.5 }}
             ></motion.img>
             <motion.img
