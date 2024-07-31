@@ -100,7 +100,7 @@ function CoreMoldings() {
         <div className="become">
             <div className="become-text">
                 <h2>Become a Dealer</h2>
-                <p>& Transfomr Your Spaces with Style</p>
+                <p>& Transform Your Spaces with Style</p>
                 <Link className="link-light" href="/become-a-dealer">Contact Now!</Link>
             </div>
         </div>

@@ -22,10 +22,10 @@ const BaseboardsCarousel = () => {
 
   return (
     <>
-      <div className="embla home-banner-carousel-container">
+      <div className="embla home-banner-carousel-container h-auto">
         <div className="embla__viewport" ref={emblaRef}>
-          <div className="embla__container">
-            <div className="embla__slide">
+          <div className="embla__container h-auto">
+            <div className="embla__slide flex flex-col h-auto justify-center">
               <Image
                 src="/core-moldings/Baseboard-1-6-Pine-WATERPROOF.webp"
                 height={600}
@@ -34,7 +34,7 @@ const BaseboardsCarousel = () => {
               ></Image>
               <p className="text-center my-10 font-bold">Baseboard 1x6 Pine Waterproof</p>
             </div>
-            <div className="embla__slide">
+            <div className="embla__slide flex flex-col h-auto justify-center">
               <Image
                 src="/core-moldings/Baseboard-1-8-Pine.webp"
                 height={600}
@@ -43,7 +43,7 @@ const BaseboardsCarousel = () => {
               ></Image>
               <p className="text-center my-10 font-bold">Baseboard 1x8 Pine</p>
             </div>
-            <div className="embla__slide">
+            <div className="embla__slide flex flex-col h-auto justify-center">
               <Image
                 src="/core-moldings/Baseboard-410-Pine.webp"
                 height={600}
@@ -52,7 +52,7 @@ const BaseboardsCarousel = () => {
               ></Image>
               <p className="text-center my-10 font-bold">Baseboard 410 Pine</p>
             </div>
-            <div className="embla__slide">
+            <div className="embla__slide flex flex-col h-auto justify-center">
               <Image
                 src="/core-moldings/Baseboard-618-Pine.webp"
                 height={600}
@@ -61,7 +61,7 @@ const BaseboardsCarousel = () => {
               ></Image>
               <p className="text-center my-10 font-bold">Baseboard 618 Pine</p>
             </div>
-            <div className="embla__slide">
+            <div className="embla__slide flex flex-col h-auto justify-center">
               <Image
                 src="/core-moldings/Baseboard-620-Pine.webp"
                 height={600}
@@ -70,7 +70,7 @@ const BaseboardsCarousel = () => {
               ></Image>
               <p className="text-center my-10 font-bold">Baseboard 620 Pine</p>
             </div>
-            <div className="embla__slide">
+            <div className="embla__slide flex flex-col h-auto justify-center">
               <Image
                 src="/core-moldings/Baseboard-810-Pine.webp"
                 height={600}
@@ -79,7 +79,7 @@ const BaseboardsCarousel = () => {
               ></Image>
               <p className="text-center my-10 font-bold">Baseboard 810 Pine</p>
             </div>
-            <div className="embla__slide">
+            <div className="embla__slide flex flex-col h-auto justify-center">
               <Image
                 src="/core-moldings/Baseboard-9769-Pine.webp"
                 height={600}
@@ -88,7 +88,7 @@ const BaseboardsCarousel = () => {
               ></Image>
               <p className="text-center my-10 font-bold">Baseboard 9769 Pine</p>
             </div>
-            <div className="embla__slide">
+            <div className="embla__slide flex flex-col h-auto justify-center">
               <Image
                 src="/core-moldings/Baseboard&Casing1×4Pine.webp"
                 height={600}
@@ -97,7 +97,7 @@ const BaseboardsCarousel = () => {
               ></Image>
               <p className="text-center my-10 font-bold">Baseboard Casing Pine</p>
             </div>
-            <div className="embla__slide">
+            <div className="embla__slide flex flex-col h-auto justify-center">
               <Image
                 src="/core-moldings/Quarter-Round-PinE-MDF-EPS-Waterproof.webp"
                 height={600}
