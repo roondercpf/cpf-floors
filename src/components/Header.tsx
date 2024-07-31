@@ -33,6 +33,7 @@ function Header() {
           <div>
             <Link href="/">
               <Image
+              onClick={()=> setOpenProducts(false)}
                 className="header-desktop-logo"
                 alt="CPF Floors logo"
                 src="./footer-logo.svg"
@@ -45,10 +46,10 @@ function Header() {
             <div className="composed-link flex">
               <Link
                 onClick={() => {
-                  setOpenProducts(!openProducts);
+                  setOpenProducts(false)
                   setOpenInspire(false);
                 }}
-                href="#"
+                href="/collections/vinyl"
               >
                 Products
               </Link>
@@ -141,19 +142,19 @@ function Header() {
               <div className="product-menu-links-container">
                 <div className="links-container">
                   <h3>Collections</h3>
-                  <Link href="#">Deco54</Link>
-                  <Link href="/collection/6696ccc2103daba3b410e1a2">
+                  <Link onClick={() => setOpenProducts(false)} href="#">Deco54</Link>
+                  <Link onClick={() => setOpenProducts(false)} href="/collection/6696ccc2103daba3b410e1a2">
                     Quick48+
                   </Link>
-                  <Link href="/collection/6696cdb2103daba3b410e1a6">
+                  <Link onClick={() => setOpenProducts(false)} href="/collection/6696cdb2103daba3b410e1a6">
                     Project
                   </Link>
-                  <Link href="/collection/6696cabd103daba3b410e19f">
+                  <Link onClick={() => setOpenProducts(false)} href="/collection/6696cabd103daba3b410e19f">
                     Spirit XL
                   </Link>
-                  <Link href="/collection/6696ccd5103daba3b410e1a4">Project 2.0</Link>
-                  <Link href="#">Supreme</Link>
-                  <Link href="#">Evolve</Link>
+                  <Link onClick={() => setOpenProducts(false)} href="/collection/6696ccd5103daba3b410e1a4">Project 2.0</Link>
+                  <Link onClick={() => setOpenProducts(false)} href="#">Supreme</Link>
+                  <Link onClick={() => setOpenProducts(false)} href="#">Evolve</Link>
                 </div>
 
                 <div className="links-container">
@@ -167,11 +168,11 @@ function Header() {
 
                 <div className="links-container">
                   <h3>More Products</h3>
-                  <Link href="#">Baseboards</Link>
-                  <Link href="#">Underlayment</Link>
-                  <Link href="#">Steps</Link>
-                  <Link href="#">Moldings</Link>
-                  <Link href="#">Whisper Matt</Link>
+                  <Link onClick={()=> setOpenProducts(false)} href="#">Baseboards</Link>
+                  <Link onClick={()=> setOpenProducts(false)} href="/corepad">Underlayment</Link>
+                  <Link onClick={()=> setOpenProducts(false)} href="/coresteps">Steps</Link>
+                  <Link onClick={()=> setOpenProducts(false)} href="/core-moldings">Moldings</Link>
+                  <Link onClick={()=> setOpenProducts(false)} href="#">Whisper Matt</Link>
                 </div>
               </div>
             </motion.div>

@@ -29,7 +29,7 @@ function Footer() {
               <Link href="/collections/vinyl">Rigid Core and Vinyl</Link>
               <Link href="#">Waterproof Laminate</Link>
               <Link href="/coresteps">Core Steps</Link>
-              <Link href="#">Core Moldings</Link>
+              <Link href="/core-moldings">Core Moldings</Link>
               <Link href="/corepad">Underlayment</Link>
             </li>
           </div>
