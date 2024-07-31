@@ -62,8 +62,8 @@ function CoreMoldings() {
       <BaseboardsCarousel />
 
       <section>
-        <div className="main-banner-molding">
-          <div className="main-banner-molding-text">
+        <div className="main-banner-molding-2">
+          <div className="main-banner-molding-text-2">
             <h2>Moldings</h2>
             <p>
               {" "}
@@ -72,7 +72,7 @@ function CoreMoldings() {
             </p>
             <Link className="link-dark" href="#moldings">See Products</Link>
           </div>
-          <div className="main-banner-molding-img">
+          <div className="main-banner-molding-img-2">
             <Image
               src="/core-moldings/reducer.svg"
               alt="Core Molding Logo"
@@ -101,7 +101,7 @@ function CoreMoldings() {
             <div className="become-text">
                 <h2>Become a Dealer</h2>
                 <p>& Transfomr Your Spaces with Style</p>
-                <Link className="link-light-molding" href="/become-a-dealer">Contact Now!</Link>
+                <Link className="link-light" href="/become-a-dealer">Contact Now!</Link>
             </div>
         </div>
       </section>
