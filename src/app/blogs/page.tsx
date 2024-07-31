@@ -48,7 +48,7 @@ async function Blogs() {
         </div>
       </>
       <div className="blog-card-container">
-        {blogs.length > 0 ? (
+        {blogs ? (
           <>
             {blogs.map((blog) => {
               return (
