@@ -23,12 +23,19 @@ async function Collections() {
     <>
       <div className="collections-main-banner">
         <div className="banner-img">
-          <Image src="/collections-vinyl/Group 238.png" height={400} width={400} alt="CPF Floors vinyl collections"></Image>
+          <Image
+            src="/collections-vinyl/Group 238.png"
+            height={400}
+            width={400}
+            alt="CPF Floors vinyl collections"
+          ></Image>
         </div>
         <div className="banner-text">
-          <h2>Rigid Core Vinyl 
-          Flooring</h2>
-          <p>Our Rigid Core Vinyl Flooring offers exceptional resilience, easy installation, a comfortable feel, and lasting performance.</p>
+          <h2>Rigid Core Vinyl Flooring</h2>
+          <p>
+            Our Rigid Core Vinyl Flooring offers exceptional resilience, easy
+            installation, a comfortable feel, and lasting performance.
+          </p>
         </div>
       </div>
       <div className="collections-container">
@@ -48,20 +55,15 @@ async function Collections() {
                       <h2>{collection.name}</h2>
                       <h2>Collection</h2>
                     </div>
-                    <p>{collection.description}</p>
-                    <div className="collection-specs">
-                      <div className="spec capitalize">
-                        {collection.wear_layer}
-                      </div>
-                      <div className="spec capitalize">{collection.core}</div>
-                      <div className="spec capitalize">
-                        {collection.plank_sizes}
-                      </div>
-                      <div className="spec capitalize">
-                        {collection.plank_sizes}
-                      </div>
+                    <div className="mb-10">
+                      <p className="font-bold">{collection.brand}</p>
+                      <p className="font-bold">{collection.serieName}</p>
+                      <p>{collection.category}</p>
                     </div>
-                    <Link className="underline" href={"/collection/"+ collection._id}>
+                    <Link
+                      className="link-dark"
+                      href={"/collection/" + collection._id}
+                    >
                       View Collection
                     </Link>
                   </div>

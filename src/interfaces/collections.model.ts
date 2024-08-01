@@ -6,23 +6,37 @@ export interface CollectionResponse {
 export interface Collections {
   _id: string;
   name: string;
-  sbrand: string;
+  brand: string;
   category: string;
   colors: string[];
-  product_type: string;
-  plank_sizes: string;
-  wear_layer: string;
-  overall_thickness: string;
+  serieName: string
+  productType: string;
+  wearLayer: string;
+  overallThickness: string;
   core: string;
   underlayment: string;
-  installation_method: string;
-  traffic_class: string;
-  sqft_per_box: string;
-  sqft_per_pallet: string;
-  planks_per_box: number;
-  box_per_pallet: number;
-  features: string[];
+  trafficClass: string;
   description: string;
+}
+
+export interface Color {
+  name: string;
+  sku: string;
+  plank_sizes: string;
+  installation_method: string;
+  sound_transmission?: string;
+  warranty: string;
+  sqftPerBox: number;
+  sqftPerPallet: number;
+  planksPerBox: number;
+  boxPerPallet: number;
+  weightBoxPounds: number;
+  weightPallet: number;
+  palletSize: string;
+  picture: string;
+  installation: string;
+  roomScene: string;
+  features?: string;
 }
 
 export enum Category {
