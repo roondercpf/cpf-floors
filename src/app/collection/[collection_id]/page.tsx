@@ -1,9 +1,9 @@
 import { FRONTEND } from "@/utils/env";
-import { Collections } from "@/interfaces/collections.model";
+import { Collections, Color } from "@/interfaces/collections.model";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import ColorSpecs from "@/components/ColorSpecs"
+
 
 import "@/app/sass/CollectionProfile.scss";
 import "@/app/sass/Financing.scss";
@@ -15,8 +15,10 @@ async function CollectionsID( { params: { collection_id }} : {params: { collecti
   const res = await fetch(`${FRONTEND}/api/collections/${collection_id}`);
 
   const data: Collections = await res.json();
+
  
-  console.log(data);
+  console.log(data.colors);
+
 
   if ("error" in data) {
     notFound();
