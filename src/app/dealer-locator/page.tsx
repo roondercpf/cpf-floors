@@ -17,10 +17,10 @@ async function DealerLocator() {
 
   return (
     <>
-      <h1>Dealer Locator</h1>
       <Map data={data} />
       <>
       <>
+        
         <div className="main-container">
           <div className="sample-board">
             <div className="sample-board-text">
