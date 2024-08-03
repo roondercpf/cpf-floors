@@ -22,6 +22,7 @@ function Corepad() {
               width={300}
               alt="Corepad logo"
             ></Image>
+            <p>Enhance soundproofing and comfort underfoot with mute pads for vinyl floors.</p>
             <Link className="link-dark" href="/collections/vinyl">
               See Products
             </Link>
@@ -209,7 +210,7 @@ function Corepad() {
             <h2>Buy Over</h2>
             <h2>2,000 SqFt</h2>
             <h3>
-              Inspire Black Edition flooring <br></br>and grab your
+              Inspire Black Edition flooring <br></br><b>and grab your</b>
             </h3>
             <h2>
               Vapor Barrier <br />

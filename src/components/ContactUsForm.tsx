@@ -50,7 +50,7 @@ export default function ContactUsForm() {
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <p>Get Started</p>
+        <h3 className="font-extrabold">Get Started</h3>
         <h2>Contact Now</h2>
         <p className="mb-10">
           Have any questions? Feel free to reach out to us

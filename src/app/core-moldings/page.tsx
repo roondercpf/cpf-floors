@@ -47,7 +47,9 @@ function CoreMoldings() {
       <section>
         <div className="green-banner">
           <div className="green-banner-text">
-            <h2>Endless Design Possibilities with CoreMoldings</h2>
+            <h2>
+              Endless Design Possibilities with <b>CoreMolding</b>s
+            </h2>
             <Link className="corepad-green-link" href="/contact-us">
               Get a free quote
             </Link>
@@ -56,8 +58,14 @@ function CoreMoldings() {
         </div>
       </section>
 
-      <h2 className="font-bold base-title">Moldings with Multiple choices!</h2>
-      <p className="base-p">Striking a balance between simplicity and sophistication.</p>
+      <div className="base-title">
+        <h2>
+          Baseboards with <br /> <b>Multiple choices!</b>
+        </h2>
+        <p className="base-p">
+          Striking a balance between simplicity and sophistication.
+        </p>
+      </div>
 
       <BaseboardsCarousel />
 
@@ -70,7 +78,9 @@ function CoreMoldings() {
               Explore a world of design options! Used to transition from one
               flooring type to another.{" "}
             </p>
-            <Link className="link-dark" href="#moldings">See Products</Link>
+            <Link className="link-dark" href="#moldings">
+              See Products
+            </Link>
           </div>
           <div className="main-banner-molding-img-2">
             <Image
@@ -86,8 +96,7 @@ function CoreMoldings() {
       <section>
         <div className="green-banner">
           <div className="green-banner-text">
-            <h2>Discover Quality Behind
-            CoreMoldings</h2>
+            <h2>Discover Quality Behind <b>CoreMoldings</b></h2>
             <Link className="corepad-green-link" href="/contact-us">
               Get a free quote
             </Link>
@@ -98,11 +107,13 @@ function CoreMoldings() {
 
       <section>
         <div className="become">
-            <div className="become-text">
-                <h2>Become a Dealer</h2>
-                <p>& Transform Your Spaces with Style</p>
-                <Link className="link-light" href="/become-a-dealer">Contact Now!</Link>
-            </div>
+          <div className="become-text">
+            <h2>Become a Dealer</h2>
+            <p>& Transform Your Spaces with Style</p>
+            <Link className="link-light" href="/become-a-dealer">
+              Contact Now!
+            </Link>
+          </div>
         </div>
       </section>
     </>

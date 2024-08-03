@@ -6,7 +6,7 @@
   padding: 0px 50px;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../../../public/header-texture.svg");
+  // background-image: url("../../../public/header-texture.svg");
   background-position: center;
   background-size: cover;
   background-color: rgb(255, 255, 255);
@@ -191,7 +191,7 @@
 
 /*MEDIA QUERIES*/
 
-@media(max-width: 1280px){
+@media(max-width: 1175px){
   .desktop-header{
     display: none;
   }
@@ -212,7 +212,7 @@
   }
     
 }
-@media(min-width: 1280px){
+@media(min-width: 1176px){
   .mobile-header{
     display: none;
   }

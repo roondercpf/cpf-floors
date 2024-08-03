@@ -1,22 +1,24 @@
 import { FRONTEND } from "@/utils/env";
-import { Collections } from "@/interfaces/collections.model";
+import { Collections, Color } from "@/interfaces/collections.model";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
+
 import "@/app/sass/CollectionProfile.scss";
 import "@/app/sass/Financing.scss";
+
 import CollectionPlanksCarousel from "@/components/CollectionPlanksCarousel";
 
-async function CollectionsID({
-  params: { collection_id },
-}: {
-  params: { collection_id: string };
-}) {
+async function CollectionsID( { params: { collection_id }} : {params: { collection_id: string }}) {
+  
   const res = await fetch(`${FRONTEND}/api/collections/${collection_id}`);
+
   const data: Collections = await res.json();
 
-  console.log(data);
+ 
+  console.log(data.colors);
+
 
   if ("error" in data) {
     notFound();
@@ -36,9 +38,11 @@ async function CollectionsID({
             alt="coreproof"
           ></Image>
           <h2 className="my-5">{data.name}</h2>
-          <p>{data.product_type}</p>
+          <p>{data.brand}</p>
         </div>
       </div>
+
+      
 
       <div className="description-banner">
         <div className="description">
@@ -83,49 +87,6 @@ async function CollectionsID({
           </div>
         </div>
       </div>
-
-      <>
-        <div className="specs-section p-3">
-          <h2>Specifications</h2>
-          <div className="specs-text flex flex-wrap justify-center items-start">
-            <div className="specs m-10">
-              <p>Size</p>
-              <h3>{data.plank_sizes}</h3>
-            </div>
-            <div className="specs m-10">
-              <p>Box</p>
-              <h3>{data.sqft_per_box}</h3>
-              <p>{data.planks_per_box} Planks</p>
-            </div>
-            <div className="specs m-10">
-              <p>Sqft per Pallet</p>
-              <h3>{data.sqft_per_pallet}</h3>
-              <p>{data.box_per_pallet} Boxes</p>
-            </div>
-
-            <div className="specs m-10">
-              <p>Thickness</p>
-              <h3>{data.overall_thickness}</h3>
-              <p>{data.underlayment}</p>
-            </div>
-
-            <div className="specs m-10">
-              <p>Instalation Type</p>
-              <h3 className="flex lowercase">{data.installation_method}</h3>
-            </div>
-
-            <div className="specs m-10">
-              <p>Wear Layer</p>
-              <h3>{data.wear_layer}</h3>
-            </div>
-
-            <div className="specs m-10">
-              <p>Class</p>
-              <h3 className="lowercase">{data.traffic_class}</h3>
-            </div>
-          </div>
-        </div>
-      </>
 
       <div className="bluetape-become-container">
         <div className="bluetape-become">

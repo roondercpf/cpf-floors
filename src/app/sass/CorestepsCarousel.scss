@@ -24,13 +24,13 @@
 
   .home-carousel-prev{
     position: absolute;
-    top: 45%;
+    top:35%;
     left: 0;
     margin: 0 60px;
   }
   .home-carousel-next{
     position: absolute;
-    top: 45%;
+    top:35%;
     right: 0;
     margin: 0 60px;
   }
@@ -38,7 +38,7 @@
 
   /*MEDIA QUERIES*/
 
-  @media(max-width: 1280px){
+  @media(max-width: 1175px){
     .embla{
       height: auto;
     }

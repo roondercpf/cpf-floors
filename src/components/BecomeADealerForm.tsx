@@ -55,7 +55,7 @@ export default function BecomeADealerForm() {
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <p>Get Started</p>
+        <p className="font-bold">Get Started</p>
         <h2>Contact Now</h2>
         <p className="mb-10">
           Have any questions? Feel free to reach out to us
