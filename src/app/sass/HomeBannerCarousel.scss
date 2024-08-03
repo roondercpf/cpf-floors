@@ -18,13 +18,13 @@
   .home-carousel-prev{
     position: absolute;
     top: 45%;
-    left: 0;
+    left: 0%;
     margin: 0 60px;
   }
   .home-carousel-next{
     position: absolute;
     top: 45%;
-    right: 0;
+    right: 0%;
     margin: 0 60px;
   }
 
@@ -38,13 +38,12 @@
         background-color: transparent;
         background-image: url("/home/slide1.png");
         background-size: cover;
-        background-position: center;
         background-repeat: no-repeat;
         height: 100%;
         border-radius: 20px;
         border: none;
         color: white;
-        padding: 80px;
+        padding: 80px 120px;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -282,7 +281,7 @@
 
 /*MEDIA QUERIES*/
 
- @media(max-width: 1280px){
+ @media(max-width: 1175px){
     .embla__slide{
         padding: 20px !important;
     }
