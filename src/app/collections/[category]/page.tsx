@@ -3,6 +3,7 @@ import { FRONTEND } from "../../../utils/env";
 import { CollectionResponse } from "@/interfaces/collections.model";
 import Image from "next/image";
 import Link from "next/link";
+import { redirect, notFound } from "next/navigation";
 
 import "@/app/sass/Collections.scss";
 
@@ -11,14 +12,20 @@ export const metadata: Metadata = {
   description: "CPF Floors - Collections",
 };
 
-async function Collections() {
+async function Collections( { params: { category } }: { params: { category: string } } ) {
+
+  if( ! ["vinyl", "laminate"].includes(category)){
+    return notFound()
+  }
+
+
+  console.log(category)
   const res = await fetch(`${FRONTEND}/api/collections/`, {
     next: {
       revalidate: 5,
     },
   });
   const { collections }: CollectionResponse = await res.json();
-  console.log(collections);
   return (
     <>
       <div className="collections-main-banner">

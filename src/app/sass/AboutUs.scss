@@ -102,9 +102,9 @@
         align-items: center;
         background-image: url("/about/discover-about.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top;
         background-size: cover;
-        border-radius: 18px;
+        border-radius: 40px;
         color: white;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         .discover-about-text{
@@ -113,6 +113,9 @@
             h2{
                 font-size: 40px;
                 font-weight: 800;
+            }
+            h3{
+                font-size: 30px;
             }
             p{
                 margin: 45px 0;

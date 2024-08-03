@@ -20,7 +20,7 @@ function BecomeADealer() {
               Join us now and discover how we help you achieve your business
               goals!
             </p>
-            <Link className="link-dark" href="#contactForm">
+            <Link className="link-light" href="#contactForm">
               Contact Us
             </Link>
           </div>
@@ -30,7 +30,7 @@ function BecomeADealer() {
             whileInView={{ opacity: 1 }}
           >
             <Image
-              src="/become-a-dealer/become-banner.svg"
+              src="/display-resources/rack-1.svg"
               height={600}
               width={600}
               alt="CPF Floors - Become a dealer"
@@ -75,9 +75,9 @@ function BecomeADealer() {
                 ></Image>
                 <h3>Grow Your Business</h3>
                 <p>
-                  We &quote; ve got your back with the largest in-stock selection of
-                  rigid core vinyl, laminate flooring, baseboards, and
-                  stair-step materials.{" "}
+                  We &quote; ve got your back with the largest in-stock
+                  selection of rigid core vinyl, laminate flooring, baseboards,
+                  and stair-step materials.{" "}
                 </p>
               </div>
             </div>
@@ -135,21 +135,23 @@ function BecomeADealer() {
           <div className="bluetape">
             <div className="bluetape-text">
               <h2 className="font-bold">Buy Today,</h2>
-              <h2>Pay Tomorrow With Ease</h2>
+              <h3>Pay Tomorrow With Ease</h3>
               <p>
                 Join our dealer network and keep your store&apos;s cash flow
                 thriving while growing your business faster! Enjoy multiple
-                benefits, including super-friendly financing terms. You can get
-                0% interest for the first 30 days and choose to pay within 30,
-                60, or 90 days.
+                benefits, including super-friendly financing terms. <br />
+                <br /> You can get 0% interest for the first 30 days and choose
+                to pay within 30, 60, or 90 days.
               </p>
               <Link className="link-light" href="#contactForm">
                 Explore Products
               </Link>
             </div>
-            <motion.div className="bluetape-img"
-            initial={{opacity: 0}}
-            whileInView={{opacity: 1}}>
+            <motion.div
+              className="bluetape-img"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+            >
               <Image
                 src="/become-a-dealer/bluetape-banner.png"
                 height={600}
@@ -167,9 +169,11 @@ function BecomeADealer() {
             <div className="form-container">
               <BecomeADealerForm />
             </div>
-            <motion.div className="form-img"
-            initial={{opacity: 0}}
-            whileInView={{opacity: 1}}>
+            <motion.div
+              className="form-img"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+            >
               <Image
                 src="/become-a-dealer/contact-img.png"
                 height={300}
@@ -180,7 +184,7 @@ function BecomeADealer() {
               <h2>Together</h2>
               <p>
                 Take advantage of opportunities to grow your dealer business and
-                increase sales! 
+                increase sales!
               </p>
             </motion.div>
           </div>

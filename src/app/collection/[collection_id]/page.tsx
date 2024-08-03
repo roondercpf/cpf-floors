@@ -17,7 +17,7 @@ async function CollectionsID( { params: { collection_id }} : {params: { collecti
   const data: Collections = await res.json();
 
  
-  console.log(data.colors);
+
 
 
   if ("error" in data) {
