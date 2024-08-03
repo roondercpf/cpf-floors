@@ -63,9 +63,11 @@ function Footer() {
       <div className="copyright-footer">
         <p>© 2024 CPF Floors. All rights reserved.</p>
         <div className="flex footer-img">
+        <Image className="mx-10" src="/financing/bluetape.svg" width={220} height={220} alt="World Floor Covering Association"></Image>
         <Image className="mx-10" src="/footer2.svg" width={60} height={60} alt="World Floor Covering Association"></Image>
         <Image className="mx-10" src="/footer1.svg" width={80} height={80} alt="World Floor Covering Association"></Image>
         <Image className="mx-10" src="/wfca.svg" width={220} height={220} alt="World Floor Covering Association"></Image>
+
         </div>
         
       </div>

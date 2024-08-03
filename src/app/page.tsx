@@ -209,10 +209,10 @@ function Home() {
             <motion.img
               src="/home/plank-banner.png"
               width={500}
-              height={800}
+              height={900}
               alt="CPF Floors Rigid Core Vinyl"
               initial={{ y: 700 }}
-              whileInView={{ y: 100 }}
+              whileInView={{ y: 200 }}
               exit={{ y: 700 }}
               transition={{ duration: 0.5 }}
             ></motion.img>
