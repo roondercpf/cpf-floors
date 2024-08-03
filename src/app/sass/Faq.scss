@@ -1,7 +1,7 @@
 .faq-main-banner{
-    height: 80vh;
+    height: auto;
     width: 100%;
-    padding: 100px 80px;
+    padding: 40px 80px;
     background-image: url('/faq/faq-banner.png');
     background-size: cover;
     background-position: bottom;
@@ -12,7 +12,7 @@
     align-items: center;
     .faq-banner-text{
         width: 50%;
-        padding: 80px;
+        padding: 80px 0;
         color: white;
         h2{
             font-size: 40px;
@@ -37,15 +37,22 @@
 .accordion-container{
     width: 100%;
     height: auto;
-    padding: 80px;
+    padding: 80px 0;
+    p{
+        line-height: 30px;
+    }
 }
-
+.lucide-chevron-down{
+    svg{
+        font-size: 80px;
+    }
+}
 
 /*FAQ CONTACT BANNER*/
 
 .faq-contact-banner{
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     padding: 80px 40px;
     .faq-contact-section{
         height: 100%;
@@ -53,9 +60,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("/faq/faq-banner.png");
+        background-image: url("/faq/chikdren.png");
         background-size: cover;
-        background-position: center;
         background-repeat: no-repeat;
         border-radius: 18px;
         .faq-text{
@@ -74,14 +80,14 @@
 }
 
 
-
 /*MEDIA QUERIES*/
 
-@media(max-width:1280px){
+@media(max-width:1175px){
     .faq-main-banner{
         height: 100vh;
         padding: 20px;
         margin-top: 80px;
+        background-position: left;
         .faq-banner-text{
             width: 100%;
             text-align: center;
@@ -97,12 +103,16 @@
     }
 
     .accordion-container{
-        padding: 80px 20px;
+        padding: 80px 0px;
+        p{
+            text-align: start;
+        }
     }
 
     .faq-contact-banner{
         padding: 20px;
         .faq-contact-section{
+            background-position: center;
             .faq-text{
                 h2{
                     font-size: 25px;

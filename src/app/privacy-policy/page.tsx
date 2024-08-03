@@ -105,21 +105,6 @@ function PrivacyPolicy() {
           <Link href='#' className="link-light">Read More</Link>
         </div>
       </motion.div>
-
-      <motion.div className="banner-two-container"
-      initial={{opacity: 0, y: 400}}
-      whileInView={{opacity: 1, y: 0}}>
-        <div className="banner-two">
-          <h2>Special Clauses for our Dealers</h2>
-          <p>
-            As a Dealer utilizing our services, you acknowledge and agree to the
-            Company&apos;s Terms for the Sale of Flooring Products, and to indemnify
-            and hold CPF Floors LLC, including reasonable legal fees and other
-            litigation expenses, arising directly or indirectly.
-          </p>
-          <Link href='#' className="link-light">Read More</Link>
-        </div>
-      </motion.div>
     </>
   );
 }

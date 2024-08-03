@@ -146,6 +146,13 @@ function DisplayResources() {
                 See More
               </Link>
             </div>
+            <Image
+              className="dog"
+              src="/display-resources/dog.png"
+              height={600}
+              width={600}
+              alt="CFP Floors dog"
+            ></Image>
           </div>
         </div>
       </>

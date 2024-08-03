@@ -1,5 +1,5 @@
 .main-banner{
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -8,8 +8,9 @@
     align-items: center;
     background-color: #e3e3e3;
     padding: 80px;
+    margin-top: 40px;
     .main-banner-text{
-        width: 30%;
+        width: 50%;
         padding: 80px;
         height: 100%;
         display: flex;
@@ -24,14 +25,14 @@
         }
     }
     .main-banner-img{
-        width: 30%;
+        width: 50%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         img{
             margin: 0 auto;
-            height: 400px !important;
+            height: 100% !important;
         }
     }
 }
@@ -81,7 +82,7 @@
     background-color: #373737;
     padding: 80px;
     .mutepad-banner-text{
-        width: 30%;
+        width: 50%;
         padding: 80px;
         height: 100%;
         display: flex;
@@ -96,7 +97,7 @@
         }
     }
     .mutepad-banner-img{
-        width: 30%;
+        width: 50%;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -142,7 +143,7 @@
     background-color: #e3e3e3;
     padding: 80px;
     .mutepad-banner-text{
-        width: 30%;
+        width: 50%;
         padding: 80px;
         height: 100%;
         display: flex;
@@ -157,7 +158,7 @@
         }
     }
     .mutepad-banner-img{
-        width: 30%;
+        width: 50%;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -181,7 +182,7 @@
     background-color: #373737;
     padding: 80px;
     .mutepad-banner-text{
-        width: 30%;
+        width: 50%;
         padding: 80px;
         height: 100%;
         display: flex;
@@ -196,7 +197,7 @@
         }
     }
     .mutepad-banner-img{
-        width: 30%;
+        width: 50%;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -239,7 +240,7 @@
             color: #48b16a;
         }
         h3{
-            font-size: 25px;
+            font-size: 30px;
             font-weight: 500;
         }
         img{
@@ -292,7 +293,6 @@
             font-weight: 600;
         }
         p{
-            font-size: 20px;
             margin-bottom: 40px;
         }
     }
@@ -302,7 +302,7 @@
 
 /*MEDIA QUERIES*/
 
-@media(max-width: 1280px){
+@media(max-width: 1175px){
     .main-banner{
         padding: 180px 40px;
         height: auto;
