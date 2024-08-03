@@ -1,5 +1,5 @@
 "use client";
-import { ReactNode, useRef } from "react";
+import { ReactNode, useRef, useState } from "react";
 import DealerMap, {
   Marker,
   Popup,
@@ -14,6 +14,7 @@ import { Dealerlocator } from "@/interfaces/dealer-locator.model";
 import { getCenter } from "geolib";
 import GeocoderControl from "./Geocoder-control";
 import "@/app/mapbox-gl.css";
+import { Result } from "postcss";
 
 interface MapProps {
   props?: ReactNode;
@@ -23,6 +24,8 @@ export const Map = ({ data, ...props }: MapProps) => {
   if (data.length === 0) {
     return <div>No dealers found</div>;
   }
+
+  const [selectedDealer, setSelectedDealer] = useState<Dealerlocator | null>();
 
   //const markerRef = useRef<mapboxgl.Marker>();
 
@@ -82,7 +85,30 @@ export const Map = ({ data, ...props }: MapProps) => {
               anchor="bottom"
               offsetTop={-20}
               offsetLeft={-7}
-            ></Marker>
+              onClick={() => setSelectedDealer(dealer)}
+            >
+              {dealer.lng === selectedDealer?.lng &&
+              dealer.lat === selectedDealer?.lat ? (
+                <Popup
+                  latitude={dealer.lat}
+                  longitude={dealer.lng}
+                  onClose={() => setSelectedDealer(null)}
+                  closeOnClick={false}
+                  anchor="bottom"
+                >
+                  <div>
+                    <h3>{dealer.title}</h3>
+                    <p>{dealer.description}</p>
+                    <p>
+                      {dealer.city}, {dealer.state} {dealer.postal_code} {dealer.street}
+                    </p>
+                    <p>{dealer.phone}</p>
+                    <p>{dealer.email}</p>
+                    <p>{dealer.website}</p>
+                  </div>
+                </Popup>
+              ) : null}
+            </Marker>
           );
         })}
       </DealerMap>
