@@ -1,0 +1,71 @@
+form{
+    display: flex;
+    flex-direction: column;
+
+    input{
+        width: 100%;
+        border-radius: 12px;
+    }
+    button{
+        background-color: white;
+        color: black;
+        border: none;
+        margin: 20px 0;
+        border-radius: 12px;
+        padding: 20px;
+        font-weight: 600;
+    }
+}
+p{
+    margin-bottom: 20px;
+}
+
+.mapboxgl-popup-content{
+    border-radius: 18px !important;
+    padding: 20px!important;
+    height: 250px !important;
+    width: 400px !important;
+    h3{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgb(238, 237, 237);
+        padding-bottom: 10px;
+    }
+    p{
+        font-size: 16px !important;
+        margin: 5px 0;
+    }
+    a{
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.mapboxgl-popup-close-button{
+    margin: 15px;
+    font-size: 40px;
+}
+
+.map-container{
+    margin-top: 0 !important;
+    padding: 40px !important;
+    border-radius: 18px;
+    box-shadow: none !important;
+    h2{
+        font-size: 60px;
+        font-weight: 600;
+        margin: 80px 0;
+    }
+}
+.mapboxgl-map{
+    border: none !important;
+}
+.mapboxgl-canvas-container{
+    border: none !important;
+    border-radius: 18px;
+}
+.mapboxgl-canvas{
+    border-radius: 18px;
+    border: none in !important;
+}

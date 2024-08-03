@@ -1,5 +1,5 @@
 "use client";
-import { ReactNode, useRef } from "react";
+import { ReactNode, useRef, useState } from "react";
 import DealerMap, {
   Marker,
   Popup,
@@ -14,12 +14,19 @@ import { Dealerlocator } from "@/interfaces/dealer-locator.model";
 import { getCenter } from "geolib";
 import GeocoderControl from "./Geocoder-control";
 import "@/app/mapbox-gl.css";
+import { Result } from "postcss";
+import Image from "next/image";
+import Link from "next/link";
+
+import "@/app/sass/DealerLocatorForm.scss";
 
 interface MapProps {
   props?: ReactNode;
   data: Dealerlocator[];
 }
+
 export const Map = ({ data, ...props }: MapProps) => {
+  const [selectedDealer, setSelectedDealer] = useState<Dealerlocator | null>();
   if (data.length === 0) {
     return <div>No dealers found</div>;
   }
@@ -35,6 +42,7 @@ export const Map = ({ data, ...props }: MapProps) => {
 
   return (
     <div className="map-container">
+      <h2 mt-20>Find your nearest Dealer</h2>
       {/* <div className="map-container-bar">
           <div className="map-title-bar text-center">
             <Image
@@ -82,7 +90,41 @@ export const Map = ({ data, ...props }: MapProps) => {
               anchor="bottom"
               offsetTop={-20}
               offsetLeft={-7}
-            ></Marker>
+              onClick={() => setSelectedDealer(dealer)}
+            >
+              {dealer.lng === selectedDealer?.lng &&
+              dealer.lat === selectedDealer?.lat ? (
+                <Popup
+                  className="dealer-popup"
+                  latitude={dealer.lat}
+                  longitude={dealer.lng}
+                  onClose={() => setSelectedDealer(null)}
+                  closeOnClick={false}
+                  anchor="bottom"
+                >
+                  <Image
+                    className="m-auto mb-5"
+                    src="/footer-logo.svg"
+                    height={60}
+                    width={60}
+                    alt="CPF Floors Logo"
+                  ></Image>
+                  <div>
+                    <h3>{dealer.title}</h3>
+                    <p>{dealer.description}</p>
+                    <p>
+                      <b>Street:</b> 
+                      {" " + dealer.city}, {dealer.state} {dealer.postal_code}{" "}
+                      {dealer.street}
+                    </p>
+                    <p><b>Phone:</b>{" " + dealer.phone}</p>
+                    <p>{dealer.email}</p>
+                    
+                    <Link href={dealer.website}>Website</Link>
+                  </div>
+                </Popup>
+              ) : null}
+            </Marker>
           );
         })}
       </DealerMap>

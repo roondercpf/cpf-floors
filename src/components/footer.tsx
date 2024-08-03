@@ -11,15 +11,15 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-container-social">
           <Image
-            src="./footer-logo.svg"
+            src="/footer-logo.svg"
             alt="CPF footer Logo"
             width={100}
             height={100}
           ></Image>
           <div className="social-icons">
-            <Image src="./instagram.svg" height={20} width={20} alt="CPF Floors Instagram"></Image>
-            <Image src="./linkedin.svg" height={20} width={20} alt="CPF Floors LinkedIn"></Image>
-            <Image src="./pinterest.svg" height={20} width={20} alt="CPF Floors Pinterest"></Image>
+            <Image src="/instagram.svg" height={20} width={20} alt="CPF Floors Instagram"></Image>
+            <Image src="/linkedin.svg" height={20} width={20} alt="CPF Floors LinkedIn"></Image>
+            <Image src="/pinterest.svg" height={20} width={20} alt="CPF Floors Pinterest"></Image>
           </div>
         </div>
         <div className="footer-container-links">
@@ -63,9 +63,9 @@ function Footer() {
       <div className="copyright-footer">
         <p>© 2024 CPF Floors. All rights reserved.</p>
         <div className="flex footer-img">
-        <Image className="mx-10" src="./footer2.svg" width={60} height={60} alt="World Floor Covering Association"></Image>
-        <Image className="mx-10" src="./footer1.svg" width={80} height={80} alt="World Floor Covering Association"></Image>
-        <Image className="mx-10" src="./wfca.svg" width={220} height={220} alt="World Floor Covering Association"></Image>
+        <Image className="mx-10" src="/footer2.svg" width={60} height={60} alt="World Floor Covering Association"></Image>
+        <Image className="mx-10" src="/footer1.svg" width={80} height={80} alt="World Floor Covering Association"></Image>
+        <Image className="mx-10" src="/wfca.svg" width={220} height={220} alt="World Floor Covering Association"></Image>
         </div>
         
       </div>

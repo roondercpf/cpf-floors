@@ -6,6 +6,8 @@ import { FRONTEND } from "@/utils/env";
 import { Dealerlocator } from "@/interfaces/dealer-locator.model";
 
 import '@/app/sass/DisplayResources.scss'
+import BecomeADealerForm from "@/components/BecomeADealerForm";
+import DealerLocatorForm from "@/components/DealerLocatorForm";
 
 async function DealerLocator() {
   const res = await fetch(`${FRONTEND}/api/dealer-locator`, {
@@ -15,20 +17,14 @@ async function DealerLocator() {
 
   return (
     <>
-      <h1>Dealer Locator</h1>
       <Map data={data} />
       <>
       <>
+        
         <div className="main-container">
           <div className="sample-board">
             <div className="sample-board-text">
-              <h2>Become a dealer</h2>
-              <p>
-              Power up your business and join our exclusive network to benefit from agility, speed, and readily available inventory.
-              </p>
-              <Link className="link-light" href="/become-a-dealer">
-                Click Here
-              </Link>
+            <DealerLocatorForm />
             </div>
             <div className="sample-board-img">
               <Image
