@@ -8,7 +8,7 @@ function LoaderScreen() {
           <Image
             className="header-desktop-logo"
             alt="CPF Floors logo"
-            src="./header_desktop_logo.svg"
+            src="/header_desktop_logo.svg"
             height={150}
             width={150}
           ></Image>

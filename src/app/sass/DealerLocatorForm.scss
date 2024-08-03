@@ -19,3 +19,24 @@ form{
 p{
     margin-bottom: 20px;
 }
+
+.mapboxgl-popup-content{
+    border-radius: 18px !important;
+    padding: 20px!important;
+    height: 100% !important;
+    width: 400px !important;
+    h3{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 16px !important;
+        margin: 5px 0;
+    }
+}
+
+.mapboxgl-popup-close-button{
+    margin: 15px;
+    font-size: 40px;
+}

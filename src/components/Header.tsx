@@ -36,7 +36,7 @@ function Header() {
               onClick={()=> setOpenProducts(false)}
                 className="header-desktop-logo"
                 alt="CPF Floors logo"
-                src="./footer-logo.svg"
+                src="/footer-logo.svg"
                 height={70}
                 width={70}
               ></Image>

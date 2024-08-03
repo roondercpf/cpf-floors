@@ -15,17 +15,26 @@ import { getCenter } from "geolib";
 import GeocoderControl from "./Geocoder-control";
 import "@/app/mapbox-gl.css";
 import { Result } from "postcss";
+import Image from "next/image";
+
+import "@/app/sass/DealerLocatorForm.scss"
 
 interface MapProps {
   props?: ReactNode;
   data: Dealerlocator[];
+
+  
 }
+
+
+
 export const Map = ({ data, ...props }: MapProps) => {
+  const [selectedDealer, setSelectedDealer] = useState<Dealerlocator | null>();
   if (data.length === 0) {
     return <div>No dealers found</div>;
   }
 
-  const [selectedDealer, setSelectedDealer] = useState<Dealerlocator | null>();
+  
 
   //const markerRef = useRef<mapboxgl.Marker>();
 
@@ -90,12 +99,14 @@ export const Map = ({ data, ...props }: MapProps) => {
               {dealer.lng === selectedDealer?.lng &&
               dealer.lat === selectedDealer?.lat ? (
                 <Popup
+                  className="dealer-popup"
                   latitude={dealer.lat}
                   longitude={dealer.lng}
                   onClose={() => setSelectedDealer(null)}
                   closeOnClick={false}
                   anchor="bottom"
                 >
+                  <Image className="m-auto mb-5" src="/footer-logo.svg" height={60} width={60} alt="CPF Floors Logo"></Image>
                   <div>
                     <h3>{dealer.title}</h3>
                     <p>{dealer.description}</p>
