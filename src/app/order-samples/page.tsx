@@ -15,7 +15,7 @@ async function OrderSample() {
     const res = await fetch(`${FRONTEND}/api/collections`, {
         cache: "no-cache",
         next: {
-            revalidate: 5,
+            revalidate: 300e3,
         },
     });
 

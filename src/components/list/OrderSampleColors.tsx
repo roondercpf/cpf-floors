@@ -110,7 +110,7 @@ export const OrderSampleColors = forwardRef(({
                 {...register("search")}
             />
             </div>
-            <div className="dropdown-container flex justify-between items-center">
+            <div className="dropdown-container flex justify-center items-end gap-4">
                 <GeneralDropwdown
                     field="type" 
                     formSetValue={setValue} 

@@ -42,13 +42,13 @@ export const GeneralDropwdown = forwardRef(({
     const [open, setOpen] = useState<boolean>(false);
 
     return (
-        <div ref={ref} className={`flex flex-col gap-2 md:items-end row-start-2 md:row-start-1 ${className}`}>
+        <div ref={ref} className={`flex flex-col gap-2 ${className}`}>
             <Select value={formValue} onValueChange={(currentValue) => {
                 formSetValue(field, currentValue)
             }}>
                 <div className="w-full">
-                    <label className="text-cpf-darkGray text-xs">{title}</label>
-                    <SelectTrigger className="w-full h-10">
+                    <label className="text-xs text-neutral-400">{title}</label>
+                    <SelectTrigger className="w-[240px] h-[60px] text-neutral-700">
                         <SelectValue aria-label={formValue} placeholder={placeholder}>
                             {formValue ? items.find(item => item === formValue) : placeholder}
                         </SelectValue>
