@@ -1,0 +1,44 @@
+.footer-mobile{
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 18px;
+    background-color: white;
+    h2{
+        font-size: 25px;
+        font-weight: 700;
+        margin: 40px 0;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgb(224, 224, 224);
+        padding-bottom: 50px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    a{
+        font-size: 20px;
+        margin: 15px 0;
+
+    }
+    .logos{
+        border-bottom: 1px solid black;
+        padding: 40px;
+        img{
+            height: 70px;
+        }
+        .bluetape{
+            height: 15px;
+        }
+    }
+    p{
+        margin: 40px 0;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+
+
+@media(min-width: 1175px){
+    .footer-mobile{
+        display: none;
+    }
+}
