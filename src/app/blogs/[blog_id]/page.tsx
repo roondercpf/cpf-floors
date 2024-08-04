@@ -33,7 +33,7 @@ async function BlogsID({
               <h1>{data.title}</h1>
             </div>
             <>
-              <BlogArticleCarousel />
+              {/* <BlogArticleCarousel /> */}
             </>
             <div key={data._id} className="blog-article">
               <Image
