@@ -42,9 +42,8 @@ async function BlogsID({
                 Back to the Blog
               </Link>
               <h1>{data.title}</h1>
+              <BlogArticleCarousel blogs={carouselData ? carouselData.blogs : []} />
             </div>
-            
-            <BlogArticleCarousel blogs={carouselData ? carouselData.blogs : []} />
             
             <div key={data._id} className="blog-article">
               <Image
