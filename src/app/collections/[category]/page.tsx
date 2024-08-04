@@ -12,19 +12,24 @@ export const metadata: Metadata = {
   description: "CPF Floors - Collections",
 };
 
-async function Collections( { params: { category } }: { params: { category: string } } ) {
-
-  if( ! ["vinyl", "laminate"].includes(category)){
-    return notFound()
+async function Collections({
+  params: { category },
+}: {
+  params: { category: string };
+}) {
+  if (!["vinyl", "laminate"].includes(category)) {
+    return notFound();
   }
 
+  const res = await fetch(
+    `${FRONTEND}/api/collections/productType/${category}`,
+    {
+      next: {
+        revalidate: 5,
+      },
+    }
+  );
 
-  console.log(category)
-  const res = await fetch(`${FRONTEND}/api/collections/`, {
-    next: {
-      revalidate: 5,
-    },
-  });
   const { collections }: CollectionResponse = await res.json();
   return (
     <>
