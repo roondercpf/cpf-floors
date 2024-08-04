@@ -59,14 +59,14 @@ function DocumentCenter() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search Document"
-          className="py-1 px-3 rounded"
+          className="p-5 px-3"
         />
 
         <div className="document-search-buttons flex justify-center gap-5">
           {buttonsOptions.map((option, index) => (
             <button
               key={index}
-              className="bg-slate-400 rounded-md text-lg font-semibold py-1 px-3"
+              className="link-dark"
               onClick={() => setSelected(option)}
             >
               {option}
@@ -74,17 +74,17 @@ function DocumentCenter() {
           ))}
         </div>
 
-        <div className="grid grid-cols-4 gap-3">
+        <div className="documents-container flex flex-wrap justify-center items-center">
           {filteredResources.map((resource, index) => (
-            <div key={index}>
-              <h2>{resource.name}</h2>
+            <div key={index} className="document-card flex flex-col justify-center items-center">
               <Image
                 src={resource.cover}
                 width={200}
                 height={200}
                 alt={resource.name}
               />
-              <Link href={resource.url}>DownLoad</Link>
+              <h3>{resource.name}</h3>
+              <Link target="_blank" className="link-dark" href={resource.url}>DownLoad</Link>
             </div>
           ))}
         </div>
