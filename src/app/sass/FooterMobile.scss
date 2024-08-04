@@ -26,7 +26,7 @@
             height: 70px;
         }
         .bluetape{
-            width: 70%;
+            max-width: 90%;
         }
     }
     p{
@@ -41,5 +41,6 @@
 @media(min-width: 1175px){
     .footer-mobile{
         display: none;
+        padding: 20px 10px !important;
     }
 }

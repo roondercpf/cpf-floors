@@ -13,7 +13,7 @@ import "@/app/sass/FooterMobile.scss";
 export default function FooterMobile() {
   return (
     <>
-      <div className="footer-mobile p-10 py-20">
+      <div className="footer-mobile p-10 pt-20 pb-10">
         <div className="footer-social flex justify-between items-center">
           <Link href="/">
             <Image

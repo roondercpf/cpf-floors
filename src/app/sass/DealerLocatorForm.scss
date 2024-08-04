@@ -70,3 +70,14 @@ p{
     border-radius: 18px;
     border: none in !important;
 }
+
+/*MEDIA QUERIES*/
+
+@media(max-width: 1175px){
+    .map-container{
+        margin-top: 120px !important;
+    }
+    .mapboxgl-map{
+        margin: 0 auto !important;
+    }
+}
