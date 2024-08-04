@@ -1,10 +1,26 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+// Components
+import { OrderSampleColors } from "@/components/list/OrderSampleColors";
+// Types
+import { CollectionResponse } from "@/interfaces/collections.model";
+// Utils
+import { FRONTEND } from "@/utils/env";
 
 import "@/app/sass/OrderSample.scss";
 
-function OrderSample() {
+async function OrderSample() {
+
+    const res = await fetch(`${FRONTEND}/api/collections`, {
+        cache: "no-cache",
+        next: {
+            revalidate: 5,
+        },
+    });
+
+    const data: CollectionResponse = await res.json();
+
   return (
     <>
       <div className="order-sample-banner">
@@ -28,6 +44,8 @@ function OrderSample() {
           ></Image>
         </div>
       </div>
+
+      <OrderSampleColors collections={data?.collections ? data.collections : []} />
 
 
     </>
