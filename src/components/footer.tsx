@@ -17,9 +17,24 @@ function Footer() {
             height={100}
           ></Image>
           <div className="social-icons">
-            <Image src="/instagram.svg" height={20} width={20} alt="CPF Floors Instagram"></Image>
-            <Image src="/linkedin.svg" height={20} width={20} alt="CPF Floors LinkedIn"></Image>
-            <Image src="/pinterest.svg" height={20} width={20} alt="CPF Floors Pinterest"></Image>
+            <Image
+              src="/instagram.svg"
+              height={20}
+              width={20}
+              alt="CPF Floors Instagram"
+            ></Image>
+            <Image
+              src="/linkedin.svg"
+              height={20}
+              width={20}
+              alt="CPF Floors LinkedIn"
+            ></Image>
+            <Image
+              src="/pinterest.svg"
+              height={20}
+              width={20}
+              alt="CPF Floors Pinterest"
+            ></Image>
           </div>
         </div>
         <div className="footer-container-links">
@@ -36,7 +51,8 @@ function Footer() {
           <div className="links-container">
             <h3>Resources</h3>
             <li>
-
+              <Link href="/order-samples">Order Samples</Link>
+              <Link href="/document-center">Document Center</Link>
               <Link href="/display-resources">Display Resources</Link>
               <Link href="/faq">F.A.Q.</Link>
             </li>
@@ -61,16 +77,37 @@ function Footer() {
         </div>
       </div>
       <div className="copyright-footer">
-        
         <div className="flex footer-img">
-        <Image className="mx-10" src="/financing/bluetape.svg" width={220} height={220} alt="World Floor Covering Association"></Image>
-        <Image className="mx-10" src="/footer2.svg" width={60} height={60} alt="World Floor Covering Association"></Image>
-        <Image className="mx-10" src="/footer1.svg" width={80} height={80} alt="World Floor Covering Association"></Image>
-        <Image className="mx-10" src="/wfca.svg" width={220} height={220} alt="World Floor Covering Association"></Image>
-        
+          <Image
+            className="mx-10"
+            src="/financing/bluetape.svg"
+            width={220}
+            height={220}
+            alt="World Floor Covering Association"
+          ></Image>
+          <Image
+            className="mx-10"
+            src="/footer2.svg"
+            width={60}
+            height={60}
+            alt="World Floor Covering Association"
+          ></Image>
+          <Image
+            className="mx-10"
+            src="/footer1.svg"
+            width={80}
+            height={80}
+            alt="World Floor Covering Association"
+          ></Image>
+          <Image
+            className="mx-10"
+            src="/wfca.svg"
+            width={220}
+            height={220}
+            alt="World Floor Covering Association"
+          ></Image>
         </div>
         <p>© 2024 CPF Floors. All rights reserved.</p>
-        
       </div>
     </footer>
   );

@@ -76,13 +76,13 @@ function Header() {
               Dealer Locator
             </Link>
             <Link
-              href="/contact-us"
+              href="/order-samples"
               onClick={() => {
                 setOpenProducts(false);
                 setOpenInspire(false);
               }}
             >
-              Order Sample
+              Order Samples
             </Link>
             <Link
               href="/about-us"
@@ -168,6 +168,7 @@ function Header() {
                 </div>
                 <div className="links-container">
                   <h3>Resources</h3>
+                  <Link onClick={()=> setOpenProducts(false)} href="/document-center">Document Center</Link>
                   <Link onClick={()=> setOpenProducts(false)} href="/financing">Financing</Link>
                   <Link onClick={()=> setOpenProducts(false)} href="/faq">F.A.Q.</Link>
                   <Link onClick={()=> setOpenProducts(false)} href="/display-resources">Display Resources</Link>
