@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   description: "CPF Floors - Collections",
 };
 
+const productTypes = ["Rigid core Vinyl", "waterproof laminate"];
+
 async function Collections({
   params: { category },
 }: {
@@ -43,10 +45,11 @@ async function Collections({
           ></Image>
         </div>
         <div className="banner-text">
-          <h2>Rigid Core Vinyl Flooring</h2>
+          <h2 className="capitalize">{productTypes.find((type) => type.toLowerCase().includes(category))}</h2>
           <p>
-            Our Rigid Core Vinyl Flooring offers exceptional resilience, easy
-            installation, a comfortable feel, and lasting performance.
+            Our {productTypes.find((type) => type.toLowerCase().includes(category))} Flooring
+            offers exceptional resilience, easy installation, a comfortable
+            feel, and lasting performance.
           </p>
         </div>
       </div>
