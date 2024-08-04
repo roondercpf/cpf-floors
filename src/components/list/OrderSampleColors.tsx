@@ -152,7 +152,7 @@ export const OrderSampleColors = forwardRef(({
                                 alt={`${color.collection}, ${color.color}, ${color.type}`}
                                 objectFit="contain"
                             />
-                            <h3>{color.color}</h3>
+                            <h3 className="max-w-[224.94px] truncate text-ellipsis">{color.color}</h3>
                             <p>{color.collection}</p>
                             </div>
                         </article>
