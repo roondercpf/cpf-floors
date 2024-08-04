@@ -111,7 +111,7 @@ export const Map = ({ data, ...props }: MapProps) => {
                   <div>
                     <h3>{dealer.title}</h3>
                     <p>{dealer.description}</p>
-                    <p>
+                    <p className="capitalize">
                       <b>Street:</b> 
                       {" " + dealer.city}, {dealer.state} {dealer.postal_code}{" "}
                       {dealer.street}
@@ -120,7 +120,7 @@ export const Map = ({ data, ...props }: MapProps) => {
                       dealer.phone === "" ? " Not Available": dealer.phone 
                     }</p>
                     <p><b>Email:</b>{
-                      dealer.email === "" ? " Not Available": dealer.email 
+                      dealer.email ? " " + dealer.email : " Not Available" 
                     }</p>
 
                     

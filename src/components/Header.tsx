@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import "../app/globals.css";
 import "../app/sass/Header.scss";
@@ -18,6 +18,7 @@ function Header() {
     useState(false);
   const [openMobileInspiredSection, setOpenMobileInspiredSection] =
     useState(false);
+    
 
   return (
     <>
@@ -164,8 +165,13 @@ function Header() {
                   <Link onClick={()=> setOpenProducts(false)} href="/corepad">Underlayment</Link>
                   <Link onClick={()=> setOpenProducts(false)} href="/coresteps">Steps</Link>
                   <Link onClick={()=> setOpenProducts(false)} href="/core-moldings">Moldings</Link>
-                  <Link onClick={()=> setOpenProducts(false)} href="#">Whisper Matt</Link>
-                  
+                </div>
+                <div className="links-container">
+                  <h3>Resources</h3>
+                  <Link onClick={()=> setOpenProducts(false)} href="/financing">Financing</Link>
+                  <Link onClick={()=> setOpenProducts(false)} href="/faq">F.A.Q.</Link>
+                  <Link onClick={()=> setOpenProducts(false)} href="/display-resources">Display Resources</Link>
+                  <Link onClick={()=> setOpenProducts(false)} href="/privacy-policy">Privacy Policy</Link>
                 </div>
               </div>
             </motion.div>
