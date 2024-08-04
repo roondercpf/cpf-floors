@@ -8,7 +8,7 @@ export interface Collections {
   name: string;
   brand: string;
   category: string;
-  colors: string[];
+  colors: Color[];
   serieName: string
   productType: string;
   wearLayer: string;
