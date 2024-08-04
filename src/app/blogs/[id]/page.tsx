@@ -46,7 +46,7 @@ async function BlogsID({
             </div>
             
             <div key={data._id} className="blog-article">
-              <Image
+              <img
                 src={data.featured_image}
                 alt={data.title}
                 width={200}

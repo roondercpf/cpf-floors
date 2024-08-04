@@ -46,14 +46,19 @@
       img {
         margin: 40px auto;
       }
-      .contact-data{
-        height: auto !important;
-        margin: 0 20px;
-        img{
-          margin-right: 15px;
-        }
-        p{
-          margin-right: 15px !important;
+      .contact-cpf{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        .contact-data{
+          height: 50px!important;
+          margin: 0 20px;
+          img{
+            margin-right: 15px;
+          }
+          p{
+            margin-right: 15px !important;
+          }
         }
       }
     }
@@ -179,12 +184,13 @@
   }
 
   .locate-container{
-    padding: 20px;
+    padding: 40px 20px;
     .locate{
       width: 100%;
-      padding: 0;
+      padding: 40px 0;
       h2{
         font-size: 35px;
+        margin-top: 40px;
       }
       .locate-img{
         a{
@@ -193,6 +199,13 @@
           .locate-card{
             width: 100%;
             margin: 0 auto;
+            h3{
+              font-size: 25px;
+              margin-top: 20px;
+            }
+            .mark{
+              margin-top: 20px;
+            }
           }
         }
       }
@@ -203,9 +216,16 @@
     padding: 20px;
     margin-bottom: 80px;
     .contact-banner {
-      padding: 40px;
+      height: auto;
+      padding: 60px 20px;
       .contact-banner-text {
         width: 100%;
+        h2{
+          font-size: 30px;
+        }
+        h3{
+          font-size: 25px;
+        }
       }
     }
   }

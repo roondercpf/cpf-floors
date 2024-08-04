@@ -11,6 +11,7 @@ import "@/app/sass/HomeBannerCarousel.scss";
 
 
 const HomeBannerCarousel = () => {
+  
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
   const scrollPrev = useCallback(() => {

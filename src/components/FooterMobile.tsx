@@ -76,6 +76,8 @@ export default function FooterMobile() {
               <h3>Resources</h3>
             </AccordionTrigger>
             <AccordionContent className="flex flex-col">
+              <Link href="/order-samples">Order Samples</Link>
+              <Link href="/document-center">Document Center</Link>
               <Link href="/display-resources">Display Resources</Link>
               <Link href="/financing">Financing</Link>
               <Link href="/faq">F.A.Q.</Link>
@@ -106,10 +108,34 @@ export default function FooterMobile() {
         </Accordion>
 
         <div className="logos flex flex-wrap  flex-col items-center">
-            <Image className="my-5" src="/footer1.svg" height={70} width={70} alt="CPF Floors parters"></Image>
-            <Image className="my-5" src="/footer2.svg" height={70} width={70} alt="CPF Floors parters"></Image>
-            <Image className="my-5" src="/wfca.svg" height={180} width={180} alt="CPF Floors parters"></Image>
-            <Image className="bluetape my-5" src="/financing/bluetape.svg" height={70} width={70} alt="CPF Floors parters"></Image>
+          <Image
+            className="my-5"
+            src="/footer1.svg"
+            height={70}
+            width={70}
+            alt="CPF Floors parters"
+          ></Image>
+          <Image
+            className="my-5"
+            src="/footer2.svg"
+            height={70}
+            width={70}
+            alt="CPF Floors parters"
+          ></Image>
+          <Image
+            className="my-5"
+            src="/wfca.svg"
+            height={180}
+            width={180}
+            alt="CPF Floors parters"
+          ></Image>
+          <Image
+            className="bluetape my-5"
+            src="/financing/bluetape.svg"
+            height={70}
+            width={70}
+            alt="CPF Floors parters"
+          ></Image>
         </div>
         <p className="font-semibold">© 2024 CPF Floors. All rights reserved.</p>
       </div>

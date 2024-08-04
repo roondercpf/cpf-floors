@@ -12,19 +12,26 @@ export const metadata: Metadata = {
   description: "CPF Floors - Collections",
 };
 
-async function Collections( { params: { category } }: { params: { category: string } } ) {
+const productTypes = ["Rigid core Vinyl", "waterproof laminate"];
 
-  if( ! ["vinyl", "laminate"].includes(category)){
-    return notFound()
+async function Collections({
+  params: { category },
+}: {
+  params: { category: string };
+}) {
+  if (!["vinyl", "laminate"].includes(category)) {
+    return notFound();
   }
 
+  const res = await fetch(
+    `${FRONTEND}/api/collections/productType/${category}`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
 
-  console.log(category)
-  const res = await fetch(`${FRONTEND}/api/collections/`, {
-    next: {
-      revalidate: 5,
-    },
-  });
   const { collections }: CollectionResponse = await res.json();
   return (
     <>
@@ -38,10 +45,11 @@ async function Collections( { params: { category } }: { params: { category: stri
           ></Image>
         </div>
         <div className="banner-text">
-          <h2>Rigid Core Vinyl Flooring</h2>
+          <h2 className="capitalize">{productTypes.find((type) => type.toLowerCase().includes(category))}</h2>
           <p>
-            Our Rigid Core Vinyl Flooring offers exceptional resilience, easy
-            installation, a comfortable feel, and lasting performance.
+            Our {productTypes.find((type) => type.toLowerCase().includes(category))} Flooring
+            offers exceptional resilience, easy installation, a comfortable
+            feel, and lasting performance.
           </p>
         </div>
       </div>
