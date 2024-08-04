@@ -42,7 +42,6 @@ export const Map = ({ data, ...props }: MapProps) => {
 
   return (
     <div className="map-container">
-      <h2 mt-20>Find your nearest Dealer</h2>
       {/* <div className="map-container-bar">
           <div className="map-title-bar text-center">
             <Image
@@ -117,11 +116,15 @@ export const Map = ({ data, ...props }: MapProps) => {
                       {" " + dealer.city}, {dealer.state} {dealer.postal_code}{" "}
                       {dealer.street}
                     </p>
-                    <p><b>Phone:</b>{" " + dealer.phone || "Not Available"}</p>
-                    <p><b>Email:</b> {" " + dealer.email || "Not Available"}</p>
+                    <p><b>Email:</b>{
+                      dealer.phone === "" ? " Not Available": dealer.phone 
+                    }</p>
+                    <p><b>Email:</b>{
+                      dealer.email === "" ? " Not Available": dealer.email 
+                    }</p>
 
                     
-                    <Link target="_blank" href={" " + dealer.website || "Not Available"}>Website</Link>
+                    <Link target="_blank" href={ dealer.website === "" ? "Not Available" : dealer.website}>Website</Link>
                   </div>
                 </Popup>
               ) : null}

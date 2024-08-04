@@ -207,9 +207,9 @@ function Home() {
         <div className="rigid-core-container">
           <div className="rigid-core">
             <motion.img
-              src="/home/plank-banner.png"
+              src="/plank.png"
               width={500}
-              height={800}
+              height={900}
               alt="CPF Floors Rigid Core Vinyl"
               initial={{ y: 700 }}
               whileInView={{ y: 100 }}
@@ -223,7 +223,7 @@ function Home() {
               height={800}
               alt="CPF Floors Rigid Core Vinyl"
               initial={{ y: 800 }}
-              whileInView={{ y: 0 }}
+              whileInView={{ y: 300 }}
               exit={{ y: 800 }}
               transition={{ duration: 1 }}
             ></motion.img>

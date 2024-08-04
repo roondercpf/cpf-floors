@@ -89,7 +89,7 @@ function BecomeADealer() {
               transition={{ duration: 1 }}
             >
               <Image
-                src="/become-a-dealer/benefits-img.svg"
+                src="/display-resources/sample-board.svg"
                 height={500}
                 width={500}
                 alt="CPF Floors Become a dealer"
@@ -182,7 +182,7 @@ function BecomeADealer() {
               ></Image>
               <h2 className="font-bold">Let&apos;s Work</h2>
               <h2>Together</h2>
-              <p>
+              <p className="text-center">
                 Take advantage of opportunities to grow your dealer business and
                 increase sales!
               </p>

@@ -29,10 +29,10 @@
     }
     .contact-img {
       width: 50%;
-      padding: 80px;
+      padding: 40px;
       background-color: #e3e3e3;
       border-radius: 18px;
-      text-align: start;
+      text-align: center;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       h2 {
         font-size: 50px;
@@ -45,6 +45,16 @@
       }
       img {
         margin: 40px auto;
+      }
+      .contact-data{
+        height: auto !important;
+        margin: 0 20px;
+        img{
+          margin-right: 15px;
+        }
+        p{
+          margin-right: 15px !important;
+        }
       }
     }
   }
@@ -77,21 +87,23 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      a {
-        width: 45%;
-        margin: 20px;
+      a{
+        width: 50%;
         .locate-card {
           text-align: center;
           width: 100%;
-          margin: 30px;
+          margin: 20px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
           img {
-            width: 100%;
-            margin: 20px auto;
-            height: 100%;
+            width: 70%;
+            margin-bottom: 0px;
           }
           .mark {
             height: 35px;
-            margin: 0px !important;
             width: 10%;
           }
           h3 {

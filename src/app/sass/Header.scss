@@ -38,6 +38,7 @@
 }
 
 .products-menu{
+  height: auto;
   position: fixed;
   top: 100px;
   left: 0;
@@ -52,22 +53,23 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   z-index: 95;
   .menu-products-carousel{
-    width: 50%;
+    width: 40%;
   }
   .product-menu-links-container{
     display: flex;
     width: 50%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: start;
     padding: 40px;
     .links-container{
-      width: 30%;
+      height: 100%s;
+      width: 50%;
+      padding: 20px;
       h3{
         font-size: 20px;
         font-weight: 600;
-        padding-bottom: 20px;
         border-bottom: 1px solid black;
-        margin-bottom: 20px;
+        padding-bottom: 15px;
       }
       a{
         display: list-item;

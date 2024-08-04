@@ -47,7 +47,7 @@ function DisplayResources() {
                 finishes.
               </p>
               <Link className="link-dark" href="#">
-                Download PDF
+                Contact Now!
               </Link>
             </div>
           </div>
@@ -64,7 +64,7 @@ function DisplayResources() {
                 options in a visually impactful format.
               </p>
               <Link className="link-light" href="#">
-                Download PDF
+                Contact Now!
               </Link>
             </div>
             <div className="sample-board-img">
@@ -98,7 +98,7 @@ function DisplayResources() {
                 customer questions confidently.
               </p>
               <Link className="link-dark" href="#">
-                Download PDF
+                Contact Now!
               </Link>
             </div>
           </div>
@@ -116,7 +116,7 @@ function DisplayResources() {
                 directly to clients.
               </p>
               <Link className="link-light" href="#">
-                Download PDF
+                Contact Now!
               </Link>
             </div>
             <div className="sample-board-img">

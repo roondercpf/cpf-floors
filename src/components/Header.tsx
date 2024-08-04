@@ -141,7 +141,7 @@ function Header() {
               </div>
               <div className="product-menu-links-container">
                 <div className="links-container">
-                  <h3>Collections</h3>
+                  <h3>Our Collections</h3>
                   <Link onClick={() => setOpenProducts(false)} href="#">Deco54</Link>
                   <Link onClick={() => setOpenProducts(false)} href="/collection/6696ccc2103daba3b410e1a2">
                     Quick48+
@@ -155,24 +155,17 @@ function Header() {
                   <Link onClick={() => setOpenProducts(false)} href="/collection/6696ccd5103daba3b410e1a4">Project 2.0</Link>
                   <Link onClick={() => setOpenProducts(false)} href="#">Supreme</Link>
                   <Link onClick={() => setOpenProducts(false)} href="#">Evolve</Link>
+                  <Link className="font-bold underline" href="/collections">See All Categories</Link>
                 </div>
 
                 <div className="links-container">
-                  <h3>Room Type</h3>
-                  <Link href="#">Kitchen</Link>
-                  <Link href="#">Bathroom</Link>
-                  <Link href="#">Living Area</Link>
-                  <Link href="#">Basement</Link>
-                  <Link href="#">Light Commercial</Link>
-                </div>
-
-                <div className="links-container">
-                  <h3>More Products</h3>
+                  <h3>Accesories</h3>
                   <Link onClick={()=> setOpenProducts(false)} href="#">Baseboards</Link>
                   <Link onClick={()=> setOpenProducts(false)} href="/corepad">Underlayment</Link>
                   <Link onClick={()=> setOpenProducts(false)} href="/coresteps">Steps</Link>
                   <Link onClick={()=> setOpenProducts(false)} href="/core-moldings">Moldings</Link>
                   <Link onClick={()=> setOpenProducts(false)} href="#">Whisper Matt</Link>
+                  
                 </div>
               </div>
             </motion.div>
@@ -296,19 +289,8 @@ function Header() {
                       exit={{ height: 0 }}
                     >
                       <h3>Collections</h3>
-                      <Link href="#">Deco54</Link>
-                      <Link onClick={()=> setMobileNav(false)} href="/collection/6696ccc2103daba3b410e1a2">
-                        Quick48+
-                      </Link>
-                      <Link onClick={()=> setMobileNav(false)} href="/collection/6696cdb2103daba3b410e1a6">
-                        Project
-                      </Link>
-                      <Link onClick={()=> setMobileNav(false)} href="/collection/6696cabd103daba3b410e19f">
-                        Spirit XL
-                      </Link>
-                      <Link onClick={()=> setMobileNav(false)} href="/collection/6696ccd5103daba3b410e1a4">Project 2.0</Link>
-                      <Link href="#">Supreme</Link>
-                      <Link href="#">Evolve</Link>
+                
+                      <Link className="text-center" onClick={()=> setMobileNav(false)} href="/collections">Watch All Collections</Link>
                     </motion.div>
                   )}
                 </AnimatePresence>
