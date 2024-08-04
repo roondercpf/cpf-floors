@@ -7,6 +7,7 @@ import { GeneralDropwdown } from "../dropdowns/GeneralDropdown";
 import { useForm } from "react-hook-form";
 // Types
 import { CollectionResponse, Collections } from "@/interfaces/collections.model";
+import "@/app/sass/OrderSample.scss"
 
 interface OrderSampleColorsProps {
     collections: Collections[];
@@ -100,15 +101,17 @@ export const OrderSampleColors = forwardRef(({
     
     return (
         <>
+            <div className="input-container">
             <input
                 type="text"
                 value={search}
                 placeholder="Search Color"
-                className="py-1 px-3 my-2 rounded w-full"
+                className="order-input py-1 px-3 my-2 rounded w-full"
                 {...register("search")}
             />
-            <div className="flex justify-between px-4">
-                <GeneralDropwdown 
+            </div>
+            <div className="dropdown-container flex justify-between items-center">
+                <GeneralDropwdown
                     field="type" 
                     formSetValue={setValue} 
                     formValue={type} 
@@ -128,20 +131,22 @@ export const OrderSampleColors = forwardRef(({
                     title="Collection"
                 />
                 <button
+                    className="link-dark"
                     onClick={() => reset()}
                 >
                     Reset
                 </button>
             </div>
 
-            <section ref={ref} className="grid place-items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 p-4">
+            <section ref={ref} className="samples-container flex flex-row flex-wrap justify-center align-center">
 
                 {filteredColors && filteredColors.map((color: ColorProjected, index: number) => {
                     return (
-                        <article key={Math.random() + index * 4}>
+                        <article className="sample-card" key={Math.random() + index * 4}>
+                            <div className="sample-card">
                             <Image 
                                 className="rounded-md" 
-                                src={color.picture} 
+                                src={color.picture ? color.picture : "/place-img.jpg"} 
                                 width={224.94} 
                                 height={224.94} 
                                 alt={`${color.collection}, ${color.color}, ${color.type}`}
@@ -149,6 +154,7 @@ export const OrderSampleColors = forwardRef(({
                             />
                             <h3>{color.color}</h3>
                             <p>{color.collection}</p>
+                            </div>
                         </article>
                     )
                 })}            

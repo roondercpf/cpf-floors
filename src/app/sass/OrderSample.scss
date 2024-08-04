@@ -36,7 +36,45 @@
 
     }
 }
-
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .order-input{
+        width: 95%;
+        margin: 40px auto !important;
+        padding: 20px;
+        border-radius: 12px;
+    }
+}
+.dropdown-container{
+    width: 100%;
+    padding: 40px;
+    font-size: 20px;
+}
+.samples-container{
+    width: 100%;
+    .sample-card{
+        margin: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 350px;
+            width: 350px;
+        }
+        h3{
+            font-size: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+}
 
 
 
