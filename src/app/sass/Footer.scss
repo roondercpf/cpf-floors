@@ -59,13 +59,14 @@ footer{
     }
     .copyright-footer{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
         p{
             font-size: 14px;
             font-weight: 600;
+            margin: 40px 0;
         }
     }
 }

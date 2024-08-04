@@ -105,11 +105,11 @@ export default function FooterMobile() {
           </AccordionItem>
         </Accordion>
 
-        <div className="logos flex flex-wrap  flex-row items-center">
-            <Image className="my-5" src="/footer1.svg" height={30} width={30} alt="CPF Floors parters"></Image>
-            <Image className="my-5" src="/footer2.svg" height={30} width={30} alt="CPF Floors parters"></Image>
-            <Image className="my-5" src="/wfca.svg" height={30} width={30} alt="CPF Floors parters"></Image>
-            <Image className="bluetape my-5" src="/financing/bluetape.svg" height={30} width={30} alt="CPF Floors parters"></Image>
+        <div className="logos flex flex-wrap  flex-col items-center">
+            <Image className="my-5" src="/footer1.svg" height={70} width={70} alt="CPF Floors parters"></Image>
+            <Image className="my-5" src="/footer2.svg" height={70} width={70} alt="CPF Floors parters"></Image>
+            <Image className="my-5" src="/wfca.svg" height={180} width={180} alt="CPF Floors parters"></Image>
+            <Image className="bluetape my-5" src="/financing/bluetape.svg" height={70} width={70} alt="CPF Floors parters"></Image>
         </div>
         <p className="font-semibold">© 2024 CPF Floors. All rights reserved.</p>
       </div>
