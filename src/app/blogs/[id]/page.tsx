@@ -1,25 +1,36 @@
 import { FRONTEND } from "@/utils/env";
-import { Blog } from "@/interfaces/blogs.model";
-import { notFound } from "next/navigation";
+import { Blog, BlogsResponse } from "@/interfaces/blogs.model";
 import Image from "next/image";
 import Link from "next/link";
 
 import "@/app/sass/Blogs.scss";
-import BlogArticleCarousel from "@/components/BlogArticleCarousel";
+import { BlogArticleCarousel } from "@/components/BlogArticleCarousel";
 
 async function BlogsID({
-  params: { blog_id },
+  params: { id },
 }: {
-  params: { blog_id: string };
+  params: { id: string };
 }) {
-  const res = await fetch(`${FRONTEND}/api/blog/${blog_id}`);
-  const data: Blog = await res.json();
-
-  if ("error" in data) {
-    notFound();
+  let data: Blog | undefined = undefined;
+  let carouselData: BlogsResponse | undefined = undefined;
+  try {
+    const [blog, blogs] = await Promise.all([
+      await fetch(`${FRONTEND}/api/blog/${id}`, {
+        cache: "no-store"
+      }).then(res => res.json()),
+      await fetch(`${FRONTEND}/api/blog/`, {
+        next: {
+          revalidate: 5,
+        },
+      }).then(res => res.json())
+    ])
+    data = blog;
+    carouselData = blogs;
+  } catch (error) {
+    if (error) {
+      console.log(error);
+    }
   }
-
-  console.log(data.paragraphs);
 
   return (
     <>
@@ -32,9 +43,9 @@ async function BlogsID({
               </Link>
               <h1>{data.title}</h1>
             </div>
-            <>
-              {/* <BlogArticleCarousel /> */}
-            </>
+            
+            <BlogArticleCarousel blogs={carouselData ? carouselData.blogs : []} />
+            
             <div key={data._id} className="blog-article">
               <Image
                 src={data.featured_image}
@@ -47,25 +58,21 @@ async function BlogsID({
               </Link>
               <h1 className="article-title">{data.title}</h1>
               <h3>{data.subtitle}</h3>
-              {data.paragraphs.length > 0 ? (
+              {data?.paragraphs?.length > 0 ? (
                 data.paragraphs.map((paragraph, index) => (
                   <>
-                    <p className="my-5" key={index}>
+                    <p className="my-5" key={(index * Math.random()) + 4 * Math.random()}>
                       {paragraph}
                     </p>
                   </>
                 ))
               ) : (
-                <>
-                  <p>Not found</p>
-                </>
+                <p>Not found</p>
               )}
             </div>
           </>
         ) : (
-          <>
-            <h2>Not Found</h2>
-          </>
+          <h2>Not Found</h2>
         )}
       </div>
     </>
