@@ -46,7 +46,7 @@ function DisplayResources() {
                 for easy browsing and comparison of different materials and
                 finishes.
               </p>
-              <Link className="link-dark" href="#">
+              <Link className="link-dark" href="/contact-us">
                 Contact Now!
               </Link>
             </div>
@@ -63,7 +63,7 @@ function DisplayResources() {
                 Showcase a curated selection of our most popular flooring
                 options in a visually impactful format.
               </p>
-              <Link className="link-light" href="#">
+              <Link className="link-light" href="/contact-us">
                 Contact Now!
               </Link>
             </div>
@@ -97,7 +97,7 @@ function DisplayResources() {
                 product information, specifications, and benefits to answer
                 customer questions confidently.
               </p>
-              <Link className="link-dark" href="#">
+              <Link className="link-dark" href="/contact-us">
                 Contact Now!
               </Link>
             </div>
@@ -115,7 +115,7 @@ function DisplayResources() {
                 a portable way to showcase CPF Floors diverse product range
                 directly to clients.
               </p>
-              <Link className="link-light" href="#">
+              <Link className="link-light" href="/contact-us">
                 Contact Now!
               </Link>
             </div>
@@ -142,7 +142,7 @@ function DisplayResources() {
                 rustic, modern, and classic to elegant.Transform your space and
                 find inspiration with our beautiful collections.
               </p>
-              <Link className="link-light" href="#">
+              <Link className="link-light" href="/financing">
                 See More
               </Link>
             </div>

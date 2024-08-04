@@ -59,13 +59,14 @@ footer{
     }
     .copyright-footer{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
         p{
             font-size: 14px;
             font-weight: 600;
+            margin: 40px 0;
         }
     }
 }
@@ -74,8 +75,11 @@ footer{
 /*MEDIA QUERIES*/
 
 
+
+
 @media(max-width: 1175px){
     footer{
+        display: none;
         .footer-container{
             flex-direction: column;
             padding: 40px 0;

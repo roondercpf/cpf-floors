@@ -26,23 +26,44 @@ const MenuCarousel = () => {
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
 
+
             <div className="embla__slide">
               <div className="menu-slide-carousel-one">
                 <div className="content">
-                  <h2>Quick48+</h2>
+                  <h2>Inspire Black Edition</h2>
                   <h3>Collection</h3>
                 </div>
               </div>
             </div>
 
             <div className="embla__slide">
-              <div className="menu-slide-carousel-one">
+              <div className="menu-slide-carousel-two">
                 <div className="content">
-                  <h2>Quick48+</h2>
+                  <h2>Project 2.0</h2>
                   <h3>Collection</h3>
                 </div>
               </div>
             </div>
+
+            <div className="embla__slide">
+              <div className="menu-slide-carousel-three">
+                <div className="content">
+                  <h2>Alpha 22</h2>
+                  <h3>Collection</h3>
+                </div>
+              </div>
+            </div>
+
+            <div className="embla__slide">
+              <div className="menu-slide-carousel-four">
+                <div className="content">
+                  <h2>Spirit XL</h2>
+                  <h3>Collection</h3>
+                </div>
+              </div>
+            </div>
+
+            
             
           </div>
         </div>

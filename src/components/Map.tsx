@@ -116,15 +116,15 @@ export const Map = ({ data, ...props }: MapProps) => {
                       {" " + dealer.city}, {dealer.state} {dealer.postal_code}{" "}
                       {dealer.street}
                     </p>
-                    <p><b>Email:</b>{
-                      dealer.phone === "" ? " Not Available": dealer.phone 
+                    <p><b>Phone:</b>{
+                      dealer.phone ? " " + dealer.phone: "Not Available" 
                     }</p>
                     <p><b>Email:</b>{
                       dealer.email ? " " + dealer.email : " Not Available" 
                     }</p>
 
                     
-                    <Link target="_blank" href={ dealer.website === "" ? "Not Available" : dealer.website}>Website</Link>
+                    <Link target="_blank" href={dealer.website ? " " + dealer.website: "Not"}>Website</Link>
                   </div>
                 </Popup>
               ) : null}

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import "@/app/sass/Blogs.scss";
+import BlogArticleCarousel from "@/components/BlogArticleCarousel";
 
 async function BlogsID({
   params: { blog_id },
@@ -31,6 +32,9 @@ async function BlogsID({
               </Link>
               <h1>{data.title}</h1>
             </div>
+            <>
+              {/* <BlogArticleCarousel /> */}
+            </>
             <div key={data._id} className="blog-article">
               <Image
                 src={data.featured_image}
