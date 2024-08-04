@@ -8,12 +8,25 @@ import "@/app/sass/DocumentCenter.scss";
 
 function DocumentCenter() {
   const [search, setSearch] = useState("");
+  const [selected, setSelected] = useState("All");
 
   const filteredResources = useMemo(() => {
-    return resource.filter((resource) =>
-      resource.name.toLowerCase().includes(search.toLowerCase())
-    );
-  }, [search]);
+    return resource.filter((resource) => {
+      const type = selected === "All" ? true : resource.type === selected;
+
+      return resource.name.toLowerCase().includes(search.toLowerCase()) && type;
+    });
+  }, [search, selected]);
+
+  const buttonsOptions = [
+    "All",
+    "Sell Sheets",
+    "Warranties",
+    "Data Sheets",
+    "Installation Manuals",
+    "Legal Obligations",
+    "Test Labs",
+  ];
 
   return (
     <>
@@ -49,6 +62,18 @@ function DocumentCenter() {
           className="py-1 px-3 rounded"
         />
 
+        <div className="document-search-buttons flex justify-center gap-5">
+          {buttonsOptions.map((option, index) => (
+            <button
+              key={index}
+              className="bg-slate-400 rounded-md text-lg font-semibold py-1 px-3"
+              onClick={() => setSelected(option)}
+            >
+              {option}
+            </button>
+          ))}
+        </div>
+
         <div className="grid grid-cols-4 gap-3">
           {filteredResources.map((resource, index) => (
             <div key={index}>
@@ -59,6 +84,7 @@ function DocumentCenter() {
                 height={200}
                 alt={resource.name}
               />
+              <Link href={resource.url}>DownLoad</Link>
             </div>
           ))}
         </div>
