@@ -142,7 +142,7 @@ function Header() {
               </div>
               <div className="product-menu-links-container">
                 <div className="links-container">
-                  <h3>Our Collections</h3>
+                  <h3>Collections</h3>
                   <Link onClick={() => setOpenProducts(false)} href="#">Deco54</Link>
                   <Link onClick={() => setOpenProducts(false)} href="/collection/6696ccc2103daba3b410e1a2">
                     Quick48+
@@ -156,7 +156,7 @@ function Header() {
                   <Link onClick={() => setOpenProducts(false)} href="/collection/6696ccd5103daba3b410e1a4">Project 2.0</Link>
                   <Link onClick={() => setOpenProducts(false)} href="#">Supreme</Link>
                   <Link onClick={() => setOpenProducts(false)} href="#">Evolve</Link>
-                  <Link className="font-bold underline" href="/collections">See All Categories</Link>
+                  <Link onClick={() => setOpenProducts(false)} className="font-bold underline" href="/collections">All Categories</Link>
                 </div>
 
                 <div className="links-container">
