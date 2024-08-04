@@ -21,12 +21,12 @@ function AboutUs() {
             </Link>
           </div>
           <div className="about-img">
-            <Image
+            <img
               src="/about/about-banner.png"
               height={600}
               width={600}
               alt="About Us - CPF Floors"
-            ></Image>
+            ></img>
           </div>
         </div>
       </>

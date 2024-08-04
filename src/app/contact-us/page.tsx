@@ -31,9 +31,9 @@ function ContactUs() {
                 Take advantage of opportunities to grow your dealer business and
                 increase sales!
               </p>
-              <div className="flex flex-row font-bold justifly-between items-center">
+              <div className="contact-cpf flex flex-row font-bold justifly-between items-center">
                 <Link
-                  className="flex items-center  contact-data"
+                  className="flex items-center w-100  contact-data"
                   href="mailto:sales@cpffloors.com"
                 >
                   <Image
@@ -45,7 +45,7 @@ function ContactUs() {
                   <p>sales@cpffloors.com</p>
                 </Link>
                 <Link
-                  className="flex items-center contact-data"
+                  className="flex items-center w-100 contact-data"
                   href="tel:13056022330"
                 >
                   <Image

@@ -66,7 +66,7 @@
             margin-bottom: 20px;
         }
         img{
-            height: 400px;
+            height: 300px;
             width: 100%;
             border-radius: 18px;
             margin: 0 auto;
@@ -110,8 +110,8 @@
 /*ARTICLE*/
 
 .blog-article-container{
-    position: relative;
-    height: 90vh;
+    
+    height: 1000px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -142,11 +142,16 @@
             font-size: 20px;
             font-weight: 700;
             margin: 20px 0;
+            line-height: 35px;
+        }
+        p{
+            line-height: 35px;
         }
 
     }
     .blog-title{
         width: 40%;
+        height: 1000px;
         padding: 20px;
         background-color: #e3e3e3;
         color: black;
@@ -196,6 +201,9 @@
             h2{
                 font-size: 20px;
             }
+            img{
+                height: auto;
+            }
         }
     }
     .bluetape-become-container{
@@ -222,6 +230,12 @@
             overflow: inherit;
             height: 100%;
             text-align: center;
+            margin-top: 80px;
+            padding: 20px;
+            text-align: justify;
+            img{
+                height: auto;
+            }
             .article-title, .article-link-2{
                 display: block;
             }
