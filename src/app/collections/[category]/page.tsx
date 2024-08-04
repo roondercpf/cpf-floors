@@ -25,7 +25,7 @@ async function Collections({
     `${FRONTEND}/api/collections/productType/${category}`,
     {
       next: {
-        revalidate: 5,
+        revalidate: 60,
       },
     }
   );
