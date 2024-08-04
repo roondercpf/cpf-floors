@@ -1,7 +1,7 @@
 
 
 import type { Metadata } from "next";
-import { FRONTEND } from "../../utils/env";
+import { FRONTEND } from "@/utils/env";
 import { BlogsResponse } from "@/interfaces/blogs.model";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,7 +21,7 @@ async function Blogs() {
     },
   });
   const { blogs }: BlogsResponse = await res.json();
-  console.log(blogs);
+
   return (
     <>
       <>

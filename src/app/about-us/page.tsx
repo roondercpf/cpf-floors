@@ -13,7 +13,7 @@ function AboutUs() {
           <div className="about-text">
             <h2>About Us</h2>
             <p>
-              We continuously search for the finest and most innovative flooring
+              We continuously search for the finest and most <br /> innovative flooring
               solutions.
             </p>
             <Link className="link-dark" href="/contact-us">
@@ -22,7 +22,7 @@ function AboutUs() {
           </div>
           <div className="about-img">
             <Image
-              src="/about/about-banner.svg"
+              src="/about/about-banner.png"
               height={600}
               width={600}
               alt="About Us - CPF Floors"
