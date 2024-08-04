@@ -57,6 +57,84 @@
     }
 }
 
+.menu-slide-carousel-two{
+  height: 80%;
+  border-radius: 18px;
+  .content{
+    position: relative;
+      background-image: url("/home/project20.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: start;
+      padding: 20px;
+      border-radius: 18px;
+
+      h2{
+          font-size: 20px;
+          font-weight: 600;
+      }
+  }
+}
+.menu-slide-carousel-three{
+  height: 80%;
+  border-radius: 18px;
+  .content{
+    position: relative;
+      background-image: url("/home/alpha22.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: start;
+      padding: 20px;
+      border-radius: 18px;
+
+      h2{
+          font-size: 20px;
+          font-weight: 600;
+      }
+  }
+}
+.menu-slide-carousel-four{
+  height: 80%;
+  border-radius: 18px;
+  .content{
+    position: relative;
+      background-image: url("/home/spiritxl.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: start;
+      padding: 20px;
+      border-radius: 18px;
+
+      h2{
+          font-size: 20px;
+          font-weight: 600;
+      }
+  }
+}
 
 
 

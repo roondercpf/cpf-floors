@@ -246,7 +246,7 @@ function Header() {
               <Image
                 className="header-mobile-logo"
                 alt="CPF Floors logo"
-                src="./footer-logo.svg"
+                src="/footer-logo.svg"
                 height={50}
                 width={50}
               ></Image>

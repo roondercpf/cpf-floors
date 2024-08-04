@@ -60,22 +60,6 @@ const HomeBannerCarousel = () => {
               </div>
             </div>
 
-            <div className="embla__slide home-carousel-slide">
-              <div className="home-slide-five">
-                <div className="content">
-                  <h2>Decotile</h2>
-                  <h3>Collection</h3>
-                  <p>
-                    The collection that perfectly blends the resilience of
-                    waterproof rigid core vinyl with the serene hues of natural
-                    and rich wood landscapes.
-                  </p>
-                  <Link className="link-light" href="#">
-                    See More!
-                  </Link>
-                </div>
-              </div>
-            </div>
 
             <div className="embla__slide home-carousel-slide">
               <div className="home-slide-six">
@@ -94,44 +78,11 @@ const HomeBannerCarousel = () => {
               </div>
             </div>
 
-            <div className="embla__slide home-carousel-slide">
-              <div className="home-slide-seven">
-                <div className="content">
-                  <h2>Deco54</h2>
-                  <h3>Collection</h3>
-                  <p>
-                    The collection that perfectly blends the resilience of
-                    waterproof rigid core vinyl with the serene hues of natural
-                    and rich wood landscapes.
-                  </p>
-                  <Link className="link-light" href="#">
-                    See More!
-                  </Link>
-                </div>
-              </div>
-            </div>
 
             <div className="embla__slide home-carousel-slide">
               <div className="home-slide-three">
                 <div className="content">
-                  <h2>Project</h2>
-                  <h3>Collection</h3>
-                  <p>
-                    The collection that perfectly blends the resilience of
-                    waterproof rigid core vinyl with the serene hues of natural
-                    and rich wood landscapes.
-                  </p>
-                  <Link className="link-light" href="#">
-                    See More!
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="embla__slide home-carousel-slide">
-              <div className="home-slide-four">
-                <div className="content">
-                  <h2>Quick48+</h2>
+                  <h2>Project 2.0</h2>
                   <h3>Collection</h3>
                   <p>
                     The collection that perfectly blends the resilience of
