@@ -12,8 +12,8 @@ const TechnicalDataSection = ({
   return (
     <div>
       {resources.map((resource, index) => (
-        <div key={index} className="tech-banner">
-          <div className="tech">
+        <div className="tech-banner flex flex-col flex-wrap justify-center items-center">
+          <div className="tech flex flex-col flex-wrap justify-center items-center">
             <div className="tech-data">
               <Image
                 src={resource.cover}
@@ -22,7 +22,7 @@ const TechnicalDataSection = ({
                 alt={resource.name}
               />
               <h2 className="mb-20">{resource.name}</h2>
-              <Link href={resource.url} target="_blank" className="link-dark my-20">
+              <Link href={resource.url} target="_blank" className="link-dark text-center">
                 DownLoad
               </Link>
             </div>

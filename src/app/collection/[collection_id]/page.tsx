@@ -58,19 +58,29 @@ async function CollectionsID({
 
       <InfoSection collection={collection} />
 
-      <div>
+      <div className="most-main-banner">
         <h2>More collection also viewed</h2>
-        <div>
+        <div className="flex flex-row flex-wrap justify-center items-center">
           {collectionsWithoutCurrent.map((collection, index) => (
-            <div key={index}>
-              <Image
-                src={collection.colors[0].picture}
-                height={200}
-                width={200}
-                alt={collection.name}
-              ></Image>
-              <h3>{collection.name}</h3>
-              <p>{collection.brand}</p>
+            <div className="most-container flex flex-row flex-wrap justify-center items-center">
+              <div
+                className="most-card flex flex-col flex-wrap justify-center items-center"
+                key={index}
+              >
+                <Image
+                  className="most-img"
+                  src={
+                    collection.colors[0].picture
+                      ? collection.colors[0].picture
+                      : "/place-img.jpg"
+                  }
+                  height={400}
+                  width={400}
+                  alt={collection.name}
+                ></Image>
+                <h3>{collection.name}</h3>
+                <p>{collection.brand}</p>
+              </div>
             </div>
           ))}
         </div>
