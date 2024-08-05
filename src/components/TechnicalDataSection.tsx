@@ -12,7 +12,7 @@ const TechnicalDataSection = ({
   return (
     <div>
       {resources.map((resource, index) => (
-        <div className="tech-banner flex flex-col flex-wrap justify-center items-center">
+        <div className="tech-banner flex flex-col flex-wrap justify-center items-center" key={index * Math.random() + 5}>
           <div className="tech flex flex-col flex-wrap justify-center items-center">
             <div className="tech-data">
               <Image

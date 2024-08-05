@@ -62,10 +62,9 @@ async function CollectionsID({
         <h2>More collection also viewed</h2>
         <div className="flex flex-row flex-wrap justify-center items-center">
           {collectionsWithoutCurrent.map((collection, index) => (
-            <div className="most-container flex flex-row flex-wrap justify-center items-center">
+            <div className="most-container flex flex-row flex-wrap justify-center items-center" key={index * Math.random() + 3}>
               <div
                 className="most-card flex flex-col flex-wrap justify-center items-center"
-                key={index}
               >
                 <Image
                   className="most-img"
