@@ -86,7 +86,7 @@ function ContactUs() {
                 >
                   <div className="locate-card">
                     <Image
-                      src="/contact-us/lakeland.png"
+                      src="/contact-us/Lakeland.png"
                       height={400}
                       width={400}
                       alt="CPF Location"
@@ -113,7 +113,7 @@ function ContactUs() {
                 >
                   <div className="locate-card">
                     <Image
-                      src="/contact-us/medley.png"
+                      src="/contact-us/Medley.png"
                       height={400}
                       width={400}
                       alt="CPF Location"
