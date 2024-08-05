@@ -2,7 +2,7 @@
 import { Ref, forwardRef, useState, ReactNode, useMemo } from "react";
 import { Collections } from "@/interfaces/collections.model";
 import SpecsSection from "./SpecsSection";
-import TechnicalDataSection from "./technicalDataSection";
+import TechnicalDataSection from "./TechnicalDataSection";
 import resources from "@/../resources/resources2.json";
 import InstructionsSection from "./InstructionsSection";
 import DescriptionBanner from "./DescriptionBanner";
