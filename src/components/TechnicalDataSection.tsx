@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import "@/app/sass/TechnicalDataSection.scss";
 
-const technicalDataSection = ({
+const TechnicalDataSection = ({
   resources,
 }: {
   resources: typeof resource;
@@ -33,4 +33,4 @@ const technicalDataSection = ({
   );
 };
 
-export default technicalDataSection;
+export default TechnicalDataSection;
