@@ -9,7 +9,7 @@ import DescriptionBanner from "./DescriptionBanner";
 const buttonGroup = [
   "description",
   "specs",
-  "intructions",
+  "instructions",
   "technical data",
   "benefits",
 ];
@@ -45,7 +45,7 @@ export const InfoSection = forwardRef(
           {buttonGroup.map((button, index) => (
             <button
               key={index}
-              className="py-1 px-3 capitalize"
+              className="link-dark my-20"
               onClick={() => setActiveButton(button)}
             >
               {button}

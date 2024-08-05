@@ -17,6 +17,36 @@ function Home() {
             <h1>Let&apos;s Click Together!</h1>
             <p>The smartest flooring solution for all your renovation needs.</p>
           </div>
+
+          <div className="contact-google-container flex flex-wrap justify-center items-center">
+            <Link href="/become-a-dealer">
+              <Image
+                className="mx-10"
+                src="/home/1.svg"
+                height={180}
+                width={180}
+                alt=""
+              ></Image>
+            </Link>
+            <Link href="/dealer-locator">
+              <Image
+                className="mx-10"
+                src="/home/2.svg"
+                height={180}
+                width={180}
+                alt=""
+              ></Image>
+            </Link>
+            <Link target="_blank" href="https://www.google.com/maps/place/CPF+Floors+-+Flooring+Distributors/@25.8349023,-80.322886,15z/data=!4m2!3m1!1s0x0:0xff0a55e7c993d600?sa=X&ved=1t:2428&ictx=111">
+              <Image
+                className="mx-10"
+                src="/home/3.svg"
+                height={170}
+                width={170}
+                alt=""
+              ></Image>
+            </Link>
+          </div>
           <div className="main-banner-img">
             <motion.img
               initial={{ opacity: 0 }}
@@ -30,35 +60,7 @@ function Home() {
           </div>
         </div>
       </>
-      <>
-        <motion.div
-          className="description-container"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 2 }}
-        >
-          <div className="description-text">
-            <h2>+800</h2>
-            <p>dealers</p>
-          </div>
-          <div className="description-text">
-            <h2>Find</h2>
-            <p>dealers near</p>
-          </div>
-          <div className="description-text flex items-center justify-evenly py-8">
-            <h2>4.8</h2>
-            <div className="flex flex-col justify-center items-center">
-              <Image
-                src="/home/stars.svg"
-                height={180}
-                width={180}
-                alt=""
-              ></Image>
-              <p>128 reviews</p>
-            </div>
-          </div>
-        </motion.div>
-      </>
+
 
       {/* <>
         <div className="logos p-20 flex justify-center items-center w-100">
@@ -67,10 +69,12 @@ function Home() {
       </> */}
 
       <>
-        <motion.div className="roomvo-section-container"
-        initial={{opacity: 0, y:800}}
-        animate={{opacity:1, y: 0}}
-        whileInView={{opacity: 1, y: 0}}>
+        <motion.div
+          className="roomvo-section-container"
+          initial={{ opacity: 0, y: 800 }}
+          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        >
           <div className="roomvo-section">
             <div className="roomvo-img">
               <Image
@@ -235,8 +239,8 @@ function Home() {
               </div>
               <p>
                 Discover high-quality flooring options in different styles, from
-                rustic, modern, and classic to elegant. Transform your space
-                and find inspiration with our beautiful collections.
+                rustic, modern, and classic to elegant. Transform your space and
+                find inspiration with our beautiful collections.
               </p>
               <Link className="link-light" href="/collections/vinyl">
                 See More

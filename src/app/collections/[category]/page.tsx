@@ -68,7 +68,6 @@ async function Collections({
                   <div className="card-text">
                     <div className="collection-title">
                       <h2>{collection.name}</h2>
-                      <h2>Collection</h2>
                     </div>
                     <div className="mb-10">
                       <p className="font-bold">{collection.brand}</p>
