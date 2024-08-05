@@ -31,7 +31,7 @@ async function OrderSample() {
             regular samples to Strap Sets or Architect folders, we make floor
             shopping easy and convenient.
           </p>
-          <Link className="link-light" href="#">
+          <Link className="link-light" href="/collections">
             Explore All
           </Link>
         </div>

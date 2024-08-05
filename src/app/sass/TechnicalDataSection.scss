@@ -1,3 +1,25 @@
-.tech-banner{
-    padding: 80px;
+.tech-banner {
+  padding: 80px;
+  .tech {
+    background-color: #e3e3e3;
+    border-radius: 18px;
+    width: 30%;
+    .tech-data{
+        padding: 40px 0;
+        width: 30%;
+        img {
+            margin: 0 auto;
+            height: auto;
+            width: 400px;
+          }
+          h2{
+              margin: 20px 0;
+              font-weight: 600;
+          }
+          a{
+            margin-bottom: 80px;
+            margin: 0 auto !important;
+          }
+    }
+  }
 }
