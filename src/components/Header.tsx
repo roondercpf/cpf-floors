@@ -155,13 +155,13 @@ function Header() {
                   </Link>
                   <Link onClick={() => setOpenProducts(false)} href="/collection/6696ccd5103daba3b410e1a4">Project 2.0</Link>
                   <Link onClick={() => setOpenProducts(false)} href="#">Supreme</Link>
-                  <Link onClick={() => setOpenProducts(false)} href="#">Evolve</Link>
+                  <Link onClick={() => setOpenProducts(false)} href="/collection/66afb340613ab3dab29c8557">Evolve</Link>
                   <Link onClick={() => setOpenProducts(false)} className="font-bold underline" href="/collections">All Categories</Link>
                 </div>
 
                 <div className="links-container">
                   <h3>Accesories</h3>
-                  <Link onClick={()=> setOpenProducts(false)} href="#">Baseboards</Link>
+                  <Link onClick={()=> setOpenProducts(false)} href="/coresteps">Baseboards</Link>
                   <Link onClick={()=> setOpenProducts(false)} href="/corepad">Underlayment</Link>
                   <Link onClick={()=> setOpenProducts(false)} href="/coresteps">Steps</Link>
                   <Link onClick={()=> setOpenProducts(false)} href="/core-moldings">Moldings</Link>
