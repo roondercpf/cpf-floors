@@ -69,6 +69,7 @@
   width: 100%;
   height: auto;
   padding: 80px;
+  padding-top: 0;
   margin: 40px 0;
   .description {
     width: 100%;
@@ -77,10 +78,18 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    padding: 80px 20px;
-    margin: 40px 0;
+    padding: 40px 20px;
+    margin: 0;
     background-color: #e3e3e3;
     border-radius: 18px;
+    .description-specs{
+      border: 1px solid rgb(196, 196, 196);
+      padding: 20px;
+      margin: 20px 40px;
+      width: 30%;
+      border-radius: 12px;
+    }
+
     .description-banner-img {
       width: 50%;
       img {
@@ -102,6 +111,15 @@
         width: 60%;
       }
     }
+  }
+}
+
+.tech-data{
+  width: 100%;
+  text-align: center;
+  img{
+    height: 350;
+    width: auto;
   }
 }
 

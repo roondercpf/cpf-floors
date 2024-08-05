@@ -1,26 +1,40 @@
 import { FRONTEND } from "@/utils/env";
 import { Collections, Color } from "@/interfaces/collections.model";
 import { notFound } from "next/navigation";
+
 import Link from "next/link";
 import Image from "next/image";
-
+import { InfoSection } from "@/components/InfoSection";
 
 import "@/app/sass/CollectionProfile.scss";
 import "@/app/sass/Financing.scss";
 
 import CollectionPlanksCarousel from "@/components/CollectionPlanksCarousel";
 
-async function CollectionsID( { params: { collection_id }} : {params: { collection_id: string }}) {
-  
-  const res = await fetch(`${FRONTEND}/api/collections/${collection_id}`);
+async function CollectionsID({
+  params: { collection_id },
+}: {
+  params: { collection_id: string };
+}) {
+  const res = await fetch(`${FRONTEND}/api/collections/`);
 
-  const data: Collections = await res.json();
+  const collectionResponse = await res.json();
 
- 
+  if ("error" in collectionResponse) {
+    notFound();
+  }
 
+  const { collections }: { collections: Collections[] } = collectionResponse;
 
+  const collection = collections.find(
+    (collection) => collection._id === collection_id
+  );
 
-  if ("error" in data) {
+  const collectionsWithoutCurrent = collections.filter(
+    (collection) => collection._id !== collection_id
+  );
+
+  if (!collection) {
     notFound();
   }
 
@@ -28,7 +42,7 @@ async function CollectionsID( { params: { collection_id }} : {params: { collecti
     <>
       <div className="collection-banner">
         <div className="collection-banner-carousel">
-          <CollectionPlanksCarousel />
+          <CollectionPlanksCarousel colors={collection.colors} />
         </div>
         <div className="collection-banner-text">
           <Image
@@ -37,54 +51,28 @@ async function CollectionsID( { params: { collection_id }} : {params: { collecti
             width={350}
             alt="coreproof"
           ></Image>
-          <h2 className="my-5">{data.name}</h2>
-          <p>{data.brand}</p>
+          <h2 className="my-5">{collection.name}</h2>
+          <p>{collection.brand}</p>
         </div>
       </div>
 
-      
+      <InfoSection collection={collection} />
 
-      <div className="description-banner">
-        <div className="description">
-          <div className="description-banner-img">
-            <Image
-              src="/description.svg"
-              height={600}
-              width={600}
-              alt="coreproof"
-            ></Image>
-          </div>
-          <div className="description-banner-text">
-            <h2 className="my-5">{data.name}</h2>
-            <h3>The Major Collection Flooring</h3>
-            <p>{data.description}</p>
-            <div className="icons flex flex-wrap my-10">
+      <div>
+        <h2>More collection also viewed</h2>
+        <div>
+          {collectionsWithoutCurrent.map((collection, index) => (
+            <div key={index}>
               <Image
-                src="/icon1.svg"
-                height={100}
-                width={100}
-                alt="coreproof"
+                src={collection.colors[0].picture}
+                height={200}
+                width={200}
+                alt={collection.name}
               ></Image>
-              <Image
-                src="/icon2.svg"
-                height={100}
-                width={100}
-                alt="coreproof"
-              ></Image>
-              <Image
-                src="/icon3.svg"
-                height={100}
-                width={100}
-                alt="coreproof"
-              ></Image>
-              <Image
-                src="/icon4.svg"
-                height={100}
-                width={100}
-                alt="coreproof"
-              ></Image>
+              <h3>{collection.name}</h3>
+              <p>{collection.brand}</p>
             </div>
-          </div>
+          ))}
         </div>
       </div>
 

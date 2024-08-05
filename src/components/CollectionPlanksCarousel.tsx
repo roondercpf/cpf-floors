@@ -4,12 +4,13 @@ import React, { useRef, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
+import { Color } from "@/interfaces/collections.model";
 
 import useEmblaCarousel from "embla-carousel-react";
 
 import "@/app/sass/CollectionProfile.scss";
 
-const CollectionPlanksCarousel = () => {
+const CollectionPlanksCarousel = ({ colors }: { colors: Color[] }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
   const scrollPrev = useCallback(() => {
@@ -25,19 +26,16 @@ const CollectionPlanksCarousel = () => {
       <div className="embla home-banner-carousel-container">
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
-
-            <div className="embla__slide">
-                <Image src="https://cpffloors.com/wp-content/uploads/2023/09/BALANCED-OAK-1200x1200.webp" height={600} width={600} alt="Step"></Image>
-            </div>
-            <div className="embla__slide">
-                <Image src="https://cpffloors.com/wp-content/uploads/2023/09/BRUT-OAK-1200x1200.webp" height={600} width={600} alt="Step"></Image>
-            </div>
-            <div className="embla__slide">
-                <Image src="https://cpffloors.com/wp-content/uploads/2023/09/CERISE-copia-1200x1200.webp" height={600} width={600} alt="Step"></Image>
-            </div>
-            <div className="embla__slide">
-                <Image src="https://cpffloors.com/wp-content/uploads/2023/09/SLATE-1200x1200.webp" height={600} width={600} alt="Step"></Image>
-            </div>
+            {colors.map((color, index) => (
+              <div className="embla__slide" key={index}>
+                <Image
+                  src={color.picture}
+                  height={600}
+                  width={600}
+                  alt={color.name}
+                ></Image>
+              </div>
+            ))}
           </div>
         </div>
 
