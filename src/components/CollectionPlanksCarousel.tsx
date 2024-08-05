@@ -28,10 +28,10 @@ const CollectionPlanksCarousel = ({ colors }: { colors: Color[] }) => {
           <div className="embla__container">
             {colors.map((color, index) => (
               <div className="embla__slide" key={index}>
-                <Image
-                  src={color.picture}
-                  height={600}
-                  width={600}
+                <Image className="carousel-image"
+                  src={color.picture ? color.picture : "/place-img"}
+                  height={500}
+                  width={500}
                   alt={color.name}
                 ></Image>
               </div>
