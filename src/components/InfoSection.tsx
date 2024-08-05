@@ -4,6 +4,7 @@ import { Collections } from "@/interfaces/collections.model";
 import SpecsSection from "./SpecsSection";
 import TechnicalDataSection from "./technicalDataSection";
 import resources from "@/../resources/resources2.json";
+import InstructionsSection from "./InstructionsSection";
 import DescriptionBanner from "./DescriptionBanner";
 const buttonGroup = [
   "description",
@@ -31,6 +32,8 @@ export const InfoSection = forwardRef(
             resource.name.toLowerCase().includes(collection.name.toLowerCase())
           );
           return <TechnicalDataSection resources={resource} />;
+        case "intructions":
+          return <InstructionsSection />;
         default:
           return <DescriptionBanner collection={collection} />;
       }
