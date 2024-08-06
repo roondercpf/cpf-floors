@@ -1,0 +1,50 @@
+.roomvo-img-container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    .roomvo-img{
+        width: 100% !important;
+        padding: 40px;
+        .scene{
+            height: 400px !important;
+            width: auto !important;
+            max-width: 100% !important;
+            margin: 0 auto;
+        }
+    }
+    .roomvo-buttons{
+        margin: 40px 0 !important;
+        background-color: none;
+        width: 100%;
+        button{
+            background-color: transparent;
+            border: none;
+            img{
+                height: 100px !important;
+                width: 130px;
+                margin: 0 20px !important;
+            }
+        }
+        button:active{
+            background-color: transparent !important;
+        }
+    }
+}
+
+@media(max-width: 1175px){
+    .roomvo-img-container{
+        .roomvo-img{
+            .scene{
+                height: 350px !important;
+            }
+        }
+        .roomvo-buttons{
+            button{
+                img{
+                    height: 80px !important;
+                }
+            }
+        }
+    }
+}
+

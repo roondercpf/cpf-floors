@@ -4,7 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
+import RoomvoImage from "@/components/RoomvoImage";
 import HomeBannerCarousel from "@/components/HomeBannerCarousel";
+import LogosCarousel from "@/components/LogosCarousel";
 
 import "@/app/sass/Home.scss";
 
@@ -14,59 +16,16 @@ function Home() {
       <>
         <div className="main-banner">
           <div className="main-banner-text">
-            <h1>Let&apos;s Click Together!</h1>
-            <p>The smartest flooring solution for all your renovation needs.</p>
-          </div>
-
-          <div className="contact-google-container flex flex-wrap justify-center items-center">
-            <Link href="/become-a-dealer">
-              <Image
-                className="mx-10"
-                src="/home/1.svg"
-                height={180}
-                width={180}
-                alt=""
-              ></Image>
-            </Link>
-            <Link href="/dealer-locator">
-              <Image
-                className="mx-10"
-                src="/home/2.svg"
-                height={180}
-                width={180}
-                alt=""
-              ></Image>
-            </Link>
-            <Link target="_blank" href="https://www.google.com/maps/place/CPF+Floors+-+Flooring+Distributors/@25.8349023,-80.322886,15z/data=!4m2!3m1!1s0x0:0xff0a55e7c993d600?sa=X&ved=1t:2428&ictx=111">
-              <Image
-                className="mx-10"
-                src="/home/3.svg"
-                height={170}
-                width={170}
-                alt=""
-              ></Image>
-            </Link>
-          </div>
-          <div className="main-banner-img">
-            <motion.img
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2 }}
-              src="/home/main-banner-img.png"
-              height={500}
-              width={500}
-              alt=""
-            ></motion.img>
+            <h1>Let&apos;s Click <br /> Together!</h1>
+            <p>The smartest flooring solution for all your <br /> renovation needs.</p>
+            <Link className="link-light" href="/collections">Get Started!</Link>
           </div>
         </div>
       </>
 
-
-      {/* <>
-        <div className="logos p-20 flex justify-center items-center w-100">
-          <Image src="/home/logos.svg" height={100} width={100} alt="" />
-        </div>
-      </> */}
+      <>
+        <LogosCarousel />
+      </>
 
       <>
         <motion.div
@@ -77,12 +36,7 @@ function Home() {
         >
           <div className="roomvo-section">
             <div className="roomvo-img">
-              <Image
-                src="/home/roomvo-section.png"
-                height={500}
-                width={500}
-                alt="CPF Floor LLC Roomvo Visualizer"
-              ></Image>
+              <RoomvoImage />
             </div>
             <div className="roomvo-text">
               <h2>Room Visualizer</h2>
@@ -109,8 +63,7 @@ function Home() {
         <div className="discover-section-container">
           <div className="discover">
             <div className="discover-text">
-              <h2 className="font-bold">Discover Resources</h2>
-              <h2>For Grow Your Business</h2>
+              <h2 className="font-bold"><b>Discover Resources</b><br />For Grow Your Business</h2>
               <p>
                 Gain a competitive edge and ignite revenue growth today. We
                 equip your dealer with powerful marketing tools that make CPF
@@ -121,12 +74,12 @@ function Home() {
               </Link>
             </div>
             <div className="discover-img">
-              <Image
+              <motion.img
                 src="/home/discover-img.png"
                 width={500}
                 height={500}
                 alt="Discover Section CPF Floors"
-              ></Image>
+              ></motion.img>
             </div>
           </div>
         </div>
@@ -164,14 +117,17 @@ function Home() {
             </div>
             <div className="available-accessories-container">
               <div className="available-accessories-div-one">
+                <motion.img src="/home/ac1.svg" width={400} height={400} alt=""></motion.img>
                 <h2>Steps</h2>
                 <Link href="/coresteps">View More</Link>
               </div>
               <div className="available-accessories-div-two">
+              <motion.img src="/home/ac2.svg" width={400} height={400} alt=""></motion.img>
                 <h2>Moldings</h2>
                 <Link href="/core-moldings">View More</Link>
               </div>
               <div className="available-accessories-div-three">
+              <motion.img src="/home/ac3.svg" width={400} height={400} alt=""></motion.img>
                 <h2>Underlayments</h2>
                 <Link href="/corepad">View More</Link>
               </div>
@@ -184,12 +140,12 @@ function Home() {
         <div className="deliver-section-container">
           <div className="deliver-section">
             <div className="deliver-img">
-              <Image
+              <motion.img
                 src="/home/deliver-img.png"
                 height={500}
                 width={500}
                 alt="CPF Floor LLC We deliver"
-              ></Image>
+              ></motion.img>
             </div>
             <div className="deliver-text">
               <h2>We Deliver Trust,</h2>
@@ -211,6 +167,7 @@ function Home() {
         <div className="rigid-core-container">
           <div className="rigid-core">
             <motion.img
+              className="plank"
               src="/plank.png"
               width={500}
               height={900}

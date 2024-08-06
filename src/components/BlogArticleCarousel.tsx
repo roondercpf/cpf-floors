@@ -31,15 +31,15 @@ export const BlogArticleCarousel = forwardRef( ({ blogs, ...props }: BlogArticle
     return (
       <div ref={ref}>
         <>
-          <div className="embla">
-            <div className="embla__viewport" ref={emblaRef}>
-              <div className="embla__container">
+          <div className="blog-article-carousel">
+            <div className="blog-article-carousel__viewport" ref={emblaRef}>
+              <div className="blog-article-carousel__container">
                 
                   {blogs ? (
                     <>
                       {blogs.map((blog) => {
                         return (
-                          <div key={blog._id} className="embla__slide">
+                          <div key={blog._id} className="blog-article-carousel__slide">
                             <div className="blog-article-slide">
                             <Image
                               src={blog.featured_image}
@@ -71,7 +71,7 @@ export const BlogArticleCarousel = forwardRef( ({ blogs, ...props }: BlogArticle
 
             <div className="blog-carousel-buttons">
               <button
-                className="embla__prev blog-carousel-prev"
+                className="blog-carousel-prev"
                 onClick={scrollPrev}
               >
                 <Image
@@ -82,7 +82,7 @@ export const BlogArticleCarousel = forwardRef( ({ blogs, ...props }: BlogArticle
                 ></Image>
               </button>
               <button
-                className="embla__next blog-carousel-next"
+                className="blog-carousel-next"
                 onClick={scrollNext}
               >
                 <Image
