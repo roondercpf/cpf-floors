@@ -10,10 +10,11 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: start;
-        border-bottom: 2px solid #797979;
+        border-bottom: 1px solid #f0f0f0;
         padding: 40px;
         z-index: 90;
         background-color: white;
+        margin-bottom: 40px;
         .footer-container-social{
             display: flex;
             flex-direction: column;

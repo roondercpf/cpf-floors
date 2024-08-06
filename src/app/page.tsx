@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
+import RoomvoImage from "@/components/RoomvoImage";
 import HomeBannerCarousel from "@/components/HomeBannerCarousel";
 import LogosCarousel from "@/components/LogosCarousel";
 
@@ -35,12 +36,7 @@ function Home() {
         >
           <div className="roomvo-section">
             <div className="roomvo-img">
-              <motion.img
-                src="/home/roomvo-section.png"
-                height={500}
-                width={500}
-                alt="CPF Floor LLC Roomvo Visualizer"
-              ></motion.img>
+              <RoomvoImage />
             </div>
             <div className="roomvo-text">
               <h2>Room Visualizer</h2>
