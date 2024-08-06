@@ -24,18 +24,16 @@ const HomeBannerCarousel = () => {
 
   return (
     <>
-      <div className="embla home-banner-carousel-container">
-        <div className="embla__viewport" ref={emblaRef}>
-          <div className="embla__container">
-            <div className="embla__slide home-carousel-slide">
+      <div className="home-banner-carousel-container">
+        <div className="embla__viewport home-banner-carousel__viewport" ref={emblaRef}>
+          <div className="home-banner-carousel__container">
+            
+            <div className="home-carousel__slide">
               <div className="home-slide-one">
                 <div className="content">
-                  <h2>Inspire Black</h2>
-                  <h3>Edition Collection</h3>
+                  <h2><b>Inspire Black</b><br />Edition Collection</h2>
                   <p>
-                    The collection that perfectly blends the resilience of
-                    waterproof rigid core vinyl with the serene hues of natural
-                    and rich wood landscapes.
+                    The collection that perfectly blends the resilience of waterproof rigid core vinyl with the serene hues of natural and rich wood landscapes.
                   </p>
                   <Link className="link-light" href="#">
                     See More!
@@ -43,59 +41,7 @@ const HomeBannerCarousel = () => {
                 </div>
               </div>
             </div>
-
-            <div className="embla__slide home-carousel-slide">
-              <div className="home-slide-two">
-                <div className="content">
-                  <h2>Spirit XL</h2>
-                  <h3>Collection</h3>
-                  <p>
-                    The collection that perfectly blends the resilience of
-                    waterproof rigid core vinyl with the serene hues of natural
-                    and rich wood landscapes.
-                  </p>
-                  <Link className="link-light" href="#">
-                    See More!
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-
-            <div className="embla__slide home-carousel-slide">
-              <div className="home-slide-six">
-                <div className="content">
-                  <h2>Alpha 22</h2>
-                  <h3>Collection</h3>
-                  <p>
-                    The collection that perfectly blends the resilience of
-                    waterproof rigid core vinyl with the serene hues of natural
-                    and rich wood landscapes.
-                  </p>
-                  <Link className="link-light" href="#">
-                    See More!
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-
-            <div className="embla__slide home-carousel-slide">
-              <div className="home-slide-three">
-                <div className="content">
-                  <h2>Project 2.0</h2>
-                  <h3>Collection</h3>
-                  <p>
-                    The collection that perfectly blends the resilience of
-                    waterproof rigid core vinyl with the serene hues of natural
-                    and rich wood landscapes.
-                  </p>
-                  <Link className="link-light" href="#">
-                    See More!
-                  </Link>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
 
