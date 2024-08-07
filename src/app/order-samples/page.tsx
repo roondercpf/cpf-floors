@@ -1,25 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-// Components
-import { OrderSampleColors } from "@/components/list/OrderSampleColors";
-// Types
-import { CollectionResponse } from "@/interfaces/collections.model";
-// Utils
-import { FRONTEND } from "@/utils/env";
+
 
 import "@/app/sass/OrderSample.scss";
 
-async function OrderSample() {
+export default function OrderSample() {
 
-    const res = await fetch(`${FRONTEND}/api/collections`, {
-        cache: "no-cache",
-        next: {
-            revalidate: 300e3,
-        },
-    });
-
-    const data: CollectionResponse = await res.json();
+;
 
   return (
     <>
@@ -45,11 +33,9 @@ async function OrderSample() {
         </div>
       </div>
 
-      <OrderSampleColors collections={data?.collections ? data.collections : []} />
+     
 
 
     </>
   );
 }
-
-export default OrderSample;

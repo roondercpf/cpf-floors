@@ -41,6 +41,48 @@ const HomeBannerCarousel = () => {
                 </div>
               </div>
             </div>
+
+            <div className="home-carousel__slide">
+              <div className="home-slide-two">
+                <div className="content">
+                  <h2><b>Deco54</b><br />Collection</h2>
+                  <p>
+                    The collection that perfectly blends the resilience of waterproof rigid core vinyl with the serene hues of natural and rich wood landscapes.
+                  </p>
+                  <Link className="link-light" href="#">
+                    See More!
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="home-carousel__slide">
+              <div className="home-slide-three">
+                <div className="content">
+                  <h2><b>Project 2.0</b><br />Collection</h2>
+                  <p>
+                    The collection that perfectly blends the resilience of waterproof rigid core vinyl with the serene hues of natural and rich wood landscapes.
+                  </p>
+                  <Link className="link-light" href="#">
+                    See More!
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="home-carousel__slide">
+              <div className="home-slide-four">
+                <div className="content">
+                  <h2><b>Decotile</b><br />Collection</h2>
+                  <p>
+                    The collection that perfectly blends the resilience of waterproof rigid core vinyl with the serene hues of natural and rich wood landscapes.
+                  </p>
+                  <Link className="link-light" href="#">
+                    See More!
+                  </Link>
+                </div>
+              </div>
+            </div>
             
           </div>
         </div>

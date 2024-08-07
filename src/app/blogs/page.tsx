@@ -53,14 +53,14 @@ async function Blogs() {
             {blogs.map((blog) => {
               return (
                 <div key={blog._id} className="blog-card">
-                  <Image
+                  <img
                     src={blog.featured_image}
                     alt={blog.title}
                     width={200}
                     height={200}
                   />
                   <h2>{blog.title}</h2>
-                  <h3>{blog.subtitle}</h3>
+                  <p>{blog.subtitle}</p>
                   <Link className="link-dark" href={`/blogs/${blog._id}`}>
                     {"Read More"}
                   </Link>

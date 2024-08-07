@@ -6,7 +6,7 @@ export default function RoomvoImage() {
   return (
     <>
       <div className="roomvo-img-container flex justify-center items-center">
-        <Tabs defaultValue="roomvo">
+        <Tabs defaultValue="scene-1">
           <div className="roomvo-img">
             <TabsContent value="scene-1">
               <Image className="scene" src="/home/s1.png" height={400} width={400} alt=""></Image>

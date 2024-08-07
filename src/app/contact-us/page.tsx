@@ -75,7 +75,7 @@ function ContactUs() {
               <h2>Locate Us</h2>
               <p>
                 Visit our showroom to browse our extensive selection of flooring
-                options, get expert advice from our professional staff, and
+                options, get expert <br /> advice from our professional staff, and
                 experience the CPF Floors difference firsthand.
               </p>
 
