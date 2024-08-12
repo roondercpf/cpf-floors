@@ -31,11 +31,11 @@ const ReviewsCarousel = () => {
               <div className="reviews-slide-carousel">
                 <div className="content flex justify-center items-start flex-col">
                   <div className="name flex flex-col items-start">
-                    <h2>Name</h2>
+                    <h2>JM Ferrer</h2>
                     <Image src="/about/star.svg" height={40} width={40} alt=""></Image>
                   </div>
                   <div className="comment">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque officia dolorem ullam, omnis veniam, tempore repudiandae pariatur cumque magni rerum non! Aspernatur distinctio a, similique eaque eveniet excepturi repellendus, labore ad tenetur beatae praesentium facilis hic placeat saepe dolores ducimus!</p>
+                    <p>Excellent company, excellent quality products, very professional, Mario, Javier & Esteban always willing to seek excellence...highly recommended</p>
                   </div>
                 </div>
               </div>
@@ -45,11 +45,11 @@ const ReviewsCarousel = () => {
               <div className="reviews-slide-carousel">
                 <div className="content flex justify-center items-start flex-col">
                   <div className="name flex flex-col items-start">
-                    <h2>Name</h2>
+                    <h2>Walter Salas</h2>
                     <Image src="/about/star.svg" height={40} width={40} alt=""></Image>
                   </div>
                   <div className="comment">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque officia dolorem ullam, omnis veniam, tempore repudiandae pariatur cumque magni rerum non! Aspernatur distinctio a, similique eaque eveniet excepturi repellendus, labore ad tenetur beatae praesentium facilis hic placeat saepe dolores ducimus!</p>
+                    <p>CPF Floors services are simply exceptional. With a stunning range of styles and colors, they offer something for every home decor. The personalized attention and speed of delivery are remarkable. The CPF team ensures meticulous work, resulting in impeccable floors. Highly recommended!</p>
                   </div>
                 </div>
               </div>
@@ -59,11 +59,39 @@ const ReviewsCarousel = () => {
               <div className="reviews-slide-carousel">
                 <div className="content flex justify-center items-start flex-col">
                   <div className="name flex flex-col items-start">
-                    <h2>Name</h2>
+                    <h2>Derek Clobes</h2>
                     <Image src="/about/star.svg" height={40} width={40} alt=""></Image>
                   </div>
                   <div className="comment">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque officia dolorem ullam, omnis veniam, tempore repudiandae pariatur cumque magni rerum non! Aspernatur distinctio a, similique eaque eveniet excepturi repellendus, labore ad tenetur beatae praesentium facilis hic placeat saepe dolores ducimus!</p>
+                    <p>They went above and beyond to ensure my client was moving in onto new flooring..Communication was clear. The product looks amazing. The installer is excited to work with the product in the future and I have peace of mind knowing that it is well built and a conscientious team backs it up.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="reviews-carousel__slide">
+              <div className="reviews-slide-carousel">
+                <div className="content flex justify-center items-start flex-col">
+                  <div className="name flex flex-col items-start">
+                    <h2>Nelson Martínez</h2>
+                    <Image src="/about/star.svg" height={40} width={40} alt=""></Image>
+                  </div>
+                  <div className="comment">
+                    <p>Top of the line materials with the Best customer service we are grateful for all the support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="reviews-carousel__slide">
+              <div className="reviews-slide-carousel">
+                <div className="content flex justify-center items-start flex-col">
+                  <div className="name flex flex-col items-start">
+                    <h2>Joel Freitas</h2>
+                    <Image src="/about/star.svg" height={40} width={40} alt=""></Image>
+                  </div>
+                  <div className="comment">
+                    <p>Muy profesionales, conseguimos un piso extraordinario para nuestras oficinas!</p>
                   </div>
                 </div>
               </div>
