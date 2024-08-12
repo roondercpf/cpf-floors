@@ -64,7 +64,7 @@ async function Blogs() {
             {blogs.map((blog) => {
               return (
                 <div key={blog._id} className="blog-card">
-                  <Image
+                  <img
                     src={blog.featured_image}
                     alt={blog.title}
                     width={200}
