@@ -1,5 +1,5 @@
 "use client";
-import { ReactNode, useRef, useState } from "react";
+import { ReactNode, useRef, useState, useMemo } from "react";
 import DealerMap, {
   Marker,
   Popup,
@@ -9,14 +9,16 @@ import DealerMap, {
   ScaleControl,
   Source,
   Layer,
+  MapRef,
 } from "react-map-gl";
+
 import { Dealerlocator } from "@/interfaces/dealer-locator.model";
 import { getCenter } from "geolib";
 import GeocoderControl from "./Geocoder-control";
 import "@/app/mapbox-gl.css";
-import { Result } from "postcss";
 import Image from "next/image";
 import Link from "next/link";
+import { DealerSearchInput } from "./search/DealerSearchInput";
 
 import "@/app/sass/DealerLocatorForm.scss";
 
@@ -26,7 +28,10 @@ interface MapProps {
 }
 
 export const Map = ({ data, ...props }: MapProps) => {
+  const mapRef = useRef<MapRef | null>(null);
   const [selectedDealer, setSelectedDealer] = useState<Dealerlocator | null>();
+  const [selectInput, setSelectInput] = useState<string>("");
+
   if (data.length === 0) {
     return <div>No dealers found</div>;
   }
@@ -40,8 +45,25 @@ export const Map = ({ data, ...props }: MapProps) => {
     }))
   );
 
+  const filterDealer = useMemo(() => {
+    if (selectInput.length === 0) return;
+
+    const dealerFilter = data.filter(
+      (dealer) =>
+        dealer.city.toLowerCase().includes(selectInput.toLowerCase()) ||
+        `${dealer.postal_code}`.includes(selectInput) ||
+        dealer.title.toLowerCase().includes(selectInput.toLowerCase()) ||
+        dealer.street.toLowerCase().includes(selectInput.toLowerCase()) ||
+        dealer.website.toLowerCase().includes(selectInput.toLowerCase()) ||
+        dealer.email.toLowerCase().includes(selectInput.toLowerCase())
+    );
+    if (!dealerFilter) return;
+
+    return dealerFilter
+  }, [selectInput]);
+
   return (
-    <div className="map-container">
+    <div className="map-container gap-5">
       {/* <div className="map-container-bar">
           <div className="map-title-bar text-center">
             <Image
@@ -60,7 +82,14 @@ export const Map = ({ data, ...props }: MapProps) => {
             />
           </div>
         </div> */}
+      <DealerSearchInput
+        filterDealer={filterDealer}
+        mapRef={mapRef}
+        setSelectInput={setSelectInput}
+        setSelectedDealer={setSelectedDealer}
+      />
       <DealerMap
+        ref={mapRef}
         mapboxAccessToken={`${process.env.NEXT_PUBLIC_ACCESSTOKEN}`}
         mapStyle={"mapbox://styles/kevyuppie/clyrfqie902ej01p88zlb82xz"}
         initialViewState={{
@@ -89,7 +118,15 @@ export const Map = ({ data, ...props }: MapProps) => {
               anchor="bottom"
               offsetTop={-20}
               offsetLeft={-7}
-              onClick={() => setSelectedDealer(dealer)}
+              onClick={() => {
+                setSelectedDealer(dealer);
+                mapRef.current?.flyTo({
+                  center: [dealer.lng, dealer.lat],
+                  duration: 1800,
+                  zoom: 8,
+                  maxZoom: 4,
+                });
+              }}
             >
               {dealer.lng === selectedDealer?.lng &&
               dealer.lat === selectedDealer?.lat ? (
@@ -112,19 +149,25 @@ export const Map = ({ data, ...props }: MapProps) => {
                     <h3>{dealer.title}</h3>
                     <p>{dealer.description}</p>
                     <p className="capitalize">
-                      <b>Street:</b> 
+                      <b>Street:</b>
                       {" " + dealer.city}, {dealer.state} {dealer.postal_code}{" "}
                       {dealer.street}
                     </p>
-                    <p><b>Phone:</b>{
-                      dealer.phone ? " " + dealer.phone: "Not Available" 
-                    }</p>
-                    <p><b>Email:</b>{
-                      dealer.email ? " " + dealer.email : " Not Available" 
-                    }</p>
+                    <p>
+                      <b>Phone:</b>
+                      {dealer.phone ? " " + dealer.phone : "Not Available"}
+                    </p>
+                    <p>
+                      <b>Email:</b>
+                      {dealer.email ? " " + dealer.email : " Not Available"}
+                    </p>
 
-                    
-                    <Link target="_blank" href={dealer.website ? " " + dealer.website: "Not"}>Website</Link>
+                    <Link
+                      target="_blank"
+                      href={dealer.website ? " " + dealer.website : "Not"}
+                    >
+                      Website
+                    </Link>
                   </div>
                 </Popup>
               ) : null}
