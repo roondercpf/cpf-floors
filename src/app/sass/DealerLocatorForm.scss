@@ -2,7 +2,6 @@
     width: 100%;
     border-radius: 18px;
     padding: 20px !important;
-    padding-top: 80px !important;
     display: flex !important;
     flex-direction: row !important; 
     height: auto !important;
@@ -63,7 +62,7 @@ p{
 .mapboxgl-popup-content{
     border-radius: 18px !important;
     padding: 20px!important;
-    height: 250px !important;
+    height: auto !important;
     width: 400px !important;
     font-family: 'montserrat';
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
