@@ -59,36 +59,30 @@ export const Map = ({ data, ...props }: MapProps) => {
     );
     if (!dealerFilter) return;
 
-    return dealerFilter
+    return dealerFilter;
   }, [selectInput]);
 
   return (
     <div className="map-container gap-5">
-      {/* <div className="map-container-bar">
-          <div className="map-title-bar text-center">
-            <Image
-              className="mb-10"
-              src="/footer-logo.svg"
-              height={150}
-              width={150}
-              alt="CPF Logo"
-            ></Image>
-            <h2>Find your Nearest Dealer</h2>
-            <input
-              placeholder="Enter your dealer Name"
-              type="search"
-              name="dealer"
-              id="dealer"
-            />
-          </div>
-        </div> */}
-      <DealerSearchInput
-        filterDealer={filterDealer}
-        mapRef={mapRef}
-        setSelectInput={setSelectInput}
-        setSelectedDealer={setSelectedDealer}
-      />
-      <DealerMap
+      <div className="map-container-bar">
+        <div className="map-title-bar text-center">
+          <Image
+            className="mb-10"
+            src="/footer-logo.svg"
+            height={150}
+            width={150}
+            alt="CPF Logo"
+          ></Image>
+          <h2>Find your Nearest Dealer</h2>
+          <DealerSearchInput
+            filterDealer={filterDealer}
+            mapRef={mapRef}
+            setSelectInput={setSelectInput}
+            setSelectedDealer={setSelectedDealer}
+          />
+        </div>
+
+        <DealerMap
         ref={mapRef}
         mapboxAccessToken={`${process.env.NEXT_PUBLIC_ACCESSTOKEN}`}
         mapStyle={"mapbox://styles/kevyuppie/clyrfqie902ej01p88zlb82xz"}
@@ -175,6 +169,9 @@ export const Map = ({ data, ...props }: MapProps) => {
           );
         })}
       </DealerMap>
+      </div>
+
+      
     </div>
   );
 };

@@ -26,7 +26,7 @@ async function DealerLocator() {
             <div className="sample-board-text">
             <DealerLocatorForm />
             </div>
-            <div className="sample-board-img">
+            <div className="dealer-locator-img sample-board-img">
               <Image
                 src="/display-resources/rack-1.svg"
                 height={200}

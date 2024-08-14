@@ -17,24 +17,32 @@ function Footer() {
             height={100}
           ></Image>
           <div className="social-icons">
-            <Image
-              src="/instagram.svg"
-              height={20}
-              width={20}
-              alt="CPF Floors Instagram"
-            ></Image>
-            <Image
-              src="/linkedin.svg"
-              height={20}
-              width={20}
-              alt="CPF Floors LinkedIn"
-            ></Image>
-            <Image
-              src="/pinterest.svg"
-              height={20}
-              width={20}
-              alt="CPF Floors Pinterest"
-            ></Image>
+            <Link target="_blank" href="https://www.instagram.com/cpf_floors/">
+              <Image
+                src="/instagram.svg"
+                height={20}
+                width={20}
+                alt="CPF Floors Instagram"
+              ></Image>
+            </Link>
+
+            <Link target="_blank" href="https://www.linkedin.com/company/cpf-floors-llc">
+              <Image
+                src="/linkedin.svg"
+                height={20}
+                width={20}
+                alt="CPF Floors LinkedIn"
+              ></Image>
+            </Link>
+
+            <Link target="_blank" href="https://www.pinterest.com/cpf_floors/">
+              <Image
+                src="/pinterest.svg"
+                height={20}
+                width={20}
+                alt="CPF Floors Pinterest"
+              ></Image>
+            </Link>
           </div>
         </div>
         <div className="footer-container-links">

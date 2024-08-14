@@ -1,3 +1,43 @@
+.map-container-bar{
+    width: 100%;
+    border-radius: 18px;
+    padding: 20px !important;
+    padding-top: 80px !important;
+    display: flex !important;
+    flex-direction: row !important; 
+    height: auto !important;
+    .map-title-bar{
+        width: 40%;
+        padding: 20px;
+        height: 800px !important;
+        .dealer-search-container{
+            margin-bottom: 60px;
+            .search-dealer-input-container{
+                width: 100%;
+                margin: 0 auto;
+                margin-bottom: 40px;
+                .search-dealer-input{
+                    width: 100% !important;
+                    border: none;
+                }
+            }
+            .search-button{
+                background-color: #1f1f1f;
+                border-radius: 12px;
+            }
+            .scroll-area{
+                border: 1px solid rgb(235, 235, 235);
+                margin-bottom: 60px !important;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+                .scroll-div-area:hover{
+                    background-color: rgb(209, 209, 209);
+                }
+            }
+        }
+    }
+}
+
+
 form{
     display: flex;
     flex-direction: column;
@@ -52,9 +92,11 @@ p{
 }
 
 .map-container{
+    height: auto;
     margin-top: 0 !important;
     padding: 40px !important;
     border-radius: 18px;
+    padding-bottom: 20px !important;
     box-shadow: none !important;
     h2{
         font-size: 60px;
@@ -68,19 +110,36 @@ p{
 .mapboxgl-canvas-container{
     border: none !important;
     border-radius: 18px;
+    margin-top: 60px !important;
 }
 .mapboxgl-canvas{
     border-radius: 18px;
     border: none in !important;
+    width: 100% !important;
 }
-
+.mapboxgl-ctrl-geocoder--icon{
+    display: none !important;
+}
 /*MEDIA QUERIES*/
 
-@media(max-width: 1175px){
+
+
+@media(max-width: 1176px){
     .map-container{
         margin-top: 120px !important;
+        padding: 10px !important;
+        .map-container-bar{
+            flex-direction: column !important;
+            .map-title-bar{
+                width: 100%;
+                height: auto !important;
+            }
+        }
     }
     .mapboxgl-map{
         margin: 0 auto !important;
+    }
+    .mapboxgl-canvas{
+        width: 100% !important;
     }
 }
