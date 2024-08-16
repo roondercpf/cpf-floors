@@ -201,13 +201,14 @@
     }
   }
   .available-accessories-container {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 40px 20px;
+    padding: 0;
     .available-accessories-div-one {
       position: relative;
       height: 240px;
@@ -219,7 +220,7 @@
       flex-direction: column;
       justify-content: end;
       align-items: center;
-      margin: 60px 40px;
+      margin: 60px 20px;
       img{
         position: absolute;
         top: -20%;

@@ -116,6 +116,18 @@ function Coresteps() {
           </div>
         </div>
 
+        <div className="brochure-2">
+          <div className="brochure-banner-container-2">
+            <div className="brochure-card-2 flex justify-center items-center flex-col">
+              <h2>Install Yourself</h2>
+              <p>
+                Get the installation manual to <br /> install your own product.
+              </p>
+              <Link className="link-coresteps" href="/document-center">Download</Link>
+            </div>
+          </div>
+        </div>
+
       </>
 
       <>
@@ -154,7 +166,7 @@ function Coresteps() {
         <div className="last-banner-container">
           <div className="last-banner">
             <h2>Become a Dealer</h2>
-            <h3>Transform Your Spaces with Style</h3>
+            <h3>& Transform Your Spaces with Style</h3>
             <Link className="link-coresteps" href="/become-a-dealer">
               Become a Dealer
             </Link>
