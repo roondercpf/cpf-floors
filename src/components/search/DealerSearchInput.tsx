@@ -30,12 +30,22 @@ export const DealerSearchInput = forwardRef(
   ) => {
     return (
       <div className="dealer-search-container" ref={ref}>
-        <form className="h-auto flex justify-center items-center">
+        <form
+          className="h-auto flex justify-center items-center"
+          onSubmit={(e) => {
+            e.preventDefault();
+            if (filterDealer && filterDealer.length > 0) {
+              const item = filterDealer[0];
+              setSelectedDealer(item);
+            }
+          }}
+        >
           <div className="search-dealer-input-container flex justify-between rounded-md bg-white shadow shadow-black/20">
             <input
               type="text"
               className="search-dealer-input block w-full flex-1 px-3 py-2 focus:outline-none"
               placeholder="Search your dealer..."
+              name="search"
               onChange={(e) => setSelectInput(e.target.value)}
             />
             <span className="search-button m-1 inline-flex cursor-pointer items-center px-4 py-4">
@@ -49,16 +59,16 @@ export const DealerSearchInput = forwardRef(
                 <path
                   d="M7.66652 14.333C11.3483 14.333 14.333 11.3483 14.333 7.66652C14.333 3.9847 11.3483 1 7.66652 1C3.9847 1 1 3.9847 1 7.66652C1 11.3483 3.9847 14.333 7.66652 14.333Z"
                   stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M15.9999 16L12.375 12.3751"
                   stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </span>
