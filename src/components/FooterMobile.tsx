@@ -24,7 +24,7 @@ export default function FooterMobile() {
             ></Image>
           </Link>
           <div className="footer-icons flex">
-            <Link href="#">
+            <Link href="https://www.instagram.com/cpf_floors/">
               <Image
                 className="mx-4"
                 src="/instagram.svg"
@@ -33,7 +33,7 @@ export default function FooterMobile() {
                 alt="CPF Floors logo"
               ></Image>
             </Link>
-            <Link href="#">
+            <Link href="https://www.pinterest.com/cpf_floors/">
               <Image
                 className="mx-4"
                 src="/pinterest.svg"
@@ -42,7 +42,7 @@ export default function FooterMobile() {
                 alt="CPF Floors logo"
               ></Image>
             </Link>
-            <Link href="#">
+            <Link href="https://www.linkedin.com/company/cpf-floors-llc">
               <Image
                 className="mx-4"
                 src="/linkedin.svg"

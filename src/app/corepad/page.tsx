@@ -29,7 +29,7 @@ function Corepad() {
           </div>
           <div className="main-banner-img">
             <Image
-              src="/corepad/main-banner-img.svg"
+              src="/corepad/main-banner-img.png"
               height={300}
               width={300}
               alt="Corepad logo"
@@ -41,12 +41,12 @@ function Corepad() {
       <>
         <div className="quiet-section-container">
           <div className="quiet-section-img">
-            <Image
+            <img
               src="/corepad/child.png"
               height={300}
               width={300}
               alt="Corepad logo"
-            ></Image>
+            ></img>
           </div>
           <div className="quiet-section-text">
             <h2>The Be Quiet Pad!</h2>

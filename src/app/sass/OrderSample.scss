@@ -6,26 +6,29 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-image: url("/document-center/main-banner.png");
+    background-image: url("/order-sample/order-sample-img.png");
+    background-color: rgb(73, 73, 73);
     background-size: cover;
     margin-top: 20px;
-    padding: 80px;
+    padding: 80px 120px;
     .order-img{
         width: 50%;
         img{
             margin: 0 auto;
-            width: 70%;
+            width: 100%;
         }
     }
     .order-text{
         width: 50%;
         color: white;
         h2{
-            font-size: 50px;
-            font-weight: 600;
+            font-size: 45px;
+            font-weight: 700;
         }
         h3{
-            font-size: 45px;
+            font-size: 30px;
+            margin: 25px 0;
+            font-weight: 600;
         }
         p{
             margin-bottom: 40px;
@@ -36,42 +39,65 @@
 
     }
 }
-.input-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .order-input{
-        width: 95%;
-        margin: 40px auto !important;
-        padding: 20px;
-        border-radius: 12px;
-    }
-}
-.dropdown-container{
+
+
+.order-title-container{
     width: 100%;
-    padding: 40px;
-    font-size: 20px;
-}
-.samples-container{
-    width: 100%;
-    .sample-card{
-        margin: 30px;
+    padding: 80px;
+    .order-title{
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        img{
-            height: 350px;
-            width: 350px;
-        }
         h3{
-            font-size: 25px;
-            margin-top: 20px;
+            font-size: 45px;
             font-weight: 600;
         }
         p{
-            font-size: 18px;
+            font-size: 35px;
+            margin: 25px 0;
+        }
+    }
+    .order-cards-container{
+        width: 100%;
+        padding: 20px;
+        .order-card{
+            width: 25%;
+            text-align: center;
+            margin: 40px;
+            img{
+                height: 100%;
+                width: 80%;
+                margin: 0 auto;
+                border-radius: 18px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            h3{
+                font-size: 30px;
+                font-weight: 600;
+                margin: 25px 0;
+            }
+        }
+    }
+}
+
+.order-last-banner-container{
+    padding: 80px;
+    width: 100%;
+    .last-banner-container{
+        height: 70vh;
+        width: 100%;
+        text-align: center;
+        background-image: url("/order-sample/last-banner.png");
+        border-radius: 24px;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        h3{
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: px;
+        }
+        p{
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 35px;
         }
     }
 }
@@ -92,13 +118,51 @@
         .order-text{
             width: 100%;
             text-align: center;
+            margin-bottom: 45px;
             h2{
-                font-size: 30px;
-                margin-bottom: 20px;
+                font-size: 45px;
+                margin-bottom: 15px;
+                line-height: 50px;
             }
             h3{
-                font-size: 20px;
+                font-size: 30px;
                 margin-bottom: 40px;
+            }
+        }
+    }
+
+    .order-title-container{
+        padding: 80px 20px;
+        .order-title{
+            h3{
+                font-size: 40px;
+            }
+            p{
+                font-size: 30px;
+            }
+        }
+        .order-cards-container{
+            padding: 20px;
+            .order-card{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .order-last-banner-container{
+        padding: 20px;
+        .last-banner-container{
+            background-position: bottom;
+            padding: 20px;
+            h3{
+                font-size: 40px;
+            }
+            p{
+                font-size: 25px;
             }
         }
     }

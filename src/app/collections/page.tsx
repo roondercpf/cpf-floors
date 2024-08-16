@@ -1,6 +1,9 @@
+"use client"
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import "@/app/sass/CollectionsCategories.scss";
 
@@ -10,12 +13,12 @@ function CollectionsCategories() {
       <div className="categories-container">
         <div className="category-card flex flex-col justify-between">
           <div className="img-title">
-            <Image
+            <motion.img
               src="/collections-categories/vinyl.png"
               height={200}
               width={200}
               alt="CPF Floors Categories"
-            ></Image>
+            ></motion.img>
             <h2>Rigid Core Vinyl</h2>
           </div>
           <div className="description">
@@ -31,12 +34,12 @@ function CollectionsCategories() {
 
         <div className="category-card flex flex-col justify-between">
           <div className="img-title">
-            <Image
+            <motion.img
               src="/collections-categories/laminate.png"
               height={200}
               width={200}
               alt="CPF Floors Categories"
-            ></Image>
+            ></motion.img>
             <h2>Laminate</h2>
           </div>
           <div className="description">
@@ -53,12 +56,12 @@ function CollectionsCategories() {
 
         <div className="category-card flex flex-col justify-between">
           <div className="img-title">
-            <Image
+            <motion.img
               src="/collections-categories/baseboards.png"
               height={200}
               width={200}
               alt="CPF Floors Categories"
-            ></Image>
+            ></motion.img>
             <h2>Baseboards</h2>
           </div>
           <div className="description">
@@ -74,12 +77,12 @@ function CollectionsCategories() {
 
         <div className="category-card flex flex-col justify-between">
           <div className="img-title">
-            <Image
+            <motion.img
               src="/collections-categories/steps.png"
               height={200}
               width={200}
               alt="CPF Floors Categories"
-            ></Image>
+            ></motion.img>
             <h2>Steps</h2>
           </div>
           <div className="description">
@@ -95,12 +98,12 @@ function CollectionsCategories() {
 
         <div className="category-card flex flex-col justify-between">
           <div className="img-title">
-            <Image
+            <motion.img
               src="/collections-categories/underlayment.png"
               height={200}
               width={200}
               alt="CPF Floors Categories"
-            ></Image>
+            ></motion.img>
             <h2>Underlayment</h2>
           </div>
           <div className="description">

@@ -1,16 +1,24 @@
-
-
 import type { Metadata } from "next";
 import { FRONTEND } from "@/utils/env";
 import { BlogsResponse } from "@/interfaces/blogs.model";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination";
 
 import "@/app/sass/Blogs.scss";
 
 export const metadata: Metadata = {
-  title: "Blogs",
+  title: "Blog",
   description: "CPF Floors - Blogs",
 };
 
@@ -47,20 +55,23 @@ async function Blogs() {
           </div>
         </div>
       </>
+
+      {/*BLOG ARTICLES */}
+
       <div className="blog-card-container">
         {blogs ? (
           <>
             {blogs.map((blog) => {
               return (
                 <div key={blog._id} className="blog-card">
-                  <Image
+                  <img
                     src={blog.featured_image}
                     alt={blog.title}
                     width={200}
                     height={200}
                   />
                   <h2>{blog.title}</h2>
-                  <h3>{blog.subtitle}</h3>
+                  <p>{blog.subtitle}</p>
                   <Link className="link-dark" href={`/blogs/${blog._id}`}>
                     {"Read More"}
                   </Link>
@@ -73,7 +84,27 @@ async function Blogs() {
             <h2>Not Found</h2>
           </>
         )}
+
+        <Pagination>
+          <PaginationContent>
+            <PaginationItem>
+              <PaginationPrevious href="#" />
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#">1</PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationEllipsis />
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationNext href="#" />
+            </PaginationItem>
+          </PaginationContent>
+        </Pagination>
+
+
       </div>
+
       <div className="bluetape-become-container">
         <div className="bluetape-become">
           <h2>Become a Dealer</h2>

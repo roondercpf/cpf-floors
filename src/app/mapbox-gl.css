@@ -222,6 +222,15 @@
     box-shadow: none;
 }
 
+.mapboxgl-ctrl button.mapboxgl-ctrl-geolocate .mapboxgl-ctrl-icon {
+    background-image: url("/svg/mapboxgl-ctrl-geolocate.svg");
+}
+.mapboxgl-ctrl button.mapboxgl-ctrl-compass .mapboxgl-ctrl-icon {
+    background-image: url("/svg/mapboxgl-ctrl-compass.svg");
+}
+
+
+
 .mapboxgl-ctrl button.mapboxgl-ctrl-zoom-out .mapboxgl-ctrl-icon {
     background-image: url("/svg/mapboxgl-ctrl-zoom-out.svg");
 }
