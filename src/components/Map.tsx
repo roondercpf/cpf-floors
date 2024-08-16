@@ -32,19 +32,6 @@ export const Map = ({ data, ...props }: MapProps) => {
   const [selectedDealer, setSelectedDealer] = useState<Dealerlocator | null>();
   const [selectInput, setSelectInput] = useState<string>("");
 
-  if (data.length === 0) {
-    return <div>No dealers found</div>;
-  }
-
-  //const markerRef = useRef<mapboxgl.Marker>();
-
-  const center = getCenter(
-    data.map((dealer) => ({
-      latitude: dealer.lat,
-      longitude: dealer.lng,
-    }))
-  );
-
   const filterDealer = useMemo(() => {
     if (selectInput.length === 0) return;
 
@@ -60,7 +47,24 @@ export const Map = ({ data, ...props }: MapProps) => {
     if (!dealerFilter) return;
 
     return dealerFilter;
-  }, [selectInput]);
+  
+  }, [selectInput,data]);
+
+  if (data.length === 0) {
+    return <div>No dealers found</div>;
+  }
+
+  //const markerRef = useRef<mapboxgl.Marker>();
+
+  const center = getCenter(
+    data.map((dealer) => ({
+      latitude: dealer.lat,
+      longitude: dealer.lng,
+    }))
+  );
+
+  
+  
 
   return (
     <div className="map-container gap-5">
