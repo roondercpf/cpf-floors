@@ -10,8 +10,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import "@/app/sass/CollectionProfile.scss";
 import "@/app/sass/Financing.scss";
 
-import CollectionPlanksCarousel from "@/components/CollectionPlanksCarousel";
-
 async function CollectionsID({
   params: { collection_id },
 }: {
@@ -171,7 +169,7 @@ async function CollectionsID({
         </div>
       </div>
 
-      {/* <InfoSection collection={collection} />
+      <InfoSection collection={collection} />
 
       <div className="most-main-banner">
         <h2>More collection also viewed</h2>
@@ -209,7 +207,7 @@ async function CollectionsID({
             Contact Now!
           </Link>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
