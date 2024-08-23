@@ -253,8 +253,9 @@ function Header() {
               ></Image>
             </Link>
           </div>
-
-          <div className="menu-bar" onClick={() => setMobileNav(!mobileNav)}>
+          <Link href="" className="link-dark mx-5 py-1 px-8">Become a Dealer</Link>
+          <div className="menu-bar flex" onClick={() => setMobileNav(!mobileNav)}>
+          
             <Image
               src="/menu-bar.svg"
               height={30}
