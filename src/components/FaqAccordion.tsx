@@ -13,7 +13,7 @@ import {
       <Accordion type="single" collapsible className="w-full px-10">
         <AccordionItem value="item-1">
           <AccordionTrigger className="font-bold py-20">
-            <p>What types of flooring do you offer?</p>
+            <h3>What types of flooring do you offer?</h3>
           </AccordionTrigger>
           <AccordionContent className="py-20">
             <p>We provide a wide range of rigid core vinyl and laminate flooring. Our selection caters to both residential and commercial needs, and includes all the necessary accesories.</p>
@@ -23,7 +23,7 @@ import {
 
         <AccordionItem value="item-2">
           <AccordionTrigger className="font-bold py-20">
-            <p>Do you sell to individual homeowners?</p>
+            <h3>Do you sell to individual homeowners?</h3>
           </AccordionTrigger>
           <AccordionContent className="py-20">
           <p>While our primary clientele consists of retailers, builders, and contractors, we also serve individual homeowners. Feel free to explore our products and submit a quote.</p>
@@ -33,7 +33,7 @@ import {
 
         <AccordionItem value="item-3">
           <AccordionTrigger className="font-bold py-20">
-            <p>Do you offer installation services?</p>
+            <h3>Do you offer installation services?</h3>
           </AccordionTrigger>
           <AccordionContent className="py-20">
           <p>
@@ -44,7 +44,7 @@ import {
 
         <AccordionItem value="item-4">
           <AccordionTrigger className="font-bold py-20">
-            <p>Is there a warranty on your products?</p>
+            <h3>Is there a warranty on your products?</h3>
           </AccordionTrigger>
           <AccordionContent className="py-20">
           <p>Yes! Our warranties covers Coreproof, Quicksurfaces, and Finfloor brands. You can find detailed warranty information for each product on the Technical Specifications section.</p>
@@ -53,7 +53,7 @@ import {
 
         <AccordionItem value="item-5">
           <AccordionTrigger className="font-bold py-20">
-            <p>How can I place an order?</p>
+            <h3>How can I place an order?</h3>
           </AccordionTrigger>
           <AccordionContent className="py-20">
           <p>You can reach out to our team directly on the Become A Dealer section. We’ll guide you through the ordering process and assist with any questions.</p>
@@ -62,7 +62,7 @@ import {
 
         <AccordionItem value="item-6">
           <AccordionTrigger className="font-bold py-20">
-            <p>Can I request samples before making a decision?</p>
+            <h3>Can I request samples before making a decision?</h3>
           </AccordionTrigger>
           <AccordionContent className="py-20">
           <p>

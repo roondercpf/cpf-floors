@@ -35,7 +35,7 @@ const HomeBannerCarousel = () => {
                   <p>
                     The collection that perfectly blends the resilience of waterproof rigid core vinyl with the serene hues of natural and rich wood landscapes.
                   </p>
-                  <Link className="link-light" href="#">
+                  <Link className="link-light" href="/collection/66afbdb4613ab3dab29c8558">
                     See More!
                   </Link>
                 </div>
@@ -49,7 +49,7 @@ const HomeBannerCarousel = () => {
                   <p>
                     The collection that perfectly blends the resilience of waterproof rigid core vinyl with the serene hues of natural and rich wood landscapes.
                   </p>
-                  <Link className="link-light" href="#">
+                  <Link className="link-light" href="/collection/66cb600baec0a38cb01ff2e1">
                     See More!
                   </Link>
                 </div>
@@ -63,7 +63,7 @@ const HomeBannerCarousel = () => {
                   <p>
                     The collection that perfectly blends the resilience of waterproof rigid core vinyl with the serene hues of natural and rich wood landscapes.
                   </p>
-                  <Link className="link-light" href="#">
+                  <Link className="link-light" href="/collection/66abc1c6ff92ba10a656047d">
                     See More!
                   </Link>
                 </div>
@@ -77,7 +77,7 @@ const HomeBannerCarousel = () => {
                   <p>
                     The collection that perfectly blends the resilience of waterproof rigid core vinyl with the serene hues of natural and rich wood landscapes.
                   </p>
-                  <Link className="link-light" href="#">
+                  <Link className="link-light" href="/collection/66ae8f0d0c8f4839920a6422">
                     See More!
                   </Link>
                 </div>

@@ -1,6 +1,7 @@
 import { FRONTEND } from "@/utils/env";
 import { Collections, Color } from "@/interfaces/collections.model";
 import { notFound } from "next/navigation";
+import CollectionProfilePageCarousel from "@/components/CollectionProfilePageCarousel";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -16,7 +17,9 @@ async function CollectionsID({
 }: {
   params: { collection_id: string };
 }) {
-  const res = await fetch(`${FRONTEND}/api/collections/`);
+  const res = await fetch(`${FRONTEND}/api/collections/`, {
+    headers: { cache: "no-store" },
+  });
 
   const collectionResponse = await res.json();
 
@@ -29,7 +32,7 @@ async function CollectionsID({
   const collection = collections.find(
     (collection) => collection._id === collection_id
   );
-
+  console.log(collections);
   const collectionsWithoutCurrent = collections.filter(
     (collection) => collection._id !== collection_id
   );
@@ -78,8 +81,10 @@ async function CollectionsID({
             {/*BUTTONS */}
             <div className="room-buttons flex flex-col justify-start items-start">
               <div className="collection-title flex items-center">
-                <h2><b>{collection.name}</b> Collection</h2>
-                </div>
+                <h2>
+                  <b>{collection.name}</b> Collection
+                </h2>
+              </div>
               <p>By {collection.brand}</p>
               <div>
                 <TabsList className="tab-list">
@@ -169,8 +174,8 @@ async function CollectionsID({
           </Tabs>
         </div>
       </div>
-
-      <TabCollectionDescription collection={collection}  />
+      <CollectionProfilePageCarousel />
+      <TabCollectionDescription collection={collection} />
 
       {/* <div className="most-main-banner">
         <h2>More collection also viewed</h2>

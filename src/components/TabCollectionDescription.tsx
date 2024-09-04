@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Collections, Color } from "@/interfaces/collections.model";
+import { Collections} from "@/interfaces/collections.model";
 import resources from "@/../resources/resources2.json";
 
 import "@/app/sass/TabCollectionDescription.scss";
@@ -14,8 +14,13 @@ interface Props {
 }
 
 const TabCollectionDescription: React.FC<Props> = ({ collection }) => {
+  
   const resource = resources.find(
     (resource) => resource.name === "Installation Manual"
+  ) as (typeof resources)[0];
+
+  const tech = resources.find(
+    (tech) => tech.name === "Technical Data"
   ) as (typeof resources)[0];
 
   return (
@@ -90,6 +95,23 @@ const TabCollectionDescription: React.FC<Props> = ({ collection }) => {
             </div>
           </TabsContent>
           <TabsContent value="Installation Manual">
+            <div className="content-tab">
+              <div className="installation-container w-100 flex flex-col justify-center items-center">
+                <Image
+                  src={resource.cover}
+                  height={200}
+                  width={200}
+                  alt={resource.name}
+                />
+                <h2>{resource.name}</h2>
+                <Link href={resource.url} target="_blank" className="link-dark">
+                  DownLoad
+                </Link>
+              </div>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="Technical Data">
             <div className="content-tab">
               <div className="installation-container w-100 flex flex-col justify-center items-center">
                 <Image

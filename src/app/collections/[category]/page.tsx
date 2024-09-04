@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { FRONTEND } from "../../../utils/env";
 import { CollectionResponse } from "@/interfaces/collections.model";
@@ -60,19 +61,24 @@ async function Collections({
               return (
                 <div key={collection._id} className="collection-card">
                   <Image
-                    src="/home/slide6.png"
+                    src={collection.cover}
                     height={400}
                     width={400}
                     alt="CPF Floors Collections"
                   ></Image>
                   <div className="card-text">
                     <div className="collection-title">
-                      <h2>{collection.name}</h2>
+                      <h2><b>{collection.name}</b> Collection</h2>
                     </div>
                     <div className="mb-10">
-                      <p className="font-bold">{collection.brand}</p>
+                      <p>By <b>{collection.brand}</b></p>
                       <p className="font-bold">{collection.serieName}</p>
                       <p>{collection.category}</p>
+                    </div>
+                    <div className="specs flex mb-10">
+                      <div className="link-dark w-auto mr-2 font-bold">{collection.core}</div>
+                      <div className="link-dark w-auto mr-2 font-bold">{collection.overallThickness}</div>
+                      <div className="link-dark w-auto mr-2 font-bold">{collection.wearLayer}</div>
                     </div>
                     <Link
                       className="link-dark"

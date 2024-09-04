@@ -17,7 +17,7 @@ function Faq() {
               Explore our FAQs to learn about our flooring options, warranty
               coverage, ordering process, and more. We&apos;re here to assist you!
             </p>
-            <Link className="link-dark" href="/collections/vinyl">
+            <Link className="link-dark" href="/collections">
               Explore Products
             </Link>
           </div>

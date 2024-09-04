@@ -28,7 +28,7 @@ function ContactUs() {
                 Let&apos;s Get In <br></br> Touch
               </h2>
               <p>
-                Take advantage of opportunities to grow your dealer business and
+                Take advantage of opportunities to grow your dealer <br /> business and
                 increase sales!
               </p>
               <div className="contact-cpf flex flex-row font-bold justifly-between items-center">
