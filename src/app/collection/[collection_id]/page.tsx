@@ -9,6 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import "@/app/sass/CollectionProfile.scss";
 import "@/app/sass/Financing.scss";
+import TabCollectionDescription from "@/components/TabCollectionDescription";
 
 async function CollectionsID({
   params: { collection_id },
@@ -169,9 +170,9 @@ async function CollectionsID({
         </div>
       </div>
 
-      <InfoSection collection={collection} />
+      <TabCollectionDescription collection={collection}  />
 
-      <div className="most-main-banner">
+      {/* <div className="most-main-banner">
         <h2>More collection also viewed</h2>
         <div className="flex flex-row flex-wrap justify-center items-center">
           {collectionsWithoutCurrent.map((collection, index) => (
@@ -197,7 +198,7 @@ async function CollectionsID({
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       <div className="bluetape-become-container">
         <div className="bluetape-become">
