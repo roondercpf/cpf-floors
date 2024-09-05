@@ -153,12 +153,9 @@ export const Map = ({ data, ...props }: MapProps) => {
                     </p>
                     <p>
                       <b>Phone:</b>
-                      {dealer.phone ? " " + dealer.phone : "Not Available"}
+                      {dealer.phone ? " " + dealer.phone : " Not Available"}
                     </p>
-                    <p>
-                      <b>Email:</b>
-                      {dealer.email ? " " + dealer.email : " Not Available"}
-                    </p>
+
 
                     <Link
                       target="_blank"

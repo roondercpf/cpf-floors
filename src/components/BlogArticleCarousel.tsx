@@ -41,7 +41,7 @@ export const BlogArticleCarousel = forwardRef( ({ blogs, ...props }: BlogArticle
                         return (
                           <div key={blog._id} className="blog-article-carousel__slide">
                             <div className="blog-article-slide">
-                            <Image
+                            <img
                               src={blog.featured_image}
                               alt={blog.title}
                               width={200}

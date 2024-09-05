@@ -42,13 +42,13 @@ export const InfoSection = forwardRef(
     return (
       <div ref={ref}>
         <div className="flex justify-center gap-5">
-          {buttonGroup.map((button, index) => (
+          {buttonGroup.map((Button, index) => (
             <button
               key={index}
-              className="link-dark my-20"
-              onClick={() => setActiveButton(button)}
+              className="link-dark my-20 capitalize"
+              onClick={() => setActiveButton(Button)}
             >
-              {button}
+              {Button}
             </button>
           ))}
         </div>

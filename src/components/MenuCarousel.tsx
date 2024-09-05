@@ -25,46 +25,49 @@ const MenuCarousel = () => {
       <div className="menu-carousel">
         <div className="menu-carousel__viewport" ref={emblaRef}>
           <div className="menu-carousel__container">
-
-
             <div className="menu-carousel__slide">
-              <div className="menu-slide-carousel-one">
-                <div className="content">
-                  <h2>Inspire Black Edition</h2>
-                  <h3>Collection</h3>
+              <Link href="/collection/66afbdb4613ab3dab29c8558">
+                <div className="menu-slide-carousel-one">
+                  <div className="content">
+                    <h2>Inspire Black Edition</h2>
+                    <h3>Collection</h3>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <div className="menu-carousel__slide">
-              <div className="menu-slide-carousel-two">
-                <div className="content">
-                  <h2>Project 2.0</h2>
-                  <h3>Collection</h3>
+              <Link href="/collection/6696ccd5103daba3b410e1a4">
+                <div className="menu-slide-carousel-two">
+                  <div className="content">
+                    <h2>Project 2.0</h2>
+                    <h3>Collection</h3>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <div className="menu-carousel__slide">
-              <div className="menu-slide-carousel-three">
-                <div className="content">
-                  <h2>Alpha 22</h2>
-                  <h3>Collection</h3>
+              <Link href="/collection/66cb5b6caec0a38cb01ff2e0">
+                <div className="menu-slide-carousel-three">
+                  <div className="content">
+                    <h2>Alpha 22</h2>
+                    <h3>Collection</h3>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <div className="menu-carousel__slide">
-              <div className="menu-slide-carousel-four">
-                <div className="content">
-                  <h2>Spirit XL</h2>
-                  <h3>Collection</h3>
+              <Link href="/collection/6696cabd103daba3b410e19f">
+                <div className="menu-slide-carousel-four">
+                  <div className="content">
+                    <h2>Spirit XL</h2>
+                    <h3>Collection</h3>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
-
-            
-            
           </div>
         </div>
 

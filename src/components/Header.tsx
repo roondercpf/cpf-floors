@@ -18,7 +18,6 @@ function Header() {
     useState(false);
   const [openMobileInspiredSection, setOpenMobileInspiredSection] =
     useState(false);
-    
 
   return (
     <>
@@ -34,7 +33,7 @@ function Header() {
           <div>
             <Link href="/">
               <Image
-              onClick={()=> setOpenProducts(false)}
+                onClick={() => setOpenProducts(false)}
                 className="header-desktop-logo"
                 alt="CPF Floors logo"
                 src="/footer-logo.svg"
@@ -47,10 +46,10 @@ function Header() {
             <div className="composed-link flex">
               <Link
                 onClick={() => {
-                  setOpenProducts(false)
+                  setOpenProducts(false);
                   setOpenInspire(false);
                 }}
-                href="/collections/vinyl"
+                href="/collections"
               >
                 Products
               </Link>
@@ -143,36 +142,107 @@ function Header() {
               <div className="product-menu-links-container">
                 <div className="links-container">
                   <h3>Collections</h3>
-                  <Link onClick={() => setOpenProducts(false)} href="#">Deco54</Link>
-                  <Link onClick={() => setOpenProducts(false)} href="/collection/6696ccc2103daba3b410e1a2">
+                  <Link onClick={() => setOpenProducts(false)} href="#">
+                    Deco54
+                  </Link>
+                  <Link
+                    onClick={() => setOpenProducts(false)}
+                    href="/collection/6696ccc2103daba3b410e1a2"
+                  >
                     Quick48+
                   </Link>
-                  <Link onClick={() => setOpenProducts(false)} href="/collection/6696cdb2103daba3b410e1a6">
+                  <Link
+                    onClick={() => setOpenProducts(false)}
+                    href="/collection/6696cdb2103daba3b410e1a6"
+                  >
                     Project
                   </Link>
-                  <Link onClick={() => setOpenProducts(false)} href="/collection/6696cabd103daba3b410e19f">
+                  <Link
+                    onClick={() => setOpenProducts(false)}
+                    href="/collection/6696cabd103daba3b410e19f"
+                  >
                     Spirit XL
                   </Link>
-                  <Link onClick={() => setOpenProducts(false)} href="/collection/6696ccd5103daba3b410e1a4">Project 2.0</Link>
-                  <Link onClick={() => setOpenProducts(false)} href="#">Supreme</Link>
-                  <Link onClick={() => setOpenProducts(false)} href="/collection/66afb340613ab3dab29c8557">Evolve</Link>
-                  <Link onClick={() => setOpenProducts(false)} className="font-bold underline" href="/collections">All Categories</Link>
+                  <Link
+                    onClick={() => setOpenProducts(false)}
+                    href="/collection/6696ccd5103daba3b410e1a4"
+                  >
+                    Project 2.0
+                  </Link>
+                  <Link
+                    onClick={() => setOpenProducts(false)}
+                    href="/collection/66c378954718f2eb74729eb8"
+                  >
+                    Supreme
+                  </Link>
+                  <Link
+                    onClick={() => setOpenProducts(false)}
+                    href="/collection/66afb340613ab3dab29c8557"
+                  >
+                    Evolve
+                  </Link>
+                  <Link
+                    onClick={() => setOpenProducts(false)}
+                    className="font-bold underline"
+                    href="/collections"
+                  >
+                    All Categories
+                  </Link>
                 </div>
 
                 <div className="links-container">
                   <h3>Accesories</h3>
-                  <Link onClick={()=> setOpenProducts(false)} href="/coresteps">Baseboards</Link>
-                  <Link onClick={()=> setOpenProducts(false)} href="/corepad">Underlayment</Link>
-                  <Link onClick={()=> setOpenProducts(false)} href="/coresteps">Steps</Link>
-                  <Link onClick={()=> setOpenProducts(false)} href="/core-moldings">Moldings</Link>
+                  <Link
+                    onClick={() => setOpenProducts(false)}
+                    href="/coresteps"
+                  >
+                    Baseboards
+                  </Link>
+                  <Link onClick={() => setOpenProducts(false)} href="/corepad">
+                    Underlayment
+                  </Link>
+                  <Link
+                    onClick={() => setOpenProducts(false)}
+                    href="/coresteps"
+                  >
+                    Steps
+                  </Link>
+                  <Link
+                    onClick={() => setOpenProducts(false)}
+                    href="/core-moldings"
+                  >
+                    Moldings
+                  </Link>
                 </div>
                 <div className="links-container">
                   <h3>Resources</h3>
-                  <Link onClick={()=> setOpenProducts(false)} href="/document-center">Document Center</Link>
-                  <Link onClick={()=> setOpenProducts(false)} href="/financing">Financing</Link>
-                  <Link onClick={()=> setOpenProducts(false)} href="/faq">F.A.Q.</Link>
-                  <Link onClick={()=> setOpenProducts(false)} href="/display-resources">Display Resources</Link>
-                  <Link onClick={()=> setOpenProducts(false)} href="/privacy-policy">Privacy Policy</Link>
+                  <Link
+                    onClick={() => setOpenProducts(false)}
+                    href="/document-center"
+                  >
+                    Document Center
+                  </Link>
+                  <Link
+                    onClick={() => setOpenProducts(false)}
+                    href="/financing"
+                  >
+                    Financing
+                  </Link>
+                  <Link onClick={() => setOpenProducts(false)} href="/faq">
+                    F.A.Q.
+                  </Link>
+                  <Link
+                    onClick={() => setOpenProducts(false)}
+                    href="/display-resources"
+                  >
+                    Display Resources
+                  </Link>
+                  <Link
+                    onClick={() => setOpenProducts(false)}
+                    href="/privacy-policy"
+                  >
+                    Privacy Policy
+                  </Link>
                 </div>
               </div>
             </motion.div>
@@ -253,8 +323,13 @@ function Header() {
               ></Image>
             </Link>
           </div>
-
-          <div className="menu-bar" onClick={() => setMobileNav(!mobileNav)}>
+          <Link href="" className="link-dark mx-5 py-1 px-8">
+            Become a Dealer
+          </Link>
+          <div
+            className="menu-bar flex"
+            onClick={() => setMobileNav(!mobileNav)}
+          >
             <Image
               src="/menu-bar.svg"
               height={30}
@@ -296,8 +371,14 @@ function Header() {
                       exit={{ height: 0 }}
                     >
                       <h3>Collections</h3>
-                
-                      <Link className="text-center" onClick={()=> setMobileNav(false)} href="/collections">Watch All Collections</Link>
+
+                      <Link
+                        className="text-center"
+                        onClick={() => setMobileNav(false)}
+                        href="/collections"
+                      >
+                        Watch All Collections
+                      </Link>
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -341,7 +422,9 @@ function Header() {
                       exit={{ height: 0 }}
                     >
                       <h3>Visit Our Blog</h3>
-                      <Link onClick={()=> setMobileNav(false)} href="/blogs">Blog</Link>
+                      <Link onClick={() => setMobileNav(false)} href="/blogs">
+                        Blog
+                      </Link>
                     </motion.div>
                   )}
                 </AnimatePresence>

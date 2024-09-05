@@ -47,7 +47,7 @@ function Home() {
                 select the products you want to use, and find the perfect design
                 for your home.
               </p>
-              <Link href="#" className="link-dark">
+              <Link target="_blank" href="https://www.roomvo.com/my/cpffloors/" className="link-dark">
                 Try it Yourself!
               </Link>
             </div>
@@ -95,7 +95,7 @@ function Home() {
                 Request your samples and experience the quality of CPF Floors
                 with your own eyes!
               </p>
-              <Link href="/contact-us" className="link-light">
+              <Link href="/order-samples" className="link-light">
                 Get Started
               </Link>
             </div>

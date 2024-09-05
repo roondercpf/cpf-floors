@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -10,6 +10,10 @@ import "@/app/sass/CollectionsCategories.scss";
 function CollectionsCategories() {
   return (
     <>
+      <div className="categories-title">
+        <h2>Select Your Product</h2>
+        <p>The founders at CPF Floors are dedicated in providing the hihgest levels of quality service and innovation for it&apos;s flooring products. CPF Floors was founded a few years ago, but it&apos;s founders have more than 20 years of experience.</p>
+      </div>
       <div className="categories-container">
         <div className="category-card flex flex-col justify-between">
           <div className="img-title">
@@ -23,8 +27,8 @@ function CollectionsCategories() {
           </div>
           <div className="description">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse
-              omnis ut ea dolorum autem incidunt quibusdam quia aliquid
+              Durable and water-resistant flooring that&apos;s perfect for
+              high-traffic areas. Enjoy the wood look with natural tones.
             </p>
           </div>
           <Link className="link-dark" href="/collections/vinyl">
@@ -44,15 +48,14 @@ function CollectionsCategories() {
           </div>
           <div className="description">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse
-              omnis ut ea dolorum autem incidunt quibusdam quia aliquid
+              Stylish and waterproof flooring that can withstand spills and
+              moisture. Ideal for kitchens, bathrooms, and basements.
             </p>
           </div>
           <Link className="link-dark" href="/collections/laminate">
             View Collections
           </Link>
         </div>
-
 
         <div className="category-card flex flex-col justify-between">
           <div className="img-title">
@@ -66,8 +69,8 @@ function CollectionsCategories() {
           </div>
           <div className="description">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse
-              omnis ut ea dolorum autem incidunt quibusdam quia aliquid
+              Protect your walls with our durable baseboards. Available in a
+              variety of heights and profiles
             </p>
           </div>
           <Link className="link-dark" href="/core-moldings">
@@ -87,8 +90,8 @@ function CollectionsCategories() {
           </div>
           <div className="description">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse
-              omnis ut ea dolorum autem incidunt quibusdam quia aliquid
+              Create a safe and stylish staircase with our custom-made steps.
+              Choose from a variety of materials and colors.
             </p>
           </div>
           <Link className="link-dark" href="/coresteps">
@@ -108,19 +111,16 @@ function CollectionsCategories() {
           </div>
           <div className="description">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse
-              omnis ut ea dolorum autem incidunt quibusdam quia aliquid
+              Improve the comfort and performance of your flooring with our
+              premium underlayment products. Designed to reduce noise and
+              provide additional insulation.
             </p>
           </div>
           <Link className="link-dark" href="/corepad">
             View Collections
           </Link>
         </div>
-
-
-        
       </div>
-
 
       <section>
         <div className="become-banner-container">

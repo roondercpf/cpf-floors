@@ -1,71 +1,84 @@
 .collection-banner {
   width: 100%;
-  height: auto;
+  height: 90vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
-  margin: 40px 0;
+  margin: 20px 0;
   background-color: rgb(228, 228, 228);
   border-bottom: 1px solid rgb(206, 206, 206);
-  .collection-banner-carousel {
-    width: 55%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .collection-banner-text {
-    width: 40%;
-    h2 {
-      font-size: 60px;
-      font-weight: 700;
+  .room-img-container{
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap !important;
+    .room-img{
+        width: 50% !important;
+        padding: 0px;
+        padding: 60px;  
+        .scene{
+            height: 100% !important;
+            width: auto !important;
+            max-width: 100% !important;
+            margin: 0 auto;
+            border-radius: 18px;
+            img{
+              width: 100%;
+              margin: 0 auto;
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+        }
     }
-  }
-  .carousel-image{
-    height: 500px;
-    width: 500px;
-  }
+    .room-buttons{
+        margin: 40px 0 !important;
+        background-color: none;
+        width: 50%;
+        text-align: start !important;
+        flex-wrap: wrap;
+        padding: 40px 0;
+        h2{
+            font-size: 60px;
+            text-align: start !important;
+            padding: 0 20px;
+        }
+
+        p{
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+        .tab-list{
+            width: 90% !important;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            button{
+                height: 80px;
+                width: 140px;
+                background-color: transparent;
+                border: none;
+                margin: 10px 0px !important;
+                img{
+                    height: 100% !important;
+                    width: auto;
+                    
+                    border-radius: 12px;
+                    
+                }
+            }
+            button:active{
+                background-color: transparent !important;
+            }
+        }
+    }
+}
 }
 
-/*PLANK CAROUSEL*/
 
-.embla {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  margin: 0 !important;
-  padding: 80px;
-  height: auto;
-}
-.embla__container {
-  display: flex;
-  width: 100%;
-  height: auto;
-}
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
-  padding: 40px 80px;
-  img {
-    margin: 0 auto;
-    border-radius: 18px;
-  }
-}
-
-.home-carousel-prev {
-  position: absolute;
-  top: 45%;
-  left: 10%;
-  margin: 0 60px;
-}
-.home-carousel-next {
-  position: absolute;
-  top: 45%;
-  right: 10%;
-  margin: 0 60px;
-}
 
 /*DESCRIPTION BANNER*/
 
@@ -176,59 +189,71 @@
   }
 }
 
-/*MEDIA QUERIES CAROUSEL*/
-
-@media (max-width: 1175px) {
-  .embla {
-    height: auto;
-  }
-  .embla__slide {
-    flex: 0 0 100%;
-    img {
-      width: 100%;
-    }
-  }
-  .home-banner-carousel-container {
-    padding: 0;
-  }
-  .home-carousel-next {
-    right: 0;
-  }
-  .home-carousel-prev {
-    left: 0;
-  }
-  .home-carousel-next,
-  .home-carousel-prev {
-    margin: 0 10px;
-  }
-}
 
 /*MEDIA QUERIES*/
 
 @media (max-width: 1280px) {
   .collection-banner {
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
     justify-content: center;
     align-items: center;
-    .collection-banner-carousel {
-      width: 100%;
-      padding: 40px;
-      margin-bottom: 40px;
-    }
-    .collection-banner-text {
-      width: 100%;
-      text-align: center;
-      img {
-        margin: 0 auto;
+    padding: 0;
+    .room-img-container{
+      height: auto !important;
+      width: 100% !important;
+      padding: 0;
+      .room-img{
+        width: 100% !important;
+        padding: 0px;
+        .scene{
+          width: 100% !important;
+          border-radius: 0 !important;
+          padding: 0;
+          img{
+            height: 70%;
+            width: auto;
+          }
+        }
       }
-      h2 {
-        font-size: 45px;
-      }
-      p {
-        font-size: 20px;
+      .room-buttons{
+        height: auto;
+        width: 100% !important;
+        justify-content: space-between;
+        align-items: center;
+        .collection-title{
+          width: 100%;
+          flex-direction: column;
+          padding: 20px;
+          text-align: center;
+          h2{
+            font-size: 30px;
+            padding: 0;
+            
+          }
+        }
+        .tab-list{
+          width: 100% !important;
+          height: auto;
+          flex-direction: row !important;
+          align-items: center;
+          justify-content: space-between;
+          padding: 15px;
+          button{
+            width: 30%!important;
+            img{
+              width: 80%;
+            }
+          }
+        }
       }
     }
   }
+
+
+
+
+
   .description-banner {
     padding: 20px;
     .description {
