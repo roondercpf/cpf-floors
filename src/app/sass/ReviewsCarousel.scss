@@ -61,11 +61,22 @@
 @media(max-width: 1175px){
   .reviews-carousel-container{
       padding-bottom: 80px;
+      justify-content: center;
+      align-items: center;
   }
   .reviews-carousel__slide{
       padding: 20px !important;
+      flex: 0 0 100%;
+      justify-content: center;
   }
-
+  
+  .reviews-slide-carousel{
+    width: 100%;
+    padding: 20px;
+    .content{
+      padding: 10px;
+    }
+  }
   .reviews-carousel-next, .reviews-carousel-prev{
       margin: 10px;
   }
