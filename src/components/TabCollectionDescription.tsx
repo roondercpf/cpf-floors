@@ -30,16 +30,16 @@ const TabCollectionDescription: React.FC<Props> = ({ collection }) => {
           <TabsList>
             <div className="tab-list flex justify-between">
               <TabsTrigger value="description">
-                <div className="link-dark">Description</div>
+                <div className="tab">Description</div>
               </TabsTrigger>
               <TabsTrigger value="specs">
-                <div className="link-dark">Specs</div>
+                <div className="tab">Specs</div>
               </TabsTrigger>
               <TabsTrigger value="Installation Manual">
-                <div className="link-dark">Installation Manual</div>
+                <div className="tab">Installation Manual</div>
               </TabsTrigger>
               <TabsTrigger value="Technical Data">
-                <div className="link-dark">Technical Data</div>
+                <div className="tab">Technical Data</div>
               </TabsTrigger>
             </div>
           </TabsList>

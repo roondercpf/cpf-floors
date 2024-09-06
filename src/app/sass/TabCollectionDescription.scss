@@ -3,6 +3,15 @@
     .tab-list{
         width: 100%;
         margin: 80px;
+        .tab{
+            border: 1px solid rgb(207, 207, 207);
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        .tab:{
+            background-color: black;
+        }
     }
     .content-tab{
         display: flex;
