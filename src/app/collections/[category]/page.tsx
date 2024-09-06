@@ -7,6 +7,7 @@ import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
 
 import "@/app/sass/Collections.scss";
+import CollectionPlanksCarousel from "@/components/CollectionPlanksCarousel";
 
 export const metadata: Metadata = {
   title: "Collections",
@@ -54,6 +55,8 @@ async function Collections({
           </p>
         </div>
       </div>
+
+      
       <div className="collections-container">
         {collections.length > 0 ? (
           <>

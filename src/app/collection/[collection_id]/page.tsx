@@ -174,8 +174,7 @@ async function CollectionsID({
           </Tabs>
         </div>
       </div>
-      <CollectionProfilePageCarousel />
-      <TabCollectionDescription collection={collection} />
+      
 
       {/* <div className="most-main-banner">
         <h2>More collection also viewed</h2>
@@ -204,6 +203,9 @@ async function CollectionsID({
           ))}
         </div>
       </div> */}
+
+      <TabCollectionDescription collection={collection} />
+      <CollectionProfilePageCarousel />
 
       <div className="bluetape-become-container">
         <div className="bluetape-become">
