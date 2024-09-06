@@ -8,10 +8,11 @@
   }
   .corestep__container {
     display: flex;
+    flex-direction: row;
     width: 100%;
     height: auto;
   }
-  .corestep__slide {
+  .corestep__slide{
     flex: 0 0 40%;
     min-width: 0;
     padding: 40px;

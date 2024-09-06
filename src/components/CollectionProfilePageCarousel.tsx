@@ -24,10 +24,10 @@ function CollectionProfilePageCarousel() {
   async function getCollections() {
     try {
       const response = await fetch(`/api/collections/`);
-      const data = await response.json()
-      setCollections(data.collections)
+      const data = await response.json();
+      setCollections(data.collections);
     } catch (error) {
-      console.log("error: ", error)
+      console.log("error: ", error);
     }
   }
 
@@ -35,10 +35,14 @@ function CollectionProfilePageCarousel() {
     getCollections();
   }, []);
 
-  console.log(typeof collections)
+  console.log(typeof collections);
 
   return (
     <>
+      <div className="carousel-title">
+        <h2>More Collections Also Viewed</h2>
+        <p>Choose the perfect collection for your needs.</p>
+      </div>
       <div className="collections-carousel">
         <div className="collections-carousel__viewport" ref={emblaRef}>
           <div className="collections-carousel__container">
@@ -50,17 +54,21 @@ function CollectionProfilePageCarousel() {
                   width={200}
                   alt={col.name}
                 ></img>
-                <div className="p-5">
+                <div className="p-10">
                   <h3>
                     <b>{col.name}</b> Collection
                   </h3>
-                  <p>By <b>{col.brand}</b></p>
+                  <p>
+                    By <b>{col.brand}</b>
+                  </p>
                   <div className="collection-specs flex mb-20">
                     <div className="specs link-dark mr-5">{col.core}</div>
-                    <div className="specs link-dark mr-5">{col.overallThickness}</div>
+                    <div className="specs link-dark mr-5">
+                      {col.overallThickness}
+                    </div>
                     <div className="specs link-dark mr-5">{col.wearLayer}</div>
                   </div>
-                  <Link className="link-dark" href="/${col.id}">
+                  <Link className="link-dark" href={"/collection/" + col._id}>
                     View Collection
                   </Link>
                 </div>
