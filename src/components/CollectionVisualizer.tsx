@@ -14,7 +14,7 @@ interface Props {
 const CollectionVisualizer: React.FC<Props> = ({ collection }) => {
     console.log(collection)
   return (
-    <div className="color-visualizer-container">
+    <div className="color-visualizer-container flex flex-col justify-center items-center">
       <div className="collection-name flex items-center justify-between p-10">
         <div>
         <h2><b>{collection.name}</b> Collection</h2>
@@ -44,7 +44,7 @@ const CollectionVisualizer: React.FC<Props> = ({ collection }) => {
           <div className="collection-room-buttons flex items-center justify-center flex-wrap">
             {collection.colors.map((col, index) => (
               <TabsList key={index}>
-                <TabsTrigger value={col.name} className="flex flex-col">
+                <TabsTrigger value={col.name} className="tab-button flex flex-col">
                   <Image
                     className="rounded mb-5"
                     key={index}

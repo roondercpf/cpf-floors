@@ -78,7 +78,7 @@ async function Collections({
                       <p className="font-bold">{collection.serieName}</p>
                       <p>{collection.category}</p>
                     </div>
-                    <div className="specs flex mb-10">
+                    <div className="collection-specs flex mb-10">
                       <div className="link-dark w-auto mr-2 font-bold">{collection.core}</div>
                       <div className="link-dark w-auto mr-2 font-bold">{collection.overallThickness}</div>
                       <div className="link-dark w-auto mr-2 font-bold">{collection.wearLayer}</div>
