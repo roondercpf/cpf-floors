@@ -1,41 +1,93 @@
-"use client"
-import React from "react";
-import { useEffect, useState } from "react";
+"use client";
+
+import React, { useEffect, useState, useCallback } from "react";
 import { Collections } from "@/interfaces/collections.model";
-import Link from "next/link";
 import Image from "next/image";
+import useEmblaCarousel from "embla-carousel-react";
+import Link from "next/link";
 
+import "@/app/sass/CollectionProfilePageCarousel.scss";
 
+function CollectionProfilePageCarousel() {
+  const [collections, setCollections] = useState<Collections[] | null>([]);
 
-function CollectionProfilePageCarousel(){
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
-    const [ collections, setCollections] = useState<Collections[]>([])
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
 
-    useEffect(() => {
-        async function fetchCollections(){
-            try{
-                const response = await fetch(`/api/collections/`)
-                const data = await response.json()
-                setCollections(data)
-            }catch(error){
-                console.log("error: ",error)
-            }
-        }
-        fetchCollections()
-    }, [])
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
 
-    console.log(collections)
-    
-    return ( 
-        <>
-            {collections.length > 0 && collections.map((col, index) => (
-                <div key={index}>
-                    <Image src={col.cover} width={500} height={500} alt="CPF Floors"></Image>
-                    <p>{col.name}</p>
+  async function getCollections() {
+    try {
+      const response = await fetch(`/api/collections/`);
+      const data = await response.json();
+      setCollections(data.collections);
+    } catch (error) {
+      console.log("error: ", error);
+    }
+  }
+
+  useEffect(() => {
+    getCollections();
+  }, []);
+
+  console.log(typeof collections);
+
+  return (
+    <>
+      <div className="carousel-title">
+        <h2>More Collections Also Viewed</h2>
+        <p>Choose the perfect collection for your needs.</p>
+      </div>
+      <div className="collections-carousel">
+        <div className="collections-carousel__viewport" ref={emblaRef}>
+          <div className="collections-carousel__container">
+            {collections?.map((col, index) => (
+              <div key={index} className="collections-carousel__slide">
+                <Image
+                  src={col.cover}
+                  height={200}
+                  width={200}
+                  alt={col.name}
+                  unoptimized
+                ></Image>
+                <div className="p-10">
+                  <h3>
+                    <b>{col.name}</b> Collection
+                  </h3>
+                  <p>
+                    By <b>{col.brand}</b>
+                  </p>
+                  <div className="collection-specs flex mb-20">
+                    <div className="specs link-dark mr-5">{col.core}</div>
+                    <div className="specs link-dark mr-5">
+                      {col.overallThickness}
+                    </div>
+                    <div className="specs link-dark mr-5">{col.wearLayer}</div>
+                  </div>
+                  <Link className="link-dark" href={"/collection/" + col._id}>
+                    View Collection
+                  </Link>
                 </div>
+              </div>
             ))}
-        </>
-     );
+          </div>
+        </div>
+        <div className="collections-carousel-buttons">
+          <button className="collections-carousel-prev" onClick={scrollPrev}>
+            <Image src="/prev.svg" height={50} width={50} alt="prev"></Image>
+          </button>
+          <button className="collections-carousel-next" onClick={scrollNext}>
+            <Image src="/next.svg" height={50} width={50} alt="next"></Image>
+          </button>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default CollectionProfilePageCarousel;

@@ -7,6 +7,7 @@ import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
 
 import "@/app/sass/Collections.scss";
+import CollectionPlanksCarousel from "@/components/CollectionPlanksCarousel";
 
 export const metadata: Metadata = {
   title: "Collections",
@@ -54,6 +55,8 @@ async function Collections({
           </p>
         </div>
       </div>
+
+      
       <div className="collections-container">
         {collections.length > 0 ? (
           <>
@@ -75,7 +78,7 @@ async function Collections({
                       <p className="font-bold">{collection.serieName}</p>
                       <p>{collection.category}</p>
                     </div>
-                    <div className="specs flex mb-10">
+                    <div className="collection-specs flex mb-10">
                       <div className="link-dark w-auto mr-2 font-bold">{collection.core}</div>
                       <div className="link-dark w-auto mr-2 font-bold">{collection.overallThickness}</div>
                       <div className="link-dark w-auto mr-2 font-bold">{collection.wearLayer}</div>

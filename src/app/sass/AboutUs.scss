@@ -195,17 +195,27 @@
         }
     }
     .choosing-section-container{
-        padding: 40px;
-        .choosing-text{
+        padding: 20px;
+        height: auto;
+        .choosing{
             height: auto;
-            width: 100%;
-            padding: 0;
-            margin: 80px 0;
-            h2{
+            padding: 20px;
+            flex-direction: column;
+            .choosing-text{
+                height: auto;
                 width: 100%;
-                font-size: 30px;
+                padding: 0;
+                margin: 80px 0;
+                text-align: center;
+                h2{
+                    width: 100%;
+                    font-size: 30px;
+                }
+                p{
+                    width: 100%;
+                }
             }
-            p{
+            .choosing-carousel{
                 width: 100%;
             }
         }

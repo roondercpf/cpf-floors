@@ -33,7 +33,10 @@
 
 @media (max-width: 1175px) {
   .logos__slide {
-    flex: 0 0 30%;
+    flex: 0 0 50%;
     padding: 20px !important;
+    img{
+      filter: none;
+    }
   }
 }
