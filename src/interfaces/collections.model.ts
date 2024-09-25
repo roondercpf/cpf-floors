@@ -36,7 +36,7 @@ export interface Color {
   palletSize: string;
   picture: string;
   installation: string;
-  roomScene: string;
+  room_scenes: string;
   features?: string;
 }
 

@@ -30,7 +30,7 @@ const CollectionVisualizer: React.FC<Props> = ({ collection }) => {
               <TabsContent className="collection-room-img" key={index} value={col.name}>
                 <Image
                   key={index}
-                  src={col.roomScene}
+                  src={col.room_scenes}
                   height={100}
                   width={100}
                   alt={col.name}
