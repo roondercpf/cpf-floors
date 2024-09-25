@@ -5,16 +5,14 @@ import CollectionProfilePageCarousel from "@/components/CollectionProfilePageCar
 import CollectionVisualizer from "@/components/CollectionVisualizer";
 
 import Link from "next/link";
-import Image from "next/image";
-import { InfoSection } from "@/components/InfoSection";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import "@/app/sass/CollectionProfile.scss";
 import "@/app/sass/Financing.scss";
 import TabCollectionDescription from "@/components/TabCollectionDescription";
-import { color } from "framer-motion";
+
 
 async function CollectionsID({
+
   params: { collection_id },
 }: {
   params: { collection_id: string };

@@ -12,6 +12,9 @@
       color: #000000;
     }
   }
+  div[dir=ltr]{
+    width: 100%;
+  }
   .collection-room {
     position: relative;
     width: 98%;
@@ -24,7 +27,7 @@
     margin: 0 auto;
     img {
       position: absolute;
-      bottom: -50px;
+      bottom: -350px;
       left: 0;
       right: 0;
       width: 100%;
