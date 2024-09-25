@@ -323,7 +323,7 @@ function Header() {
               ></Image>
             </Link>
           </div>
-          <Link href="" className="link-dark mx-5 py-1 px-8">
+          <Link onClick={()=> setMobileNav(!mobileNav)} href="/become-a-dealer" className="link-dark mx-5 py-1 px-8">
             Become a Dealer
           </Link>
           <div
@@ -350,11 +350,11 @@ function Header() {
               <div className="mobile-nav-links">
                 <div
                   className="composed-link flex"
-                  onClick={() =>
-                    setOpenMobileProductsSection(!openMobileProductsScetion)
-                  }
+
                 >
-                  <Link href="/#">Products</Link>
+                  <Link href="/#" onClick={() =>
+                    setOpenMobileProductsSection(!openMobileProductsScetion)
+                  }>Products</Link>
                   <Image
                     src="/menu-arrow.svg"
                     height={14}
