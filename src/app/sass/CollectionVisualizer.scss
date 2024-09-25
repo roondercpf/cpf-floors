@@ -54,3 +54,29 @@
     }
   }
 }
+
+@media(max-width: 1175px){
+  .color-visualizer-container{
+    .collection-name{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 40px;
+      h2{
+        margin-bottom: 15px;
+        line-height: 50px;
+      }
+    }
+    .collection-room{
+      height: 400px;
+      width: 100%;
+      padding: 0;
+      border-radius: 0;
+      img{
+        top: 0;
+        border-radius: 0;
+      }
+    }
+  }
+}

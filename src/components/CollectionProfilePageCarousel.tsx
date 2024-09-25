@@ -48,12 +48,13 @@ function CollectionProfilePageCarousel() {
           <div className="collections-carousel__container">
             {collections?.map((col, index) => (
               <div key={index} className="collections-carousel__slide">
-                <img
+                <Image
                   src={col.cover}
                   height={200}
                   width={200}
                   alt={col.name}
-                ></img>
+                  unoptimized
+                ></Image>
                 <div className="p-10">
                   <h3>
                     <b>{col.name}</b> Collection

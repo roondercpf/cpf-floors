@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Collections} from "@/interfaces/collections.model";
+import { Collections } from "@/interfaces/collections.model";
 import resources from "@/../resources/resources2.json";
 
 import "@/app/sass/TabCollectionDescription.scss";
@@ -14,7 +14,6 @@ interface Props {
 }
 
 const TabCollectionDescription: React.FC<Props> = ({ collection }) => {
-  
   const resource = resources.find(
     (resource) => resource.name === "Installation Manual"
   ) as (typeof resources)[0];
@@ -27,22 +26,25 @@ const TabCollectionDescription: React.FC<Props> = ({ collection }) => {
     <>
       <div className="tabs-container">
         <Tabs defaultValue="description">
-          <TabsList>
-            <div className="tab-list flex justify-between">
-              <TabsTrigger value="description">
-                <div className="tab">Description</div>
-              </TabsTrigger>
-              <TabsTrigger value="specs">
-                <div className="tab">Specs</div>
-              </TabsTrigger>
-              <TabsTrigger value="Installation Manual">
-                <div className="tab">Installation Manual</div>
-              </TabsTrigger>
-              <TabsTrigger value="Technical Data">
-                <div className="tab">Technical Data</div>
-              </TabsTrigger>
-            </div>
-          </TabsList>
+          
+          <div className="tabs-buttons">
+            <TabsList>
+              <div className="tab-list flex justify-between">
+                <TabsTrigger value="description">
+                  <div className="tab">Description</div>
+                </TabsTrigger>
+                <TabsTrigger value="specs">
+                  <div className="tab">Specs</div>
+                </TabsTrigger>
+                <TabsTrigger value="Installation Manual">
+                  <div className="tab">Installation Manual</div>
+                </TabsTrigger>
+                <TabsTrigger value="Technical Data">
+                  <div className="tab">Technical Data</div>
+                </TabsTrigger>
+              </div>
+            </TabsList>
+          </div>
 
           {/*CONTENT */}
           <TabsContent value="description">
