@@ -121,7 +121,9 @@
             width: 100%;
             margin: 20px 0;
             .card-text{
+                width: 100%;
                 padding: 40px;
+                text-align: center;
                 .collection-title{
                     flex-direction: column;
                     justify-content: center;
@@ -137,7 +139,12 @@
                 border-radius: 18px;
             }
             .collection-specs{
-                justify-content: space-around;
+                flex-direction: column;
+                div{
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
             }
         }
     }   
