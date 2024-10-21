@@ -14,19 +14,20 @@ interface Props {
 }
 
 const TabCollectionDescription: React.FC<Props> = ({ collection }) => {
+
   const resource = resources.find(
     (resource) => resource.name === "Installation Manual"
   ) as (typeof resources)[0];
 
-  const tech = resources.find(
-    (tech) => tech.name === "Technical Data"
+  const data = resources.find(
+    (data) => data.type === "Data Sheets"
   ) as (typeof resources)[0];
+
 
   return (
     <>
       <div className="tabs-container">
         <Tabs defaultValue="description">
-          
           <div className="tabs-buttons">
             <TabsList>
               <div className="tab-list flex justify-between">
@@ -117,13 +118,13 @@ const TabCollectionDescription: React.FC<Props> = ({ collection }) => {
             <div className="content-tab">
               <div className="installation-container w-100 flex flex-col justify-center items-center">
                 <Image
-                  src={resource.cover}
-                  height={200}
+                  src={data.cover}
+                  height={500}
                   width={200}
-                  alt={resource.name}
+                  alt={data.name}
                 />
-                <h2>{resource.name}</h2>
-                <Link href={resource.url} target="_blank" className="link-dark">
+                <h2>{data.name}</h2>
+                <Link href={data.url} target="_blank" className="link-dark">
                   DownLoad
                 </Link>
               </div>

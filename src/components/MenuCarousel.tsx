@@ -37,7 +37,7 @@ const MenuCarousel = () => {
             </div>
 
             <div className="menu-carousel__slide">
-              <Link href="/collection/6696ccd5103daba3b410e1a4">
+              <Link href="/collection/66abc1c6ff92ba10a656047d">
                 <div className="menu-slide-carousel-two">
                   <div className="content">
                     <h2>Project 2.0</h2>

@@ -35,7 +35,7 @@ function CollectionProfilePageCarousel() {
     getCollections();
   }, []);
 
-  console.log(typeof collections);
+  console.log(collections);
 
   return (
     <>
@@ -62,12 +62,12 @@ function CollectionProfilePageCarousel() {
                   <p>
                     By <b>{col.brand}</b>
                   </p>
-                  <div className="collection-specs flex mb-20">
-                    <div className="specs link-dark mr-5">{col.core}</div>
-                    <div className="specs link-dark mr-5">
-                      {col.overallThickness}
+                  <div className="collection-specs flex flex-col mb-20">
+                    <div className="specs link-dark my-2"><b>Core: </b> {col.core} </div>
+                    <div className="specs link-dark my-2">
+                    <b>Overall Thickness: </b> {col.overallThickness} 
                     </div>
-                    <div className="specs link-dark mr-5">{col.wearLayer}</div>
+                    <div className="specs link-dark my-2"><b>Wear Layer: </b> {col.wearLayer}</div>
                   </div>
                   <Link className="link-dark" href={"/collection/" + col._id}>
                     View Collection

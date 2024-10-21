@@ -42,7 +42,7 @@
     .collection-card{
         width: 40%;
         margin: 40px;
-        height: 700px;
+        height: auto;
         border: 1px solid rgb(209, 209, 209);
         border-radius: 18px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -101,6 +101,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         padding: 20px;
+        margin-top: 80px;
         .banner-img{
             display: none;
         }
@@ -108,6 +109,7 @@
             color: white;
             width: 100%;
             text-align: center;
+            padding: 0;
             h2{
                 font-size: 35px;
             }
@@ -120,9 +122,11 @@
             height: auto;
             width: 100%;
             margin: 20px 0;
+            padding-bottom: 40px;
             .card-text{
+                height: auto;
                 width: 100%;
-                padding: 40px;
+                padding: 20px;
                 text-align: center;
                 .collection-title{
                     flex-direction: column;

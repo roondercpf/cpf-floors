@@ -22,6 +22,7 @@ async function CollectionsID({
   });
 
   const collectionResponse = await res.json();
+  console.log(collectionResponse)
 
   if ("error" in collectionResponse) {
     notFound();
