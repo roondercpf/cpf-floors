@@ -46,6 +46,12 @@
   p {
     margin-bottom: 30px;
   }
+  .specs{
+    padding: 20px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
   a {
     margin-bottom: 60px;
   }
@@ -77,6 +83,7 @@
 @media (max-width: 1175px) {
   .collections-carousel{
     margin-bottom: 180px;
+    
   }
  
   .collections-carousel__container{
@@ -86,7 +93,7 @@
     padding: 20px !important;
     flex: 0 0 100%;
     margin: 20px;
-    height: 950px;
+    height: 100%;
     text-align: center;
   }
   .collections-carousel-next {

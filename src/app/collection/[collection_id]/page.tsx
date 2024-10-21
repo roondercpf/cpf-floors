@@ -10,9 +10,7 @@ import "@/app/sass/CollectionProfile.scss";
 import "@/app/sass/Financing.scss";
 import TabCollectionDescription from "@/components/TabCollectionDescription";
 
-
 async function CollectionsID({
-
   params: { collection_id },
 }: {
   params: { collection_id: string };
@@ -22,7 +20,7 @@ async function CollectionsID({
   });
 
   const collectionResponse = await res.json();
-  console.log(collectionResponse)
+  console.log(collectionResponse);
 
   if ("error" in collectionResponse) {
     notFound();
@@ -47,21 +45,25 @@ async function CollectionsID({
     <>
       <>
         <section>
-        <CollectionVisualizer collection = {collection}  />
+          <CollectionVisualizer collection={collection} />
         </section>
       </>
-      <TabCollectionDescription collection={collection} />
-      <CollectionProfilePageCarousel />
+      <>
+        <TabCollectionDescription collection={collection} />
+        <CollectionProfilePageCarousel />
+      </>
 
-      <div className="bluetape-become-container">
-        <div className="bluetape-become">
-          <h2>Become a Dealer</h2>
-          <p>& Transform Spaces with Style</p>
-          <Link href="/become-a-dealer" className="link-light">
-            Contact Now!
-          </Link>
+      <section>
+        <div className="bluetape-become-container">
+          <div className="bluetape-become">
+            <h2>Become a Dealer</h2>
+            <p>& Transform Spaces with Style</p>
+            <Link href="/become-a-dealer" className="link-light">
+              Contact Now!
+            </Link>
+          </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

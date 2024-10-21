@@ -7,6 +7,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar{
+  background-color: #363636;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #363636;
+  background-image: url("/thumb.png");
+}
 p{
   font-size: 20px;
   font-weight: 500;

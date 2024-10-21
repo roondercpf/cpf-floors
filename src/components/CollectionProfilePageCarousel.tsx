@@ -63,11 +63,11 @@ function CollectionProfilePageCarousel() {
                     By <b>{col.brand}</b>
                   </p>
                   <div className="collection-specs flex flex-col mb-20">
-                    <div className="specs link-dark my-2"><b>Core: </b> {col.core} </div>
-                    <div className="specs link-dark my-2">
+                    <div className="specs  my-2"><b>Core: </b> {col.core} </div>
+                    <div className="specs  my-2">
                     <b>Overall Thickness: </b> {col.overallThickness} 
                     </div>
-                    <div className="specs link-dark my-2"><b>Wear Layer: </b> {col.wearLayer}</div>
+                    <div className="specs  my-2"><b>Wear Layer: </b> {col.wearLayer}</div>
                   </div>
                   <Link className="link-dark" href={"/collection/" + col._id}>
                     View Collection

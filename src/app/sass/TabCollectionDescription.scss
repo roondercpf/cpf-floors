@@ -1,9 +1,9 @@
 .tabs-container {
   margin: 80px 0;
   height: auto;
+  padding: 0 20px;
   div[role="tablist"]{
     width: auto;
-    justify-content: center !important;
     height: auto;
     margin: 20px;
     display: flex;
@@ -31,6 +31,22 @@
     padding: 80px 40px;
     background-color: #e3e3e3;
     border-radius: 18px;
+    width: 100%;
+    margin: 0;
+    .color-list{
+      width: 100% !important;
+      text-align: center;
+      p{
+        cursor: pointer;
+        margin-bottom: 15px;
+        text-decoration: underline;
+
+      }
+    }
+    .specs-container{
+      width: 100%;
+      text-align: center;
+    }
     h2 {
       font-size: 45px;
       margin-bottom: 25px;
@@ -55,6 +71,61 @@
   }
 }
 
+.expand-color-container{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.705);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+    height: 25px;
+    width: auto;
+    border-radius: 0;
+  }
+  .image-container{
+    position: relative;
+    height: 90%;
+    width: auto;
+    z-index: 10;
+    img{
+      height: 100%;
+      width: auto;
+      border-radius: 18px;
+    }
+    h2{
+      position: absolute;
+      right: 0;
+      bottom: 40px;
+      margin: 20px;
+      font-size: 35px;
+    }
+    p{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: black;
+      margin: 20px;
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }
+}
+
+
+
+
 @media (max-width: 1175px) {
   .tabs-container {
     width: 100% !important;
@@ -64,39 +135,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .tabs-buttons {
+    div[role="tablist"]{
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      height: auto;
-      margin-top: 140px;
-      .tab-list {
-        width: 100% !important;
-        height: auto;
-        display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      .tab-list{
+        width: 100%;
         flex-direction: column;
-        flex-wrap: wrap;
+        padding: 0;
         margin: 0;
-        margin-bottom: 280px;
-        justify-content: center !important;
-        align-items: center;
-        button {
+        button{
           width: 100%;
-        }
-        .tab {
-          width: 100% !important;
-          button {
-            width: 100% !important;
-          }
+          margin: 10px 0;
         }
       }
     }
+    
     .content-tab {
-      padding: 40px;
+      padding: 40px 15px;
       margin: 0;
       flex-wrap: wrap;
       padding-bottom: 40px;
       width: 100%;
+      text-align: center;
       .description-img {
         width: 100%;
         img {
@@ -106,13 +170,17 @@
       }
       .description-text {
         width: 100%;
+        text-align: center;
+        padding: 0;
         h2 {
           text-align: center;
           line-height: 50px;
+          font-size: 35px;
         }
       }
     }
   }
+
   .carousel-title {
     margin-top: 80px;
     h2 {

@@ -1,7 +1,6 @@
 .color-visualizer-container {
   margin: 50px 0;
   height: auto;
-  margin-bottom: 150px;
   border-bottom: 1px solid rgb(214, 214, 214);
   .collection-name {
     width: 100%;
@@ -25,7 +24,16 @@
     border-radius: 18px;
     margin-top: 20px;
     margin: 0 auto;
-    img {
+    .logo-visualizer{
+      position: absolute;
+      right: 0 !important;
+      bottom: 0;
+      margin: 20px;
+      z-index: 10;
+      height: 80px;
+      width: auto;
+    }
+    .room-scene{
       position: absolute;
       bottom: -350px;
       left: 0;
@@ -33,8 +41,11 @@
       width: 100%;
       height: auto;
       margin: 0 auto;
+      cursor: zoom-in;
     }
+
   }
+
   .collection-room-buttons {
     margin: 20px 0;
     height: auto;
@@ -55,6 +66,45 @@
       height: auto !important;
       margin-top: 20px;
     }
+  }
+}
+
+.expand-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(14, 14, 14, 0.747);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+    height: 25px;
+    cursor: pointer;
+    box-shadow: none;
+    border-radius: none;
+  }
+  .white-logo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+    height: 80px;
+    width: auto;
+    box-shadow: none;
+    border-radius: none !important;
+  }
+  img{
+    height: 90%;
+    width: auto;
+    border-radius: 18px;
   }
 }
 
