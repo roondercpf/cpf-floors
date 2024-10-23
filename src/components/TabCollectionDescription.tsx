@@ -28,8 +28,7 @@ const TabCollectionDescription: React.FC<Props> = ({ collection }) => {
   const data = resources.find(
     (data) => data.name === collection.name
   ) as (typeof resources)[0];
-
-  console.log(collection);
+  
   return (
     <>
       <div className="tabs-container">

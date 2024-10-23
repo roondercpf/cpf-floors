@@ -69,7 +69,7 @@ function CollectionProfilePageCarousel() {
                     </div>
                     <div className="specs  my-2"><b>Wear Layer: </b> {col.wearLayer}</div>
                   </div>
-                  <Link className="link-dark" href={"/collection/" + col._id}>
+                  <Link className="link-dark" href={"/collection/" + col.collection_url}>
                     View Collection
                   </Link>
                 </div>

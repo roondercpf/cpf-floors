@@ -1,6 +1,5 @@
 'use client'
 
-
 import {
     Accordion,
     AccordionContent,
@@ -56,7 +55,7 @@ import {
             <h3>How can I place an order?</h3>
           </AccordionTrigger>
           <AccordionContent className="py-20">
-          <p>You can reach out to our team directly on the Become A Dealer section. We’ll guide you through the ordering process and assist with any questions.</p>
+          <p>You can reach out to our team directly on the Become A Dealer section. We&apos;ll guide you through the ordering process and assist with any questions.</p>
           </AccordionContent>
         </AccordionItem>
 
@@ -66,7 +65,7 @@ import {
           </AccordionTrigger>
           <AccordionContent className="py-20">
           <p>
-          Absolutely! Contact us, and we’ll arrange your free samples of our flooring products. It’s essential to see and feel the materials firsthand.
+          Absolutely! Contact us, and we&apos;ll arrange your free samples of our flooring products. It&apos;s essential to see and feel the materials firsthand.
           </p>
           </AccordionContent>
         </AccordionItem>

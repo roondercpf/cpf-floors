@@ -2,6 +2,7 @@
   margin: 50px 0;
   height: auto;
   border-bottom: 1px solid rgb(214, 214, 214);
+  z-index: 400;
   .collection-name {
     width: 100%;
     padding-bottom: 0;
@@ -81,6 +82,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
   .close{
     position: absolute;
     right: 0;
@@ -129,6 +131,9 @@
       img{
         top: 0;
         border-radius: 0;
+      }
+      .logo-visualizer{
+        height: 50px;
       }
     }
   }
