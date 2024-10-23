@@ -10,7 +10,12 @@ import LogosCarousel from "@/components/LogosCarousel";
 
 import "@/app/sass/Home.scss";
 
+
+
 function Home() {
+
+
+
   return (
     <>
       <>
@@ -24,7 +29,7 @@ function Home() {
       </>
 
       <>
-        <LogosCarousel />
+        <LogosCarousel  />
       </>
 
       <>

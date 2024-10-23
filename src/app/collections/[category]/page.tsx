@@ -85,7 +85,7 @@ async function Collections({
                     </div>
                     <Link
                       className="link-dark"
-                      href={"/collection/" + collection._id}
+                      href={"/collection/" + collection.collection_url}
                     >
                       View Collection
                     </Link>

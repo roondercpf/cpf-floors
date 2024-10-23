@@ -1,5 +1,5 @@
 import { FRONTEND } from "@/utils/env";
-import { Collections, Color } from "@/interfaces/collections.model";
+import { Collections} from "@/interfaces/collections.model";
 import { notFound } from "next/navigation";
 import CollectionProfilePageCarousel from "@/components/CollectionProfilePageCarousel";
 import CollectionVisualizer from "@/components/CollectionVisualizer";
@@ -10,10 +10,10 @@ import "@/app/sass/CollectionProfile.scss";
 import "@/app/sass/Financing.scss";
 import TabCollectionDescription from "@/components/TabCollectionDescription";
 
-async function CollectionsID({
-  params: { collection_id },
+async function CollectionID({
+  params: { collection_url },
 }: {
-  params: { collection_id: string };
+  params: { collection_url: string };
 }) {
   const res = await fetch(`${FRONTEND}/api/collections/`, {
     headers: { cache: "no-store" },
@@ -29,12 +29,11 @@ async function CollectionsID({
   const { collections }: { collections: Collections[] } = collectionResponse;
 
   const collection = collections.find(
-    (collection) => collection._id === collection_id
+    (collection) => collection.collection_url === collection_url
   );
-
-  console.log(collections);
+  
   const collectionsWithoutCurrent = collections.filter(
-    (collection) => collection._id !== collection_id
+    (collection) => collection.collection_url !== collection_url
   );
 
   if (!collection) {
@@ -68,4 +67,4 @@ async function CollectionsID({
   );
 }
 
-export default CollectionsID;
+export default CollectionID;

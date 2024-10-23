@@ -3,20 +3,41 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect, useRef } from "react";
-
+import { useState, useEffect } from "react";
+import { CollectionResponse } from "@/interfaces/collections.model";
 import "../app/globals.css";
 import "../app/sass/Header.scss";
 import MenuCarousel from "./MenuCarousel";
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 function Header() {
+  const [list, setList] = useState<CollectionResponse>();
+
   const [openProducts, setOpenProducts] = useState(false);
   const [openInspire, setOpenInspire] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
-  const [openMobileProductsScetion, setOpenMobileProductsSection] =
-    useState(false);
-  const [openMobileInspiredSection, setOpenMobileInspiredSection] =
-    useState(false);
+
+  useEffect(() => {
+    async function getCollections() {
+      const url = "api/collections";
+      try {
+        const response = await fetch(url);
+
+        const collection: CollectionResponse = await response.json();
+
+        setList(collection);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    getCollections();
+  }, []);
 
   return (
     <>
@@ -99,7 +120,7 @@ function Header() {
                 }}
                 href="/blogs"
               >
-                Blog
+                Our Blog
               </Link>
             </div>
 
@@ -132,7 +153,7 @@ function Header() {
             <motion.div
               className="products-menu"
               initial={{ height: 0, opacity: 0 }}
-              animate={{ height: 600, opacity: 1 }}
+              animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
             >
               <div className="menu-products-carousel">
@@ -141,48 +162,19 @@ function Header() {
               <div className="product-menu-links-container">
                 <div className="links-container">
                   <h3>Collections</h3>
-                  <Link
-                    onClick={() => setOpenProducts(false)}
-                    href="/collection/66cb600baec0a38cb01ff2e1"
-                  >
-                    Deco54
-                  </Link>
-                  <Link
-                    onClick={() => setOpenProducts(false)}
-                    href="/collection/66abffc6ff92ba10a656048d"
-                  >
-                    Quick48+
-                  </Link>
-                  <Link
-                    onClick={() => setOpenProducts(false)}
-                    href="/collection/66cb5823aec0a38cb01ff2df"
-                  >
-                    Project
-                  </Link>
-                  <Link
-                    onClick={() => setOpenProducts(false)}
-                    href="/collection/66abd8bbff92ba10a656047e"
-                  >
-                    Spirit XL
-                  </Link>
-                  <Link
-                    onClick={() => setOpenProducts(false)}
-                    href="/collection/66abc1c6ff92ba10a656047d"
-                  >
-                    Project 2.0
-                  </Link>
-                  <Link
-                    onClick={() => setOpenProducts(false)}
-                    href="/collection/66c378954718f2eb74729eb8"
-                  >
-                    Supreme
-                  </Link>
-                  <Link
-                    onClick={() => setOpenProducts(false)}
-                    href="/collection/66afb340613ab3dab29c8557"
-                  >
-                    Evolve
-                  </Link>
+
+                  {/*MAPPING COLLECTIONS URLS */}
+
+                  {list?.collections.map((link, index) => (
+                    <Link
+                      onClick={() => setOpenProducts(false)}
+                      key={index}
+                      href={`/collection/${link.collection_url}`}
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
+
                   <Link
                     onClick={() => setOpenProducts(false)}
                     className="font-bold underline"
@@ -349,100 +341,95 @@ function Header() {
           {mobileNav && (
             <motion.div
               className="mobile-nav"
-              initial={{ height: 0 }}
-              animate={{ height: "100vh" }}
-              exit={{ height: 0 }}
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ height: "100vh", opacity: 1 }}
+              exit={{ opacity: 0, height: 0 }}
             >
+              {/* MOBILE NAV ACCORDION SECTION */}
+
               <div className="mobile-nav-links">
-                <div className="composed-link flex">
-                  <Link
-                    href="/#"
-                    onClick={() =>
-                      setOpenMobileProductsSection(!openMobileProductsScetion)
-                    }
-                  >
-                    Products
-                  </Link>
-                  <Image
-                    src="/menu-arrow.svg"
-                    height={14}
-                    width={14}
-                    alt=""
-                  ></Image>
-                </div>
-                <AnimatePresence initial={false}>
-                  {openMobileProductsScetion && (
-                    <motion.div
-                      className="mobile-section-links"
-                      initial={{ height: 0 }}
-                      animate={{ height: "auto" }}
-                      exit={{ height: 0 }}
-                    >
-                      <h3>Collections</h3>
+                <Accordion type="single" collapsible className="w-full px-5">
+                  <AccordionItem value="item-1">
+                    <AccordionTrigger>
+                      <h3>Products</h3>
+                    </AccordionTrigger>
+                    <AccordionContent className="py-0">
+                      <p>
+                        We provide a wide range of rigid core vinyl and laminate
+                        flooring. Our selection caters to both residential and
+                        commercial needs, and includes all the necessary
+                        accesories.
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
 
-                      <Link
-                        className="text-center"
-                        onClick={() => setMobileNav(false)}
-                        href="/collections"
-                      >
-                        Watch All Collections
-                      </Link>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                  <AccordionItem value="item-2">
+                    <AccordionTrigger>
+                      <h3>Do you sell to individual homeowners?</h3>
+                    </AccordionTrigger>
+                    <AccordionContent className="py-0">
+                      <p>
+                        While our primary clientele consists of retailers,
+                        builders, and contractors, we also serve individual
+                        homeowners. Feel free to explore our products and submit
+                        a quote.
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
 
-                <Link
-                  onClick={() => setMobileNav(!mobileNav)}
-                  href="/dealer-locator"
-                >
-                  Dealer Locator
-                </Link>
-                <Link onClick={() => setMobileNav(!mobileNav)} href="/about-us">
-                  About Us
-                </Link>
-                <Link
-                  onClick={() => setMobileNav(!mobileNav)}
-                  href="/contact-us"
-                >
-                  Contact Us
-                </Link>
+                  <AccordionItem value="item-3">
+                    <AccordionTrigger>
+                      <h3>Do you offer installation services?</h3>
+                    </AccordionTrigger>
+                    <AccordionContent className="py-0">
+                      <p>
+                        While we don&apos;t provide installation ourselves, we
+                        can recommend trusted professionals in your area in the
+                        Dealer Locator section. Feel free to ask for referrals!
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
 
-                <div
-                  className="composed-link flex"
-                  onClick={() =>
-                    setOpenMobileInspiredSection(!openMobileInspiredSection)
-                  }
-                >
-                  <Link href="/blogs">Get Inspired</Link>
-                  <Image
-                    src="/menu-arrow.svg"
-                    height={14}
-                    width={14}
-                    alt=""
-                  ></Image>
-                </div>
-                <AnimatePresence initial={false}>
-                  {openMobileInspiredSection && (
-                    <motion.div
-                      className="mobile-section-links"
-                      initial={{ height: 0 }}
-                      animate={{ height: "auto" }}
-                      exit={{ height: 0 }}
-                    >
-                      <h3>Visit Our Blog</h3>
-                      <Link onClick={() => setMobileNav(false)} href="/blogs">
-                        Blog
-                      </Link>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                  <AccordionItem value="item-4">
+                    <AccordionTrigger>
+                      <h3>Is there a warranty on your products?</h3>
+                    </AccordionTrigger>
+                    <AccordionContent className="py-0">
+                      <p>
+                        Yes! Our warranties covers Coreproof, Quicksurfaces, and
+                        Finfloor brands. You can find detailed warranty
+                        information for each product on the Technical
+                        Specifications section.
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
 
-                <Link
-                  onClick={() => setMobileNav(!mobileNav)}
-                  href="/become-a-dealer"
-                >
-                  Become a dealer
-                </Link>
+                  <AccordionItem value="item-5">
+                    <AccordionTrigger>
+                      <h3>How can I place an order?</h3>
+                    </AccordionTrigger>
+                    <AccordionContent className="py-0">
+                      <p>
+                        You can reach out to our team directly on the Become A
+                        Dealer section. We&apos;ll guide you through the ordering
+                        process and assist with any questions.
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-6">
+                    <AccordionTrigger>
+                      <h3>Can I request samples before making a decision?</h3>
+                    </AccordionTrigger>
+                    <AccordionContent className="py-0">
+                      <p>
+                        Absolutely! Contact us, and we&apos;ll arrange your free
+                        samples of our flooring products. It&apos;s essential to see
+                        and feel the materials firsthand.
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               </div>
             </motion.div>
           )}

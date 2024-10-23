@@ -17,7 +17,8 @@ export interface Collections {
   underlayment: string;
   trafficClass: string;
   description: string;
-  cover: string
+  cover: string;
+  collection_url: string
 }
 
 export interface Color {

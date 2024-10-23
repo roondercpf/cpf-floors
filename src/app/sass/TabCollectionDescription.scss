@@ -2,20 +2,20 @@
   margin: 80px 0;
   height: auto;
   padding: 0 20px;
-  div[role="tablist"]{
+  div[role="tablist"] {
     width: auto;
     height: auto;
     margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    button{
+    button {
       padding: 20px 45px;
       border-radius: 12px;
       border: 1px solid rgb(214, 214, 214);
       margin: 15px;
     }
-    button:focus{
+    button:focus {
       background-color: #373737;
       color: white;
     }
@@ -33,17 +33,16 @@
     border-radius: 18px;
     width: 100%;
     margin: 0;
-    .color-list{
+    .color-list {
       width: 100% !important;
       text-align: center;
-      p{
+      p {
         cursor: pointer;
         margin-bottom: 15px;
         text-decoration: underline;
-
       }
     }
-    .specs-container{
+    .specs-container {
       width: 100%;
       text-align: center;
     }
@@ -60,7 +59,7 @@
     }
     .installation-container {
       width: 100%;
-      img{
+      img {
         height: 400px;
         width: auto;
       }
@@ -71,7 +70,7 @@
   }
 }
 
-.expand-color-container{
+.expand-color-container {
   position: fixed;
   height: 100vh;
   width: 100%;
@@ -84,7 +83,7 @@
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(2px);
-  .close{
+  .close {
     position: absolute;
     top: 0;
     right: 0;
@@ -93,25 +92,26 @@
     height: 25px;
     width: auto;
     border-radius: 0;
+    z-index: 4000;
   }
-  .image-container{
+  .image-container {
     position: relative;
     height: 90%;
     width: auto;
     z-index: 10;
-    img{
+    img {
       height: 100%;
       width: auto;
       border-radius: 18px;
     }
-    h2{
+    h2 {
       position: absolute;
       right: 0;
       bottom: 40px;
       margin: 20px;
       font-size: 35px;
     }
-    p{
+    p {
       position: absolute;
       bottom: 0;
       right: 0;
@@ -123,9 +123,6 @@
   }
 }
 
-
-
-
 @media (max-width: 1175px) {
   .tabs-container {
     width: 100% !important;
@@ -135,31 +132,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    div[role="tablist"]{
+    div[role="tablist"] {
       width: 100%;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       padding: 0;
       margin: 0;
-      .tab-list{
+      .tab-list {
         width: 100%;
         flex-direction: column;
         padding: 0;
         margin: 0;
-        button{
-          width: 100%;
+        button {
+          width: 100% !important;
           margin: 10px 0;
         }
       }
     }
-    
     .content-tab {
-      padding: 40px 15px;
-      margin: 0;
+      padding: 40px 0px;
       flex-wrap: wrap;
       padding-bottom: 40px;
-      width: 100%;
+      width: 95vw !important;
       text-align: center;
       .description-img {
         width: 100%;
@@ -178,6 +173,9 @@
           font-size: 35px;
         }
       }
+      .color-list{
+        width: 100%;
+      }
     }
   }
 
@@ -186,5 +184,19 @@
     h2 {
       font-size: 25px;
     }
+  }
+  .expand-color-container{
+    z-index: 3000;
+    .image-container{
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      .close{
+        z-index: 4000;
+      }
+      img{
+        width: 100%;
+      }
+    }    
   }
 }

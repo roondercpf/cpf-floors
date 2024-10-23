@@ -3,12 +3,12 @@
 import React, { useRef, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { AnimatePresence, motion } from "framer-motion";
 
 import useEmblaCarousel from "embla-carousel-react";
 import "@/app/sass/LogosCarousel.scss";
 
-const LogosCarousel = () => {
+
+function LogosCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
   const scrollPrev = useCallback(() => {
@@ -37,7 +37,7 @@ const LogosCarousel = () => {
             </div>
 
             <div className="embla__slide logos__slide">
-              <Link href="/collection/66ae8f0d0c8f4839920a6422">
+              <Link href="/collection/decotile-collection">
                 <Image
                   src="/logos/decotile.svg"
                   height={80}
@@ -59,7 +59,7 @@ const LogosCarousel = () => {
             </div>
 
             <div className="embla__slide logos__slide">
-              <Link href="/collection/66abd8bbff92ba10a656047e">
+              <Link href="/collection/spiritxl-collection">
                 <Image
                   src="/logos/spiritxl.svg"
                   height={80}
@@ -81,7 +81,7 @@ const LogosCarousel = () => {
             </div>
 
             <div className="embla__slide logos__slide">
-              <Link href="/collection/66cb600baec0a38cb01ff2e1">
+              <Link href="/collection/deco54-collection">
                 <Image
                   src="/logos/deco54.svg"
                   height={80}
@@ -92,7 +92,7 @@ const LogosCarousel = () => {
             </div>
 
             <div className="embla__slide logos__slide">
-              <Link href="/collection/66abffc6ff92ba10a656048d">
+              <Link href="/collection/quick48+-collection">
                 <Image
                   src="/logos/quick48.svg"
                   height={80}
@@ -103,7 +103,7 @@ const LogosCarousel = () => {
             </div>
 
             <div className="embla__slide logos__slide">
-              <Link href="/collection/66afb340613ab3dab29c8557">
+              <Link href="/collection/evolve-collection">
                 <Image
                   src="/logos/evolve.svg"
                   height={80}
@@ -114,7 +114,7 @@ const LogosCarousel = () => {
             </div>
 
             <div className="embla__slide logos__slide">
-              <Link href="/collection/66afbdb4613ab3dab29c8558">
+              <Link href="/collection/inspire-black-edition-collection">
                 <Image
                   src="/logos/ibe.svg"
                   height={80}
@@ -125,7 +125,7 @@ const LogosCarousel = () => {
             </div>
 
             <div className="embla__slide logos__slide">
-              <Link href="/collection/66abc1c6ff92ba10a656047d">
+              <Link href="/collection/project2.0-collection">
                 <Image
                   src="/logos/project20.svg"
                   height={80}
@@ -159,7 +159,7 @@ const LogosCarousel = () => {
             </div>
 
             <div className="embla__slide logos__slide">
-              <Link href="/collection/66acef9bda1972c3cb4245eb">
+              <Link href="/collection/artisan-collection">
                 <Image
                   src="/logos/artisan.svg"
                   height={80}
@@ -170,7 +170,7 @@ const LogosCarousel = () => {
             </div>
 
             <div className="embla__slide logos__slide">
-              <Link href="/collection/66cb5b6caec0a38cb01ff2e0">
+              <Link href="/collection/alpha22-collection">
                 <Image
                   src="/logos/alpha22.svg"
                   height={80}

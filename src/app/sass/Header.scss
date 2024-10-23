@@ -52,23 +52,26 @@
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   z-index: 95;
+  color: white;
   .menu-products-carousel{
     width: 40%;
   }
   .product-menu-links-container{
+    height: auto;
     display: flex;
     width: 50%;
     justify-content: center;
     align-items: start;
     padding: 40px;
     .links-container{
-      height: 100%s;
+      height: auto;
       width: 50%;
       padding: 20px;
+      color: #373737;
       h3{
         font-size: 20px;
         font-weight: 600;
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid #373737;
         padding-bottom: 15px;
       }
       a{
@@ -133,60 +136,19 @@
   width: 100%;
   height: auto;
   background-color: white;
-  top: 85px;
+  top: 0px;
   left: 0;
   right: 0;
-  z-index: 500 !important;
+  z-index: 99 !important;
   overflow-y: scroll;
   .mobile-nav-links{
-    width: 100%;
-    display: flex;
-    height: auto;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    padding: 20px;
-    overflow: scroll;
-    .composed-link{
-      width: 100%;
-      img{
-        border-bottom: 1px solid rgb(199, 199, 199);
-        cursor: pointer;
-      }
-    }
-    .mobile-section-links{
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 40px 20px;
-      overflow: hidden;
-      background-color: #f0f0f0;
-      border-radius: 12px;
-      margin: 20px 0;
-      h3{
-        font-weight: 600;
-        width: 100%;
-        text-align: center;
-      }
-      a{
-        display: list-item;
-        list-style: none;
-        font-weight: 500;
-      }
-    }
-    a{
-      padding: 25px 0;
-      border-bottom: 1px solid rgb(199, 199, 199);
-      width: 100%;
-      font-weight: 600;
-    }
+    margin-top: 160px;
   }
 }
 
-
+.mobile-nav::-webkit-scrollbar, .mobile-nav-links::-webkit-scrollbar{
+  display: none !important;
+}
 
 
 
