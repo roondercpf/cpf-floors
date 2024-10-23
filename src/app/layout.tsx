@@ -21,13 +21,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    
     <html lang="en">
+      <head>
+      <script type="text/javascript" src="https://cdn.roomvo.com/static/scripts/b2b/cpffloors.js" async></script>
       <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
+      </head>
+      
       <body className={`${montserrat.className}`}>
         <Header />
         {children}
         <FooterMobile />
         <Footer />
+        
       </body>
     </html>
   );

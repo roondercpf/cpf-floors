@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import "../app/globals.css";
 import "../app/sass/Header.scss";
@@ -12,7 +12,6 @@ import MenuCarousel from "./MenuCarousel";
 function Header() {
   const [openProducts, setOpenProducts] = useState(false);
   const [openInspire, setOpenInspire] = useState(false);
-
   const [mobileNav, setMobileNav] = useState(false);
   const [openMobileProductsScetion, setOpenMobileProductsSection] =
     useState(false);
@@ -142,7 +141,10 @@ function Header() {
               <div className="product-menu-links-container">
                 <div className="links-container">
                   <h3>Collections</h3>
-                  <Link onClick={() => setOpenProducts(false)} href="/collection/66cb600baec0a38cb01ff2e1">
+                  <Link
+                    onClick={() => setOpenProducts(false)}
+                    href="/collection/66cb600baec0a38cb01ff2e1"
+                  >
                     Deco54
                   </Link>
                   <Link
@@ -323,7 +325,11 @@ function Header() {
               ></Image>
             </Link>
           </div>
-          <Link onClick={()=> setMobileNav(!mobileNav)} href="/become-a-dealer" className="link-dark mx-5 py-1 px-8">
+          <Link
+            onClick={() => setMobileNav(!mobileNav)}
+            href="/become-a-dealer"
+            className="link-dark mx-5 py-1 px-8"
+          >
             Become a Dealer
           </Link>
           <div
@@ -348,13 +354,15 @@ function Header() {
               exit={{ height: 0 }}
             >
               <div className="mobile-nav-links">
-                <div
-                  className="composed-link flex"
-
-                >
-                  <Link href="/#" onClick={() =>
-                    setOpenMobileProductsSection(!openMobileProductsScetion)
-                  }>Products</Link>
+                <div className="composed-link flex">
+                  <Link
+                    href="/#"
+                    onClick={() =>
+                      setOpenMobileProductsSection(!openMobileProductsScetion)
+                    }
+                  >
+                    Products
+                  </Link>
                   <Image
                     src="/menu-arrow.svg"
                     height={14}
