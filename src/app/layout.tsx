@@ -24,10 +24,9 @@ export default function RootLayout({
     
     <html lang="en">
       <head>
-      <script type="text/javascript" src="https://cdn.roomvo.com/static/scripts/b2b/cpffloors.js" async></script>
+      <script type="text/javascript" src="https://cdn.roomvo.com/static/scripts/b2b/cpffloors.js" async={true}></script>
       <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
       </head>
-      
       <body className={`${montserrat.className}`}>
         <Header />
         {children}
