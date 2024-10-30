@@ -7,13 +7,14 @@
 .reviews-carousel__container {
   display: flex;
   width: 100%;
-  height: 700px;
+  height: auto;
 }
+
 .reviews-carousel__slide{
   flex: 0 0 100%;
   min-width: 0;
   padding: 120px;
-  height: 700px;
+  height: auto;
 
 }
 
@@ -22,20 +23,22 @@
   top: 45%;
   left: 0%;
   margin: 0 60px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .reviews-carousel-next{
   position: absolute;
   top: 45%;
   right: 0%;
   margin: 0 60px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 
 .reviews-slide-carousel{
   background-color: white;
-  height: auto;
   border-radius: 18px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 100%;
   .content{
     height: 100%;
     padding: 80px;
@@ -60,17 +63,20 @@
 
 @media(max-width: 1175px){
   .reviews-carousel-container{
+      height: auto;
       padding-bottom: 80px;
       justify-content: center;
       align-items: center;
   }
   .reviews-carousel__slide{
+    
       padding: 20px !important;
       flex: 0 0 100%;
       justify-content: center;
   }
   
   .reviews-slide-carousel{
+
     width: 100%;
     padding: 20px;
     .content{

@@ -93,6 +93,11 @@
     box-shadow: none;
     border-radius: none;
   }
+  img{
+    height: auto;
+    width: auto;
+    border-radius: 18px;
+  }
   .white-logo{
     position: absolute;
     right: 0;
@@ -102,11 +107,6 @@
     width: auto;
     box-shadow: none;
     border-radius: none !important;
-  }
-  img{
-    height: 90%;
-    width: auto;
-    border-radius: 18px;
   }
 }
 
@@ -119,8 +119,12 @@
       text-align: center;
       margin-top: 40px;
       h2{
+        font-size: 35px;
         margin-bottom: 15px;
         line-height: 50px;
+      }
+      p{
+        font-size: 20px;
       }
     }
     .collection-room{
@@ -135,6 +139,46 @@
       .logo-visualizer{
         height: 50px;
       }
+    }
+  }
+  .expand-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(14, 14, 14, 0.747);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    .close{
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 20px;
+      height: 25px;
+      cursor: pointer;
+      box-shadow: none;
+      border-radius: none;
+    }
+    img{
+      height: auto;
+      width: auto;
+      border-radius: 18px;
+    }
+    .white-logo{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin: 20px;
+      height: 40px;
+      width: auto;
+      box-shadow: none;
+      border-radius: none !important;
+      border: 0;
     }
   }
 }

@@ -39,6 +39,9 @@ function Header() {
     getCollections();
   }, []);
 
+
+  console.log(list)
+
   return (
     <>
       <>
@@ -360,7 +363,7 @@ function Header() {
                             className="mb-5 text"
                             onClick={() => {
                               setOpenProducts(false);
-                              setMobileNav(false);
+                              setMobileNav(!mobileNav);
                             }}
                             key={index}
                             href={`/collection/${link.collection_url}`}
@@ -372,13 +375,13 @@ function Header() {
                     </div>
                   </AccordionItem>
                   <div className="link-container-normal py-5">
-                    <Link href="/dealer-locator">Dealer Locator</Link>
+                    <Link href="/dealer-locator" onClick={() => setMobileNav(!mobileNav)}>Dealer Locator</Link>
                   </div>
                   <div className="link-container-normal py-5">
-                    <Link href="/become-a-dealer">Become a Dealer</Link>
+                    <Link href="/become-a-dealer onClick={() => setMobileNav(!mobileNav)}">Become a Dealer</Link>
                   </div>
                   <div className="link-container-normal py-5">
-                    <Link href="/about-us">About Us</Link>
+                    <Link href="/about-us" onClick={() => setMobileNav(!mobileNav)}>About Us</Link>
                   </div>
                   <AccordionItem value="item-2">
                     <AccordionTrigger>
@@ -386,15 +389,15 @@ function Header() {
                     </AccordionTrigger>
                     <div className="link-container">
                       <AccordionContent className="link-container-list flex flex-col p-5">
-                        <Link href="/blog">Our Blog</Link>
+                        <Link href="/blog" onClick={() => setMobileNav(!mobileNav)}>Our Blog</Link>
                       </AccordionContent>
                     </div>
                   </AccordionItem>
                   <div className="link-container-normal py-5">
-                    <Link href="/order-samples">Order Samples</Link>
+                    <Link href="/order-samples" onClick={() => setMobileNav(!mobileNav)}>Order Samples</Link>
                   </div>
                   <div className="link-container-normal py-5">
-                    <Link href="/contact-us">Contact Us</Link>
+                    <Link href="/contact-us" onClick={() => setMobileNav(!mobileNav)}>Contact Us</Link>
                   </div>
                 </Accordion>
                 <div className="flex justify-center items-center py-20">
