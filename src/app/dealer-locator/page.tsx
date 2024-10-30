@@ -1,12 +1,9 @@
 import { Map } from "@/components/Map";
-import Link from "next/link";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { FRONTEND } from "@/utils/env";
 import { Dealerlocator } from "@/interfaces/dealer-locator.model";
 
 import "@/app/sass/DisplayResources.scss";
-import BecomeADealerForm from "@/components/BecomeADealerForm";
 import DealerLocatorForm from "@/components/DealerLocatorForm";
 
 async function DealerLocator() {
@@ -29,6 +26,7 @@ async function DealerLocator() {
               height={200}
               width={200}
               alt="CPF Floors Display resources"
+              unoptimized
             ></Image>
           </div>
         </div>

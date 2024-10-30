@@ -417,15 +417,15 @@
   /*MAIN BANNER*/
 
   .main-banner {
-    height: 70vh;
+    height: auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #0f0f0f;
     background-position: center;
-    padding: 120px 20px 0px 20px;
+    padding: 40px;
     margin-top: 80px;
     .main-banner-text{
       padding: 0;
@@ -443,10 +443,10 @@
   /*ROOMVO SECTION*/
 
   .roomvo-section-container {
-    padding: 60px 20px;
+    padding: 60px 10px;
     height: auto;
     .roomvo-section {
-      padding: 20px 20px;
+      padding: 20px 10px;
       height: auto;
       .roomvo-img {
         width: 100%;
@@ -478,7 +478,7 @@
   /*DISCOVER SECTION*/
 
   .discover-section-container {
-    padding: 40px 20px;
+    padding: 40px 10px;
     height: auto;
     .discover {
       padding:  20px;
@@ -501,7 +501,7 @@
   /*ORDER SECTION*/
 
   .order-section-container {
-    padding: 20px;
+    padding: 10px;
     height: auto;
     .order {
         height: auto;
@@ -518,7 +518,7 @@
   /*AVAILABLE SECTION*/
 
   .available-section-container {
-    padding: 40px 20px;
+    padding: 40px 10px;
     padding-top: 0;
     .available-section-title {
       width: 100%;
@@ -547,7 +547,7 @@
   /*DELIVER SECTION*/
 
   .deliver-section-container {
-    padding: 20px;
+    padding: 10px;
     .deliver-section {
       padding: 20px;
       .deliver-img {
@@ -570,5 +570,70 @@
 
   .rigid-core-container {
     display: none;
+  }
+}
+
+
+@media(max-width: 1024px) {
+  .available-section-container {
+    padding: 40px 10px;
+    padding-top: 0;
+    .available-section-title {
+      width: 100%;
+      padding-bottom: 0;
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        width: 100%;
+      }
+    }
+    .available-accessories-container {
+      justify-content: center;
+      width: 100%;
+      margin: 0;
+      padding-bottom: 0;
+      .available-accessories-div-one,
+      .available-accessories-div-two,
+      .available-accessories-div-three {
+        width: 100%;
+        margin: 80px 0;
+        img{
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 620px){
+  .available-section-container {
+    padding: 40px 10px;
+    padding-top: 0;
+    .available-section-title {
+      width: 100%;
+      padding-bottom: 0;
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        width: 100%;
+      }
+    }
+    .available-accessories-container {
+      justify-content: center;
+      width: 100%;
+      margin: 0;
+      padding-bottom: 0;
+      .available-accessories-div-one,
+      .available-accessories-div-two,
+      .available-accessories-div-three {
+        width: 100%;
+        margin: 80px 0;
+        img{
+          width: 60%;
+        }
+      }
+    }
   }
 }
