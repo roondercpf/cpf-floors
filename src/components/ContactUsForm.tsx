@@ -2,6 +2,8 @@
 
 import { useForm, SubmitHandler } from "react-hook-form";
 import Router, { useRouter } from "next/navigation";
+import { useToast } from "@/hooks/use-toast"
+
 
 export default function ContactUsForm() {
   const router = useRouter();
@@ -21,6 +23,8 @@ export default function ContactUsForm() {
     watch,
   } = useForm<IFormInput>();
 
+  const { toast } = useToast()
+
   const onSubmit: SubmitHandler<IFormInput> = async (data) => {
     const dataFormatted = {
       name: data.fullName,
@@ -29,7 +33,7 @@ export default function ContactUsForm() {
       company_name: data.business,
       phone: data.phone,
     };
-
+    toast({title: "You've signed up successfully"})
     try {
       const response = await fetch("/api/emails/sendContact", {
         method: "POST",
@@ -38,6 +42,8 @@ export default function ContactUsForm() {
         },
         body: JSON.stringify(dataFormatted),
       });
+
+      
 
       if (response.status !== 200) {
         throw new Error("Error en la petición");
@@ -99,14 +105,14 @@ export default function ContactUsForm() {
 
         <input
           type="tel"
-          className="p-5 mb-5"
+          className="p-5 mb-10"
           placeholder="Phone Number"
           {...register("phone", {
             required: "This field is required",
           })}
         />
 
-        <button className="button-dark" type="submit">
+        <button className="button-dark" type="submit" onClick={() => onSubmit}>
           Sign Up
         </button>
       </form>

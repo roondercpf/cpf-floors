@@ -389,7 +389,7 @@ function Header() {
                     </AccordionTrigger>
                     <div className="link-container">
                       <AccordionContent className="link-container-list flex flex-col p-5">
-                        <Link href="/blog" onClick={() => setMobileNav(!mobileNav)}>Our Blog</Link>
+                        <Link href="/blogs" onClick={() => setMobileNav(!mobileNav)}>Our Blog</Link>
                       </AccordionContent>
                     </div>
                   </AccordionItem>
