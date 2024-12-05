@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 import "../app/sass/Footer.scss";
 
@@ -15,7 +16,8 @@ function Footer() {
             alt="CPF footer Logo"
             width={100}
             height={100}
-          ></Image>
+            unoptimized
+          />
           <div className="social-icons">
             <Link target="_blank" href="https://www.instagram.com/cpf_floors/">
               <Image
@@ -23,7 +25,8 @@ function Footer() {
                 height={20}
                 width={20}
                 alt="CPF Floors Instagram"
-              ></Image>
+                unoptimized
+              />
             </Link>
 
             <Link target="_blank" href="https://www.linkedin.com/company/cpf-floors-llc">
@@ -32,7 +35,8 @@ function Footer() {
                 height={20}
                 width={20}
                 alt="CPF Floors LinkedIn"
-              ></Image>
+                unoptimized
+              />
             </Link>
 
             <Link target="_blank" href="https://www.pinterest.com/cpf_floors/">
@@ -41,7 +45,8 @@ function Footer() {
                 height={20}
                 width={20}
                 alt="CPF Floors Pinterest"
-              ></Image>
+                unoptimized
+              />
             </Link>
           </div>
         </div>
@@ -85,36 +90,43 @@ function Footer() {
         </div>
       </div>
       <div className="copyright-footer">
-        <div className="flex footer-img">
+        <motion.div className="flex footer-img"
+        initial={{opacity: 0}}
+        whileInView={{opacity:1}}
+        transition={{duration: 2}}>
           <Image
             className="mx-10"
             src="/financing/bluetape.svg"
             width={220}
             height={220}
             alt="World Floor Covering Association"
-          ></Image>
+            unoptimized
+          />
           <Image
             className="mx-10"
             src="/footer2.svg"
             width={60}
             height={60}
             alt="World Floor Covering Association"
-          ></Image>
+            unoptimized
+          />
           <Image
             className="mx-10"
             src="/footer1.svg"
             width={80}
             height={80}
             alt="World Floor Covering Association"
-          ></Image>
+            unoptimized
+          />
           <Image
             className="mx-10"
             src="/wfca.svg"
             width={220}
             height={220}
             alt="World Floor Covering Association"
-          ></Image>
-        </div>
+            unoptimized
+          />
+        </motion.div>
         <p>© 2024 CPF Floors. All rights reserved.</p>
       </div>
     </footer>
