@@ -17,7 +17,7 @@ function BecomeADealer() {
           <div className="become-text">
             <h2>Become a Dealer</h2>
             <p>
-              Join us now and discover how we help you achieve your business
+              Join us now and discover how we help you <br /> achieve your business
               goals!
             </p>
             <Link className="link-light" href="#contactForm">
