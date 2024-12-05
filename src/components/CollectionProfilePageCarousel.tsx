@@ -9,6 +9,7 @@ import Link from "next/link";
 import "@/app/sass/CollectionProfilePageCarousel.scss";
 
 function CollectionProfilePageCarousel() {
+  
   const [collections, setCollections] = useState<Collections[] | null>([]);
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
