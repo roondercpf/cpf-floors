@@ -9,27 +9,31 @@ import HomeBannerCarousel from "@/components/HomeBannerCarousel";
 import LogosCarousel from "@/components/LogosCarousel";
 
 import "@/app/sass/Home.scss";
-
-
+import FilterCarouselPage from "@/components/FilterCarouselPage";
 
 function Home() {
-
-
-
   return (
     <>
       <>
         <div className="main-banner">
           <div className="main-banner-text">
-            <h1>Let&apos;s Click <br /> Together!</h1>
-            <p>The smartest flooring solution for all your <br /> renovation needs.</p>
-            <Link className="link-light" href="/collections">Get Started!</Link>
+            <h1>
+              Let&apos;s Click <br /> Together!
+            </h1>
+            <p>
+              The smartest flooring solution for all your <br /> renovation
+              needs.
+            </p>
+            <Link className="link-light" href="/collections">
+              Get Started!
+            </Link>
           </div>
         </div>
       </>
 
       <>
-        <LogosCarousel  />
+        <FilterCarouselPage />
+        <LogosCarousel />
       </>
 
       <>
@@ -52,7 +56,11 @@ function Home() {
                 select the products you want to use, and find the perfect design
                 for your home.
               </p>
-              <Link target="_blank" href="https://www.roomvo.com/my/cpffloors/" className="link-dark">
+              <Link
+                target="_blank"
+                href="https://www.roomvo.com/my/cpffloors/"
+                className="link-dark"
+              >
                 Try it Yourself!
               </Link>
             </div>
@@ -68,7 +76,11 @@ function Home() {
         <div className="discover-section-container">
           <div className="discover">
             <div className="discover-text">
-              <h2 className="font-bold"><b>Discover Resources</b><br />For Grow Your Business</h2>
+              <h2 className="font-bold">
+                <b>Discover Resources</b>
+                <br />
+                For Grow Your Business
+              </h2>
               <p>
                 Gain a competitive edge and ignite revenue growth today. We
                 equip your dealer with powerful marketing tools that make CPF
@@ -122,17 +134,32 @@ function Home() {
             </div>
             <div className="available-accessories-container">
               <div className="available-accessories-div-one">
-                <motion.img src="/home/ac1.svg" width={400} height={400} alt=""></motion.img>
+                <motion.img
+                  src="/home/ac1.svg"
+                  width={400}
+                  height={400}
+                  alt=""
+                ></motion.img>
                 <h2>Steps</h2>
                 <Link href="/coresteps">View More</Link>
               </div>
               <div className="available-accessories-div-two">
-              <motion.img src="/home/ac2.svg" width={400} height={400} alt=""></motion.img>
+                <motion.img
+                  src="/home/ac2.svg"
+                  width={400}
+                  height={400}
+                  alt=""
+                ></motion.img>
                 <h2>Moldings</h2>
                 <Link href="/core-moldings">View More</Link>
               </div>
               <div className="available-accessories-div-three">
-              <motion.img src="/home/ac3.svg" width={400} height={400} alt=""></motion.img>
+                <motion.img
+                  src="/home/ac3.svg"
+                  width={400}
+                  height={400}
+                  alt=""
+                ></motion.img>
                 <h2>Underlayments</h2>
                 <Link href="/corepad">View More</Link>
               </div>

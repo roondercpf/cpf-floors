@@ -1,0 +1,65 @@
+.filter {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 !important;
+  height: auto;
+}
+.filter__container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+  padding: 40px;
+}
+.filter-card__slide {
+  position: relative;
+  flex: 0 0 30%;
+  min-width: auto;
+  min-height: auto;
+  overflow: hidden;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  .effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 1s;
+    .filter-plank{
+        position: absolute;
+        bottom: -300px;
+        right: 0;
+        width: 55%;
+        transition: 1.5s;
+    }
+  }
+
+  .effect:hover{
+    opacity: 1;
+    .filter-plank{
+        bottom: 0;
+    }
+  }
+
+}
+
+.filter__slide:hover img {
+  filter: none;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1175px) {
+  .filter__slide {
+    flex: 0 0 45%;
+    padding: 20px !important;
+    img {
+      filter: none;
+    }
+  }
+}
