@@ -10,7 +10,6 @@
   width: 100%;
   height: 100%;
   margin-top: 40px;
-  padding: 40px;
 }
 .filter-card__slide {
   position: relative;
@@ -18,6 +17,7 @@
   min-width: auto;
   min-height: auto;
   overflow: hidden;
+  margin: 20px;
   img {
     height: 100%;
     width: 100%;
@@ -36,6 +36,21 @@
         right: 0;
         width: 55%;
         transition: 1.5s;
+    }
+  }
+  .slide-text{
+    color: white;
+    position: absolute;
+    top: 20%;
+    margin: 40px;
+    z-index: 10;
+    h2{
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 50px;
+    }
+    p{
+      font-size: 22px;
     }
   }
 

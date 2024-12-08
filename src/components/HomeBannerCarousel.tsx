@@ -28,7 +28,12 @@ const HomeBannerCarousel = () => {
           ref={emblaRef}
         >
           <div className="home-banner-carousel__container">
-            <div className="home-carousel__slide">
+            <motion.div
+              className="home-carousel__slide"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 2 }}
+            >
               <div className="home-slide-one">
                 <div className="content">
                   <h2>
@@ -51,9 +56,14 @@ const HomeBannerCarousel = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="home-carousel__slide">
+            <motion.div
+              className="home-carousel__slide"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 2 }}
+            >
               <div className="home-slide-two">
                 <div className="content">
                   <h2>
@@ -67,7 +77,7 @@ const HomeBannerCarousel = () => {
                     and rich wood landscapes.
                   </p>
                   <div className="mt-10">
-                  <Link
+                    <Link
                       className="link-light"
                       href="/collection/66cb600baec0a38cb01ff2e1"
                     >
@@ -76,9 +86,14 @@ const HomeBannerCarousel = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="home-carousel__slide">
+            <motion.div
+              className="home-carousel__slide"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 2 }}
+            >
               <div className="home-slide-three">
                 <div className="content">
                   <h2>
@@ -92,18 +107,23 @@ const HomeBannerCarousel = () => {
                     and rich wood landscapes.
                   </p>
                   <div className="mt-10">
-                  <Link
-                    className="link-light"
-                    href="/collection/66abc1c6ff92ba10a656047d"
-                  >
-                    See More!
-                  </Link>
+                    <Link
+                      className="link-light"
+                      href="/collection/66abc1c6ff92ba10a656047d"
+                    >
+                      See More!
+                    </Link>
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="home-carousel__slide">
+            <motion.div
+              className="home-carousel__slide"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 2 }}
+            >
               <div className="home-slide-four">
                 <div className="content">
                   <h2>
@@ -116,17 +136,17 @@ const HomeBannerCarousel = () => {
                     waterproof rigid core vinyl with the serene hues of natural
                     and rich wood landscapes.
                   </p>
-                <div className="mt-10">
-                <Link
-                    className="link-light"
-                    href="/collection/66ae8f0d0c8f4839920a6422"
-                  >
-                    See More!
-                  </Link>
-                </div>
+                  <div className="mt-10">
+                    <Link
+                      className="link-light"
+                      href="/collection/66ae8f0d0c8f4839920a6422"
+                    >
+                      See More!
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
 
