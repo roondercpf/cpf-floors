@@ -159,17 +159,6 @@ function LogosCarousel() {
             </div>
 
             <div className="embla__slide logos__slide">
-              <Link href="/collection/artisan-collection">
-                <Image
-                  src="/logos/artisan.svg"
-                  height={80}
-                  width={80}
-                  alt="Corepad Logo"
-                ></Image>
-              </Link>
-            </div>
-
-            <div className="embla__slide logos__slide">
               <Link href="/collection/alpha22-collection">
                 <Image
                   src="/logos/alpha22.svg"

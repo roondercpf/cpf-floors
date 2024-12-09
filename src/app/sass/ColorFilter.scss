@@ -1,19 +1,52 @@
-.color-filter{
-    height: 100vh;
-    overflow-y: scroll;
-    .sidebar{
-        height: 100%;
-        background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-    .color-filter-container{
-        overflow-y: scroll;
-    }
-}
-
-.color-filter-card{
-    width: 40%;
-    height: auto;
+.filter-container {
+  height: auto;
+  width: 100%;
+  margin-top: 80px;
+  .filter-title{
+    padding: 40px;
     text-align: center;
-    margin: 20px;
+    h2{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    p{
+        font-weight: 400;
+        color: gray;
+    }
+  }
+  .option-container {
+    width: 100%;
+    background-color: #373737;
+    select {
+      padding: 15px 60px;
+      margin: 15px;
+      text-align: start;
+      border-radius: 8px;
+    }
+  }
+  .colors-container {
+    padding-bottom: 80px;
+    .color-card {
+      width: auto;
+      padding: 20px;
+      border: 1px solid rgb(202, 202, 202);
+      border-radius: 18px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      img {
+        height: 350px;
+        width: auto;
+        border-radius: 18px;
+      }
+      .color-card-text {
+        h3 {
+          font-size: 22px;
+          font-weight: 600;
+        }
+        p {
+          font-size: 16px;
+          color: gray;
+        }
+      }
+    }
+  }
 }

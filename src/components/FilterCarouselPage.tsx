@@ -68,7 +68,7 @@ function FilterCarouselPage() {
                   <h2>{img.title}</h2>
                   <p>{img.p}</p>
                 </div>
-                <Link href="#">
+                <Link href="/quick-search">
                   <motion.img
                     src={img.url}
                     height={80}
