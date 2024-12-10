@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useEffect, ChangeEvent } from "react";
+import { useState, useEffect, ChangeEvent, useMemo } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { Collections, Color } from "@/interfaces/collections.model";
 
@@ -26,6 +25,13 @@ function ColorFilter() {
       console.log("error: ", error);
     }
   }
+
+  const collectionFiltered = useMemo(()=>{
+    if(collections && collections.length > 0 && Object.values(filter).some(fil=> fil.length > 0)){
+
+    }
+    return collections
+  },[filter])
 
   useEffect(() => {
     getCollections();
@@ -106,40 +112,46 @@ function ColorFilter() {
 
         <div className="colors-container flex flex-wrap items-center justify-center p-5">
           {filteredColors ? (
-            filteredColors.map((color, index) => (
-              <motion.div
-                key={index}
-                className="m-5 color-card"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-              >
-                <Image
-                  src={color.picture}
-                  height={400}
-                  width={400}
-                  alt=""
-                  unoptimized
-                />
-                <div className="color-card-text my-5">
-                  <h3>{color.name}</h3>
-                  <p>Plank Size: {color.plankSize}</p>
-                  <p>Installation: {color.installationMethod}</p>
+            collectionFiltered?.map((collection, index) => {
+              return collection.colors.map((color)=>
+                (
+                  <motion.div
+                    key={index}
+                    className="m-5 color-card"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
+                  >
+                    <Image
+                      src={color.picture}
+                      height={400}
+                      width={400}
+                      alt=""
+                      unoptimized
+                    />
+                    <div className="color-card-text my-5">
+                      <h3>{color.name}</h3>
+                      <p>Plank Size: {color.plankSize}</p>
+                      <p>Installation: {color.installationMethod}</p>
+                    </div>
+                  </motion.div>
+                )) 
+              })
+            )
+              : (
+                <div className="loader-screen">
+                  <Image
+                    className="header-desktop-logo"
+                    alt="CPF Floors logo"
+                    src="/header_desktop_logo.svg"
+                    height={150}
+                    width={150}
+                  />
+                  <span className="loader"></span>
                 </div>
-              </motion.div>
-            ))
-          ) : (
-            <div className="loader-screen">
-              <Image
-                className="header-desktop-logo"
-                alt="CPF Floors logo"
-                src="/header_desktop_logo.svg"
-                height={150}
-                width={150}
-              />
-              <span className="loader"></span>
-            </div>
-          )}
+              )
+              }
+          
         </div>
       </div>
     </>
