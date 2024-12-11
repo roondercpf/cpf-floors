@@ -18,6 +18,8 @@
   min-height: auto;
   overflow: hidden;
   margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 16px;
   img {
     height: 100%;
     width: 100%;
@@ -70,11 +72,16 @@
 /*MEDIA QUERIES*/
 
 @media (max-width: 1175px) {
-  .filter__slide {
-    flex: 0 0 45%;
-    padding: 20px !important;
+  .filter__container{
+    padding: 20px;
+  }
+  .filter-card__slide {
+    flex: 0 0 100%;
+    overflow: hidden;
+    margin: 20px;
     img {
       filter: none;
+      overflow: hidden;
     }
   }
 }

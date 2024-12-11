@@ -11,14 +11,6 @@ import "@/app/sass/FilterCarouselPage.scss";
 function FilterCarouselPage() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
-  }, [emblaApi]);
-
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
-
   const url = [
     {
       url: "/filter-slide-1.png",
@@ -52,7 +44,7 @@ function FilterCarouselPage() {
       url: "/filter-slide-5.png",
       plank: "/filter-plank-5.png",
       shadow: "/shadow.png",
-      title: "Muted Tones",
+      title: "Tan Tones",
       p: "Category",
     },
   ];
