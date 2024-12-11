@@ -39,6 +39,7 @@ export interface Color {
   installation: string;
   room_scenes: string;
   features?: string;
+  tone?: string;
 }
 
 export enum Category {
