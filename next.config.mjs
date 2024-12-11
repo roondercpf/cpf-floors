@@ -8,6 +8,9 @@ const nextConfig = {
       {
         hostname: "cpffloors.com",
       },
+      {
+        hostname: "cpfmainbucket.s3.us-east-1.amazonaws.com"
+      }
     ],
   },
 };

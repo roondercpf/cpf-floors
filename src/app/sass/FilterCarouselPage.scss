@@ -1,0 +1,87 @@
+.filter {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 !important;
+  height: auto;
+}
+.filter__container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+}
+.filter-card__slide {
+  position: relative;
+  flex: 0 0 30%;
+  min-width: auto;
+  min-height: auto;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 16px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  .effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 1s;
+    .filter-plank{
+        position: absolute;
+        bottom: -300px;
+        right: 0;
+        width: 55%;
+        transition: 1.5s;
+    }
+  }
+  .slide-text{
+    color: white;
+    position: absolute;
+    top: 20%;
+    margin: 40px;
+    z-index: 10;
+    h2{
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 50px;
+    }
+    p{
+      font-size: 22px;
+    }
+  }
+
+  .effect:hover{
+    opacity: 1;
+    .filter-plank{
+        bottom: 0;
+    }
+  }
+
+}
+
+.filter__slide:hover img {
+  filter: none;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1175px) {
+  .filter__container{
+    padding: 20px;
+  }
+  .filter-card__slide {
+    flex: 0 0 100%;
+    overflow: hidden;
+    margin: 20px;
+    img {
+      filter: none;
+      overflow: hidden;
+    }
+  }
+}

@@ -1,19 +1,90 @@
-.color-filter{
-    height: 100vh;
-    overflow-y: scroll;
-    .sidebar{
-        height: 100%;
-        background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.filter-container {
+  height: auto;
+  width: 100%;
+  margin-top: 80px;
+  .filter-title{
+    padding: 40px;
+    text-align: center;
+    h2{
+        font-size: 28px;
+        font-weight: 600;
     }
-    .color-filter-container{
-        overflow-y: scroll;
+    p{
+        font-weight: 400;
+        color: gray;
     }
+  }
+  .option-container {
+    width: 100%;
+    background-color: #373737;
+    select {
+      padding: 15px 60px;
+      margin: 15px;
+      text-align: start;
+      border-radius: 8px;
+    }
+  }
+  .colors-container {
+    padding-bottom: 80px;
+    .no-results{
+      height: 60vh;
+    }
+    .color-card {
+      width: auto;
+      padding: 20px;
+      border: 1px solid rgb(202, 202, 202);
+      border-radius: 18px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      img {
+        height: 350px;
+        width: auto;
+        border-radius: 18px;
+        cursor: pointer;
+      }
+      .color-card-text {
+        .card-title{
+          width: 100%;
+          justify-content: space-between;
+          span{
+            margin-right: 5px;
+            color: rgb(107, 107, 107);
+            border: 2px solid rgb(180, 180, 180) ;
+            border-radius: 12px;
+            padding: 5px 10px;
+          }
+        }
+        h3 {
+          font-size: 22px;
+          font-weight: 600;
+        }
+        p {
+          font-size: 16px;
+          color: gray;
+        }
+      }
+      .view-color-container{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.603);
+      }
+    }
+  }
 }
 
-.color-filter-card{
-    width: 40%;
-    height: auto;
-    text-align: center;
-    margin: 20px;
+
+@media(max-width: 1175px){
+  .option-container{
+    flex-direction: column;
+    select{
+      width: 100%;
+    }
+  }
+  .colors-container{
+    .no-results{
+      height: 200px;
+    }
+  }
 }

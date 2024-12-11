@@ -24,8 +24,8 @@ export interface Collections {
 export interface Color {
   name: string;
   sku: string;
-  plank_sizes: string;
-  installation_method: string;
+  plankSize: string;
+  installationMethod: string;
   sound_transmission?: string;
   warranty: string;
   sqftPerBox: number;
@@ -39,6 +39,7 @@ export interface Color {
   installation: string;
   room_scenes: string;
   features?: string;
+  tone?: string;
 }
 
 export enum Category {
