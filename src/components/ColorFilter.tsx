@@ -1,17 +1,22 @@
 "use client";
 
-import type { Collections, Color } from "@/interfaces/collections.model";
+import type { Collections } from "@/interfaces/collections.model";
+import { generateId } from "@/utils/index";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { type ChangeEvent, useEffect, useMemo, useState } from "react";
 
 import "@/app/sass/ColorFilter.scss";
 
-function ColorFilter() {
+interface ColorFilterProps {
+	tone: string;
+}
+
+function ColorFilter({ tone }: ColorFilterProps) {
 	const [collections, setCollections] = useState<Collections[] | null>([]);
 	const [filter, setFilter] = useState({
 		size: "",
-		colorTone: "",
+		colorTone: tone,
 		clickSystem: "",
 	});
 	//const [filteredColors, setFilteredColors] = useState<Color[]>([]);
@@ -47,7 +52,7 @@ function ColorFilter() {
 						return (
 							filter.size
 								.toLowerCase()
-								.includes(color.palletSize?.toLowerCase()) ||
+								.includes(color.plankSize?.toLowerCase()) ||
 							filter.colorTone
 								.toLowerCase()
 								.includes(color?.tone?.toLowerCase() ?? "") ||
@@ -63,50 +68,39 @@ function ColorFilter() {
 	}, [filter, collections]);
 
 	const filterByColor = useMemo(() => {
-		return collectionFiltered?.map((collection) => {
-			return {
-				...collection,
-				colors: collection.colors?.filter((color) => {
-					return color?.tone
-						?.toLowerCase()
-						.includes(filter.colorTone.toLowerCase());
-				}),
-			};
-		});
+		if (!collectionFiltered) {
+			return [];
+		}
+
+		for (const collection of collectionFiltered) {
+			let { colors } = collection;
+			for (const [filt, filtValue] of Object.entries(filter)) {
+				if (filtValue.length > 0) {
+					colors = colors?.filter((color) => {
+						switch (filt) {
+							case "size":
+								return (
+									filtValue.toLowerCase() === color.plankSize?.toLowerCase()
+								);
+							case "colorTone":
+								return filtValue.toLowerCase() === color?.tone?.toLowerCase();
+							case "clickSystem":
+								return (
+									filtValue.toLowerCase() ===
+									color.installationMethod?.toLowerCase()
+								);
+						}
+						return true;
+					});
+					collection.colors = colors;
+				}
+			}
+		}
+
+		return collectionFiltered?.filter(
+			(collection) => collection.colors?.length > 0,
+		);
 	}, [collectionFiltered, filter]);
-
-	console.log(filterByColor);
-
-	// useEffect(() => {
-	// 	const colors: Color[] = [];
-
-	// 	collections?.forEach((collection) => {
-	// 		if (collection.colors && Array.isArray(collection.colors)) {
-	// 			collection.colors.forEach((color) => {
-	// 				if (!colors.includes(color)) {
-	// 					colors.push(color);
-	// 				}
-	// 			});
-	// 		}
-	// 	});
-
-	// 	// Filter colors based on the selected options
-	// 	const filtered = colors.filter((color) => {
-	// 		return filter.clickSystem.includes("Unilin Click")
-	// 			? color.installationMethod === "Unilin Click"
-	// 			: true && filter.clickSystem.includes("Herringbone")
-	// 				? color.installationMethod === "Herringbone"
-	// 				: true && filter.clickSystem.includes("Angle - Angle")
-	// 					? color.installationMethod === "Angle - Angle"
-	// 					: true && filter.clickSystem.includes("Angle Tap")
-	// 						? color.installationMethod === "Angle Tap"
-	// 						: true && filter.size.includes('7"x48"')
-	// 							? color.palletSize === '7"x48"'
-	// 							: true;
-	// 	});
-
-	// 	setFilteredColors(filtered);
-	// }, [collections, filter]);
 
 	const handleFilterChange = (e: ChangeEvent<HTMLSelectElement>) => {
 		setFilter({
@@ -125,7 +119,11 @@ function ColorFilter() {
 
 				{/* BUTTONS */}
 				<div className="option-container flex justify-center items-center mb-10 p-5">
-					<select name="colorTone" onChange={handleFilterChange}>
+					<select
+						name="colorTone"
+						onChange={handleFilterChange}
+						defaultValue={tone}
+					>
 						<option value="">Select by Color</option>
 						<option value="grays">Grays</option>
 						<option value="tan tones">Tan Tones</option>
@@ -144,16 +142,17 @@ function ColorFilter() {
 
 					<select name="size" onChange={handleFilterChange}>
 						<option value="">Select Plank Size</option>
-						<option value='7"x48"'>7&quot; x 48&quot;</option>
+						<option value='7"x48"'>7&quot;x48&quot;</option>
+						<option value='9"x48"'>9&quot;x48&quot;</option>
 					</select>
 				</div>
 
 				<div className="colors-container flex flex-wrap items-center justify-center p-5">
 					{filterByColor && filterByColor.length > 0 ? (
 						filterByColor?.map((collection) => {
-							return collection.colors.map((color, index) => (
+							return collection.colors.map((color) => (
 								<motion.div
-									key={index}
+									key={generateId()}
 									className="m-5 color-card"
 									initial={{ opacity: 0 }}
 									whileInView={{ opacity: 1 }}
