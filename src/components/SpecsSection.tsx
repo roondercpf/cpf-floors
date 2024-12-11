@@ -7,7 +7,7 @@ const SpecsSection = ({ collection }: { collection: Collections }) => {
       <div className="description" >
         <div className="description-specs">
           <h3 className="font-bold">Size</h3>
-          <p>{collection.colors[0].plank_sizes}</p>
+          <p>{collection.colors[0].plankSize}</p>
           <h3 className="font-bold">Sqft per box</h3>
           <p>{collection.colors[0].sqftPerBox}</p>
           <h3 className="font-bold">Sqft per pallet</h3>
@@ -17,7 +17,7 @@ const SpecsSection = ({ collection }: { collection: Collections }) => {
           <h3 className="font-bold">Total Thickness</h3>
           <p>{collection.overallThickness}</p>
           <h3 className="font-bold">Installation type</h3>
-          <p>{collection.colors[0].installation_method}</p>
+          <p>{collection.colors[0].installationMethod}</p>
           <h3 className="font-bold">Looking</h3>
           <p>...</p>
         </div>
