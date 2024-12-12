@@ -177,7 +177,7 @@ function ColorFilter({ tone }: ColorFilterProps) {
                     <div className="color-card-text my-5">
                       <div className="card-title flex flex-col items-start mb-5">
                         <h3>{color.name}</h3>
-                        <span>{color.tone}</span>
+                        <span>{color.tone ?? color.sound_transmission}</span>
                       </div>
                       <p>Plank Size: {color.plankSize}</p>
                       <p>Installation: {color.installationMethod}</p>

@@ -34,6 +34,7 @@ function BecomeADealer() {
               height={600}
               width={600}
               alt="CPF Floors - Become a dealer"
+              unoptimized
             ></Image>
           </motion.div>
         </div>
@@ -157,6 +158,7 @@ function BecomeADealer() {
                 height={600}
                 width={600}
                 alt="CPF Floors - Become a dealer"
+                unoptimized
               ></Image>
             </motion.div>
           </div>
