@@ -92,7 +92,7 @@ function LogosCarousel() {
             </div>
 
             <div className="embla__slide logos__slide">
-              <Link href="/collection/quick48+-collection">
+              <Link href="/collection/quick48-collection">
                 <Image
                   src="/logos/quick48.svg"
                   height={80}
@@ -148,7 +148,7 @@ function LogosCarousel() {
             </div>
 
             <div className="embla__slide logos__slide">
-              <Link href="/#">
+              <Link href="/collection/project-collection">
                 <Image
                   src="/logos/project.svg"
                   height={80}
