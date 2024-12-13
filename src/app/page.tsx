@@ -22,7 +22,7 @@ function Home() {
             </h1>
             <p>
               The smartest flooring solution for all your <br /> renovation
-              needs.
+              needs
             </p>
             <Link className="link-light" href="/collections">
               Get Started!
