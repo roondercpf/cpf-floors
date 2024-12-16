@@ -4,6 +4,7 @@ import { Color, Collections } from "@/interfaces/collections.model";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 import "@/app/sass/CollectionVisualizer.scss";
 import "@/app/globals.css";
@@ -93,6 +94,10 @@ const CollectionVisualizer: React.FC<Props> = ({ collection }) => {
             ))}
           </div>
         </Tabs>
+
+        <div className="link-dark mb-10">
+          <Link target="_blank" href="https://www.roomvo.com/my/cpffloors/">See it in your room</Link>
+        </div>
       </div>
 
       <AnimatePresence initial={false}>
