@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { CollectionResponse } from "@/interfaces/collections.model";
 import "../app/globals.css";
 import "../app/sass/Header.scss";
@@ -23,6 +23,8 @@ function Header() {
   const [openInspire, setOpenInspire] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
 
+  const headerRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
     async function getCollections() {
       const url = "api/collections";
@@ -37,10 +39,25 @@ function Header() {
       }
     }
     getCollections();
+
+    // Close menu when clicking outside of header
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        headerRef.current &&
+        !headerRef.current.contains(event.target as Node)
+      ) {
+        setOpenProducts(false);
+        setOpenInspire(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
-
-  console.log(list)
+  console.log(list);
 
   return (
     <>
@@ -154,6 +171,7 @@ function Header() {
         <AnimatePresence initial={false}>
           {openProducts && (
             <motion.div
+              ref={headerRef}
               className="products-menu"
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
@@ -375,13 +393,25 @@ function Header() {
                     </div>
                   </AccordionItem>
                   <div className="link-container-normal py-5">
-                    <Link href="/dealer-locator" onClick={() => setMobileNav(!mobileNav)}>Dealer Locator</Link>
+                    <Link
+                      href="/dealer-locator"
+                      onClick={() => setMobileNav(!mobileNav)}
+                    >
+                      Dealer Locator
+                    </Link>
                   </div>
                   <div className="link-container-normal py-5">
-                    <Link href="/become-a-dealer onClick={() => setMobileNav(!mobileNav)}">Become a Dealer</Link>
+                    <Link href="/become-a-dealer onClick={() => setMobileNav(!mobileNav)}">
+                      Become a Dealer
+                    </Link>
                   </div>
                   <div className="link-container-normal py-5">
-                    <Link href="/about-us" onClick={() => setMobileNav(!mobileNav)}>About Us</Link>
+                    <Link
+                      href="/about-us"
+                      onClick={() => setMobileNav(!mobileNav)}
+                    >
+                      About Us
+                    </Link>
                   </div>
                   <AccordionItem value="item-2">
                     <AccordionTrigger>
@@ -389,15 +419,30 @@ function Header() {
                     </AccordionTrigger>
                     <div className="link-container">
                       <AccordionContent className="link-container-list flex flex-col p-5">
-                        <Link href="/blogs" onClick={() => setMobileNav(!mobileNav)}>Our Blog</Link>
+                        <Link
+                          href="/blogs"
+                          onClick={() => setMobileNav(!mobileNav)}
+                        >
+                          Our Blog
+                        </Link>
                       </AccordionContent>
                     </div>
                   </AccordionItem>
                   <div className="link-container-normal py-5">
-                    <Link href="/order-samples" onClick={() => setMobileNav(!mobileNav)}>Order Samples</Link>
+                    <Link
+                      href="/order-samples"
+                      onClick={() => setMobileNav(!mobileNav)}
+                    >
+                      Order Samples
+                    </Link>
                   </div>
                   <div className="link-container-normal py-5">
-                    <Link href="/contact-us" onClick={() => setMobileNav(!mobileNav)}>Contact Us</Link>
+                    <Link
+                      href="/contact-us"
+                      onClick={() => setMobileNav(!mobileNav)}
+                    >
+                      Contact Us
+                    </Link>
                   </div>
                 </Accordion>
                 <div className="flex justify-center items-center py-20">
