@@ -49,7 +49,7 @@ const HomeBannerCarousel = () => {
                   <div className="mt-10">
                     <Link
                       className="link-light"
-                      href="/collection/66afbdb4613ab3dab29c8558"
+                      href="/collection/inspire-black-edition-collection"
                     >
                       See More!
                     </Link>
@@ -79,7 +79,7 @@ const HomeBannerCarousel = () => {
                   <div className="mt-10">
                     <Link
                       className="link-light"
-                      href="/collection/66cb600baec0a38cb01ff2e1"
+                      href="/collection/deco54-collection"
                     >
                       See More!
                     </Link>
@@ -109,7 +109,7 @@ const HomeBannerCarousel = () => {
                   <div className="mt-10">
                     <Link
                       className="link-light"
-                      href="/collection/66abc1c6ff92ba10a656047d"
+                      href="/collection/project2.0-collection"
                     >
                       See More!
                     </Link>
@@ -139,7 +139,7 @@ const HomeBannerCarousel = () => {
                   <div className="mt-10">
                     <Link
                       className="link-light"
-                      href="/collection/66ae8f0d0c8f4839920a6422"
+                      href="/collection/decotile-collection"
                     >
                       See More!
                     </Link>
