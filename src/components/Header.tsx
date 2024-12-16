@@ -209,7 +209,7 @@ function Header() {
                   <h3>Accesories</h3>
                   <Link
                     onClick={() => setOpenProducts(false)}
-                    href="/coresteps"
+                    href="/core-moldings"
                   >
                     Baseboards
                   </Link>
