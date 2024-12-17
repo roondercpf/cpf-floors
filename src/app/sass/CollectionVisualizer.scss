@@ -76,6 +76,15 @@
   height: 100vh;
   width: 100%;
   z-index: 1000;
+  .close-iframe{
+    background-color: transparent;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    margin: 20px;
+    cursor: pointer;
+  }
 }
 .expand-container{
   position: fixed;

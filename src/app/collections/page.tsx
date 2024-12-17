@@ -11,8 +11,8 @@ function CollectionsCategories() {
   return (
     <>
       <div className="categories-title">
-        <h2>Select Your Product</h2>
-        <p>The founders at CPF Floors are dedicated in providing the hihgest levels of quality service and innovation for it&apos;s flooring products. CPF Floors was founded a few years ago, but it&apos;s founders have more than 20 years of experience.</p>
+        <h2>Select By Category</h2>
+        <p>Discover the perfect flooring solution for your needs. Our extensive range of high-quality flooring options is designed to meet the diverse needs of every customer.</p>
       </div>
       <div className="categories-container">
         <div className="category-card flex flex-col justify-between">

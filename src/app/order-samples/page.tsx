@@ -15,11 +15,10 @@ export default function OrderSample() {
     <>
       <div className="order-sample-banner">
         <div className="order-text">
-          <h2>Become a<br />Dealer Today!</h2>
-          <h3>Experience the Quality First Hand</h3>
+          <h2 className="mb-5">Become a<br />Dealer Today!</h2>
           <p>
-            Experience the quality of CPF Floors with oyur own eyes.<br/> From
-            regular samples to Strap Sets or Architect folders, <br/> we make floor
+            Experience the quality of CPF Floors with oyur own eyes. From
+            regular samples to Strap Sets or Architect folders, we make floor
             shopping easy and convenient.
           </p>
           <Link className="link-light" href="/collections">
