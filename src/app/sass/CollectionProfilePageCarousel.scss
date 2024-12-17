@@ -10,65 +10,67 @@
 
 .collections-carousel {
   position: relative;
-  overflow: hidden;
+  height: auto !important;
   width: 100%;
-  margin: 0 !important;
-  height: 100%;
+  padding: 0;
+  margin: 0;
+  .collections-carousel-prev {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    margin: 0 60px;
+  }
+  .collections-carousel-next {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    margin: 0 60px;
+  }
 }
+
 .collections-carousel__container {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
+  height: auto !important;
+}
+.collections-carousel__viewport {
+  height: auto !important;
+  width: 100%;
+  overflow: hidden;
 }
 .collections-carousel__slide {
   flex: 0 0 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  min-width: auto;
-  height: 100%;
-  padding-bottom: 20px;
-  width: auto;
   margin: 40px;
-  border: 1px solid rgb(207, 207, 207);
+  border: 1px solid rgb(219, 219, 219);
   border-radius: 18px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-bottom: 20px;
+  height: auto !important;
   img {
     width: 100%;
     height: auto;
     margin-bottom: 0px;
   }
   h3 {
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 400;
   }
   p {
     margin-bottom: 30px;
   }
-  .specs{
+  .specs {
     padding: 20px;
     border: 1px solid rgb(216, 216, 216);
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   a {
-    margin-bottom: 60px;
+    margin-bottom: 0px;
   }
 }
 
-.collections-carousel-prev {
-  position: absolute;
-  top: 45%;
-  left: 0;
-  margin: 0 60px;
-}
-.collections-carousel-next {
-  position: absolute;
-  top: 45%;
-  right: 0;
-  margin: 0 60px;
-}
+
 
 /*MENU PRODUCTS SLIDES*/
 
@@ -81,12 +83,11 @@
   }
 }
 @media (max-width: 1175px) {
-  .collections-carousel{
+  .collections-carousel {
     margin-bottom: 180px;
-    
   }
- 
-  .collections-carousel__container{
+
+  .collections-carousel__container {
     height: auto !important;
   }
   .collections-carousel__slide {
@@ -102,12 +103,11 @@
   .collections-carousel-prev {
     left: -50px;
   }
-  .collection-specs{
+  .collection-specs {
     flex-direction: column;
-    .specs{
+    .specs {
       text-align: center;
       margin-bottom: 20px;
     }
-
   }
 }

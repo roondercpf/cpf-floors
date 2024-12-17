@@ -9,7 +9,6 @@ import Link from "next/link";
 import "@/app/sass/CollectionProfilePageCarousel.scss";
 
 function CollectionProfilePageCarousel() {
-  
   const [collections, setCollections] = useState<Collections[] | null>([]);
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -35,8 +34,6 @@ function CollectionProfilePageCarousel() {
   useEffect(() => {
     getCollections();
   }, []);
-
-  console.log(collections);
 
   return (
     <>
@@ -64,13 +61,20 @@ function CollectionProfilePageCarousel() {
                     By <b>{col.brand}</b>
                   </p>
                   <div className="collection-specs flex flex-col mb-20">
-                    <div className="specs  my-2"><b>Core: </b> {col.core} </div>
                     <div className="specs  my-2">
-                    <b>Overall Thickness: </b> {col.overallThickness} 
+                      <b>Core: </b> {col.core}{" "}
                     </div>
-                    <div className="specs  my-2"><b>Wear Layer: </b> {col.wearLayer}</div>
+                    <div className="specs  my-2">
+                      <b>Overall Thickness: </b> {col.overallThickness}
+                    </div>
+                    <div className="specs  my-2">
+                      <b>Wear Layer: </b> {col.wearLayer}
+                    </div>
                   </div>
-                  <Link className="link-dark" href={"/collection/" + col.collection_url}>
+                  <Link
+                    className="link-dark"
+                    href={"/collection/" + col.collection_url}
+                  >
                     View Collection
                   </Link>
                 </div>
@@ -78,14 +82,12 @@ function CollectionProfilePageCarousel() {
             ))}
           </div>
         </div>
-        <div className="collections-carousel-buttons">
-          <button className="collections-carousel-prev" onClick={scrollPrev}>
-            <Image src="/prev.svg" height={50} width={50} alt="prev"></Image>
-          </button>
-          <button className="collections-carousel-next" onClick={scrollNext}>
-            <Image src="/next.svg" height={50} width={50} alt="next"></Image>
-          </button>
-        </div>
+        <button className="collections-carousel-prev" onClick={scrollPrev}>
+          <Image src="/prev.svg" height={50} width={50} alt="prev"></Image>
+        </button>
+        <button className="collections-carousel-next" onClick={scrollNext}>
+          <Image src="/next.svg" height={50} width={50} alt="next"></Image>
+        </button>
       </div>
     </>
   );

@@ -27,6 +27,7 @@ function AboutUs() {
               height={600}
               width={600}
               alt="About Us - CPF Floors"
+              unoptimized
             ></Image>
           </div>
         </div>

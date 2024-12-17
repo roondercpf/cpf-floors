@@ -16,6 +16,7 @@ interface Props {
 const CollectionVisualizer: React.FC<Props> = ({ collection }) => {
   const [expand, setExpand] = useState(false);
   const [image, setImage] = useState("");
+  const [roomvo, setRoomvo] = useState(false);
   return (
     <>
       <div className="color-visualizer-container flex flex-col justify-center items-center">
@@ -96,9 +97,29 @@ const CollectionVisualizer: React.FC<Props> = ({ collection }) => {
         </Tabs>
 
         <div className="link-dark mb-10">
-          <Link target="_blank" href="https://www.roomvo.com/my/cpffloors/">See it in your room</Link>
+          {/* <Link target="_blank" href="https://www.roomvo.com/my/cpffloors/">
+            See it in your room
+          </Link> */}
+          <button onClick={() => setRoomvo(!roomvo)} className="link-dark">See it in your room</button>
         </div>
       </div>
+
+      <AnimatePresence initial={false}>
+        {roomvo && (
+          <motion.div className="iframe-container"
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}>
+            <div className="close-iframe"></div>
+            <iframe
+              className="roomvo-iframe"
+              src="https://www.roomvo.com/my/cpffloors/"
+              width="100%"
+              height="100%"
+              scrolling="yes"
+            ></iframe>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <AnimatePresence initial={false}>
         {expand && (
