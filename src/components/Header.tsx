@@ -186,15 +186,11 @@ function Header() {
 
                   {/*MAPPING COLLECTIONS URLS */}
 
-                  {list?.collections.map((link, index) => (
-                    <Link
-                      onClick={() => setOpenProducts(false)}
-                      key={index}
-                      href={`/collection/${link.collection_url}`}
-                    >
-                      {link.name}
-                    </Link>
-                  ))}
+                  <Link onClick={() => setOpenProducts(false)} href="/collection/quick48-collection">Quick48+</Link>
+                  <Link onClick={() => setOpenProducts(false)} href="/collection/deco54-collection">Deco54</Link>
+                  <Link onClick={() => setOpenProducts(false)} href="/collection/spiritxl-collection">Spirit XL</Link>
+                  <Link onClick={() => setOpenProducts(false)} href="/collection/inspire-black-edition-collection">Inspire Black Edition</Link>
+                  <Link onClick={() => setOpenProducts(false)} href="/collection/bold-collection">Bold Collection</Link>
 
                   <Link
                     onClick={() => setOpenProducts(false)}
@@ -209,7 +205,7 @@ function Header() {
                   <h3>Accesories</h3>
                   <Link
                     onClick={() => setOpenProducts(false)}
-                    href="/coresteps"
+                    href="/core-moldings"
                   >
                     Baseboards
                   </Link>

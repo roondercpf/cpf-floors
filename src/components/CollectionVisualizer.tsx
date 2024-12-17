@@ -4,6 +4,7 @@ import { Color, Collections } from "@/interfaces/collections.model";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 import "@/app/sass/CollectionVisualizer.scss";
 import "@/app/globals.css";
@@ -15,6 +16,7 @@ interface Props {
 const CollectionVisualizer: React.FC<Props> = ({ collection }) => {
   const [expand, setExpand] = useState(false);
   const [image, setImage] = useState("");
+  const [roomvo, setRoomvo] = useState(false);
   return (
     <>
       <div className="color-visualizer-container flex flex-col justify-center items-center">
@@ -93,7 +95,30 @@ const CollectionVisualizer: React.FC<Props> = ({ collection }) => {
             ))}
           </div>
         </Tabs>
+
+        <div className="link-dark mb-10">
+          <button onClick={() => setRoomvo(!roomvo)} className="link-dark">See it in your room</button>
+        </div>
       </div>
+
+      <AnimatePresence initial={false}>
+        {roomvo && (
+          <motion.div className="iframe-container"
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          exit={{opacity: 0}}
+          transition={{duration: 1}}>
+            <div onClick={() => setRoomvo(false)} className="close-iframe"></div>
+            <iframe
+              className="roomvo-iframe"
+              src="https://www.roomvo.com/my/cpffloors/"
+              width="100%"
+              height="100%"
+              scrolling="yes"
+            ></iframe>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <AnimatePresence initial={false}>
         {expand && (

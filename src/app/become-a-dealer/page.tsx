@@ -98,20 +98,7 @@ function BecomeADealer() {
             </motion.div>
 
             <div className="benefits-text-area">
-              <div className="benefits-text-div">
-                <Image
-                  src="/become-a-dealer/satisfaction.svg"
-                  height={50}
-                  width={50}
-                  alt="icon"
-                ></Image>
-                <h3>Your Satisfaction, Our Promise</h3>
-                <p>
-                  Our extensive range of displays and digital marketing
-                  resources are specifically designed to help your team
-                  accelerate revenue growth and foster customer loyalty.{" "}
-                </p>
-              </div>
+             
               <div className="benefits-text-div">
                 <Image
                   src="/become-a-dealer/custom.svg"
@@ -124,6 +111,21 @@ function BecomeADealer() {
                   Establish your store as a trusted brand with our branding
                   support and private label options for rigid core vinyl
                   products.{" "}
+                </p>
+              </div>
+
+              <div className="benefits-text-div">
+                <Image
+                  src="/become-a-dealer/satisfaction.svg"
+                  height={50}
+                  width={50}
+                  alt="icon"
+                ></Image>
+                <h3>Your Satisfaction, Our Promise</h3>
+                <p>
+                  Our extensive range of displays and digital marketing
+                  resources are specifically designed to help your team
+                  accelerate revenue growth and foster customer loyalty.{" "}
                 </p>
               </div>
             </div>

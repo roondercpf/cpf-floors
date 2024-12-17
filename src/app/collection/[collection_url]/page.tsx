@@ -52,7 +52,7 @@ async function CollectionID({
         <CollectionProfilePageCarousel />
       </>
 
-      <section>
+      <section className="mt-10">
         <div className="bluetape-become-container">
           <div className="bluetape-become">
             <h2>Become a Dealer</h2>

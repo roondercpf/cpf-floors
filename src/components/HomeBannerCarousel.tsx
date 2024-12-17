@@ -42,9 +42,7 @@ const HomeBannerCarousel = () => {
                     Edition Collection
                   </h2>
                   <p>
-                    The collection that perfectly blends the resilience of
-                    waterproof rigid core vinyl with the serene hues of natural
-                    and rich wood landscapes.
+                  The collection harmoniously combines the durability of waterproof laminate flooring with the calming tones of natural and richly textured wood scenery. 
                   </p>
                   <div className="mt-10">
                     <Link
@@ -72,9 +70,7 @@ const HomeBannerCarousel = () => {
                     Collection
                   </h2>
                   <p>
-                    The collection that perfectly blends the resilience of
-                    waterproof rigid core vinyl with the serene hues of natural
-                    and rich wood landscapes.
+                  Deco54 exemplifies the highest quality in waterproof rigid core vinyl flooring. With a refined 8mm thickness, a matte finish, and a beautifully natural appearance.
                   </p>
                   <div className="mt-10">
                     <Link
@@ -102,9 +98,7 @@ const HomeBannerCarousel = () => {
                     Collection
                   </h2>
                   <p>
-                    The collection that perfectly blends the resilience of
-                    waterproof rigid core vinyl with the serene hues of natural
-                    and rich wood landscapes.
+                  Experience the ideal combination of style and functionality. Project 2.0 offers remarkable waterproof qualities and durability, with its subtle hues and lifelike wood appearance, making it an excellent choice for small retail spaces and bustling households.
                   </p>
                   <div className="mt-10">
                     <Link
@@ -132,9 +126,7 @@ const HomeBannerCarousel = () => {
                     Collection
                   </h2>
                   <p>
-                    The collection that perfectly blends the resilience of
-                    waterproof rigid core vinyl with the serene hues of natural
-                    and rich wood landscapes.
+                  This collection perfectly blends affordable luxury, durability, and high-end aesthetics. DecoTile is the ideal option for those who desire flooring that fulfills their needs without sacrificing style.
                   </p>
                   <div className="mt-10">
                     <Link
