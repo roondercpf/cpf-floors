@@ -427,6 +427,7 @@
     background-position: center;
     padding: 40px;
     margin-top: 80px;
+    margin-bottom: 20px;
     .main-banner-text{
       padding: 0;
       height: auto;
@@ -448,6 +449,13 @@
     .roomvo-section {
       padding: 20px 10px;
       height: auto;
+      div[role="tablist"]{
+        height: auto;
+        width: 100%;
+        img{
+          margin: 0 !important;
+        }
+      }
       .roomvo-img {
         width: 100%;
         margin: 0;
@@ -551,6 +559,7 @@
 
   .deliver-section-container {
     padding: 10px;
+    margin-bottom: 80px;
     .deliver-section {
       padding: 20px;
       .deliver-img {
