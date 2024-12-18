@@ -156,6 +156,11 @@
         height: 50px;
       }
     }
+    .collection-room-buttons{
+      div[role="tablist"]{
+        width: 50%;
+      }
+    }
   }
   .expand-container{
     position: fixed;

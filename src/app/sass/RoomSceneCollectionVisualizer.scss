@@ -63,9 +63,15 @@
 @media(max-width: 1175px){
     .room-img-container{
         width: 100%;
+        [role=tab]{
+            img{
+                margin: 0;
+            }
+        }   
         .room-img{
             width: 100%;
             padding: 0;
+            
         }
     }
 }

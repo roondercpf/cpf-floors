@@ -78,10 +78,16 @@
   .filter-card__slide {
     flex: 0 0 100%;
     overflow: hidden;
-    margin: 20px;
+    margin: 20px; 
     img {
       filter: none;
       overflow: hidden;
+    }
+    .slide-text{
+      top: 10%;
+      h2{
+        font-size: 28px;
+      }
     }
   }
 }
