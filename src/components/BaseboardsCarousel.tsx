@@ -25,7 +25,7 @@ const BaseboardsCarousel = () => {
       <div className="corestep-carousel">
         <div className="corestep__viewport" ref={emblaRef}>
           <div className="corestep__container">
-            <div className="corestep__slide">
+            {/* <div className="corestep__slide">
               <Image
                 src="/core-moldings/Baseboard-1-6-Pine-WATERPROOF.webp"
                 height={600}
@@ -33,7 +33,7 @@ const BaseboardsCarousel = () => {
                 alt="Step"
               ></Image>
               <p className="text-center my-10 font-bold">Baseboard 1x6 Pine Waterproof</p>
-            </div>
+            </div> */}
             <div className="corestep__slide flex flex-col h-auto justify-center">
               <Image
                 src="/core-moldings/Baseboard-1-8-Pine.webp"
@@ -97,7 +97,7 @@ const BaseboardsCarousel = () => {
               ></Image>
               <p className="text-center my-10 font-bold">Baseboard Casing Pine</p>
             </div>
-            <div className="corestep__slide flex flex-col h-auto justify-center">
+            {/* <div className="corestep__slide flex flex-col h-auto justify-center">
               <Image
                 src="/core-moldings/Quarter-Round-PinE-MDF-EPS-Waterproof.webp"
                 height={600}
@@ -105,7 +105,7 @@ const BaseboardsCarousel = () => {
                 alt="Step"
               ></Image>
               <p className="text-center my-10 font-bold">Quarter Round Pine MDF/EPS</p>
-            </div>
+            </div> */}
           </div>
         </div>
 
