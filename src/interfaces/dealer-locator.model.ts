@@ -10,7 +10,7 @@ export interface Dealerlocator {
     street: string;
     city: string;
     state: string;
-    postal_code: number;
+    postal_code: string;
     country: string;
     lat: number;
     lng: number;

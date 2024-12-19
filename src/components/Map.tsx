@@ -37,12 +37,12 @@ export const Map = ({ data, ...props }: MapProps) => {
 
     const dealerFilter = data.filter(
       (dealer) =>
-        dealer.city.toLowerCase().includes(selectInput.toLowerCase()) ||
+        dealer.city?.toLowerCase().includes(selectInput.toLowerCase()) ||
         `${dealer.postal_code}`.includes(selectInput) ||
         dealer.title.toLowerCase().includes(selectInput.toLowerCase()) ||
         dealer.street.toLowerCase().includes(selectInput.toLowerCase()) ||
-        dealer.website.toLowerCase().includes(selectInput.toLowerCase()) ||
-        dealer.email.toLowerCase().includes(selectInput.toLowerCase())
+        dealer.website?.toLowerCase().includes(selectInput.toLowerCase()) ||
+        dealer.email?.toLowerCase().includes(selectInput.toLowerCase())
     );
     if (!dealerFilter) return;
 
