@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import { FRONTEND } from "../../../utils/env";
 import { CollectionResponse } from "@/interfaces/collections.model";
@@ -47,16 +46,18 @@ async function Collections({
           ></Image>
         </div>
         <div className="banner-text">
-          <h2 className="capitalize">{productTypes.find((type) => type.toLowerCase().includes(category))}</h2>
+          <h2 className="capitalize">
+            {productTypes.find((type) => type.toLowerCase().includes(category))}
+          </h2>
           <p>
-            Our {productTypes.find((type) => type.toLowerCase().includes(category))} Flooring
-            offers exceptional resilience, easy installation, a comfortable
-            feel, and lasting performance.
+            Our{" "}
+            {productTypes.find((type) => type.toLowerCase().includes(category))}{" "}
+            Flooring offers exceptional resilience, easy installation, a
+            comfortable feel, and lasting performance.
           </p>
         </div>
       </div>
 
-      
       <div className="collections-container">
         {collections.length > 0 ? (
           <>
@@ -71,17 +72,30 @@ async function Collections({
                   ></Image>
                   <div className="card-text">
                     <div className="collection-title">
-                      <h2><b>{collection.name}</b> Collection</h2>
+                      <h2>
+                        <b>{collection.name}</b> Collection
+                      </h2>
                     </div>
                     <div className="mb-10">
-                      <p>By <b>{collection.brand}</b></p>
-                      <p className="font-bold">{collection.serieName}</p>
+                      <p>
+                        By <b>{collection.brand}</b>
+                      </p>
                       <p>{collection.category}</p>
                     </div>
                     <div className="collection-specs w-100 flex flex-col">
-                      <div><b>Core: </b>{collection.core}</div>
-                      <div><b>Overall Thickness: </b>{collection.overallThickness}</div>
-                      <div><b>Wear Layer: </b>{collection.wearLayer}</div>
+                      <div>
+                        <b>Overall Thickness: </b>
+                        {collection.overallThickness}
+                      </div>
+
+                      <div>
+                        <b>Wear Layer: </b>
+                        {collection.wearLayer}
+                      </div>
+                      <div>
+                        <b>Core: </b>
+                        {collection.core}
+                      </div>
                     </div>
                     <Link
                       className="link-dark"

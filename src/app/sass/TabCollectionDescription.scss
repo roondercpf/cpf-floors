@@ -33,6 +33,7 @@
     border-radius: 18px;
     width: 100%;
     margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.247) 0px 5px 15px;
     .color-list {
       width: 100% !important;
       text-align: center;
@@ -49,6 +50,9 @@
     h2 {
       font-size: 45px;
       margin-bottom: 25px;
+      border: 1px solid rgb(211, 211, 211);
+      border-radius: 12px;
+      padding: 10px 15px;
     }
     .description-text,
     .description-img {
@@ -162,6 +166,9 @@
           width: 40%;
           margin-bottom: 40px;
         }
+      }
+      h2{
+        border: none;
       }
       .description-text {
         width: 100%;

@@ -110,6 +110,7 @@
         background-image: url("/privacy-policy/banner-one.png");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position-x: -20px;
         padding: 20px;
         margin-top: 80px;
         .banner-img{
@@ -121,12 +122,12 @@
             text-align: center;
             padding: 0;
             h2{
-                font-size: 5px;
+                font-size: 30px;
             }
         }
     }
     .collections-container{
-        margin-top: 120px;
+        margin-top: 40px;
         padding: 20px;
         .collection-card{
             height: auto;

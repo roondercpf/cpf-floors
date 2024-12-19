@@ -60,7 +60,7 @@ function CollectionProfilePageCarousel() {
                       alt=""
                     />
                   </div>
-                  <div className="flex p-5">
+                  <div className="collection-name flex p-5">
                     <h2 className="mr-1">{col.name + " "}</h2>
                     <span>Collection</span>
                   </div>

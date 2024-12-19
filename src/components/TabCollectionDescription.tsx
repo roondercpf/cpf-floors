@@ -117,6 +117,22 @@ const TabCollectionDescription: React.FC<Props> = ({ collection }) => {
                   <b>Wear Layer: </b>
                   {collection.wearLayer}
                 </p>
+                <p className="my-4">
+                  <b>Plank Size: </b>
+                  {collection.colors[0].plankSize}
+                </p>
+                <p className="my-4">
+                  <b>Planks per box: </b>
+                  {collection.colors[0].planksPerBox}
+                </p>
+                <p className="my-4">
+                  <b>SqFt per box: </b>
+                  {collection.colors[0].sqftPerBox}
+                </p>
+                <p className="my-4">
+                  <b>SqFt per pallet: </b>
+                  {collection.colors[0].sqftPerPallet}
+                </p>
               </div>
             </div>
           </TabsContent>
