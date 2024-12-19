@@ -326,6 +326,7 @@ function Header() {
           <div>
             <Link href="/">
               <Image
+                onClick={() => setMobileNav(false)}
                 className="header-mobile-logo"
                 alt="CPF Floors logo"
                 src="/footer-logo.svg"
@@ -335,7 +336,7 @@ function Header() {
             </Link>
           </div>
           <Link
-            onClick={() => setMobileNav(!mobileNav)}
+            onClick={() => setMobileNav(false)}
             href="/become-a-dealer"
             className="link-dark mx-5 py-1 px-8"
           >
@@ -391,20 +392,20 @@ function Header() {
                   <div className="link-container-normal py-5">
                     <Link
                       href="/dealer-locator"
-                      onClick={() => setMobileNav(!mobileNav)}
+                      onClick={() => setMobileNav(false)}
                     >
                       Dealer Locator
                     </Link>
                   </div>
                   <div className="link-container-normal py-5">
-                    <Link href="/become-a-dealer onClick={() => setMobileNav(!mobileNav)}">
+                    <Link href="/become-a-dealer">
                       Become a Dealer
                     </Link>
                   </div>
                   <div className="link-container-normal py-5">
                     <Link
                       href="/about-us"
-                      onClick={() => setMobileNav(!mobileNav)}
+                      onClick={() => setMobileNav(false)}
                     >
                       About Us
                     </Link>
@@ -417,7 +418,7 @@ function Header() {
                       <AccordionContent className="link-container-list flex flex-col p-5">
                         <Link
                           href="/blogs"
-                          onClick={() => setMobileNav(!mobileNav)}
+                          onClick={() => setMobileNav(false)}
                         >
                           Our Blog
                         </Link>
@@ -427,7 +428,7 @@ function Header() {
                   <div className="link-container-normal py-5">
                     <Link
                       href="/order-samples"
-                      onClick={() => setMobileNav(!mobileNav)}
+                      onClick={() => setMobileNav(false)}
                     >
                       Order Samples
                     </Link>
@@ -435,7 +436,7 @@ function Header() {
                   <div className="link-container-normal py-5">
                     <Link
                       href="/contact-us"
-                      onClick={() => setMobileNav(!mobileNav)}
+                      onClick={() => setMobileNav(false)}
                     >
                       Contact Us
                     </Link>
