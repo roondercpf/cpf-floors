@@ -157,12 +157,9 @@ export const Map = ({ data, ...props }: MapProps) => {
                     </p>
 
 
-                    <Link
-                      target="_blank"
-                      href={dealer.website ? " " + dealer.website : "Not"}
-                    >
-                      Website
-                    </Link>
+                    {dealer.website ? (
+                      <Link target="_blank" href={dealer.website}>Website</Link>
+                    ) : <p>No website available</p>}
                   </div>
                 </Popup>
               ) : null}
