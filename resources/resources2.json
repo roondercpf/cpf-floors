@@ -62,7 +62,7 @@
     {
         "name": "Spirit XL",
         "type": "Data Sheets",
-        "url": "https://cpfmainbucket.s3.amazonaws.com/web-resources/tech-resources/data-sheet/spirit-xl/Spirit+XL+Technical+Data+.pdf",
+        "url": "https://cpfmainbucket.s3.us-east-1.amazonaws.com/web-resources/tech-resources/data-sheet/spirit-xl/Data+Sheet+SPIRIT+XL.pdf",
         "cover": "https://cpfmainbucket.s3.amazonaws.com/web-resources/tech-resources/covers/data+sheet+spiritxl.png"
     },
     {
@@ -122,7 +122,7 @@
     {
         "name": "Spirit XL",
         "type": "Sell Sheets",
-        "url": "https://cpfmainbucket.s3.amazonaws.com/web-resources/tech-resources/sell-sheets/Spirit+Sell+Sheet.pdf",
+        "url": "https://cpfmainbucket.s3.us-east-1.amazonaws.com/web-resources/tech-resources/data-sheet/spirit-xl/Sell+Sheet+SPIRIT+XL.pdf",
         "cover": "https://cpfmainbucket.s3.amazonaws.com/web-resources/tech-resources/covers/sell+sheet+spiritxl.png"
     },
     {

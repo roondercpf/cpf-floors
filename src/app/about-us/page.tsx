@@ -14,7 +14,7 @@ function AboutUs() {
           <div className="about-text">
             <h2>About Us</h2>
             <p>
-              We continuously search for the finest and most <br /> innovative
+              We continuously search for the finest and most innovative
               flooring solutions.
             </p>
             <Link className="link-dark" href="/contact-us">

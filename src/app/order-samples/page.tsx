@@ -17,7 +17,7 @@ export default function OrderSample() {
         <div className="order-text">
           <h2 className="mb-5">Become a<br />Dealer Today!</h2>
           <p>
-            Experience the quality of CPF Floors with oyur own eyes. From
+            Experience the quality of CPF Floors with your own eyes. From
             regular samples to Strap Sets or Architect folders, we make floor
             shopping easy and convenient.
           </p>

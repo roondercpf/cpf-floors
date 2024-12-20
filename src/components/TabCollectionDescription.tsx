@@ -193,7 +193,7 @@ const TabCollectionDescription: React.FC<Props> = ({ collection }) => {
                         <Image onClick={() => setExpand(false)} className="close" src="/close.svg" height={20} width={20} alt="close"></Image>
                         <div className="image-container">
                         <Image src={`${expandColor}`} width={400} height={400} alt={collection.name} unoptimized></Image>
-                        <h2><b>{collectionName}</b> Collection</h2>
+                        <h2 className="text-end"><b>{collectionName} <br /> </b> Collection</h2>
                         <p>{colorName}</p>
                         </div>
                     </motion.div>
