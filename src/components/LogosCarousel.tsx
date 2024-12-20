@@ -31,7 +31,7 @@ function LogosCarousel() {
                   src="/logos/corepad.svg"
                   height={80}
                   width={80}
-                  alt="Corepad Logo"
+                  alt=""
                 ></Image>
               </Link>
             </div>
@@ -42,7 +42,7 @@ function LogosCarousel() {
                   src="/logos/decotile.svg"
                   height={80}
                   width={80}
-                  alt="Corepad Logo"
+                  alt=""
                 ></Image>
               </Link>
             </div>
@@ -53,7 +53,7 @@ function LogosCarousel() {
                   src="/logos/coresteps.svg"
                   height={80}
                   width={80}
-                  alt="Corepad Logo"
+                  alt=""
                 ></Image>
               </Link>
             </div>
@@ -64,7 +64,7 @@ function LogosCarousel() {
                   src="/logos/spiritxl.svg"
                   height={80}
                   width={80}
-                  alt="Corepad Logo"
+                  alt=""
                 ></Image>
               </Link>
             </div>
@@ -75,7 +75,7 @@ function LogosCarousel() {
                   src="/logos/coremoldings.svg"
                   height={80}
                   width={80}
-                  alt="Corepad Logo"
+                  alt=""
                 ></Image>
               </Link>
             </div>
@@ -86,7 +86,7 @@ function LogosCarousel() {
                   src="/logos/deco54.svg"
                   height={80}
                   width={80}
-                  alt="Corepad Logo"
+                  alt=""
                 ></Image>
               </Link>
             </div>
@@ -97,7 +97,7 @@ function LogosCarousel() {
                   src="/logos/quick48.svg"
                   height={80}
                   width={80}
-                  alt="Corepad Logo"
+                  alt=""
                 ></Image>
               </Link>
             </div>
@@ -108,7 +108,7 @@ function LogosCarousel() {
                   src="/logos/evolve.svg"
                   height={80}
                   width={80}
-                  alt="Corepad Logo"
+                  alt=""
                 ></Image>
               </Link>
             </div>
@@ -119,7 +119,18 @@ function LogosCarousel() {
                   src="/logos/ibe.svg"
                   height={80}
                   width={80}
-                  alt="Corepad Logo"
+                  alt=""
+                ></Image>
+              </Link>
+            </div>
+
+            <div className="embla__slide logos__slide">
+              <Link href="/collection/deco54-matte-collection">
+                <Image
+                  src="/logos/decomatte.svg"
+                  height={80}
+                  width={80}
+                  alt=""
                 ></Image>
               </Link>
             </div>
@@ -130,22 +141,11 @@ function LogosCarousel() {
                   src="/logos/project20.svg"
                   height={80}
                   width={80}
-                  alt="Corepad Logo"
+                  alt=""
                 ></Image>
               </Link>
             </div>
 
-
-            <div className="embla__slide logos__slide">
-              <Link href="/corepad">
-                <Image
-                  src="/logos/mutepad.svg"
-                  height={80}
-                  width={80}
-                  alt="Corepad Logo"
-                ></Image>
-              </Link>
-            </div>
 
             <div className="embla__slide logos__slide">
               <Link href="/collection/project-collection">
@@ -153,7 +153,7 @@ function LogosCarousel() {
                   src="/logos/project.svg"
                   height={80}
                   width={80}
-                  alt="Corepad Logo"
+                  alt=""
                 ></Image>
               </Link>
             </div>
@@ -164,7 +164,7 @@ function LogosCarousel() {
                   src="/logos/alpha22.svg"
                   height={80}
                   width={80}
-                  alt="Corepad Logo"
+                  alt=""
                 ></Image>
               </Link>
             </div>
