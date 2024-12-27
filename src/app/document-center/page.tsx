@@ -82,6 +82,7 @@ function DocumentCenter() {
                 width={200}
                 height={200}
                 alt={resource.name}
+                unoptimized
               />
               <h3>{resource.name}</h3>
               <Link target="_blank" className="link-dark" href={resource.url}>DownLoad</Link>

@@ -64,11 +64,12 @@ async function Blogs() {
             {blogs.map((blog) => {
               return (
                 <div key={blog._id} className="blog-card">
-                  <img
+                  <Image
                     src={blog.featured_image}
                     alt={blog.title}
                     width={200}
                     height={200}
+                    unoptimized
                   />
                   <h2>{blog.title}</h2>
                   <p>{blog.subtitle}</p>
